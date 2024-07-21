@@ -31,11 +31,11 @@
 - 文生视频 [Runway](https://app.runwayml.com/video-tools/teams/sgq2742798794/dashboard) 网址 https://app.runwayml.com/video-tools/teams/sgq2742798794/dashboard
 - 文案撰写优化 [GPT](https://openai.com/index/gpt-4/) 网址 https://openai.com/index/gpt-4/
 - 角色、背景、音效等资源
-- 1.Kenney网址: www.kenney.nl/assets
-- 2.OpenGameArt:www.opengameart.org
-- 3.itch.io:网址: www.itch.io/game-assets/free
-- 4.GameDev Market:网址: www.gamedevmarket.net
-- 5.Craftpix:网址: www.craftpix.net
+  1.Kenney网址: www.kenney.nl/assets
+  2.OpenGameArt:www.opengameart.org
+  3.itch.io:网址: www.itch.io/game-assets/free
+  4.GameDev Market:网址: www.gamedevmarket.net
+  5.Craftpix:网址: www.craftpix.net
 ## 学习资源
 QQ群文件： 
     ***Funcode 软件设计大赛经验分享*** (这个有必要看)
