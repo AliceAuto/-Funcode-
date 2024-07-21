@@ -4,7 +4,7 @@
 
 # 项目说明
 ## 项目logo
-![LOGO](https://github.com/AliceAuto/-Funcode-/blob/main/%E9%A1%B9%E7%9B%AElogo/logo.png)
+![LOGO](项目logo/logo_1.png)
 
 ## 准备工作
 
