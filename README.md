@@ -5,7 +5,7 @@
 
 # 项目说明
 ## 项目logo
-![LOGO](项目logo/logo_2.png/logo_2.psd)
+![LOGO](项目logo/logo_2.png)
 
 ## 准备工作
 
