@@ -4,13 +4,12 @@
 ## 开发团队: JNMC-四人帮
 
 # 项目说明
-## 项目logo
-![LOGO](项目logo/logo_2.png)
+
 
 ## 游戏框架
 ### 影之界 [项目成员编辑通道](https://app.diagrams.net/?client=1#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E7%BB%98%E5%9B%BE.drawio.png#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
 ![游戏框架](游戏框架/未命名绘图.drawio.png)
-### XXX [项目成员编辑通道]
+### XXX [项目成员编辑通道](游戏框架/游戏框架_XXX.drawio.png)
 ## 准备工作
 
 - **工作台环境:** Funcode平台已经上传qq群文件,文件名  ***Funcode***
@@ -63,5 +62,6 @@ QQ群文件：
   - 主分支 (如果不介意自己的更新提交前库的更新，可选择此)
   - 分支 (为自己新建一个分支，完成更新时合并分支，解决库的更新丢失，但需要手动解决冲突)
 - **如果更新项目时需要添加新文件夹，请在文件夹中放置一个名为"初始空文件.md"的文件以避免空文件夹不显示的问题**
-  
+## 项目logo
+![LOGO](项目logo/logo_2.png)
 ![加油](https://github.com/AliceAuto/-Funcode-/blob/main/github%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90(%E6%97%A0%E5%85%B3%E9%A1%B9)/%E5%8A%A0%E6%B2%B9.png)
