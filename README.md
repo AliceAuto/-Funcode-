@@ -51,7 +51,7 @@
 - 文生音乐 [Soundraw](https://soundraw.io/edit_music) 网址 https://soundraw.io/edit_music
 - 文生视频 [Runway](https://app.runwayml.com/video-tools/teams/sgq2742798794/dashboard) 网址 https://app.runwayml.com/video-tools/teams/sgq2742798794/dashboard
 - 文案撰写优化 [GPT](https://openai.com/index/gpt-4/) 网址 https://openai.com/index/gpt-4/
-- 地图生成器 [Tiled](https://www.mapeditor.org/) 教程:https://www.mapeditor.org/
+- 地图生成器 [Tiled](https://www.mapeditor.org/) 教程:[https://www.mapeditor.org/](https://blog.csdn.net/hqc17/article/details/52369990)
 - 角色、背景、音效等资源
     - [Ezgif (序列帧转精灵表)](https://ezgif.com/)：                网址: https://ezgif.com/ [教程](https://blog.csdn.net/hqc17/article/details/52369990)
     - [Kenney](www.kenney.nl/assets)           网址: www.kenney.nl/assets
