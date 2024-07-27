@@ -46,19 +46,19 @@
     - [GameDev Market](www.gamedevmarket.net)    网址: www.gamedevmarket.net
     - [Craftpix](www.craftpix.net)               网址: www.craftpix.net
 - [Github Desktop汉化工具](https://github.com/robotze/GithubDesktopZhTool) 网址 https://github.com/robotze/GithubDesktopZhTool
-
+--------------------------------------------------------------------------------------------
 ## 学习资源
 QQ群文件： 
     ***Funcode 软件设计大赛经验分享*** (这个有必要看)
 ***Funcode获奖作品展示***
 
-
+----------------------------------------------------------------
 ## 项目规范
 - **项目编码之前一定要约定项目的命名规范** （我建议采用蛇形命名，使用翻译器英文命名）
 - **高效、模块化添加注释**
 - **分工明确成员工作嵌合度不要太高**
   
-
+---------------------------------------------------------------------
 ## 注意
 - **项目参与者可  ***~~[完成项目需求]~~*** 以及  ***~~[新建项目需求]~~ 包括库README.md文件*****
 - **推荐使用可视化Github desktop**
