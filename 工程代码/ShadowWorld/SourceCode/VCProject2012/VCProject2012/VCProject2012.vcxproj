@@ -108,6 +108,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\Header\CommonClass.h" />
     <ClInclude Include="..\..\Header\LessonX.h" />
+    <ClInclude Include="MyClass.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc" />

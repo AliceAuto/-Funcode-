@@ -40,7 +40,7 @@
    new t2dAnimatedSprite(kongzhiyu) {
       animationName = "angelfish1sheetImageMapAnimation";
       canSaveDynamicFields = "1";
-      Position = "0.000 10.000";
+      Position = "-0.000 10.000";
       size = "25.000 25.000";
       Layer = "15";
       WorldLimitMin = "-51.455 -40.000";

@@ -1,4 +1,4 @@
-//-------------------------- 7/27/2024 -- 12:20:38 -----
+//-------------------------- 7/27/2024 -- 23:05:49 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
      (timed at roughly 2.89 Ghz)
@@ -110,6 +110,7 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorl
 FunCode (v1.7.5) initialized...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorld/Bin/game/managed/datablocks.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorld/Bin/game/managed/persistent.cs.
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorld/Bin/game/managed/brushes.cs...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorld/Bin/game/managed/brushes.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorld/Bin/game/gui/mainScreen.gui.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/ShadowWorld/Bin/game/gameScripts/game.cs.
