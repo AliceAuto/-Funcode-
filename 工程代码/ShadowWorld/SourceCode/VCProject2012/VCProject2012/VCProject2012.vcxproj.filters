@@ -26,6 +26,9 @@
     <ClInclude Include="..\..\Header\LessonX.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Header\CommonClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc">

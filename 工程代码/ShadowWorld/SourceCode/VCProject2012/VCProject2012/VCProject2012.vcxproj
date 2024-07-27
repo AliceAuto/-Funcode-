@@ -106,6 +106,7 @@
     <ClCompile Include="..\..\Src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Header\CommonClass.h" />
     <ClInclude Include="..\..\Header\LessonX.h" />
   </ItemGroup>
   <ItemGroup>
