@@ -19,14 +19,15 @@ int PASCAL WinMain(HINSTANCE hInstance,
 		return 0;
 
 	// To do : 在此使用API更改窗口标题
-	CSystem::SetWindowTitle("LessonX");
+	CSystem::SetWindowTitle("Game");
 
 	// 引擎主循环，处理屏幕图像刷新等工作
 	while( CSystem::EngineMainLoop() )
 	{
 		// 获取两次调用之间的时间差，传递给游戏逻辑处理
 		float	fTimeDelta	=	CSystem::GetTimeDelta();
-
+		
+		
 		// 执行游戏主循环
 		g_GameMain.GameMainLoop( fTimeDelta );
 	};

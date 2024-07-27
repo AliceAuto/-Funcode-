@@ -7,6 +7,7 @@
 #include <Stdio.h>
 #include "CommonClass.h"
 #include "LessonX.h"
+
 ////////////////////////////////////////////////////////////////////////////////
 //
 //
@@ -40,6 +41,10 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 	switch( GetGameState() )
 	{
 		// 初始化游戏，清空上一局相关数据
+			
+
+
+
 	case 1:
 		{
 			GameInit();
@@ -80,6 +85,7 @@ void CGameMain::GameInit()
 // 每局游戏进行中
 void CGameMain::GameRun( float fDeltaTime )
 {
+
 }
 //=============================================================================
 //
