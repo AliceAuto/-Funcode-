@@ -4,7 +4,7 @@
 ## 开发团队: JNMC-四人帮
 
 # 项目说明
-
+------------------------------------------------------------
 ## 项目logo
 ### 影之界![LOGO](项目logo/logo_2.png) XXX![LOGO](None)
 ------------------------------------------------------
@@ -13,6 +13,7 @@
 ![游戏框架](游戏框架/未命名绘图.drawio.png)
 ### XXX [项目成员编辑通道](https://app.diagrams.net/#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6_XXX.drawio.png#%7B%22pageId%22%3A%22weIvoqKA7_c4nYOg37wb%22%7D)
 ![游戏框架](游戏框架/游戏框架_XXX.drawio.png)
+-------------------------------------------------------------
 ## 准备工作
 
 - **工作台环境:** Funcode平台已经上传qq群文件,文件名  ***Funcode***
@@ -21,6 +22,7 @@
     - 创建**github**账户 ***可使用谷歌邮箱Gmail***
     - 下载**github desktop**（可视化Git管理）[点击下载](https://desktop.github.com/download/)
     - 观看具体团体项目开发教学视频[点击观看](https://www.bilibili.com/video/BV1o7411U7j6?vd_source=21be49af9afac52c20366bcfdbce61f2)
+-------------------------------------------------
 ## 项目进度
 - [x] 1. 选定游戏题目
 - [x] 2. 构思游戏玩法
@@ -28,7 +30,7 @@
 - [ ] 4.项目代码实现与维护
 - [ ] 5.游戏素材优化
 - [ ] 6.编写文档与比赛制作必要附件
-  
+------------------------------------------------------------------
 ## 项目工具资源
 - 资源网站 [爱给网](https://www.aigei.com/) 网址 https://www.aigei.com/
 - 位图资源网站 [Opengameart](https://opengameart.org/) 网址 https://opengameart.org/
