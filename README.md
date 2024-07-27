@@ -35,11 +35,11 @@
 - 文生视频 [Runway](https://app.runwayml.com/video-tools/teams/sgq2742798794/dashboard) 网址 https://app.runwayml.com/video-tools/teams/sgq2742798794/dashboard
 - 文案撰写优化 [GPT](https://openai.com/index/gpt-4/) 网址 https://openai.com/index/gpt-4/
 - 角色、背景、音效等资源
-    - [Ezgif](https://ezgif.com/)                网址: https://ezgif.com/
-    - [Kenney](www.kenney.nl/assets)             网址: www.kenney.nl/assets
-    - [itch.io](www.itch.io/game-assets/free)    网址: www.itch.io/game-assets/free
-    - [GameDev Market](www.gamedevmarket.net)    网址: www.gamedevmarket.net
-    - [Craftpix](www.craftpix.net)               网址: www.craftpix.net
+    - [Ezgif](https://ezgif.com/)：                网址: https://ezgif.com/
+    - [Kenney](www.kenney.nl/assets)：             网址: www.kenney.nl/assets
+    - [itch.io](www.itch.io/game-assets/free)：    网址: www.itch.io/game-assets/free
+    - [GameDev Market](www.gamedevmarket.net)：    网址: www.gamedevmarket.net
+    - [Craftpix](www.craftpix.net)：               网址: www.craftpix.net
 - [Github Desktop汉化工具](https://github.com/robotze/GithubDesktopZhTool) 网址 https://github.com/robotze/GithubDesktopZhTool
 
 ## 学习资源
