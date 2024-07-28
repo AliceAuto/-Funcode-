@@ -1,0 +1,62 @@
+/**
+ * @(#)JStaticSprite.java
+ *
+ * JStaticSprite application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineAPI;
+/**
+ * JStaticSprite
+ * ��̬����(��̬ͼƬ��ʾ)����CSprite�������̳��������Ȼ�����˼������ƾ���ͼƬ��ʾ�ĺ���
+ * @author root
+ *
+ */
+public	class JStaticSprite extends JSprite
+{
+	public	JStaticSprite( String szName )
+	{
+		super( szName );
+	}
+
+	/**
+	 * SetStaticSpriteImage������/���ľ�̬�������ʾͼƬ
+	 * @param ���� szImageName��ͼƬ����
+	 * @param ���� iFrame����ͼƬ����ʾ֡����Ϊ�༭��Ԥ��ͼ����ʾ��1/N����ΧΪ 0 �� N - 1
+	 */
+	public	void		SetStaticSpriteImage( String szImageName,  int iFrame )
+	{
+		EngineAPI.SetStaticSpriteImage( GetName(), szImageName, iFrame );
+	}
+
+	/**
+	 * SetStaticSpriteFrame�����þ�̬���鵱ǰͼƬ����ʾ֡��
+	 * @param ���� iFrame����ͼƬ����ʾ֡����Ϊ�༭��Ԥ��ͼ����ʾ��1/N����ΧΪ 0 �� N - 1
+	 */
+	public	void		SetStaticSpriteFrame(  int iFrame )
+	{
+		EngineAPI.SetStaticSpriteFrame( GetName(), iFrame );
+	}
+
+	/**
+	 * GetStaticSpriteImage����ȡ���鵱ǰ��ʾ��ͼƬ����
+	 * @return ����ֵ��ͼƬ����
+	 */
+	public	String  GetStaticSpriteImage()
+	{
+		return EngineAPI.GetStaticSpriteImage( GetName() );
+	}
+
+	/**
+	 * GetStaticSpriteFrame����ȡ���鵱ǰ��ʾ��ͼƬ֡��
+	 * @return ����ֵ��֡��
+	 */
+	public	int			GetStaticSpriteFrame()
+	{
+		return EngineAPI.GetStaticSpriteFrame( GetName() );
+	}
+};

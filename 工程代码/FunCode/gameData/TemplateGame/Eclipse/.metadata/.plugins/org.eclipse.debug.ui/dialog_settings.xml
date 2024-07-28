@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="EXT_FOLDER_LAST_SUBDIR_SETTING"/>
+	<item value="G:\Work\项目\FunCode_MySVN\EngineSource\compilers\VisualStudio2008\JavaAPI\EngineAPI\src" key="EXT_FOLDER_LAST_PATH_SETTING"/>
+	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="292" key="DIALOG_Y_ORIGIN"/>
+		<item value="702" key="DIALOG_X_ORIGIN"/>
+		<item value="378" key="DIALOG_HEIGHT"/>
+		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
+		<item value="262" key="DIALOG_WIDTH"/>
+		<item value="410" key="DIALOG_HEIGHT"/>
+		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

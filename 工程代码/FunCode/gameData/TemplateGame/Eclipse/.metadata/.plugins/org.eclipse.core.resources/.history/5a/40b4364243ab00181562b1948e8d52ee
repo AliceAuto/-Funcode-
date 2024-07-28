@@ -1,0 +1,79 @@
+/**
+ * @(#)JSound.java
+ *
+ * JSound application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineAPI;
+/**
+ * �ࣺJSound
+ * @author root
+ * �����������࣬����һ������ʵ�������ò��ź�������ʵ�������Ĳ���
+ */
+public	class JSound
+{
+	private String		m_szName;	// ������
+	private int			m_iSoundId;				// ���沥��������ʱ�򣬷��ص�ID
+	private boolean		m_bLoop;				// bLoop : �Ƿ�ѭ�����š����Ϊѭ����Ч������CSoundʵ��������ʱ���Զ�����StopSoundֹͣ�������Ĳ���
+	private float		m_fVolume;				// ������С��0-1��1Ϊ�����ļ���ԭ����С
+
+	/**
+	 * ���캯��
+	 * @param ���� szName��������·�������ƣ�����ֵ���ڱ༭������Դ -> �����������鿴����Ŀ���������Դ�����������Ǹ�·��ֵ��д����
+	 * @param ���� bLoop���Ƿ�ѭ�����š������ѭ�����ŵ���������Ҫ�ֶ�����APIֹͣ����
+	 * @param ���� fVolume��������С��0-1��1Ϊ�����ļ���ԭ����С
+	 */
+	public	JSound( String szName,  boolean bLoop,  float fVolume )
+	{
+		m_bLoop		=	bLoop;
+		m_fVolume	=	fVolume;
+		m_iSoundId	=	0;
+		m_szName	=	szName;
+	}
+
+
+	/**
+	 * GetName����ȡ��������
+	 * @return
+	 */
+	public	String GetName()
+	{
+		return m_szName;
+	}
+
+	/**
+	 * PlaySound�����Ÿ�����
+	 */
+	public	void		PlaySound()
+	{
+		if( m_bLoop && 0 != m_iSoundId )
+			StopSound();
+
+		m_iSoundId = EngineAPI.PlaySound( GetName(), m_bLoop, m_fVolume );
+	}
+
+	/**
+	 * StopSound��ֹͣ�������Ĳ���
+	 * ��ѭ���Ĳ�����֮���Զ�ֹͣ������һ�㲻��Ҫ���ô˺�����ֻ��ѭ������������Ҫ���á�����ѭ����Ч��������������Ҳ���Զ����ô˺���
+	 */
+	public	void		StopSound()
+	{
+		EngineAPI.StopSound( m_iSoundId );
+
+		m_iSoundId = 0;
+	}
+
+	/**
+	 * StopAllSound��ֹͣ������������
+	 * ��̬�����������Դ��ַ�ʽ���ã�CSound::StopAllSound����ֹͣ��Ϸ���������ڲ��ŵ�����
+	 */
+	public	static void	StopAllSound()
+	{
+		EngineAPI.StopAllSound();
+	}
+};

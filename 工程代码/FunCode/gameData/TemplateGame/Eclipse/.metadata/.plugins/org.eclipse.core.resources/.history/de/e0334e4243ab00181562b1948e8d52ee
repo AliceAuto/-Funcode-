@@ -1,0 +1,1095 @@
+/**
+ * @(#)EngineAPI.java
+ *
+ * EngineAPI application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineCall;
+
+public class EngineAPI
+{
+	/**
+	 * CursorOff���ر���겻��ʾ����API���ص�������Windows����꣬���ǵ��ÿ�������API CursorOn��������꽫һֱ����ʾ
+	 */
+	public static native void		CursorOff();
+
+	/**
+	 * CursorOn�����������ʾ����API CursorOff�رյ�������¿�����ʾ
+	 */
+	public static native void		CursorOn();
+	/**
+	 * IsCursorOn����ǰ����ǿ������ǹرա���Ӧ������API CursorOff��CursorOn�������߹رյĲ���
+	 * @return ����ֵ��trueΪ����״̬��falseΪ�ر�״
+	 */
+	public static native boolean	IsCursorOn();
+	/**
+	 * ShowCursor������/��ʾ��ꡣ��APIֻ�����ر����򴰿��ڵ���꣬�ƶ����������ʱ����껹�ǻ���ʾ
+	 * @param ���� bShow��true Ϊ��ʾ��false Ϊ����
+	 */
+	public static native void		ShowCursor( boolean bShow );
+	/**
+	 * IsShowCursor����ǰ�������ʾ�������ء���Ӧ������API ShowCursor���ػ�����ʾ�Ĳ���
+	 * @return ����ֵ��trueΪ����״̬��falseΪ�ر�״̬
+	 */
+	public static native boolean	IsShowCursor();
+	/**
+	 * SetWindowTitle�����ô�������/����
+	 * @param ���� szTitle���ǿ��ַ���
+	 */
+	public static native void		SetWindowTitle( String szTitle );
+	/**
+	 * ResizeWindow�����Ĵ��ڴ�
+	 * @param ���� iWidth����ȣ�����0С�ڵ���1920
+	 * @param ���� iHeight���߶ȣ�����0С�ڵ���1080
+	 */
+	public static native void		ResizeWindow(int iWidth, int iHeight);
+	/**
+	 * Random����ȡһ�����ڵ���0�������
+	 * @return ����ֵ��int����Χ0 - 2147483648
+	 */
+	public static native int		Random();
+	/**
+	 * RandomRange����ȡһ��λ�ڲ���1������2֮��������
+	 * @param ���� iMin��С��iMax������
+	 * @param ���� iMax������iMin������
+	 * @return ����ֵ��int����ΧiMin - iMax
+	 */
+	public static native int		RandomRange( int iMin, int iMax );
+	/**
+	 * CalLineRotation�������������ߵ�ֱ�ߵ���ת�Ƕ�
+	 * @param ���� fStartX����ʼ����X
+	 * @param ���� fStartY����ʼ����Y
+	 * @param ���� fEndX���յ�����X
+	 * @param ���� fEndY���յ�����Y
+	 * @return ����ֵ���Ƕȣ���Χ0 - 360
+	 */
+	public static native float	CalLineRotation( float fStartX, float fStartY, float fEndX, float fEndY );
+	/**
+	 * RotationToVectorX������ĳ���Ƕȶ�Ӧ��ֱ��������X����
+	 * @param ���� fRotation���Ƕȣ���Χ0 - 360
+	 * @return ����ֵ ����ֱ��������Xֵ
+	 */
+	public static native float	RotationToVectorX( float fRotation );
+	/**
+	 * RotationToVectorY������ĳ���Ƕȶ�Ӧ��ֱ��������Y����
+	 * @param ���� fRotation���Ƕȣ���Χ0 - 360
+	 * @return ����ֵ ����ֱ��������Yֵ
+	 */
+	public static native float	RotationToVectorY( float fRotation );
+	/**
+	 * DrawLine��������֮�仭һ����
+	 * @param ���� fStartX����ʼ����X
+	 * @param ���� fStartY����ʼ����Y
+	 * @param ���� fEndX���յ�����X
+	 * @param ���� fEndY���յ�����Y
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer���������ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha���ߵ�͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public static native void		DrawLine( float fStartX, float fStartY, float fEndX, float fEndY, float fLineWidth, int iLayer, int iRed, int iGreen, int iBlue, int iAlpha );
+	/**
+	 * DrawTriangle����һ��������
+	 * @param ���� fX1�����������������X����
+	 * @param ���� fY1�����������������Y����
+	 * @param ���� fX2�����������������X����
+	 * @param ���� fY2�����������������Y����
+	 * @param ����fX3�����������������X����
+	 * @param ���� fY3�����������������Y����
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer�������������ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31��
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha�������ε�͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public static native void		DrawTriangle( float fX1, float fY1, float fX2, float fY2, float fX3, float fY3, float fLineWidth, int iLayer, int iRed, int iGreen, int iBlue, int iAlpha );
+	/**
+	 * DrawRect����һ������
+	 * @param ���� fUpperX�����Ͻ�����X
+	 * @param ���� fUpperY�����Ͻ�����Y
+	 * @param ���� fLowerX�����½�����X
+	 * @param ���� fLowerY�����½�����Y
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer���þ������ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31��
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha�����ε�͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public static native void		DrawRect( float fUpperX, float fUpperY, float fLowerX, float fLowerY, float fLineWidth, int iLayer, int iRed, int iGreen, int iBlue, int iAlpha );
+	/**
+	 * DrawCircle����һ��Բ
+	 * @param ���� fCenterX��Բ������X
+	 * @param ���� fCenterY��Բ������Y
+	 * @param ���� fRadius��Բ�İ뾶
+	 * @param ���� iSegment��Բ����������Χ4-72. ���紫��6�����õ�һ��6���Σ�����Խ��ԽԲ�������ǻ�ͼЧ��Խ��
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer����Բ���ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31��
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ����  iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha��Բ��͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public static native void		DrawCircle( float fCenterX, float fCenterY, float fRadius, int iSegment, float fLineWidth, int iLayer, int iRed, int iGreen, int iBlue, int iAlpha );
+	/**
+	 * GetScreenLeft����ȡ����߽�֮���X����
+	 * @return ����ֵ����߽�X����
+	 */
+	public static native float	GetScreenLeft();
+	/**
+	 * GetScreenTop����ȡ����߽�֮�ϱ�Y����
+	 * @return ����ֵ���ϱ߽�Y����
+	 */
+	public static native float	GetScreenTop();
+
+	/**
+	 * GetScreenRight����ȡ����߽�֮�ұ�X����
+	 * @return ����ֵ���ұ߽�X����
+	 */
+	public static native float	GetScreenRight();
+
+	/**
+	 * GetScreenBottom����ȡ����߽�֮�±�Y����
+	 * @return ����ֵ���±߽�Y����
+	 */
+	public static native float	GetScreenBottom();
+
+	/**
+	 * LoadMap�������³�����ע�⣬�����³�����ʱ�򣬾ɳ��������о��鶼��������ɾ���������������ڳ����д��������Ƴ����ľ��鶼�����ڵ��ñ�API֮ǰ��ɾ����
+	 * @param ���� szName���������֡����½����������ʱ��ȡ�����֣������Сд�ĺ�׺ -- xxx.t2d�����ô�·��
+	 */
+	public static native void		LoadMap( String szName );
+
+	/**
+	 * CloneSprite������(����)һ�����顣����Ĵ�����ʽ�����ڵ�ͼ�аڷ�һ��������Ϊģ�壬���úø��������Ȼ���ڴ�����ʹ�ô˺�����¡һ��ʵ��
+	 * @param ���� szSrcName����ͼ������ģ��ľ�������
+	 * @param ���� szMyName���µľ�������
+	 * @return ����ֵ��true��ʾ��¡�ɹ���false��¡ʧ�ܡ�ʧ�ܵ�ԭ��������ڵ�ͼ��δ�ҵ���Ӧ���ֵľ���
+	 */
+	public static native boolean	CloneSprite( String szSrcName, String szMyName );
+
+	/**
+	 * DeleteSprite���ڵ�ͼ��ɾ��һ������
+	 * @param ���� szName��Ҫɾ���ľ�������
+	 */
+	public static native void	DeleteSprite( String szName );
+
+	/**
+	 * SetSpriteVisible�����þ������ػ�����ʾ(�ɼ����ɼ�)
+	 * @param ���� szName����������
+	 * @param ���� bVisible��true �ɼ� false���ɼ�
+	 */
+	public static native void	SetSpriteVisible( String szName, boolean bVisible );
+
+	/**
+	 * IsSpriteVisible����ȡ�þ��鵱ǰ�Ƿ�ɼ�
+	 * @param ���� szName����������
+	 * @return ����ֵ true�ɼ� false���ɼ�
+	 */
+	public static native boolean	IsSpriteVisible( String szName );
+
+	/**
+	 * SetSpriteEnable����ֹ�������øþ��顣����ֹ�ľ��齫�������κ���Ӧ���������ƶ���û����ײ�ȣ��������ڵ�ͼ����ʾ
+	 * @param ���� szName����������
+	 * @param ���� bEnable��true���� false��ֹ
+	 */
+	public static native void		SetSpriteEnable( String szName, boolean bEnable );
+
+	/**
+	 * SetSpriteScale�����þ��������ֵ
+	 * @param ���� szName����������
+	 * @param ���� fScale������ֵ������0��ֵ
+	 */
+	public static native void		SetSpriteScale( String szName, float fScale );
+
+	/**
+	 * IsPointInSprite���ж�ĳ��������Ƿ�λ�ھ����ڲ�
+	 * @param ���� szName����������
+	 * @param ���� fPosX��X�����
+	 * @param ���� fPosY��Y�����
+	 * @return ����ֵ true �� false ����
+	 */
+	public static native boolean 	IsPointInSprite( String szName, float fPosX, float fPosY );
+
+	/**
+	 * SetSpritePosition�����þ���λ��
+	 * @param ���� szName����������
+	 * @param ���� fPosX��X����
+	 * @param ���� fPosY��Y����
+	 */
+	public static native void		SetSpritePosition( String szName, float fPosX, float fPosY );
+
+	/**
+	 * SetSpritePositionX��ֻ���þ���X����
+	 * @param ���� szName����������
+	 * @param ���� fPosX��X����
+	 */
+	public static native void		SetSpritePositionX( String szName, float fPosX );
+	
+	/**
+	 * SetSpritePositionY��ֻ���þ���Y����
+	 * @param ���� szName����������
+	 * @param ���� fPosY��Y����
+	 */
+	public static native void		SetSpritePositionY( String szName, float fPosY );
+
+	/**
+	 * GetSpritePositionX����ȡ����X����
+	 * @param ���� szName����������
+	 * @return ����ֵ�������X����
+	 */
+	public static native float	GetSpritePositionX( String szName );
+
+	/**
+	 * GetSpritePositionY����ȡ����Y����
+	 * @param ���� szName����������
+	 * @return ����ֵ�������Y����
+	 */
+	public static native float	GetSpritePositionY( String szName );
+
+	/**
+	 * GetSpriteLinkPointPosX����ȡ�������ӵ�X���ꡣ���ӵ��������ھ����һ������㣬�����ڱ༭�������ӻ���ɾ��
+	 * @param ���� szName����������
+	 * @param ���� iId�����ӵ���ţ���һ��Ϊ1���������εݼ�
+	 * @return �������ӵ�X����
+	 */
+	public static native float	GetSpriteLinkPointPosX( String szName, int iId );
+
+	/**
+	 * GetSpriteLinkPointPosY����ȡ�������ӵ�Y���ꡣ���ӵ��������ھ����һ������㣬�����ڱ༭�������ӻ���ɾ��
+	 * @param ���� szName����������
+	 * @param ���� iId�����ӵ���ţ���һ��Ϊ1���������εݼ�
+	 * @return �������ӵ�Y����
+	 */
+	public static native float	GetSpriteLinkPointPosY( String szName,  int iId );
+
+	/**
+	 * SetSpriteRotation�����þ������ת�Ƕ�
+	 * @param ���� szName����������
+	 * @param ���� fRot����ת�Ƕȣ���Χ0 - 360
+	 */
+	public static native void		SetSpriteRotation( String szName,  float fRot );
+	/**
+	 * GetSpriteRotation����ȡ�������ת�Ƕ�
+	 * @param ���� szName����������
+	 * @return �������ת�Ƕ�
+	 */
+	public static native float	GetSpriteRotation( String szName );
+
+	/**
+	 * SetSpriteAutoRot�����þ��鰴��ָ���ٶ��Զ���ת
+	 * @param szName����������
+	 * @param fRotSpeed����ת�ٶ�
+	 */
+	public static native void 	SetSpriteAutoRot( String szName,  float fRotSpeed );
+
+	/**
+	 * SetSpriteWidth�����þ������ο��
+	 * @param ���� szName����������
+	 * @param ���� fWidth�����ֵ������0
+	 */
+	public static native void		SetSpriteWidth( String szName,  float fWidth );
+
+	/**
+	 * GetSpriteWidth����ȡ�������ο��
+	 * @param ���� szName����������
+	 * @return ����ֵ��������ֵ
+	 */
+	public static native float	GetSpriteWidth( String szName );
+
+	/**
+	 * SetSpriteHeight�����þ������θ߶�
+	 * @param ���� szName����������
+	 * @param ���� fHeight������߶�ֵ
+	 */
+	public static native void		SetSpriteHeight( String szName, float fHeight );
+
+	/**
+	 * GetSpriteHeight����ȡ�������θ߶�
+	 * @param ���� szName����������
+	 * @return ����ֵ������߶�ֵ
+	 */
+	public static native float	GetSpriteHeight( String szName );
+
+	/**
+	 * SetSpriteFlipX�����þ���ͼƬX����ת��ʾ
+	 * @param ���� szName����������
+	 * @param ���� bFlipX��true ��ת false����ת(�ָ�ԭ������)
+	 */
+	public static native void		SetSpriteFlipX( String szName, boolean bFlipX );
+
+	/**
+	 * GetSpriteFlipX����ȡ��ǰ����ͼƬX�����Ƿ��Ƿ�ת��ʾ
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ��ת false����ת
+	 */
+	public static native boolean		GetSpriteFlipX( String szName );
+
+	/**
+	 * SetSpriteFlipY�����þ���ͼƬY����ת��ʾ
+	 * @param ���� szName����������
+	 * @param ����bFlipY:true ��ת false����ת(�ָ�ԭ������)
+	 */
+	
+	public static native void		SetSpriteFlipY( String szName, boolean bFlipY );
+
+	/**
+	 * GetSpriteFlipY����ȡ��ǰ����ͼƬY�����Ƿ��Ƿ�ת��ʾ
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ��ת false����ת
+	 */
+	public static native boolean	GetSpriteFlipY( String szName );
+
+	/**
+	 * SetSpriteFlip��ͬʱ���þ��鷭תX��Y����
+	 * @param ���� szName����������
+	 * @param bFlipX
+	 * @param bFlipY
+	 */
+	public static native void		SetSpriteFlip( String szName, boolean bFlipX, boolean bFlipY );
+
+	/**
+	 * SetSpriteLifeTime�����þ��������ʱ����ʱ�䵽��֮���Զ���ɾ��
+	 * @param ���� szName����������
+	 * @param ���� fLifeTime������ʱ������λ ��
+	 */
+	public static native void		SetSpriteLifeTime( String szName, float fLifeTime );
+
+	/**
+	 * GetSpriteLifeTime����ȡ��������ʱ��
+	 * @param ���� szName����������
+	 * @return ����ֵ������ʱ������λ ��
+	 */
+	public static native float	GetSpriteLifeTime( String szName );
+
+	/**
+	 * SpriteMoveTo���þ��鰴�ո����ٶ��ƶ������������
+	 * @param ���� szName����������
+	 * @param ���� fPosX���ƶ���Ŀ��X����ֵ
+	 * @param ���� fPosY���ƶ���Ŀ��Y����ֵ
+	 * @param ���� fSpeed���ƶ��ٶ�
+	 * @param ���� bAutoStop���ƶ����յ�֮���Ƿ��Զ�ֹͣ, true ֹͣ false ��ֹͣ
+	 */
+	public static native void		SpriteMoveTo( String szName, float fPosX, float fPosY,  float fSpeed,  boolean bAutoStop );
+
+	/**
+	 * SpriteRotateTo���þ��鰴�ո����ٶ���ת�������ĽǶ�
+	 * @param ���� szName����������
+	 * @param ���� fRotation��������Ŀ����תֵ
+	 * @param ���� fRotSpeed����ת�ٶ�
+	 * @param ���� bAutoStop����ת���յ�֮���Ƿ��Զ�ֹͣ, true ֹͣ false ��ֹͣ
+	 */
+	public static native void		SpriteRotateTo( String szName,  float fRotation,  float fRotSpeed,  boolean bAutoStop );
+
+	/**
+	 * SetSpriteWorldLimit�����þ��������߽��������Ƽ���ײģʽ
+	 * @param ���� szName����������
+	 * @param ���� Limit����ײ������߽�֮�����Ӧģʽ�����ΪOFF�����ǹر�����߽���ײ������ֵ�� EWorldLimit ����
+	 * @param ���� fLeft���߽�����X����
+	 * @param ���� fTop���߽���ϱ�Y����
+	 * @param ���� fRight���߽���ұ�X����
+	 * @param ���� fBottom���߽���±�Y����
+	 */
+	public static native void		SetSpriteWorldLimit( String szName,  int Limit,  float fLeft,  float fTop,  float fRight,  float fBottom );
+
+	/**
+	 * SetSpriteWorldLimitMode�����þ��������߽���ײģʽ
+	 * @param ���� szName����������
+	 * @param ���� Limit����ײ������߽�֮�����Ӧģʽ�����ΪOFF�����ǹر�����߽���ײ������ֵ�� EWorldLimit ����
+	 */
+	public static native void		SetSpriteWorldLimitMode( String szName,  int Limit );
+
+	/**
+	 * SetSpriteWorldLimitMin�����þ��������߽��ϱ߼������������
+	 * @param ���� szName����������
+	 * @param ���� fLeft���߽�����X����
+	 * @param ���� fTop���߽���ϱ�Y����
+	 */
+	public static native void		SetSpriteWorldLimitMin( String szName,  float fLeft,  float fTop );
+
+	/**
+	 * SetSpriteWorldLimitMax�����þ��������߽��±߼��ұ���������
+	 * @param ���� szName����������
+	 * @param ���� fBottom���߽���±�Y����
+	 * @param ���� fBottom���߽���±�Y����
+	 */
+	public static native void		SetSpriteWorldLimitMax( String szName,  float fRight,  float fBottom );
+
+	/**
+	 * GetSpriteWorldLimitLeft����ȡ��������߽���߽�����
+	 * @param ���� szName����������
+	 * @return ��������߽���߽�����
+	 */
+	public static native float		GetSpriteWorldLimitLeft( String szName );
+
+	/**
+	 * GetSpriteWorldLimitTop����ȡ��������߽��ϱ߽�����
+	 * @param ���� szName����������
+	 * @return ��������߽��ϱ߽�����
+	 */
+	public static native float		GetSpriteWorldLimitTop( String szName );
+
+	/**
+	 * GetSpriteWorldLimitRight����ȡ��������߽��ұ߽�����
+	 * @param ���� szName����������
+	 * @return ��������߽��ұ߽�����
+	 */
+	public static native float		GetSpriteWorldLimitRight( String szName );
+
+	/**
+	 * GetSpriteWorldLimitBottom����ȡ��������߽��±߽�����
+	 * @param ���� szName����������
+	 * @return ��������߽��±߽�����
+	 */
+	public static native float		GetSpriteWorldLimitBottom( String szName );
+
+	/**
+	 * SetSpriteCollisionSend�����þ����Ƿ���Է���(����)��ײ
+	 * �������ײ��ʽΪ����A�ƶ�������Bʱ�����A�ǿ��Բ�����ײ�ģ�B�ǿ��Խ�����ײ�ģ�����2������������ײ��������ײ��API�������á���������ײ����
+	 * @param ���� szName����������
+	 * @param ���� bSend��true ���Բ��� false ������
+	 */
+	public static native void 	SetSpriteCollisionSend( String szName,  boolean bSend );
+
+	/**
+	 * SetSpriteCollisionReceive�����þ����Ƿ���Խ�����ײ
+	 * �������ײ��ʽΪ����A�ƶ�������Bʱ�����A�ǿ��Բ�����ײ�ģ�B�ǿ��Խ�����ײ�ģ�����2������������ײ��������ײ��API�������á���������ײ����
+	 * @param ���� szName����������
+	 * @param ���� bReceive��true ���Խ��� false ������
+	 */
+	public static native void 	SetSpriteCollisionReceive( String szName,  boolean bReceive );
+
+	/**
+	 * SetSpriteCollisionActive��ͬʱ���þ����Ƿ���Բ�����������ײ
+	 * �������ײ��ʽΪ����A�ƶ�������Bʱ�����A�ǿ��Բ�����ײ�ģ�B�ǿ��Խ�����ײ�ģ�����2������������ײ��������ײ��API�������á���������ײ����
+	 * @param ���� szName����������
+	 * @param ���� bSend��true ���Բ��� false ������
+	 * @param ���� bReceive��true ���Խ��� false ������
+	 */
+	public static native void 	SetSpriteCollisionActive( String szName,  boolean bSend,  boolean bReceive );
+
+	/**
+	 * SetSpriteCollisionPhysicsSend�����þ����Ƿ���Է���(����)������ײ
+	 * @param szName
+	 * @param ���� bSend��true ���Բ��� false ������
+	 */
+	public static native void	SetSpriteCollisionPhysicsSend( String szName,  boolean bSend );
+
+	/**
+	 * SetSpriteCollisionPhysicsReceive�����þ����Ƿ���Խ���������ײ
+	 * @param szName
+	 * @param ���� bReceive��true ���Խ��� false ������
+	 */
+	public static native void	SetSpriteCollisionPhysicsReceive( String szName,  boolean bReceive );
+
+	/**
+	 * GetSpriteCollisionSend����ȡ���鵱ǰ�Ƿ��ǿ��Բ�����ײ
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ���Բ��� false ������
+	 */
+	public static native boolean 	GetSpriteCollisionSend( String szName );
+
+	/**
+	 * GetSpriteCollisionReceive����ȡ���鵱ǰ�Ƿ��ǿ��Խ�����ײ
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ���Խ��� false ������
+	 */
+	public static native boolean 	GetSpriteCollisionReceive( String szName );
+
+	/**
+	 * SetSpriteCollisionResponse�����þ����뾫�����ײ��Ӧģʽ
+	 * @param ���� szName����������
+	 * @param ���� Response����Ӧģʽ�����ΪOFF����Ϊ�ر���ײ��Ӧ����ײAPI�����ᱻ���á�����ֵ�� ECollisionResponse ����
+	 */
+	public static native void		SetSpriteCollisionResponse( String szName,  int Response );
+
+	/**
+	 * SetSpriteCollisionMaxIterations�����þ�����ײ֮�����󷴵�����
+	 * @param ���� szName����������
+	 * @param ���� iTimes����������
+	 */
+	public static native void		SetSpriteCollisionMaxIterations( String szName,  int iTimes );
+
+	/**
+	 * SetSpriteForwardMovementOnly�����þ����Ƿ�ֻ�ܳ�ǰ�ƶ�
+	 * @param ���� szName����������
+	 * @param ���� bForward��true ֻ�ܳ�ǰ�ƶ� false ���Գ����������ƶ�
+	 */
+	public static native void		SetSpriteForwardMovementOnly( String szName,  boolean bForward );
+
+	/**
+	 * GetSpriteForwardMovementOnly����ȡ���鵱ǰ�Ƿ�ֻ�ܳ�ǰ�ƶ�
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ֻ�ܳ�ǰ�ƶ� false ���Գ����������ƶ�
+	 */
+	public static native boolean		GetSpriteForwardMovementOnly( String szName );
+
+	/**
+	 * SetSpriteForwardSpeed�����þ�����ǰ���ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fSpeed���ٶ�
+	 */
+	public static native void		SetSpriteForwardSpeed( String szName,  float fSpeed );
+
+	/**
+	 * SetSpriteImpulseForce�����þ���˲������
+	 * @param ���� szName����������
+	 * @param ���� fForceX��X����������С
+	 * @param ���� fForceY��Y����������С
+	 * @param ���� bGravitic���Ƿ�������� : true ���㣬false������
+	 */
+	public static native void 	SetSpriteImpulseForce( String szName,  float fForceX,  float fForceY,  boolean bGravitic );
+
+	/**
+	 * SetSpriteImpulseForcePolar�����Ƕȳ������þ���˲������
+	 * @param ���� szName����������
+	 * @param ���� fPolar���Ƕȳ���
+	 * @param ���� fForce��������С
+	 * @param ���� bGravitic���Ƿ�������� : true ���㣬false������
+	 */
+	public static native void 	SetSpriteImpulseForcePolar( String szName,  float fPolar,  float fForce,  boolean bGravitic );
+
+	/**
+	 * SetSpriteConstantForceX�����þ���X����������
+	 * @param ���� szName����������
+	 * @param ���� fForceX��X����������С
+	 */
+	public static native void 	SetSpriteConstantForceX(String szName,  float fForceX );
+
+	/**
+	 * SetSpriteConstantForceY�����þ���Y����������
+	 * @param ���� szName����������
+	 * @param ���� fForceY��Y����������С
+	 */
+	public static native void 	SetSpriteConstantForceY(String szName,  float fForceY );
+
+	/**
+	 * SetSpriteConstantForceGravitic�������ڼ��㳣��������ʱ���Ƿ��������
+	 * @param ���� szName����������
+	 * @param ���� bGravitic���Ƿ�������� : true ���� false������
+	 */
+	public static native void 	SetSpriteConstantForceGravitic(String szName,  boolean bGravitic );
+
+	/**
+	 * SetSpriteConstantForce�����þ��鳣������
+	 * @param ���� szName����������
+	 * @param ���� fForceX��X����������С
+	 * @param ���� fForceY��Y����������С
+	 * @param ���� bGravitic���Ƿ�������� : true ���� false������
+	 */
+	public static native void 	SetSpriteConstantForce(String szName,  float fForceX,  float fForceY,  boolean bGravitic );
+
+	/**
+	 * SetSpriteConstantForcePolar�����Ƕȳ������þ��鳣������
+	 * @param ���� szName����������
+	 * @param ���� fPolar���Ƕȳ���
+	 * @param ���� fForce��������С
+	 * @param ���� bGravitic���Ƿ�������� : true ���� false������
+	 */
+	public static native void 	SetSpriteConstantForcePolar(String szName,  float fPolar,  float fForce,  boolean bGravitic );
+
+	/**
+	 * StopSpriteConstantForce��ֹͣ���鳣������
+	 * @param ���� szName����������
+	 */
+	public static native void 	StopSpriteConstantForce(String szName);
+
+	/**
+	 * SetSpriteForceScale�����������ž��鵱ǰ�ܵ�����
+	 * @param ���� szName����������
+	 * @param ���� fScale������ֵ
+	 */
+	public static native void 	SetSpriteForceScale(String szName,  float fScale );
+
+	/**
+	 * SetSpriteAtRest����ͣ/��������ĸ�����������
+	 * @param ���� szName����������
+	 * @param ���� bRest��true ��ͣ false ����
+	 */
+	public static native void 	SetSpriteAtRest(String szName,  boolean bRest );
+
+	/**
+	 * GetSpriteAtRest����ȡ���鵱ǰ�Ƿ�����ͣ��
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ��ͣ�� false ����
+	 */
+	public static native boolean	GetSpriteAtRest(String szName );
+
+	/**
+	 * SetSpriteFriction�����þ���Ħ����
+	 * @param ���� szName����������
+	 * @param ���� fFriction��Ħ������С
+	 */
+	public static native void 	SetSpriteFriction( String szName,  float fFriction );
+
+	/**
+	 * SetSpriteRestitution�����þ��鵯��
+	 * @param ���� szName����������
+	 * @param ���� fRestitution������ֵ��С
+	 */
+	public static native void 	SetSpriteRestitution( String szName,  float fRestitution );
+
+	/**
+	 * SetSpriteMass�����þ�������
+	 * @param ���� szName����������
+	 * @param ���� fMass��������С
+	 */
+	public static native void 	SetSpriteMass( String szName, float fMass );
+
+	/**
+	 * GetSpriteMass����ȡ��������
+	 * @param ���� szName����������
+	 * @return ����ֵ ��������С
+	 */
+	public static native float 	GetSpriteMass( String szName );
+
+	/**
+	 * SetSpriteAutoMassInertia���������߹رվ������
+	 * @param ���� szName����������
+	 * @param ���� bStatus��true ���� false �ر�
+	 */
+	public static native void 	SetSpriteAutoMassInertia( String szName,  boolean bStatus );
+
+	/**
+	 * SetSpriteInertialMoment�����þ�����Դ�С
+	 * @param ���� szName����������
+	 * @param ���� fInert�����Դ�С
+	 */
+	public static native void 	SetSpriteInertialMoment( String szName,  float fInert );
+
+	/**
+	 * SetSpriteDamping�����þ���˥��ֵ
+	 * @param ���� szName����������
+	 * @param ���� fDamp��˥��ֵ��С
+	 */
+	public static native void 	SetSpriteDamping( String szName,  float fDamp );
+
+	/**
+	 * SetSpriteImmovable�����þ����Ƿ񲻿��ƶ�
+	 * @param ���� szName����������
+	 * @param ���� bImmovable��true �������ƶ� false �����ƶ�
+	 */
+	public static native void 	SetSpriteImmovable( String szName,  boolean bImmovable );
+
+	/**
+	 * GetSpriteImmovable����ȡ���鵱ǰ�Ƿ񲻿����ƶ�
+	 * @param ���� szName����������
+	 * @return ����ֵ��true �������ƶ� false �����ƶ�
+	 */
+	public static native boolean 	GetSpriteImmovable( String szName );
+
+	/**
+	 * SetSpriteLinearVelocity�����þ����ƶ��ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fVelX��X�����ٶ�
+	 * @param ���� fVelY��Y�����ٶ�
+	 */
+	public static native void 	SetSpriteLinearVelocity( String szName,  float fVelX,  float fVelY );
+
+	/**
+	 * SetSpriteLinearVelocityX�����þ���X�����ƶ��ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fVelX��X�����ٶ�
+	 */
+	public static native void 	SetSpriteLinearVelocityX( String szName,  float fVelX );
+
+	/**
+	 * SetSpriteLinearVelocityY�����þ���Y�����ƶ��ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fVelY��Y�����ٶ�
+	 */
+	public static native void 	SetSpriteLinearVelocityY( String szName,  float fVelY );
+
+	/**
+	 * SetSpriteLinearVelocityPolar�����Ƕȳ������þ����ƶ��ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fSpeed���ƶ��ٶ�
+	 * @param ���� fPolar���Ƕȳ���
+	 */
+	public static native void 	SetSpriteLinearVelocityPolar( String szName,  float fSpeed,  float fPolar );
+
+	/**
+	 * SetSpriteAngularVelocity�����þ���Ƕ���ת�ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fAngular���Ƕ���ת�ٶ�
+	 */
+	public static native void 	SetSpriteAngularVelocity( String szName,  float fAngular );
+
+	/**
+	 * SetSpriteMinLinearVelocity�����þ�����С�ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fMin����С�ٶ�ֵ
+	 */
+	public static native void 	SetSpriteMinLinearVelocity( String szName,  float fMin );
+
+	/**
+	 * SetSpriteMaxLinearVelocity�����þ�������ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fMax������ٶ�ֵ
+	 */
+	public static native void 	SetSpriteMaxLinearVelocity( String szName,  float fMax );
+
+	/**
+	 * SetSpriteMinAngularVelocity�����þ�����С���ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fMin����С���ٶ�
+	 */
+	public static native void 	SetSpriteMinAngularVelocity( String szName,  float fMin );
+
+	/**
+	 * SetSpriteMaxAngularVelocity�����þ��������ٶ�
+	 * @param ���� szName����������
+	 * @param ���� fMax�������ٶ�
+	 */
+	public static native void 	SetSpriteMaxAngularVelocity( String szName,  float fMax );
+
+	/**
+	 * GetSpriteLinearVelocityX����ȡ����X�����ٶ�
+	 * @param ���� szName����������
+	 * @return ����ֵ��X�����ٶ�
+	 */
+	public static native float 	GetSpriteLinearVelocityX( String szName );
+
+	/**
+	 * GetSpriteLinearVelocityY����ȡ����Y�����ٶ�
+	 * @param ���� szName����������
+	 * @return ����ֵ��Y�����ٶ�
+	 */
+	public static native float 	GetSpriteLinearVelocityY( String szName );
+
+	/**
+	 * SpriteMountToSprite����һ������󶨵���һ�������ϣ���ʱ�ĳ�Ϊ��һ�������һ���֣��������˶���
+	 * @param ���� szSrcName��Ҫ�󶨵ľ�������
+	 * @param ���� szDstName�����ذ󶨵�ĸ�徫����
+	 * @param ���� fOffSetX����ƫ��X
+	 * @param ���� fOffsetY����ƫ��Y
+	 * @return ����ֵ������һ����ID
+	 */
+	public static native int		SpriteMountToSprite( String szSrcName, String szDstName,  float fOffSetX,  float fOffsetY );
+
+	/**
+	 * SpriteMountToSpriteLinkPoint����һ������󶨵���һ�������ϣ���λ��Ϊָ�������ӵ㣬��ʱ�ĳ�Ϊ��һ�������һ���֣��������˶���
+	 * @param ���� szSrcName��Ҫ�󶨵ľ�������
+	 * @param ���� szDstName�����ذ󶨵�ĸ�徫������
+	 * @param ���� iPointId�����ӵ����
+	 * @return ����ֵ������һ����ID
+	 */
+	public static native int		SpriteMountToSpriteLinkPoint( String szSrcName, String szDstName,  int iPointId );
+
+	/**
+	 * SetSpriteMountRotation�����þ���İ󶨳��򣬼������ĸ��ĳ���
+	 * @param ���� szName����������
+	 * @param ���� fRot���Ƕȳ���0 - 360
+	 */
+	public static native void		SetSpriteMountRotation( String szName,  float fRot );
+
+	/**
+	 * GetSpriteMountRotation����ȡ����İ󶨳��򣬼������ĸ��ĳ���
+	 * @param ���� szName����������
+	 * @return ����ֵ���Ƕȳ���
+	 */
+	public static native float	GetSpriteMountRotation( String szName );
+
+	/**
+	 * SetSpriteAutoMountRotation�����þ����֮���Զ���ת
+	 * @param ���� szName����������
+	 * @param ���� fRot����ת�ٶ�
+	 */
+	public static native void		SetSpriteAutoMountRotation( String szName,  float fRot );
+
+	/**
+	 * GetSpriteAutoMountRotation����ȡ�����֮����Զ���תֵ
+	 * @param ���� szName����������
+	 * @return ����ֵ����ת�ٶ�
+	 */
+	public static native float	GetSpriteAutoMountRotation( String szName );
+
+	/**
+	 * SetSpriteMountForce��������һ������ʱ�����ӵ�������
+	 * @param ���� szName����������
+	 * @param ���� fFroce��������
+	 */
+	public static native void		SetSpriteMountForce( String szName,  float fForce );
+
+	/**
+	 * SetSpriteMountTrackRotation���󶨵ľ����Ƿ����ĸ����ת
+	 * @param ���� szName����������
+	 * @param ���� bTrackRotation��true ���� false ������
+	 */
+	public static native void		SetSpriteMountTrackRotation( String szName,  boolean bTrackRotation );
+
+	/**
+	 * SetSpriteMountOwned��ĸ�屻ɾ����ʱ�򣬰󶨵ľ����Ƿ�Ҳ���ű�ɾ��
+	 * @param ���� szName����������
+	 * @param ���� bMountOwned��true ���� false ������
+	 */
+	public static native void		SetSpriteMountOwned( String szName,  boolean bMountOwned );
+
+	/**
+	 * SetSpriteMountInheritAttributes���󶨵�ʱ���Ƿ�̳�ĸ�������
+	 * @param ���� szName����������
+	 * @param ���� bInherAttr��true �̳� false ���̳�
+	 */
+	public static native void		SetSpriteMountInheritAttributes( String szName,  boolean bInherAttr );
+
+	/**
+	 * SpriteDismount�����Ѿ��󶨵ľ�����н��
+	 * @param ���� szName����������
+	 */
+	public static native void		SpriteDismount( String szName );
+
+	/**
+	 * GetSpriteIsMounted���жϾ����Ƿ������һ��������
+	 * @param ���� szName����������
+	 * @return ����ֵ��true �� false ����
+	 */
+	public static native boolean		GetSpriteIsMounted( String szName );
+
+	/**
+	 * GetSpriteMountedParent����ȡ�󶨵�ĸ�徫�������
+	 * @param ���� szName����������
+	 * @return ����ֵ��ĸ�徫�����֣����δ�󶨣��򷵻ؿ��ַ���
+	 */
+	public static native String	GetSpriteMountedParent( String szName );
+
+	/**
+	 * SetSpriteColorRed�����ľ�����ʾ��ɫ�еĺ�ɫ��Ĭ�Ͼ���ĺ���������ɫ��ֵ��Ϊ255���޸�����һ����Ըı�����ɫ
+	 * @param ���� szName����������
+	 * @param ���� iCol����ɫ��Χ 0 - 255
+	 */
+	public static native void		SetSpriteColorRed( String szName,  int iCol );
+
+	/**
+	 * SetSpriteColorGreen�����ľ�����ʾ��ɫ�е���ɫ��Ĭ�Ͼ���ĺ���������ɫ��ֵ��Ϊ255���޸�����һ����Ըı�����ɫ
+	 * @param ���� szName����������
+	 * @param ���� iCol����ɫ��Χ 0 - 255
+	 */
+	public static native void		SetSpriteColorGreen( String szName,  int iCol );
+
+	/**
+	 * SetSpriteColorBlue�����ľ�����ʾ��ɫ�е���ɫ��Ĭ�Ͼ���ĺ���������ɫ��ֵ��Ϊ255���޸�����һ����Ըı�����ɫ
+	 * @param ���� szName����������
+	 * @param ���� iCol����ɫ��Χ 0 - 255
+	 */
+	public static native void		SetSpriteColorBlue( String szName,  int iCol );
+
+	/**
+	 * SetSpriteColorAlpha�����þ���͸����
+	 * @param ���� szName����������
+	 * @param ���� iCol��͸���ȣ�ֵ0 - 255������ȫ͸������ȫ��͸��
+	 */
+	public static native void		SetSpriteColorAlpha( String szName,  int iCol );
+
+	/**
+	 * GetSpriteColorRed����ȡ������ʾ��ɫ�еĺ�ɫֵ
+	 * @param ���� szName����������
+	 * @return ����ֵ����ɫֵ
+	 */
+	public static native int		GetSpriteColorRed( String szName );
+
+	/**
+	 * GetSpriteColorGreen����ȡ������ʾ��ɫ�е���ɫֵ
+	 * @param ���� szName����������
+	 * @return ����ֵ����ɫֵ
+	 */
+	public static native int		GetSpriteColorGreen( String szName );
+
+	/**
+	 * GetSpriteColorBlue����ȡ������ʾ��ɫ�е���ɫֵ
+	 * @param ���� szName����������
+	 * @return ����ֵ����ɫֵ
+	 */
+	public static native int		GetSpriteColorBlue( String szName );
+
+	/**
+	 * GetSpriteColorAlpha����ȡ����͸����
+	 * @param ���� szName����������
+	 * @return ����ֵ��͸����
+	 */ 
+	public static native int		GetSpriteColorAlpha( String szName );
+
+	/**
+	 * SetStaticSpriteImage������/���ľ�̬�������ʾͼƬ
+	 * @param ���� szName����������
+	 * @param ���� szImageName��ͼƬ����
+	 * @param ���� iFrame����ͼƬ����ʾ֡����Ϊ�༭��Ԥ��ͼ����ʾ��1/N����ΧΪ 0 �� N - 1
+	 */
+	public static native void		SetStaticSpriteImage( String szName, String szImageName,  int iFrame );
+
+	/**
+	 * SetStaticSpriteFrame�����þ�̬���鵱ǰͼƬ����ʾ֡��
+	 * @param ���� szName����������
+	 * @param ���� iFrame����ͼƬ����ʾ֡����Ϊ�༭��Ԥ��ͼ����ʾ��1/N����ΧΪ 0 �� N - 1
+	 */
+	public static native void		SetStaticSpriteFrame( String szName,  int iFrame );
+
+	/**
+	 * GetStaticSpriteImage����ȡ���鵱ǰ��ʾ��ͼƬ����
+	 * @param ���� szName����������
+	 * @return ����ֵ��ͼƬ����
+	 */
+	public static native String GetStaticSpriteImage( String szName );
+
+	/**
+	 * GetStaticSpriteFrame����ȡ���鵱ǰ��ʾ��ͼƬ֡��
+	 * @param ���� szName����������
+	 * @return ����ֵ��֡��
+	 */
+	public static native int		GetStaticSpriteFrame( String szName );
+
+	/**
+	 * SetAnimateSpriteFrame�����ö�̬����Ķ���֡��
+	 * @param ���� szName����������
+	 * @param ���� iFrame������֡��
+	 */
+	public static native void		SetAnimateSpriteFrame( String szName,  int iFrame );
+
+	/**
+	 * IsAnimateSpriteAnimationFinished���ж϶�̬���鵱ǰ�����Ƿ񲥷���ϣ�ֻ��Է�ѭ����������
+	 * @param ���� szName����������
+	 * @return ����ֵ��true ��� false δ���
+	 */
+	public static native boolean		IsAnimateSpriteAnimationFinished( String szName);
+
+	/**
+	 * GetAnimateSpriteAnimationName����ȡ��̬���鵱ǰ��������
+	 * @param ���� szName����������
+	 * @return ����ֵ����������
+	 */
+	public static native String GetAnimateSpriteAnimationName( String szName );
+
+	/**
+	 * GetAnimateSpriteAnimationTime����ȡ�������鵱ǰ����ʱ�䳤��
+	 * @param ���� szName����������
+	 * @return ����ֵ�����ȣ���λ��
+	 */
+	public static native float	GetAnimateSpriteAnimationTime( String szName );
+
+	/**
+	 * AnimateSpritePlayAnimation���������鲥�Ŷ���
+	 * @param ���� szName����������
+	 * @param ���� szAnim����������
+	 * @param ���� bRestore��������Ϻ��Ƿ�ָ���ǰ����. true �ָ� false ���ָ�
+	 * @return ����ֵ���Ƿ񲥷ųɹ�, true : �ɹ� false �����ɹ�
+	 */
+	public static native boolean		AnimateSpritePlayAnimation( String szName, String szAnim,  boolean bRestore );
+
+	/**
+	 * SetTextValue�����־�����ʾĳ����ֵ
+	 * @param ���� szName����������
+	 * @param ���� iValue��Ҫ��ʾ����ֵ
+	 */
+	public static native void		SetTextValue( String szName, int iValue );
+
+	/**
+	 * SetTextValueFloat�����־�����ʾĳ��������ֵ
+	 * @param ���� szName����������
+	 * @param ���� fValue��Ҫ��ʾ����ֵ
+	 */
+	public static native void		SetTextValueFloat( String szName, float fValue );
+
+	/**
+	 * SetTextString�����־�����ʾĳ���ַ�������
+	 * @param ���� szName����������
+	 * @param ���� szStr��Ҫ��ʾ���ַ���
+	 */
+	public static native void		SetTextString( String szName, String szStr );
+
+	/**
+	 * PlaySound����������
+	 * @param ���� szName��������·�������ƣ�����ֵ���ڱ༭������Դ -> �����������鿴����Ŀ���������Դ�����������Ǹ�·��ֵ��д����
+	 * @param ���� bLoop���Ƿ�ѭ������ true ѭ�� false ��ѭ����ѭ�����ŵ���������Ҫ�ֶ�ֹͣ����ʹ�÷��ص�ID������APIֹͣ�������Ĳ��š���ѭ���Ĳ�����֮���Զ�ֹͣ
+	 * @param ���� fVolume��������С��0-1��1Ϊ�����ļ���ԭ����С
+	 * @return ����ֵ������ID��ѭ�����ŵ�������Ҫ��ID��ֹͣ����
+	 */
+	public static native int		PlaySound(String szName,  boolean bLoop,  float fVolume );
+
+	/**
+	 * StopSound��ֹͣ�����Ĳ���
+	 * @param ���� iSoundId��API PlaySound ����������ʱ�򷵻ص�����ID
+	 */
+	public static native void		StopSound(  int iSoundId );
+
+	/**
+	 * StopAllSound��ֹͣ������������
+	 */
+	public static native void		StopAllSound();
+
+	/**
+	 * PlayEffect������һ����ѭ������Ч���������֮�����Ч�Զ�ɾ��
+	 * @param ���� szSrcName��Ԥ�Ȱڷ��ڵ�ͼ�е���Чģ������
+	 * @param ���� fLifeTime������ʱ����ʱ�䵽��֮�󽫱��Զ�ɾ��
+	 * @param ���� fPosX�����ŵ�X����
+	 * @param ���� fPosY�����ŵ�Y����
+	 * @param ���� fRotation�����ŵĽǶȳ���
+	 */
+	public static native void		PlayEffect(String szSrcName,  float fLifeTime,  float fPosX,  float fPosY,  float fRotation);
+
+	/**
+	 * PlayLoopEffect������һ��ѭ����Ч������Ҫ����Ч��ʱ����Ҫ�Լ�����API����ɾ��
+	 * @param ���� szSrcName��Ԥ�Ȱڷ��ڵ�ͼ�е���Чģ������
+	 * @param ���� szMyName������Ч���֣�Ҫɾ������Ч��ʱ���õ�
+	 * @param ���� fCycleTime��ѭ��ʱ����ʱ�䵽��֮����ͷ����
+	 * @param ���� fPosX�����ŵ�X����
+	 * @param ���� fPosY�����ŵ�Y����
+	 * @param ���� fRotation�����ŵĽǶȳ���
+	 */
+	public static native void		PlayLoopEffect(String szSrcName, String szMyName,  float fCycleTime,  float fPosX,  float fPosY,  float fRotation);
+
+	/**
+	 * DeleteEffect��ɾ��һ�����ڲ��ŵ���Ч��ֻ��ѭ����Ч����Ҫ�ֶ�ɾ��
+	 * @param ���� szName����Ч����
+	 */
+	public static native void		DeleteEffect(String szName);
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	//
+	// ����APIΪϵͳAPI�������Լ�����
+	//
+	//////////////////////////////////////////////////////////////////////////////////////////
+
+	// GetTimeDelta����ȡ���ε��ñ�����֮���ʱ���
+	// ����ֵ��float����λ ��
+	//
+
+	public static native float		GetTimeDelta();
+
+	// ��
+    public static native boolean	EngineMainLoop();
+    public static native boolean	InitGameEngine( EngineCall MethodObj, String[] args );
+    public static native void		ShutdownGameEngine();
+
+    static
+    {
+    	boolean bSuccess	=	false;
+    	try{
+    		System.loadLibrary("src/API/FunCode/EngineAPI");
+    		//System.out.println("Loaded 32 bit dll.");
+    		bSuccess	=	true;
+    	}
+    	catch(Throwable ex)
+    	{
+    		//System.out.println("Load DLL Exception��" + ex.getMessage());
+    	}
+
+    	if( !bSuccess )
+    	{
+    		try{
+    			System.loadLibrary("src/API/FunCode/EngineAPI_64");
+    			//System.out.println("Loaded 64 bit dll.");
+    		}
+			catch(Throwable ex)
+			{
+				//System.out.println("Load DLL Exception��" + ex.getMessage());
+			}
+    	}
+    }
+}

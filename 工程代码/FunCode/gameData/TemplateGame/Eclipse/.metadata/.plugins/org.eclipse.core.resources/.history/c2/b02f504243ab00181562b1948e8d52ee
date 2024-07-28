@@ -1,0 +1,73 @@
+/**
+ * @(#)JAnimateSprite.java
+ *
+ * JAnimateSprite application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineAPI;
+/**
+ * �ࣺJAnimateSprite
+ * ��̬����(��ͼƬ����)����JSprite�������̳��������Ȼ�����˼�������ͼƬ�����ĺ���
+ * @author root
+ *
+ */
+public	class JAnimateSprite extends JSprite
+{
+	public	JAnimateSprite( String szName )
+	{
+		super( szName );
+	}
+
+
+	/**
+	 * SetAnimateSpriteFrame�����ö�̬����Ķ���֡��
+	 * @param ���� iFrame������֡��
+	 */
+	public	void		SetAnimateSpriteFrame(  int iFrame )
+	{
+		EngineAPI.SetAnimateSpriteFrame( GetName(), iFrame );
+	}
+
+	/**
+	 * GetAnimateSpriteAnimationName����ȡ��̬���鵱ǰ��������
+	 * @return ����ֵ����������
+	 */
+	public	String  GetAnimateSpriteAnimationName()
+	{
+		return EngineAPI.GetAnimateSpriteAnimationName( GetName() );
+	}
+
+	/**
+	 * GetAnimateSpriteAnimationTime����ȡ�������鵱ǰ����ʱ�䳤��
+	 * @return ����ֵ�����ȣ���λ��
+	 */
+	public	float		GetAnimateSpriteAnimationTime()
+	{
+		return EngineAPI.GetAnimateSpriteAnimationTime( GetName() );
+	}
+
+	/**
+	 * IsAnimateSpriteAnimationFinished���ж϶�̬���鵱ǰ�����Ƿ񲥷���ϣ�ֻ��Է�ѭ����������
+	 * @return ����ֵ��true ��� false δ���
+	 */
+	public	boolean		IsAnimateSpriteAnimationFinished()
+	{
+		return EngineAPI.IsAnimateSpriteAnimationFinished( GetName() );
+	}
+
+	/**
+	 * AnimateSpritePlayAnimation���������鲥�Ŷ���
+	 * @param ���� szAnim����������
+	 * @param ���� bRestore��������Ϻ��Ƿ�ָ���ǰ����
+	 * @return ����ֵ���Ƿ񲥷ųɹ�
+	 */
+	public	boolean		AnimateSpritePlayAnimation( String szAnim,  boolean bRestore )
+	{
+		return EngineAPI.AnimateSpritePlayAnimation( GetName(), szAnim, bRestore );
+	}
+};

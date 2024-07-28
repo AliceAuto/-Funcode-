@@ -1,0 +1,87 @@
+/**
+ * @(#)JEffect.java
+ *
+ * JEffect application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineAPI;
+/**
+ * �ࣺJEffect
+ * ��Ч���飬���ھ����е�һ�֡��÷������־���һ�������ڵ�ͼ��ڷ�һ����Ч��Ϊģ�壬������
+ * Ȼ���ڴ����ﶨ��һ����Ч����Ķ���ʵ������ʹ��
+ * @author root
+ *
+ */
+public	class JEffect extends JSprite
+{
+	private String		m_szCloneName;		// �ڵ�ͼ��Ԥ�Ȱڷźõ�������¡����Ч����
+	private float		m_fTime;			// ��ѭ����Ч������ʱ����ѭ����Ч��ѭ��ʱ��
+
+	/**
+	 * ���캯��
+	 * @param ���� szCloneName����ͼ��ڷźõ���Ч����
+	 * @param ���� szMyName���µ���Ч���֡�ע�⣺�����ѭ����Ч����ô����һ��ѭ����Ч�Ͷ���һ������ʵ�����ò�ͬ�����������һ��ͬ����ѭ����Ч�����Ŷ�Σ���ɾ����ʱ�������⡣��ѭ����Ч�������һ��ʵ����β���
+	 * @param ���� fTime����ѭ����Ч������ʱ����ѭ����Ч��ѭ��ʱ��
+	 */
+	public	JEffect( String szCloneName, String szMyName, float fTime )
+	{
+		super( szMyName );
+
+		m_szCloneName = szCloneName;
+		m_fTime = fTime;
+	}
+
+	/**
+	 * GetCloneName����ȡ������¡����Ч����
+	 * @return ���ؿ�¡������
+	 */
+	public	String 	GetCloneName()
+	{
+		return m_szCloneName;
+	}
+
+	/**
+	 * GetTime��������Чѭ��ʱ����������ʱ��
+	 * @return ����ʱ��
+	 */
+	public	float		GetTime()
+	{
+		return m_fTime;
+	}
+
+	/**
+	 * PlayEffect������һ����ѭ������Ч���������֮�����Ч�Զ�ɾ��
+	 * ���ŷ�ѭ����Ч��ʱ�򣬿���ʹ��һ��CEffect�Ķ���ʵ�������Ŷ����Ч
+	 * @param ���� fPosX�����ŵ�X����
+	 * @param ���� fPosY�����ŵ�Y����
+	 * @param ���� fRotation�����ŵĽǶȳ���
+	 */
+	public	void		PlayEffect(  float fPosX,  float fPosY,  float fRotation)
+	{
+		EngineAPI.PlayEffect( GetCloneName(), GetTime(), fPosX, fPosY, fRotation );
+	}
+
+	/**
+	 * PlayLoopEffect������һ��ѭ����Ч������Ҫ����Ч��ʱ����Ҫ�Լ�����API����ɾ��
+	 * @param ���� fPosX�����ŵ�X����
+	 * @param ���� fPosY�����ŵ�Y����
+	 * @param ���� fRotation�����ŵĽǶȳ���
+	 */
+	public	void		PlayLoopEffect(  float fPosX,  float fPosY,  float fRotation)
+	{
+		EngineAPI.PlayLoopEffect( GetCloneName(), GetName(), GetTime(), fPosX, fPosY, fRotation );
+	}
+
+	/**
+	 * DeleteEffect��ɾ��һ�����ڲ��ŵ���Ч��ֻ��ѭ����Ч����Ҫ�ֶ�ɾ��
+	 */
+	public	void		DeleteEffect()
+	{
+		EngineAPI.DeleteEffect( GetName() );
+	}
+};

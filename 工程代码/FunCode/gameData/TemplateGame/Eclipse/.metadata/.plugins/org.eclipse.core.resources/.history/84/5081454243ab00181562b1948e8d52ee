@@ -1,0 +1,53 @@
+/**
+ * @(#)JTextSprite.java
+ *
+ * JTextSprite application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineAPI;
+/**
+ * �ࣺJTextSprite
+ * ���־��飬�����ھ����е�һ�֡������÷����ڵ�ͼ��ڷ�һ�������֡����壬�������
+ * Ȼ���ڴ����ﶨ��һ�����־���Ķ���ʵ��������������Ϊ���캯���Ĳ�����Ȼ����ö�Ӧ�ĳ�Ա��������������ʾ����
+ * @author root
+ *
+ */
+public	class JTextSprite extends JSprite
+{
+	public	JTextSprite( String szName )
+	{
+		super( szName );
+	}
+
+	/**
+	 * SetTextValue�����־�����ʾĳ����ֵ
+	 * @param ���� iValue��Ҫ��ʾ����ֵ
+	 */
+	public	void		SetTextValue( int iValue )
+	{
+		EngineAPI.SetTextValue( GetName(),  iValue );
+	}
+
+	/**
+	 * SetTextValueFloat�����־�����ʾĳ��������ֵ
+	 * @param ���� fValue��Ҫ��ʾ����ֵ
+	 */
+	public	void		SetTextValueFloat( float fValue )
+	{
+		EngineAPI.SetTextValueFloat( GetName(),  fValue );
+	}
+
+	/**
+	 * SetTextString�����־�����ʾĳ���ַ�������
+	 * @param ���� szStr��Ҫ��ʾ���ַ���
+	 */
+	public	void		SetTextString( String szStr )
+	{
+		EngineAPI.SetTextString(  GetName(), szStr );
+	}
+};

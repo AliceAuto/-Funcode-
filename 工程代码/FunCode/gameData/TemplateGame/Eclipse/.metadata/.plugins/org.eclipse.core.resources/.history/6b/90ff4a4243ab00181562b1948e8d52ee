@@ -1,0 +1,301 @@
+/**
+ * @(#)JSystem.java
+ *
+ * JSystem application
+ *
+ * @author
+ * @version 1.00
+ */
+
+ package FunCode;
+
+ import FunCode.EngineCall;
+ import FunCode.EngineAPI;
+
+/**
+ * �ࣺJSystem
+ * ϵͳ��ع��ܵ���. �������÷��� CSystem::������();
+ * @author root
+ *
+ */
+public class JSystem
+{
+
+	/**
+	 * CursorOff���ر���겻��ʾ����API���ص�������Windows����꣬���ǵ��ÿ�������API dCursorOn��������꽫һֱ����ʾ
+	 */
+	public	static void		CursorOff()
+	{
+		EngineAPI.CursorOff();
+	}
+
+	/**
+	 * CursorOn�����������ʾ����API dCursorOff�رյ�������¿�����ʾ
+	 */
+	public	static void		CursorOn()
+	{
+		EngineAPI.CursorOn();
+	}
+
+	/**
+	 * IsCursorOn����ǰ����ǿ������ǹرա���Ӧ������API dCursorOff��dCursorOn�������߹رյĲ���
+	 * @return ����ֵ��trueΪ����״̬��falseΪ�ر�״̬
+	 */
+	public	static boolean		IsCursorOn()
+	{
+		return EngineAPI.IsCursorOn();
+	}
+
+	/**
+	 * ShowCursor������/��ʾ��ꡣ��APIֻ�����ر����򴰿��ڵ���꣬�ƶ����������ʱ����껹�ǻ���ʾ
+	 * @param ���� bShow��true Ϊ��ʾ��false Ϊ����
+	 */
+	public	static void		ShowCursor(  boolean bShow )
+	{
+		EngineAPI.ShowCursor( bShow );
+	}
+
+	/**
+	 * IsShowCursor����ǰ�������ʾ�������ء���Ӧ������API ShowCursor���ػ�����ʾ�Ĳ���
+	 * @return ����ֵ��trueΪ����״̬��falseΪ�ر�״̬
+	 */
+	public	static boolean		IsShowCursor()
+	{
+		return EngineAPI.IsShowCursor();
+	}
+
+	/**
+	 * SetWindowTitle�����ô�������/����
+	 * @param ���� szTitle���ǿ��ַ���
+	 */
+	public	static void		SetWindowTitle( String szTitle )
+	{
+		EngineAPI.SetWindowTitle( szTitle );
+	}
+
+	/**
+	 * ResizeWindow�����Ĵ��ڴ�С
+	 * @param ���� iWidth����ȣ�����0С�ڵ���1920
+	 * @param ���� iHeight���߶ȣ�����0С�ڵ���1080
+	 */
+	public	static void		ResizeWindow(int iWidth, int iHeight)
+	{
+		EngineAPI.ResizeWindow( iWidth, iHeight);
+	}
+
+	/**
+	 * Random����ȡһ�����ڵ���0�������
+	 * @return ����ֵ��int����Χ0 - 2147483648
+	 */
+	public	static int		Random()
+	{
+		return EngineAPI.Random();
+	}
+
+	/**
+	 * RandomRange����ȡһ��λ�ڲ���1������2֮��������
+	 * @param ���� iMin��С��iMax������
+	 * @param ���� iMax������iMin������
+	 * @return ����ֵ��int����ΧiMin - iMax
+	 */
+	public	static int		RandomRange(  int iMin,  int iMax )
+	{
+		return EngineAPI.RandomRange( iMin, iMax );
+	}
+
+	/**
+	 * CalLineRotation�������������ߵ�ֱ�ߵ���ת�Ƕ�
+	 * @param ���� fStartX����ʼ����X
+	 * @param ���� fStartY����ʼ����Y
+	 * @param ���� fEndX���յ�����X
+	 * @param ���� fEndY���յ�����Y
+	 * @return ����ֵ���Ƕȣ���Χ0 - 360
+	 */
+	public	static float	CalLineRotation(  float fStartX,  float fStartY,  float fEndX,  float fEndY )
+	{
+		return EngineAPI.CalLineRotation( fStartX, fStartY, fEndX, fEndY );
+	}
+
+	/**
+	 * RotationToVectorX������ĳ���Ƕȶ�Ӧ��ֱ��������X����
+	 * @param ���� fRotation���Ƕȣ���Χ0 - 360
+	 * @return ����ֵ ����ֱ��������Xֵ
+	 */
+	public	static float	RotationToVectorX(  float fRotation )
+	{
+		return EngineAPI.RotationToVectorX( fRotation );
+	}
+
+	/**
+	 * RotationToVectorY������ĳ���Ƕȶ�Ӧ��ֱ��������Y����
+	 * @param ���� fRotation���Ƕȣ���Χ0 - 360
+	 * @return ����ֵ ����ֱ��������Yֵ
+	 */
+	public	static float	RotationToVectorY(  float fRotation )
+	{
+		return EngineAPI.RotationToVectorY( fRotation );
+	}
+
+	/**
+	 * DrawLine��������֮�仭һ����
+	 * @param ���� fStartX����ʼ����X
+	 * @param ���� fStartY����ʼ����Y
+	 * @param ���� fEndX���յ�����X
+	 * @param ���� fEndY���յ�����Y
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer���������ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31��
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ����iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha���ߵ�͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public	static void		DrawLine(  float fStartX,  float fStartY,  float fEndX,  float fEndY,  float fLineWidth,  int iLayer,  int iRed,  int iGreen,  int iBlue,  int iAlpha )
+	{
+		EngineAPI.DrawLine( fStartX, fStartY, fEndX, fEndY, fLineWidth, iLayer, iRed, iGreen, iBlue, iAlpha );
+	}
+
+	/**
+	 * DrawTriangle����һ��������
+	 * @param ���� fX1�����������������X����
+	 * @param ���� fY1�����������������Y����
+	 * @param ���� fX2�����������������X����
+	 * @param ���� fY2�����������������Y����
+	 * @param ����fX3�����������������X����
+	 * @param ���� fY3�����������������Y����
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer�������������ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31��
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha�������ε�͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public	static void		DrawTriangle(  float fX1,  float fY1,  float fX2,  float fY2,  float fX3,  float fY3,  float fLineWidth,  int iLayer,  int iRed,  int iGreen,  int iBlue,  int iAlpha )
+	{
+		EngineAPI.DrawTriangle( fX1, fY1, fX2, fY2, fX3, fY3, fLineWidth, iLayer, iRed, iGreen, iBlue, iAlpha );
+	}
+
+	/**
+	 * DrawRect����һ������
+	 * @param ���� fUpperX�����Ͻ�����X
+	 * @param ���� fUpperY�����Ͻ�����Y
+	 * @param ���� fLowerX�����½�����X
+	 * @param ���� fLowerY�����½�����Y
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer���þ������ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha�����ε�͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public	static void		DrawRect(  float fUpperX,  float fUpperY,  float fLowerX,  float fLowerY,  float fLineWidth,  int iLayer,  int iRed,  int iGreen,  int iBlue,  int iAlpha )
+	{
+		EngineAPI.DrawRect( fUpperX, fUpperY, fLowerX, fLowerY, fLineWidth, iLayer, iRed, iGreen, iBlue, iAlpha );
+	}
+
+	/**
+	 * DrawCircle����һ��Բ
+	 * @param ���� fCenterX��Բ������X
+	 * @param ���� fCenterY��Բ������Y
+	 * @param ���� fRadius��Բ�İ뾶
+	 * @param ���� iSegment��Բ����������Χ4-72. ���紫��6�����õ�һ��6���Σ�����Խ��ԽԲ�������ǻ�ͼЧ��Խ��
+	 * @param ���� fLineWidth���ߵĴ�ϸ�����ڵ���1
+	 * @param ���� iLayer����Բ���ڵĲ㣬��༭�������õľ���Ĳ㼶��ͬһ�������Χ0 - 31
+	 * @param ���� iRed : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iGreen : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ����  iBlue : ��������ԭɫ����ɫֵ����Χ 0 - 255
+	 * @param ���� iAlpha��Բ��͸���ȣ���Χ0-255. 0Ϊȫ͸����255Ϊ��͸��
+	 */
+	public	static void		DrawCircle(  float fCenterX,  float fCenterY,  float fRadius,  int iSegment,  float fLineWidth,  int iLayer,  int iRed,  int iGreen,  int iBlue,  int iAlpha )
+	{
+		EngineAPI.DrawCircle( fCenterX, fCenterY, fRadius, iSegment, fLineWidth, iLayer, iRed, iGreen, iBlue, iAlpha );
+	}
+
+	/**
+	 * GetScreenLeft����ȡ����߽�֮���X����
+	 * @return ����ֵ����߽�X����
+	 */
+	public	static float	GetScreenLeft()
+	{
+		return EngineAPI.GetScreenLeft();
+	}
+
+   /**
+    * GetScreenTop����ȡ����߽�֮�ϱ�Y����
+    * @return ����ֵ���ϱ߽�Y����
+    */
+	public	static float	GetScreenTop()
+	{
+		return EngineAPI.GetScreenTop();
+	}
+
+	/**
+	 * GetScreenRight����ȡ����߽�֮�ұ�X����
+	 * @return ����ֵ���ұ߽�X����
+	 */
+	public	static float	GetScreenRight()
+	{
+		return EngineAPI.GetScreenRight();
+	}
+
+	/**
+	 * GetScreenBottom����ȡ����߽�֮�±�Y����
+	 * @return ����ֵ���±߽�Y����
+	 */
+	public	static float	GetScreenBottom()
+	{
+		return EngineAPI.GetScreenBottom();
+	}
+
+	/**
+	 * LoadMap�������³�����ע�⣬�����³�����ʱ�򣬾ɳ��������о��鶼��������ɾ���������������ڳ����д��������Ƴ����ľ��鶼�����ڵ��ñ�API֮ǰ��ɾ����
+	 * @param ���� szName���������֡����½����������ʱ��ȡ�����֣������Сд�ĺ�׺ -- xxx.t2d�����ô�·��
+	 */
+	public	static void		LoadMap( String szName )
+	{
+		EngineAPI.LoadMap( szName );
+	}
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	//
+	// ����APIΪϵͳAPI�������Լ�����
+	//
+	//////////////////////////////////////////////////////////////////////////////////////////
+
+
+	/**
+	 * GetTimeDelta����ȡ���ε��ñ�����֮���ʱ���
+	 * @return ����ֵ��float����λ ��
+	 */
+	public	static float	GetTimeDelta()
+	{
+		return EngineAPI.GetTimeDelta();
+	}
+	
+	/**
+	 * EngineMainLoop��������ѭ�������������Լ�����
+	 * @return
+	 */
+	public	static boolean		EngineMainLoop()
+	{
+		return EngineAPI.EngineMainLoop();
+	}
+	
+	/**
+	 * InitGameEngine����ʼ�����棬�����Լ�����
+	 * @param MethodObj
+	 * @param args
+	 * @return
+	 */
+	public	static boolean		InitGameEngine( EngineCall MethodObj, String[] args )
+	{
+		return EngineAPI.InitGameEngine( MethodObj, args );
+	}
+	
+	/**
+	 * ShutdownGameEngine���ر����棬�����Լ�����
+	 */
+	public	static void		ShutdownGameEngine()
+	{
+		EngineAPI.ShutdownGameEngine();
+	}
+};

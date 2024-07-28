@@ -1,0 +1,58 @@
+/**
+ * @(#)EngineCall.java
+ *
+ *
+ * @author
+ * @version 1.00
+ */
+
+package FunCode;
+
+public interface EngineCall {
+	/**
+	 * OnMouseMove������ƶ��󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+	 * @param ���� fMouseX:Ϊ��굱ǰ����
+	 * @param ����fMouseY��Ϊ��굱ǰ����
+	 */
+    public abstract void	OnMouseMove( float fMouseX, float fMouseY );
+    /**
+     * OnMouseClick����갴�º󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+     * @param ���� iMouseType����갴��ֵ���� enum MouseTypes ����
+     * @param ����fMouseX��Ϊ��굱ǰ����
+     * @param ����fMouseY��Ϊ��굱ǰ����
+     */
+	public abstract void	OnMouseClick( int iMouseType, float fMouseX, float fMouseY );
+	/**
+	 * OnMouseUp����갴�º󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+	 * @param ���� iMouseType����갴��ֵ���� enum MouseTypes ����
+	 * @param ���� fMouseX��Ϊ��굱ǰ����
+	 * @param ���� fMouseY��Ϊ��굱ǰ����
+	 */
+	public abstract void	OnMouseUp( int iMouseType, float fMouseX, float fMouseY );
+	/**
+	 * OnKeyDown�����̱����º󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+	 * @param ���� iKey�������µļ���ֵ�� enum KeyCodes �궨��
+	 * @param ���� bAltPress�������ϵĹ��ܼ�Alt��Ctrl��Shift��ǰ�Ƿ�Ҳ���ڰ���״̬
+	 * @param ����bShiftPress�������ϵĹ��ܼ�Alt��Ctrl��Shift��ǰ�Ƿ�Ҳ���ڰ���״̬
+	 * @param ���� bCtrlPress�������ϵĹ��ܼ�Alt��Ctrl��Shift��ǰ�Ƿ�Ҳ���ڰ���״̬
+	 */
+    public abstract void	OnKeyDown( int iKey, boolean bAltPress, boolean bShiftPress, boolean bCtrlPress );
+    /**
+     * OnKeyUp�����̰�������󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+     * @param ���� iKey������ļ���ֵ�� enum KeyCodes �궨��
+     */
+	public abstract void	OnKeyUp( int iKey );
+	/**
+	 * OnSpriteColSprite�������뾫����ײ�󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+	 * @param ���� szSrcName��������ײ�ľ�������
+	 * @param ���� szTarName������ײ�ľ�������
+	 */
+	public abstract void	OnSpriteColSprite( String szSrcName, String szTarName );
+
+	/**
+	 * OnSpriteColWorldLimit������������߽���ײ�󽫱����õĺ��������ڴ˺�������(Main.cpp)�����Լ�����Ӧ����
+	 * @param ���� szName����ײ���߽�ľ�������
+	 * @param ���� iColSide����ײ���ı߽� 0 ��ߣ�1 �ұߣ�2 �ϱߣ�3 �±�
+	 */
+	public abstract void	OnSpriteColWorldLimit( String szName, int iColSide );
+}

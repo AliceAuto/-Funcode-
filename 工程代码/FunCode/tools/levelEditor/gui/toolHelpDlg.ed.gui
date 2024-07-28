@@ -1,0 +1,72 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(ToolHelpDlg) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      Position = "184 173";
+      Extent = "370 268";
+      MinExtent = "300 200";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = Language_toolHelpDlg0();//"¿ìËÙ°ïÖú";
+      maxLength = "255";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "1";
+      canMaximize = "1";
+      minSize = "350 250";
+      closeCommand = "Canvas.popDialog(ToolHelpDlg);";
+
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorScrollProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         Position = "10 28";
+         Extent = "350 230";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOn";
+         vScrollBar = "alwaysOn";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+
+         new GuiMLTextCtrl(ToolHelpText) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiMLTextProfile";
+            HorizSizing = "width";
+            VertSizing = "bottom";
+            Position = "2 2";
+            Extent = "335 14";
+            MinExtent = "8 8";
+            canSave = "1";
+            Visible = "1";
+            internalName = "ToolHelpText";
+            hovertime = "1000";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
