@@ -22,15 +22,13 @@ CGameMain		g_GameMain;
 CGameMain::CGameMain()
 {
 	m_iGameState			=	1;
-	MyPlane =  new CSprite("MyPlane");
-	
+
 }
 //==============================================================================
 //
 // 析构函数
 CGameMain::~CGameMain()
 {
-	delete MyPlane;
 }
 
 //==============================================================================
@@ -77,7 +75,6 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 // 每局开始前进行初始化，清空上一局相关数据
 void CGameMain::GameInit()
 {
-	MyPlane->SetSpriteLinearVelocity(10,10);
 }
 //=============================================================================
 //
@@ -153,4 +150,11 @@ void CGameMain::OnSpriteColWorldLimit( const char *szName, const int iColSide )
 {
 	
 }
+
+
+
+
+
+
+
 
