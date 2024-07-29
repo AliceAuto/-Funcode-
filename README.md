@@ -33,8 +33,9 @@
 
 ![类图](游戏框架/剧情系统.drawio.png)
 
---
+------------------
 
+## 背包系统
 ###  [项目成员编辑通道](https://app.diagrams.net/?libs=general;uml#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E7%B1%BB%E5%9B%BE_%E5%BD%B1%E4%B9%8B%E7%95%8C.drawio.png#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
 ![类图](游戏框架/类图_XXX.drawio.png)
 
@@ -42,13 +43,11 @@
 
 --------------------------------
 ## 控制器设计
-
 ###  [项目成员编辑通道](https://app.diagrams.net/?libs=general;uml#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E6%8E%A7%E5%88%B6%E5%99%A8%E8%AE%BE%E8%AE%A1.drawio.png)
 
 ![类图](游戏框架/控制器设计.drawio.png)
 
----
-
+## 伤害系统
 ### [项目成员编辑通道](https://app.diagrams.net/?libs=general;uml#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E7%B1%BB%E5%9B%BE_%E5%BD%B1%E4%B9%8B%E7%95%8C.drawio.png#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
 ![类图](游戏框架/类图_XXX.drawio.png)
 
@@ -56,13 +55,12 @@
 
 
 ## 相机系统
-
 ###  [项目成员编辑通道](https://app.diagrams.net/#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E7%9B%B8%E6%9C%BA%E7%B3%BB%E7%BB%9F.drawio.png#%7B%22pageId%22%3A%22NDQN_u1dCDyM96YW-xxM%22%7D)
 
 ![类图](游戏框架/相机系统.drawio.png)
 
----
-
+----------------------------------------------------
+## AI系统
 ###  [项目成员编辑通道](https://app.diagrams.net/?libs=general;uml#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E7%B1%BB%E5%9B%BE_%E5%BD%B1%E4%B9%8B%E7%95%8C.drawio.png#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
 ![类图](游戏框架/类图_XXX.drawio.png)
 
