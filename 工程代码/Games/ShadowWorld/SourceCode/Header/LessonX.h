@@ -139,13 +139,13 @@ class DynamicEntity:public Entity{
 
 
 /*
- * @brief 这是一个 NPC类
- * 继承自 DynamicEntity，一在游戏中 有程序控制的 动态实体类都是一个NPC类
+ * @brief 这是一个 DynamicNPC类
+ * 继承自 DynamicEntity，一在游戏中 由程序控制的 动态实体类都是一个DynamicNPC类
  *        
  * @author	孙国庆
  * @date 2024-07-29
  */
-class NPC:public DynamicEntity{
+class DynamicNPC:public DynamicEntity{
 
 
 };
@@ -155,13 +155,13 @@ class NPC:public DynamicEntity{
 
 
 /*
- * @brief 这是一个 MainCharacter类
- * 继承自 DynamicEntity，一在游戏中 有玩家控制的 动态实体类都是一个MainCharacter类
+ * @brief 这是一个 PlayerCharacter类
+ * 继承自 DynamicEntity，一在游戏中 有玩家控制的 动态实体类都是一个PlayerCharacter类
  *        
  * @author	孙国庆
  * @date 2024-07-29
  */
-class MainCharacter:public DynamicEntity{
+class PlayerCharacter:public DynamicEntity{
 
 
 };
