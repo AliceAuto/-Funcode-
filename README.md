@@ -28,7 +28,7 @@
 ------------------------------------
 
 ## 剧情系统
-### 影之界 [项目成员编辑通道](https://app.diagrams.net/#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E5%89%A7%E6%83%85%E7%B3%BB%E7%BB%9F.drawio#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
+### 影之界 [项目成员编辑通道](https://app.diagrams.net/#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E5%89%A7%E6%83%85%E7%B3%BB%E7%BB%9F.drawio.png#%7B%22pageId%22%3A%22a22Hc1WfkqGxWuEyUdYN%22%7D)
 ![类图](游戏框架/剧情系统.drawio.png)
 
 --
