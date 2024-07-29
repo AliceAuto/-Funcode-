@@ -54,7 +54,7 @@
 -------------------------------------------------------------
 
 
-## 控制器设计
+## 相机系统
 
 ### 影之界 [项目成员编辑通道](https://app.diagrams.net/#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E7%9B%B8%E6%9C%BA%E7%B3%BB%E7%BB%9F.drawio.png#%7B%22pageId%22%3A%22NDQN_u1dCDyM96YW-xxM%22%7D)
 
