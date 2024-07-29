@@ -24,7 +24,7 @@
 --------------------------------------------------------------------
 ## 2D物理引擎加工
 ###  [项目成员编辑通道](https://app.diagrams.net/#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F2D%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E%E5%8A%A0%E5%B7%A5.drawio.png#%7B%22pageId%22%3A%222xRm0gHWRYvrj_detL7i%22%7D)
-![类图](游戏框架/类图_XXX.drawio.png)
+![类图](游戏框架/2D物理引擎加工.drawio.png)
 
 ------------------------------------
 
