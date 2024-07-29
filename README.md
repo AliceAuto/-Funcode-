@@ -44,7 +44,7 @@
 
 ### 影之界 [项目成员编辑通道](https://app.diagrams.net/?libs=general;uml#HAliceAuto%2F-Funcode-%2Fmain%2F%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6%2F%E6%8E%A7%E5%88%B6%E5%99%A8%E8%AE%BE%E8%AE%A1.drawio.png)
 
-![类图](游戏框架/剧情系统.drawio.png)
+![类图](游戏框架/控制器设计.drawio.png)
 
 --
 
