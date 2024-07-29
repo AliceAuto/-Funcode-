@@ -3,15 +3,37 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "untitled.tmx",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
+        "dass.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "untitled.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1033.3333333333335,
+                "y": 64
+            }
+        }
     },
+    "last.imagePath": "C:/Users/27427/Pictures/Screenshots",
+    "map.height": 35,
+    "map.lastUsedFormat": "tmx",
     "map.layerDataFormat": "1",
+    "map.width": 35,
     "openFiles": [
+        "untitled.tmx",
+        "dass.tsx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
-    ]
+        "dass.tsx",
+        "untitled.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
 }

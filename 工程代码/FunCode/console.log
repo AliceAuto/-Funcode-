@@ -1,4 +1,4 @@
-//-------------------------- 7/28/2024 -- 15:09:36 -----
+//-------------------------- 7/28/2024 -- 23:41:08 -----
 Processor Init:
    Intel Pentium III, ~2.87 Ghz
      (timed at roughly 2.88 Ghz)
@@ -453,6 +453,21 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs.
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
+<input> (0): Unable to find object: '' attempting to call function 'getFrameCount'
+<input> (0): Unable to find object: '' attempting to call function 'getFrameCount'
+<input> (0): Unable to find object: '' attempting to call function 'getFrameCount'
+Set::getObject index out of range.
+Set::getObject index out of range.
+Exporting Particle Editor preferences.
+Exporting Scene Editor preferences.
+Exporting Image Editor preferences.
+Exporting Gui preferences.
+Exporting TGB preferences.
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
