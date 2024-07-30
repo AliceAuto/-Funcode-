@@ -103,15 +103,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\LessonX.cpp" />
-    <ClCompile Include="..\..\Src\Main.cpp" />
     <ClCompile Include="DynamicSwitches.cpp" />
-    <ClCompile Include="mian.cpp" />
+    <ClCompile Include="UnitTesting.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Header\CommonClass.h" />
     <ClInclude Include="..\..\Header\LessonX.h" />
     <ClInclude Include="DynamicSwitches.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="EC.h" />
     <ClInclude Include="InteractiveBlock.h" />
     <ClInclude Include="InvisiableObject.h" />
     <ClInclude Include="NonEntity.h" />

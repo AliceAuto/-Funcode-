@@ -1,5 +1,6 @@
 #include "DynamicSwitches.h"
 
+
 DynamicSwitches::DynamicSwitches(size_t numSwitches) {
     // 计算所需的 unsigned int 数组大小，每个 unsigned int 可以存储 32 位开关状态
     size_t numInts = (numSwitches + 31) / 32;

@@ -3,12 +3,15 @@
 //-----------------------------------------------------------------------------
 #include "CommonClass.h"
 #include "LessonX.h"
+#include "EC.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //
 // 主函数入口
 //
 //////////////////////////////////////////////////////////////////////////////////////////
+
+
 int PASCAL WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
                    LPSTR     lpCmdLine,
@@ -35,6 +38,8 @@ int PASCAL WinMain(HINSTANCE hInstance,
 	CSystem::ShutdownGameEngine();
 	return 0;
 }
+
+
 
 //==========================================================================
 //
