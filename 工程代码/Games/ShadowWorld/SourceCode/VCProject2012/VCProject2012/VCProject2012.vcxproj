@@ -104,10 +104,26 @@
   <ItemGroup>
     <ClCompile Include="..\..\Src\LessonX.cpp" />
     <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="DynamicSwitches.cpp" />
+    <ClCompile Include="mian.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Header\CommonClass.h" />
     <ClInclude Include="..\..\Header\LessonX.h" />
+    <ClInclude Include="DynamicSwitches.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="InteractiveBlock.h" />
+    <ClInclude Include="InvisiableObject.h" />
+    <ClInclude Include="NonEntity.h" />
+    <ClInclude Include="DynamicEntity.h" />
+    <ClInclude Include="NonInteractiveBlock.h" />
+    <ClInclude Include="NPC.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="PlayerCharacter.h" />
+    <ClInclude Include="SimpleFunc.h" />
+    <ClInclude Include="StaticEntity.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="VisiableObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc" />

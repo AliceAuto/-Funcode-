@@ -1,7 +1,7 @@
-//-------------------------- 7/29/2024 -- 11:18:26 -----
+//-------------------------- 7/30/2024 -- 15:07:41 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+     (timed at roughly 2.92 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -118,7 +118,6 @@ Activating DirectInput...
 DirectInput joystick failed to enable!
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
