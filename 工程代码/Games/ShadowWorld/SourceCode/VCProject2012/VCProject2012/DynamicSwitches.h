@@ -3,9 +3,10 @@
 
 #include <vector>
 /*
- * @brief 这是一个 DynamicSwitches类
- * 继承自  SimpleObject
- *        
+  @brief 这是一个 DynamicSwitches类  继承自  SimpleObject
+
+ 这个类是一个01状态管理池,采用位运算和动态结构来实现，可实现任意的开关容量,并且具有高效的操作效率,适合用于大规模01状态管理
+
  * @author	孙国庆
  * @date 2024-07-29
  */
@@ -27,6 +28,7 @@ public:
     void clearSwitches();
 
     // 获取开关总数
+	// Num 将会是 32 的倍数
     size_t getNumSwitches() const;
 };
 
