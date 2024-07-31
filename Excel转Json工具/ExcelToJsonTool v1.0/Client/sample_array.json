@@ -1,0 +1,172 @@
+﻿[
+  {
+    "id": 1,
+    "bool_value": false,
+    "byte_value": 1,
+    "char_value": "2",
+    "decimal_value": 3.0,
+    "double_value": 4.0,
+    "float_value": 5.0,
+    "int_value": 6,
+    "long_value": 7,
+    "sbyte_value": 8,
+    "short_value": 9,
+    "uint_value": 10,
+    "ulong_value": 11,
+    "ushort_value": 12,
+    "client_only": "13",
+    "enum_a": 1,
+    "object_value2": {
+      "field1": 12,
+      "field3": "str"
+    },
+    "int_list": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "int_array": [
+      1,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "id": 2,
+    "bool_value": true,
+    "byte_value": 2,
+    "char_value": "3",
+    "decimal_value": 4.0,
+    "double_value": 5.0,
+    "float_value": 6.0,
+    "int_value": 7,
+    "long_value": 8,
+    "sbyte_value": 9,
+    "short_value": 10,
+    "uint_value": 11,
+    "ulong_value": 12,
+    "ushort_value": 13,
+    "client_only": "14",
+    "enum_a": 2,
+    "object_value2": {
+      "field1": 12,
+      "field3": "str3"
+    },
+    "int_list": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "int_array": [
+      1,
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "id": 3,
+    "bool_value": false,
+    "byte_value": 3,
+    "char_value": "4",
+    "decimal_value": 5.0,
+    "double_value": 6.0,
+    "float_value": 7.0,
+    "int_value": 8,
+    "long_value": 9,
+    "sbyte_value": 10,
+    "short_value": 11,
+    "uint_value": 12,
+    "ulong_value": 13,
+    "ushort_value": 14,
+    "client_only": "15",
+    "enum_a": 3,
+    "object_value2": {
+      "field1": 12,
+      "field3": "str4"
+    },
+    "int_list": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "int_array": [
+      1,
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "id": 4,
+    "bool_value": true,
+    "byte_value": 4,
+    "char_value": "5",
+    "decimal_value": 6.0,
+    "double_value": 999999997.0,
+    "float_value": 8.0,
+    "int_value": 9,
+    "long_value": 10,
+    "sbyte_value": 11,
+    "short_value": 12,
+    "uint_value": 13,
+    "ulong_value": 14,
+    "ushort_value": 15,
+    "client_only": "16",
+    "enum_a": 4,
+    "object_value2": {
+      "field1": 12,
+      "field3": "str5"
+    },
+    "int_list": [
+      1,
+      2,
+      3,
+      7
+    ],
+    "int_array": [
+      1,
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "id": 5,
+    "bool_value": true,
+    "byte_value": 5,
+    "char_value": "6",
+    "decimal_value": 7.0,
+    "double_value": 8.0,
+    "float_value": 9.0,
+    "int_value": 10,
+    "long_value": 11,
+    "sbyte_value": 12,
+    "short_value": 13,
+    "uint_value": 14,
+    "ulong_value": 15,
+    "ushort_value": 16,
+    "client_only": "17",
+    "enum_a": 5,
+    "object_value2": {
+      "field1": 12,
+      "field3": "str6"
+    },
+    "int_list": [
+      1,
+      2,
+      3,
+      8
+    ],
+    "int_array": [
+      1,
+      2,
+      3,
+      9
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "ExcelPath": "Excel",
+  "ClientJsonPath": "Client",
+  "ServerJsonPath": "Server"
+}
