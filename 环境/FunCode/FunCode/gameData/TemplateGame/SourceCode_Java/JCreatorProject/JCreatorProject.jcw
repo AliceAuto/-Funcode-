@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>JCreatorProject</label>
+		<id>64</id>
+		<version>0</version>
+	</settings>
+	<users>
+		<user>
+			<path>JCreatorProject.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>JCreatorProject.jcp</path>
+		</project>
+	</projects>
+</workspace>

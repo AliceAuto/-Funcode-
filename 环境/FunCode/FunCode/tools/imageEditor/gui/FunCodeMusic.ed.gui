@@ -1,0 +1,258 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(FunCodeMusicGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(FunCodeMusicWindow) {
+      canSaveDynamicFields = "0";
+      isContainer = "1";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      Position = "95 74";
+      Extent = "610 452";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "音乐资源";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "FunCodeMusicGui.cancel();";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         isContainer = "1";
+         Profile = "EditorPanelDark";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 30";
+         Extent = "229 372";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "13 32";
+            Extent = "208 332";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOn";
+            vScrollBar = "alwaysOn";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiListBoxCtrl(FunCodeMusicList) {
+               canSaveDynamicFields = "0";
+               isContainer = "0";
+               Profile = "EditorListBox";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               Position = "1 1";
+               Extent = "190 2";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               AllowMultipleSelections = "0";
+               fitParentWidth = "1";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "7 11";
+            Extent = "217 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "资源";
+            maxLength = "1024";
+         };
+      };
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         isContainer = "1";
+         Profile = "EditorPanelMedium";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "247 30";
+         Extent = "350 373";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "117 7";
+            Extent = "104 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "当前工程资源";
+            maxLength = "1024";
+         };
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "11 29";
+            Extent = "329 343";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "alwaysOff";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiListBoxCtrl(FunCodeProjectMusicList) {
+               canSaveDynamicFields = "0";
+               isContainer = "0";
+               Profile = "EditorListBox";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               Position = "1 1";
+               Extent = "327 2";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               AllowMultipleSelections = "0";
+               fitParentWidth = "1";
+            };
+         };
+      };
+      new GuiButtonCtrl(FunCodeMusicSelectButton) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "110 410";
+         Extent = "90 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "FunCodeMusicGui.onSelect();";
+         hovertime = "1000";
+         text = "添加到工程";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(FunCodeMusicImportButton) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "bottom";
+         Position = "15 410";
+         Extent = "80 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "FunCodeMusicGui.onImport();";
+         hovertime = "1000";
+         text = "导入音乐";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(FunCodeMusicPlayButton) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "215 410";
+         Extent = "77 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "FunCodePlaySelectedMusic();";
+         hovertime = "1000";
+         text = "播放";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(FunCodeMusicStopButton) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "310 410";
+         Extent = "77 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "FunCodeStopMusic();";
+         hovertime = "1000";
+         text = "停止   ";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(FunCodeMusicDelButton) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "402 409";
+         Extent = "192 26";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "FunCodeMusicGui.onDelFromProject();";
+         hovertime = "1000";
+         text = "从工程里删除";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+

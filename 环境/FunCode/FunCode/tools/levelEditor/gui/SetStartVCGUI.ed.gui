@@ -1,0 +1,171 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(SetStartVCGUI) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(SetStartVCWindow) {
+      canSaveDynamicFields = "0";
+      isContainer = "1";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "212 105";
+      Extent = "259 200";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "设置启动工程";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(SetStartVCGUI);";
+
+      new GuiButtonCtrl(SetStartVersionBtn1) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "60 30";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "SetStartProject(1);";
+         hovertime = "1000";
+         text = "VC6.0";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(SetStartVersionBtn2) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "59 120";
+         Extent = "141 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "SetStartProject(2);";
+         hovertime = "1000";
+         text = "VC2010";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(SetStartVersionBtn3) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "59 73";
+         Extent = "141 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "SetStartProject(3);";
+         hovertime = "1000";
+         text = "VC2008";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(SetStartVersionBtn4) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "59 165";
+         Extent = "141 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "SetStartProject(4);";
+         hovertime = "1000";
+         text = "CodeBlock";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function SetStartVCGUI::onWake(%this)
+{  
+   if( $FunCodeProjectType $= JAVA )
+   {
+      if( $levelEditor::StartJAVAVersion $= "" )
+      {
+         SetStartVCWindow.text   =  "设置Java启动工程 : 当前未设置";
+      }
+      else if( $levelEditor::StartJAVAVersion $= "JCreator" )
+      {
+         SetStartVCWindow.text   =  "设置Java启动工程 : 当前JCreator";
+      }
+      else if( $levelEditor::StartJAVAVersion $= "Eclipse" )
+      {
+         SetStartVCWindow.text   =  "设置Java启动工程 : 当前Eclipse";
+      }
+      else if( $levelEditor::StartJAVAVersion $= "Netbeans" )
+      {
+         SetStartVCWindow.text   =  "设置Java启动工程 : 当前Netbeans";
+      }
+      
+      SetStartVersionBtn1.text = "JCreator";
+      SetStartVersionBtn2.text = "Eclipse";
+      SetStartVersionBtn3.text = "Netbeans";
+      SetStartVersionBtn3.Visible = 0;
+      SetStartVersionBtn4.Visible = 0;
+   }
+   else
+   {
+      if( $levelEditor::StartVCVersion $= "" )
+      {
+         SetStartVCWindow.text   =  "设置VC启动工程 : 当前未设置";
+      }
+      else if( $levelEditor::StartVCVersion $= "VCProjectVC6" )
+      {
+         SetStartVCWindow.text   =  "设置VC启动工程 : 当前VC6.0";
+      }
+      else if( $levelEditor::StartVCVersion $= "VCProject2010" )
+      {
+         SetStartVCWindow.text   =  "设置VC启动工程 : 当前VC2010";
+      }
+      else if( $levelEditor::StartVCVersion $= "VCProject2008" )
+      {
+         SetStartVCWindow.text   =  "设置VC启动工程 : 当前VC2008";
+      }
+      else if( $levelEditor::StartVCVersion $= "CodeBlock" )
+      {
+         SetStartVCWindow.text   =  "设置VC启动工程 : 当前CodeBlock";
+      }
+      
+      SetStartVersionBtn1.text = "VC6.0";
+      SetStartVersionBtn2.text = "VC2010";
+      SetStartVersionBtn3.text = "VC2008";
+      SetStartVersionBtn4.text = "CodeBlock";
+      SetStartVersionBtn3.Visible = 1;
+      SetStartVersionBtn4.Visible = 1;
+   }
+}

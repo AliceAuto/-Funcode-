@@ -1,0 +1,248 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(ImageMapSelectGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(ImageMapSelectWindow) {
+      canSaveDynamicFields = "0";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "95 74";
+      Extent = "610 452";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "选择";
+      maxLength = "1024";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "ImageMapSelectGui.cancel();";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorPanelDark";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "11 30";
+         Extent = "229 372";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "13 32";
+            Extent = "208 332";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOn";
+            vScrollBar = "alwaysOn";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiListBoxCtrl(ImageMapSelectImageList) {
+               canSaveDynamicFields = "0";
+               Profile = "EditorListBox";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "1 1";
+               Extent = "190 2";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               AllowMultipleSelections = "0";
+               fitParentWidth = "1";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "7 11";
+            Extent = "217 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "资源";
+            maxLength = "1024";
+         };
+      };
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorPanelMedium";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "247 30";
+         Extent = "350 404";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "117 7";
+            Extent = "104 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "预览";
+            maxLength = "1024";
+         };
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "11 29";
+            Extent = "329 367";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "alwaysOff";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new t2dSceneWindow(ImageMapSelectPreviewWindow) {
+               canSaveDynamicFields = "0";
+               superclass = ImageMapPreviewWindow;
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "1 0";
+               Extent = "326 367";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               lockMouse = "0";
+               useWindowMouseEvents = "1";
+               useObjectMouseEvents = "0";
+            };
+         };
+      };
+      new GuiIconButtonCtrl(ImageMapSelectButton) {
+         canSaveDynamicFields = "0";
+         Profile = "EditorButton";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "11 409";
+         Extent = "229 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "ImageMapSelectGui.onSelect();";
+         hovertime = "1000";
+         text = "选择";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         buttonMargin = "4 4";
+         iconLocation = "Left";
+         sizeIconToButton = "0";
+         textLocation = "Center";
+         textMargin = "4";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function ImageMapSelectGui::getImageMap(%this, %caption, %filter, %callback)
+{
+   Canvas.pushDialog(%this);
+   ImageMapSelectWindow.text = %caption;
+   %this.callback = %callback;
+   
+   ImageMapSelectPreviewWindow.clear();
+   ImageMapSelectImageList.clearItems();
+   %datablocks = getT2DDatablockSet();
+   %datablockCount = %datablocks.getCount();
+   for (%i = 0; %i < %datablockCount; %i++)
+   {
+      %includeThisImageMap = false;
+      
+      %datablock = %datablocks.getObject(%i);
+      if (%datablock.getClassName() !$= "t2dImageMapDatablock")
+         continue;
+      
+      if ($ignoredDatablockSet.isMember(%datablock))
+         continue;
+      
+      if (%filter & $IMAGE_MAP_FILTER_FULL)
+         if (%datablock.imageMode $= "FULL")
+            %includeThisImageMap = true;
+            
+      if (%filter & $IMAGE_MAP_FILTER_CELL)
+         if (%datablock.imageMode $= "CELL")
+            %includeThisImageMap = true;
+      
+      if (%filter & $IMAGE_MAP_FILTER_LINK)
+         if (%datablock.imageMode $= "LINK")
+            %includeThisImageMap = true;
+      
+      if (%filter & $IMAGE_MAP_FILTER_KEY)
+         if (%datablock.imageMode $= "KEY")
+            %includeThisImageMap = true;
+      
+      if (%includeThisImageMap)
+      {
+         %name = %datablock.getName();
+         ImageMapSelectImageList.addItem(%name);
+      }
+   }
+}
+
+function ImageMapSelectImageList::onDoubleClick(%this)
+{
+   ImageMapSelectButton.performClick();
+}
+
+function ImageMapSelectGui::onSelect(%this)
+{
+   %imageMap = ImageMapSelectImageList.getItemText(ImageMapSelectImageList.getSelectedItem());
+   eval(%this.callback @ "(" @ %imageMap @ ");");
+   Canvas.popDialog(%this);
+}
+
+function ImageMapSelectGui::cancel(%this)
+{
+   eval(%this.callback @ "();");
+   Canvas.popDialog(%this);
+}
+
+function ImageMapSelectImageList::onSelect(%this, %id, %text)
+{
+   %db = %this.getItemText(%this.getSelectedItem());
+   ImageMapSelectPreviewWindow.display(%db);
+}

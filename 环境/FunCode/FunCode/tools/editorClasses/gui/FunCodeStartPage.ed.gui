@@ -1,0 +1,87 @@
+%guiContent = new GuiBitmapCtrl(FunCodeStartPage) {
+   canSaveDynamicFields = "0";
+   parentGroup = "GuiEditorContent";
+   isContainer = "1";
+   Profile = "GuiSolidDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "^tools/editorClasses/gui/images/start/background";
+   wrap = "0";
+
+   new GuiControl() {
+      canSaveDynamicFields = "0";
+      parentGroup = "TGBStartPage";
+      isContainer = "1";
+      Profile = "NavPanel";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      Position = "300 112";
+      Extent = "408 428";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         parentGroup = "1292";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "8 32";
+         Extent = "192 384";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.pushDialog( SelectProjectCreateGui );";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         bitmap = "^tools/editorClasses/gui/images/start/FunCodeCreate";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         parentGroup = "1292";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "208 32";
+         Extent = "192 384";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TGBWorkspace.OpenProject();";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         bitmap = "^tools/editorClasses/gui/images/start/FunCodeOpen";
+      };
+   };
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      parentGroup = "TGBStartPage";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "256 128";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "^tools/editorClasses/gui/images/start/topBarLeft";
+      wrap = "0";
+   };
+};
+

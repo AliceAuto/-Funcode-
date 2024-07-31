@@ -1,0 +1,458 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(OpenFileDlgExwPreview) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "0";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "-72 31";
+      Extent = "784 418";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "选择图片文件...";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "1";
+      canMaximize = "1";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(OpenFileDlgExwPreview);";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorPanelDark";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "10 29";
+         Extent = "197 373";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 39";
+            Extent = "185 328";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "dynamic";
+            vScrollBar = "dynamic";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiDirectoryTreeCtrl(LoadDirTreeExwPreview) {
+               canSaveDynamicFields = "0";
+               Profile = "EditorTreeViewProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "1 1";
+               Extent = "101 63";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               tabSize = "16";
+               textOffset = "2";
+               fullRowSelect = "0";
+               itemHeight = "21";
+               destroyTreeOnSleep = "0";
+               MouseDragging = "0";
+               MultipleSelections = "0";
+               DeleteObjectAllowed = "1";
+               DragToItemAllowed = "1";
+            };
+         };
+         new GuiControl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorPanelMedium";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 6";
+            Extent = "184 30";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "EditorTextHLBoldCenter";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "4 4";
+               Extent = "174 22";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "当前路径";
+               maxLength = "1024";
+            };
+         };
+      };
+      new GuiControl(PreviewContainerOTDialog) {
+         canSaveDynamicFields = "0";
+         internalName = "PreviewContainer";
+         Profile = "EditorPanelLight";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "461 29";
+         Extent = "312 339";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiControl(SizeCaptionContainerOTDialog) {
+            canSaveDynamicFields = "0";
+            Profile = "EditorPanelMedium";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "5 299";
+            Extent = "300 33";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "EditorFontHLBold";
+               HorizSizing = "right";
+               VertSizing = "top";
+               position = "19 7";
+               Extent = "82 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "图片大小:";
+               maxLength = "1024";
+            };
+            new GuiTextCtrl(OpenfilewPreviewtxtImageSize) {
+               canSaveDynamicFields = "0";
+               Profile = "EditorTextHLBoldCenter";
+               HorizSizing = "left";
+               VertSizing = "top";
+               position = "144 7";
+               Extent = "150 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "1024x768";
+               maxLength = "1024";
+            };
+         };
+         new GuiControl(ThumbContainerOTDialog) {
+            canSaveDynamicFields = "0";
+            Profile = "EditorPanelDark";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "5 5";
+            Extent = "300 289";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+
+            new guiT2DObjectCtrl(OpenFilewPreviewT2DPreview) {
+               canSaveDynamicFields = "0";
+               Profile = "EditorPanelLight";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "6 9";
+               Extent = "285 285";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               groupNum = "-1";
+               buttonType = "RadioButton";
+               renderMargin = "0";
+            };
+         };
+      };
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorPanelDark";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "213 29";
+         Extent = "242 373";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiScrollCtrl(FileListScrollOTDialog) {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 40";
+            Extent = "230 327";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "alwaysOn";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiDirectoryFileListCtrl(LoadFileListExwPreview) {
+               canSaveDynamicFields = "0";
+               Profile = "EditorTextHLBoldLeft";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "1 1";
+               Extent = "210 128";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               AllowMultipleSelections = "0";
+               fitParentWidth = "1";
+            };
+         };
+         new GuiControl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorPanelMedium";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 6";
+            Extent = "230 30";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "EditorTextHLBoldCenter";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "4 4";
+               Extent = "222 22";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "图片路径";
+               maxLength = "1024";
+            };
+         };
+      };
+      new GuiIconButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorButtonRight";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "692 377";
+         Extent = "76 24";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "DoOpenFileExCallbackwPreview();";
+         Accelerator = "return";
+         hovertime = "1000";
+         text = "选择";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         buttonMargin = "4 4";
+         iconBitmap = "~/levelEditor/gui/images/iconAccept.png";
+         iconLocation = "Left";
+         sizeIconToButton = "0";
+         textLocation = "Right";
+         textMargin = "4";
+      };
+      new GuiIconButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorButtonLeft";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "617 377";
+         Extent = "76 24";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(OpenFileDlgExwPreview);";
+         Accelerator = "escape";
+         hovertime = "1000";
+         text = "取消";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         buttonMargin = "4 4";
+         iconBitmap = "~/levelEditor/gui/images/iconCancel.png";
+         iconLocation = "Left";
+         sizeIconToButton = "0";
+         textLocation = "Right";
+         textMargin = "4";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function OpenFileDlgExwPreview::onWake(%this)
+{
+   new t2dSceneGraph(ImageBuilderScene);
+}
+
+function OpenFileDlgExwPreview::onSleep(%this)
+{
+   ImageBuilderScene.delete();
+}
+
+//------------------------------------------------------------------------------
+// ex: getLoadFilename("~/stuff/*.*", openStuff);
+//     -- calls 'openStuff(%filename)' on dblclick or ok
+//------------------------------------------------------------------------------
+function getLoadFilenamewPreview(%filespec, %callback, %currentFile)
+{
+   $GuiLoadDialogCallbackwPreview = %callback;   
+   if( %filespec $= "" )
+      $LoadFileExFileSpecwPreview = "*.*";
+   else
+      $LoadFileExFileSpecwPreview = fileName(%filespec);
+
+   Canvas.pushDialog(OpenFileDlgExwPreview, 99);
+
+   $LoadFileExFilewPreview = %currentFile;
+
+   // If we have a current path, set the tree to it
+   if( filePath(%currentFile) !$= "" )
+      LoadDirTreeExwPreview.setSelectedPath( filePath(%currentFile) );
+      
+   // Update our file view to reflect the changes
+   LoadFileListExwPreview.setPath( LoadDirTreeExwPreview.getSelectedPath(), $LoadFileExFileSpecwPreview );
+   
+   new t2dStaticSprite(previewImageFileObject) { sceneGraph = ImageBuilderScene; size = "10 10";};
+}
+
+function LoadFileListExwPreview::onSelect(%this, %id, %text)
+{
+   %path = LoadDirTreeExwPreview.getSelectedPath();
+   %file = LoadFileListExwPreview.getSelectedFile();
+   %cat = %path @ "/" @ fileBase(%file);
+  
+   // grab the extension
+   %ext = fileExt(%file);
+  
+   if(isObject(newFileImage))
+      newFileImage.delete();
+     
+   // check if this is a valid image file - based on extension
+   if((( stricmp(%ext, ".dds") == 0 ) || ( stricmp(%ext, ".png") == 0 ) || ( stricmp(%ext, ".jpg") == 0 ) || ( stricmp(%ext, ".bmp") == 0 )) && !isObject($LoadFileExFileSpecwPreview)) 
+   {
+      %datablock = "datablock t2dImageMapDatablock(newFileImage)\n";
+      %datablock = %datablock SPC "{\n";
+      %datablock = %datablock SPC "imageName = " @ "\"" @ %cat @ "\"" @ ";\n";
+      %datablock = %datablock SPC "imageMode = FULL;\n";
+      %datablock = %datablock SPC "};";
+      eval(%datablock);
+   }
+  
+   %this.loadImageFilePreview(newFileImage);
+}
+
+function LoadFileListExwPreview::loadImageFilePreview(%this, %imageMap)
+{
+   %maxWidth = 285;
+   %maxHeight = 285;
+   
+   %srcSize = %imageMap.getSrcBitmapSize();
+   %srcWidth = getWord(%srcSize, 0);
+   %srcHeight = getWord(%srcSize, 1);
+   
+   if(%srcWidth > %srcHeight)
+   {
+      %ratio = %srcHeight / %srcWidth;
+      %srcHeight = %maxHeight * %ratio;
+      %srcWidth = %maxWidth; 
+   } else if(%srcHeight > %srcWidth)
+   {
+      %ratio = %srcWidth / %srcHeight;
+      %srcWidth = %maxWidth * %ratio;
+      %srcHeight = %maxHeight; 
+   } else
+   {
+      %srcWidth = %maxWidth; 
+      %srcHeight = %maxHeight;
+   } 
+  
+   OpenFilewPreviewT2DPreview.setExtent(%srcWidth, %srcHeight); 
+   
+   OpenfilewPreviewtxtImageSize.setText(%srcSize);
+   
+   previewImageFileObject.setImageMap(%imageMap);
+   
+   OpenFilewPreviewT2DPreview.setSceneObject(previewImageFileObject);   
+   OpenFilewPreviewT2DPreview.setVisible(true);
+   
+   if(!isObject(previewImageFileBorder))
+   {
+      %border = new GuiControl(previewImageFileBorder) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "1 1";
+         Extent = %srcWidth + 2 SPC %srcHeight + 2;
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+      };
+   
+      //OpenFileDlgExwPreviewWindow.add(%border);
+   } else
+   {
+      //previewImageBorder.setExtent(%srcWidth + 2, %srcHeight + 2);      
+   }
+}
+
+//--------------------------------------
+function DoOpenFileExCallbackwPreview()
+{
+  %path = LoadDirTreeExwPreview.getSelectedPath();
+  %file = LoadFileListExwPreview.getSelectedFile();
+  
+  %extension = fileExt(%file);
+  if(%file $= "" || !(%extension $= ".dds" || %extension $= ".png" || %extension $= ".jpg" || %extension $= ".bmp"))
+     return;
+  
+  %cat = %path @ "/" @ %file;
+  
+  %eval = $GuiLoadDialogCallbackwPreview @ "(\"" @ newFileImage @"\");";
+  eval( %eval );
+}   
+
+function LoadDirTreeExwPreview::onSelectPath( %this, %path )
+{
+   // Update our file view to reflect the changes
+   LoadFileListExwPreview.setPath( %path, $LoadFileExFileSpecwPreview  );
+}

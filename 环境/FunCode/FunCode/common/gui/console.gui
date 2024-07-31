@@ -1,0 +1,101 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(ConsoleDlg) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+
+   new GuiConsoleEditCtrl(ConsoleEntry) {
+      profile = "GuiConsoleTextEditProfile";
+      horizSizing = "width";
+      vertSizing = "top";
+      position = "0 462";
+      extent = "640 18";
+      minExtent = "8 8";
+      visible = "1";
+      altCommand = "ConsoleEntry::eval();";
+      helpTag = "0";
+      maxLength = "255";
+      historySize = "40";
+      password = "0";
+      tabComplete = "0";
+      sinkAllKeyEvents = "1";
+      useSiblingScroller = "1";
+   };
+   new GuiScrollCtrl() {
+      profile = "ConsoleScrollProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "640 462";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      willFirstRespond = "1";
+      hScrollBar = "alwaysOn";
+      vScrollBar = "alwaysOn";
+      constantThumbHeight = "0";
+      childMargin = "0 0";
+
+         new GuiConsole() {
+            profile = "GuiConsoleProfile";
+            position = "0 0";
+         };
+      };
+};
+//--- OBJECT WRITE END ---
+
+
+function ConsoleEntry::eval()
+{
+   %text = trim(ConsoleEntry.getValue());
+
+   if(strpos(%text, "(") == -1)
+   {
+      if(strpos(%text, "=") == -1 && strpos(%text, " ") == -1)
+      {
+         if(strpos(%text, "{") == -1 && strpos(%text, "}") == -1)
+         {
+            %text = %text @ "()";
+         }
+      }
+   }
+
+   %pos = strlen(%text) - 1;
+   if(strpos(%text, ";", %pos) == -1 && strpos(%text, "}") == -1)
+   {
+      %text = %text @ ";";
+   }
+
+   echo("==>" @ %text);
+   eval(%text);
+   ConsoleEntry.setValue("");
+
+}
+
+function ToggleConsole(%make)
+{
+   if (%make)
+   {
+      if (ConsoleDlg.isAwake())
+      {
+         // Deactivate the console.
+         
+         if ( $enableDirectInput )
+            activateKeyboard();
+         Canvas.popDialog(ConsoleDlg);
+      }
+      else
+      {
+         if ( $enableDirectInput )
+            deactivateKeyboard();
+         Canvas.pushDialog(ConsoleDlg, 99);
+         
+      }
+   }
+}
+

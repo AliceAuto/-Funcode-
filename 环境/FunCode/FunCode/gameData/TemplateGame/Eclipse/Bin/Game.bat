@@ -1,0 +1,1 @@
+@start javaw -classpath .;bin;src/API Game

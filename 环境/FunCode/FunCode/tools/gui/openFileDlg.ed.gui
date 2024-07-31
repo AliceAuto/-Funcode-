@@ -1,0 +1,252 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(OpenFileDlgEx) {
+   canSaveDynamicFields = "0";
+   class = "FileDialogBase";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "-18 -4";
+      Extent = "675 487";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "打开文件...";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "1";
+      canMaximize = "1";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(OpenFileDlgEx);";
+      command = "Canvas.popDialog(OpenFileDlgEx);";
+      accelerator = "escape";
+      
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorPanelDark";
+         HorizSizing = "width";
+         VertSizing = "bottom";
+         position = "13 31";
+         Extent = "651 394";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiFrameSetCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "width";
+            VertSizing = "height";
+            position = "7 5";
+            Extent = "638 382";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            columns = "0 229";
+            rows = "0";
+            borderWidth = "4";
+            borderColor = "177 0 0 0";
+            borderEnable = "dynamic";
+            borderMovable = "dynamic";
+            autoBalance = "1";
+            fudgeFactor = "0";
+
+            new GuiScrollCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "EditorScrollProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "0 0";
+               Extent = "225 382";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               willFirstRespond = "1";
+               hScrollBar = "dynamic";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+               
+               //
+               // Path Listing : InternalName - DirectoryTree
+               //
+               new GuiDirectoryTreeCtrl(LoadDirTreeEx) {
+                  canSaveDynamicFields = "0";
+                  internalName = "DirectoryTree";
+                  class = "FileDialogDirectoryTree";
+                  Profile = "EditorTreeViewProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "1 1";
+                  Extent = "101 63";
+                  MinExtent = "8 2";
+                  canSave = "1";
+                  Visible = "1";
+                  hovertime = "1000";
+                  tabSize = "16";
+                  textOffset = "2";
+                  fullRowSelect = "0";
+                  itemHeight = "21";
+                  destroyTreeOnSleep = "0";
+                  MouseDragging = "0";
+                  MultipleSelections = "0";
+                  DeleteObjectAllowed = "1";
+                  DragToItemAllowed = "1";
+               };
+            };
+            new GuiScrollCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "EditorScrollProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "229 0";
+               Extent = "409 382";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOn";
+               vScrollBar = "alwaysOn";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               //
+               // File Listing : InternalName - FileList
+               //
+               new GuiDirectoryFileListCtrl() {
+                  canSaveDynamicFields = "0";
+                  internalName = "FileList";
+                  class = "FileDialogFileList";
+                  Profile = "EditorFontHL";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "1 1";
+                  Extent = "389 128";
+                  MinExtent = "8 2";
+                  canSave = "1";
+                  Visible = "1";
+                  hovertime = "1000";
+                  AllowMultipleSelections = "0";
+                  fitParentWidth = "1";
+               };
+            };
+         };
+      };
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorPanelMedium";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "13 431";
+         Extent = "371 39";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         
+         //
+         // File Filter DropDown : InternalName - FilterList
+         //
+         new GuiPopUpMenuCtrlEx() {
+            canSaveDynamicFields = "0";
+            internalName = "FilterList";
+            class = "FileDialogFilterList";
+            Profile = "GuiPopupMenuProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "102 9";
+            Extent = "260 20";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "All Files ( *.* )";
+            maxLength = "1024";
+            maxPopupHeight = "200";
+            sbUsesNAColor = "0";
+            reverseTextList = "0";
+            bitmapBounds = "16 16";
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "16 4";
+            Extent = "77 27";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "文件类型";
+            maxLength = "1024";
+         };
+      };
+      new GuiIconButtonCtrl() {
+         canSaveDynamicFields = "0";
+         class = "FileDialogOkButton";
+         internalName = "OkButton";
+         Profile = "EditorButton";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "528 439";
+         Extent = "130 24";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "打开";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         buttonMargin = "4 4";
+         iconBitmap = "~/levelEditor/gui/images/iconAccept.png";
+         iconLocation = "Left";
+         sizeIconToButton = "0";
+         textLocation = "Center";
+         textMargin = "4";
+      };
+      new GuiIconButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "EditorButton";
+         class = "FileDialogCancelButton";
+         internalName = "CancelButton";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "391 439";
+         Extent = "130 24";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "取消";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         iconBitmap = "~/levelEditor/gui/images/iconCancel.png";
+         sizeIconToButton = "0";
+         textLocation = "Center";
+         textMargin = "4";
+         buttonMargin = "4 4";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

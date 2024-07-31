@@ -1,0 +1,111 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(SetServerIP) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "1";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "329 276";
+      Extent = "327 145";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      maxLength = "1024";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(SetServerIP);";
+
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "15 45";
+         Extent = "60 24";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "服务器IP:";
+         maxLength = "1024";
+      };
+      new GuiTextEditCtrl(ServerIP_IP) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "86 44";
+         Extent = "222 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         historySize = "0";
+         password = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+         Variable = "$LevelEditor::HelpWWWMid";
+      };
+      new GuiButtonCtrl(ServerIP_OK) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "46 92";
+         Extent = "90 30";
+         MinExtent = "8 2";
+         text = "确定";
+	      Command = "Canvas.popDialog(SetServerIP);";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(ServerIP_Cancel) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "191 92";
+         Extent = "93 30";
+         MinExtent = "8 2";
+	      text = "取消";
+	      Command = "Canvas.popDialog(SetServerIP);";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

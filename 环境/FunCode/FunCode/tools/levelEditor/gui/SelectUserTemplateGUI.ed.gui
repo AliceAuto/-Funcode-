@@ -1,0 +1,126 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(SelectUserTemplateGUI) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "1";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      Position = "15 14";
+      Extent = "294 452";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "导入模板";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(SelectUserTemplateGUI);";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         isContainer = "1";
+         Profile = "EditorPanelDark";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 30";
+         Extent = "269 372";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "13 32";
+            Extent = "249 332";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOn";
+            vScrollBar = "alwaysOn";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiListBoxCtrl(UserTemplateList) {
+               canSaveDynamicFields = "0";
+               isContainer = "0";
+               Profile = "EditorListBox";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               Position = "1 1";
+               Extent = "233 2";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               AllowMultipleSelections = "0";
+               fitParentWidth = "1";
+            };
+         };
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "23 411";
+         Extent = "94 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "SelUserTemplate();";
+         hovertime = "1000";
+         text = "导入到工程";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "161 411";
+         Extent = "102 26";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "DelUserTemplate();";
+         hovertime = "1000";
+         text = "删除模板";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+

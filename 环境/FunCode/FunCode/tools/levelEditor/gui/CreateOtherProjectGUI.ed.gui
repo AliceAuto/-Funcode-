@@ -1,0 +1,133 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(CreateOtherProjectGUI) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(CreateOtherProjectWindow) {
+      canSaveDynamicFields = "0";
+      isContainer = "1";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "212 105";
+      Extent = "259 200";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "创建VC工程";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(CreateOtherProjectGUI);";
+
+      new GuiButtonCtrl(CreateOtherProjectBtn1) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "60 30";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CreateOtherProject(1);";
+         hovertime = "1000";
+         text = "VC6.0";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(CreateOtherProjectBtn2) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "59 120";
+         Extent = "141 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CreateOtherProject(2);";
+         hovertime = "1000";
+         text = "VC2010";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(CreateOtherProjectBtn3) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "59 73";
+         Extent = "141 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CreateOtherProject(3);";
+         hovertime = "1000";
+         text = "VC2008";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiButtonCtrl(CreateOtherProjectBtn4) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "59 165";
+         Extent = "141 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CreateOtherProject(4);";
+         hovertime = "1000";
+         text = "CodeBlock";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function CreateOtherProjectGUI::onWake(%this)
+{  
+   if( $FunCodeProjectType $= JAVA )
+   {
+      CreateOtherProjectWindow.text    =  "创建其它版本Java工程";
+      CreateOtherProjectBtn1.text      = "JCreator";
+      CreateOtherProjectBtn2.text      = "Eclipse";
+      CreateOtherProjectBtn3.text      = "Netbeans"; 
+      CreateOtherProjectBtn4.Visible = 0;
+   }
+   else
+   {
+      CreateOtherProjectWindow.text   =  "创建VC工程";
+      CreateOtherProjectBtn1.text      = "VC6.0";
+      CreateOtherProjectBtn2.text      = "VC2010";
+      CreateOtherProjectBtn3.text      = "VC2008"; 
+      CreateOtherProjectBtn4.text      = "CodeBlock"; 
+      CreateOtherProjectBtn4.Visible = 1;
+   }
+}

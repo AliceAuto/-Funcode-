@@ -1,0 +1,164 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(GuiEditorPaletteGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiModelessDialogProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(GuiEditorPalette) {
+      canSaveDynamicFields = "0";
+      internalName = "palette";
+      isContainer = "1";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "640 40";
+      Extent = "220 380";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "控制面板";
+      maxLength = "1024";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "GuiEditor.togglePalette(0);";
+
+      new GuiTabBookCtrl() {
+         canSaveDynamicFields = "0";
+         internalName = "paletteBook";
+         isContainer = "1";
+         Profile = "GuiTabBookProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         position = "8 24";
+         Extent = "204 344";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         TabPosition = "Top";
+         TabHeight = "22";
+         TabMargin = "7";
+         MinTabWidth = "64";
+
+         new GuiTabPageCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTabPage";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "0 22";
+            Extent = "204 322";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "普通";
+            maxLength = "1024";
+
+            new GuiScrollCtrl() {
+               canSaveDynamicFields = "0";
+               isContainer = "1";
+               Profile = "GuiScrollProfile";
+               HorizSizing = "width";
+               VertSizing = "height";
+               position = "4 4";
+               Extent = "196 312";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiListBoxCtrl() {
+                  canSaveDynamicFields = "0";
+                  internalName = "listboxCommon";
+                  superclass = "GuiEditorPaletteDragList";
+                  isContainer = "0";
+                  Profile = "GuiListBoxProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "2 2";
+                  Extent = "172 300";
+                  MinExtent = "8 2";
+                  canSave = "1";
+                  Visible = "1";
+                  hovertime = "1000";
+                  AllowMultipleSelections = "0";
+                  fitParentWidth = "1";
+               };
+            };
+         };
+         new GuiTabPageCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTabPage";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "0 22";
+            Extent = "204 322";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "0";
+            hovertime = "1000";
+            text = "所有";
+            maxLength = "1024";
+
+            new GuiScrollCtrl() {
+               canSaveDynamicFields = "0";
+               isContainer = "1";
+               Profile = "GuiScrollProfile";
+               HorizSizing = "width";
+               VertSizing = "height";
+               position = "4 4";
+               Extent = "196 312";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiListBoxCtrl() {
+                  canSaveDynamicFields = "0";
+                  internalName = "listboxAll";
+                  superclass = "GuiEditorPaletteDragList";
+                  isContainer = "0";
+                  Profile = "GuiListBoxProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "2 2";
+                  Extent = "154 1260";
+                  MinExtent = "8 2";
+                  canSave = "1";
+                  Visible = "1";
+                  hovertime = "1000";
+                  AllowMultipleSelections = "0";
+                  fitParentWidth = "1";
+               };
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

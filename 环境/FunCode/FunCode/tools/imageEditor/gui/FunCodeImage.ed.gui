@@ -1,0 +1,212 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(FunCodeImageGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(FunCodeImageWindow) {
+      canSaveDynamicFields = "0";
+      isContainer = "1";
+      Profile = "EditorWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      Position = "15 14";
+      Extent = "610 456";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "图片资源";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "FunCodeImageGui.cancel();";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         isContainer = "1";
+         Profile = "EditorPanelDark";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 30";
+         Extent = "229 372";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "13 32";
+            Extent = "208 332";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOn";
+            vScrollBar = "alwaysOn";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new GuiListBoxCtrl(FunCodeImageList) {
+               canSaveDynamicFields = "0";
+               isContainer = "0";
+               Profile = "EditorListBox";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               Position = "1 1";
+               Extent = "190 2";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               AllowMultipleSelections = "0";
+               fitParentWidth = "1";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "7 11";
+            Extent = "217 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "资源";
+            maxLength = "1024";
+         };
+      };
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         isContainer = "1";
+         Profile = "EditorPanelMedium";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "247 30";
+         Extent = "350 404";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "0";
+            Profile = "EditorTextHLBoldCenter";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "117 7";
+            Extent = "104 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "预览";
+            maxLength = "1024";
+         };
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            isContainer = "1";
+            Profile = "EditorTransparentScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "11 29";
+            Extent = "329 367";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "alwaysOff";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+
+            new t2dSceneWindow(FunCodeImagePreviewWindow) {
+               canSaveDynamicFields = "0";
+               superclass = "ImageMapPreviewWindow";
+               isContainer = "0";
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               Position = "1 0";
+               Extent = "326 367";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               lockMouse = "0";
+               useWindowMouseEvents = "1";
+               useObjectMouseEvents = "1";
+            };
+         };
+      };
+      new GuiIconButtonCtrl(FunCodeImageSelectButton) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "EditorButton";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 425";
+         Extent = "229 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "FunCodeImageGui.onSelect();";
+         hovertime = "1000";
+         text = "添加到工程";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         buttonMargin = "4 4";
+         iconLocation = "Left";
+         sizeIconToButton = "0";
+         textLocation = "Center";
+         textMargin = "4";
+      };
+      new GuiCheckBoxCtrl(FunCodeImageCheckBtn) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiCheckBoxProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "248 429";
+         Extent = "350 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Variable = "$levelEditor::FunCodeReleaseResBtn";
+         hovertime = "1000";
+         text = "关闭窗口时释放图片资源(适用低配置机器)";
+         groupNum = "-1";
+         buttonType = "ToggleButton";
+         useMouseEvents = "0";
+         useInactiveState = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+
