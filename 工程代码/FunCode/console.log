@@ -1,6 +1,6 @@
-//-------------------------- 8/1/2024 -- 17:10:53 -----
+//-------------------------- 8/1/2024 -- 17:31:43 -----
 Processor Init:
-   Intel Pentium III, ~2.93 Ghz
+   Intel Pentium III, ~2.90 Ghz
      (timed at roughly 2.92 Ghz)
    FPU detected
    MMX detected
@@ -456,7 +456,6 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.
