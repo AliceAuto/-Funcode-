@@ -1,7 +1,7 @@
-//-------------------------- 7/31/2024 -- 10:55:23 -----
+//-------------------------- 8/1/2024 -- 16:10:47 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.89 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -76,7 +76,11 @@ OpenGL Init: Disabled Extensions
 Max Texture Size reported as: 16384
 Setting screen mode to 800x600x32 (w)...
 OpenAL Driver Init:
-   Failed to initialize driver.
+   Vendor: Creative Labs Inc.
+   Version: OpenAL 1.0
+   Renderer: Software
+   Extensions: EAX 2.0, EAX 3.0, EAX Unified, and EAX-AC3
+
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/gui/profiles.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/gui/cursors.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/gui/messageBoxOk.gui.
