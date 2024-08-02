@@ -1,9 +1,21 @@
-﻿生成启动时间为 2024/8/2 13:45:40。
+﻿生成启动时间为 2024/8/2 20:12:56。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 Link:
+  D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
+  Debug\CGameMain.obj
+  Debug\Controller.obj
+  Debug\CSprite.obj
+  Debug\CSystem.obj
+  Debug\DynamicSwitches.obj
+  Debug\Model.obj
+  Debug\UnitTesting.obj
+  Debug\View.obj
+CGameMain.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
   VCProject2012.vcxproj -> C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
+BscMake:
+  D:\VS012\VC\bin\bscmake.exe /nologo /o"..\..\..\Bin\Game.bsc" /n Debug\CGameMain.sbr Debug\Controller.sbr Debug\CSprite.sbr Debug\CSystem.sbr Debug\DynamicSwitches.sbr Debug\Model.sbr Debug\UnitTesting.sbr Debug\View.sbr
 已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.18
+已用时间 00:00:03.33
