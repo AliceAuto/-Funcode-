@@ -1,7 +1,7 @@
-//-------------------------- 8/2/2024 -- 17:43:49 -----
+//-------------------------- 8/2/2024 -- 12:13:06 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+   Intel Pentium III, ~2.93 Ghz
+     (timed at roughly 2.92 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -126,7 +126,7 @@ Video Init:
 
 Activating the OpenGL display device...
 Activating the OpenGL display device...
-Setting screen mode to 1312x919x32 (w)...
+Setting screen mode to 1312x1152x32 (w)...
 Creating a new window...
 Acquiring a new device context...
 Pixel format set:
@@ -456,6 +456,7 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
+tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 Set::getObject index out of range.
