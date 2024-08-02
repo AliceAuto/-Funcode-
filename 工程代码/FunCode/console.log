@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 //-------------------------- 8/2/2024 -- 17:43:49 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
      (timed at roughly 2.90 Ghz)
-=======
-//-------------------------- 8/2/2024 -- 12:13:06 -----
-Processor Init:
-   Intel Pentium III, ~2.93 Ghz
-     (timed at roughly 2.92 Ghz)
->>>>>>> parent of e8518bc (d)
    FPU detected
    MMX detected
    SSE detected
@@ -463,7 +456,6 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 Set::getObject index out of range.
