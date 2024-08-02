@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 //-------------------------- 8/2/2024 -- 20:02:03 -----
 Processor Init:
    Intel Pentium III, ~2.87 Ghz
-=======
-//-------------------------- 8/2/2024 -- 17:21:47 -----
-Processor Init:
-   Intel Pentium III, ~2.90 Ghz
->>>>>>> 9f8b9a0c96039cedb2d026e9492f17537283cea2
      (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
@@ -132,7 +126,7 @@ Video Init:
 
 Activating the OpenGL display device...
 Activating the OpenGL display device...
-Setting screen mode to 1312x860x32 (w)...
+Setting screen mode to 1312x1152x32 (w)...
 Creating a new window...
 Acquiring a new device context...
 Pixel format set:

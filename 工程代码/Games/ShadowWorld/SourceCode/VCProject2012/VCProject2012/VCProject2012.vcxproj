@@ -66,11 +66,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-<<<<<<< HEAD
       <AdditionalIncludeDirectories>include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-=======
-      <AdditionalIncludeDirectories>..\..\VCProject2012\VCProject2012\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
->>>>>>> 9f8b9a0c96039cedb2d026e9492f17537283cea2
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
