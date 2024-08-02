@@ -9,8 +9,9 @@
  * @date 2024-07-29
  */
 class PlayerCharacter:public DynamicEntity{
+public:
 	PlayerCharacter();
-	virtual ~PlayerCharacter();
+	~PlayerCharacter(){};
 	//玩家交互信号接入
 
 };

@@ -10,7 +10,8 @@
  * @date 2024-07-29
  */
 class System :public InvisibleObject{
-	System();
-	virtual ~System();
+public:
+	System(){};
+	~System(){};
 };
 #endif 

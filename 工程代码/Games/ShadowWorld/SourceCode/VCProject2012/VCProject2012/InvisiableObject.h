@@ -11,8 +11,10 @@
  */
 class InvisibleObject :public Object
 {
-	InvisibleObject();
-	virtual ~InvisibleObject();
+public:
+
+	InvisibleObject(){};
+	~InvisibleObject(){};
 };
 
 #endif

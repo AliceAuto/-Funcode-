@@ -9,8 +9,9 @@
  * @date 2024-07-29
  */
 class NPC:public DynamicEntity{
-	NPC();
-	virtual ~NPC();
+public:
+	NPC(){};
+	~NPC(){};
 	//智能系统接入
 
 };

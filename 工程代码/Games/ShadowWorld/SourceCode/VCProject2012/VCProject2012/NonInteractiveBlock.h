@@ -9,8 +9,9 @@
  * @date 2024-07-29
  */
 class NonInteractiveBlock:public StaticEntity{
+public:
 	NonInteractiveBlock();
-	virtual ~NonInteractiveBlock();
+	~NonInteractiveBlock();
 
 };
 #endif

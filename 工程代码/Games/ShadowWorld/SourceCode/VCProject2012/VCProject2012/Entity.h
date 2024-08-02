@@ -9,8 +9,9 @@
  * @date 2024-07-29
  */
 class Entity:public VisibleObject{
-	Entity();
-	virtual ~Entity();
+public:
+	Entity(){};
+	~Entity(){};
 			//设置精灵为开启"发/接"物理碰撞
 };
 

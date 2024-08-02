@@ -11,8 +11,9 @@
  * @date 2024-07-29
  */
 class StaticEntity:public Entity{
-	StaticEntity();
-	virtual ~StaticEntity();
+public:
+	StaticEntity(){};
+	~StaticEntity(){};
 	//²»ÅäÖÃ¿ØÖÆÆ÷
 };
 

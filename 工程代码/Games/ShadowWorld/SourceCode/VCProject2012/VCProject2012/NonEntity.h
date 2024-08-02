@@ -10,8 +10,9 @@
  * @date 2024-07-29
  */
 class NonEntity:public VisibleObject{
-	NonEntity();
-	virtual ~NonEntity();
+public:
+	NonEntity(){};
+	~NonEntity(){};
 		//设置精灵为不开启"发/接"物理碰撞
 };
 

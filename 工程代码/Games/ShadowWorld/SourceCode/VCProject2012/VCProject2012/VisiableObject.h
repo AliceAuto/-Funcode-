@@ -12,8 +12,8 @@
  */
 class VisibleObject:public Object{
 public:
-	VisibleObject();
-	virtual~VisibleObject();
+	VisibleObject(){};
+	~VisibleObject(){};
 private:
 	CSprite *	spritePtr			;			//可见精灵属性
 };

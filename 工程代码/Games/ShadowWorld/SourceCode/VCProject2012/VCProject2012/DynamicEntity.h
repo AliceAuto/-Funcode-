@@ -9,8 +9,9 @@
  * @date 2024-07-29
  */
 class DynamicEntity:public Entity{
-	DynamicEntity();
-	virtual ~DynamicEntity();
+public:
+	DynamicEntity(){};
+	~DynamicEntity(){};
 	//ÅäÖÃ¿ØÖÆÆ÷
 };
 

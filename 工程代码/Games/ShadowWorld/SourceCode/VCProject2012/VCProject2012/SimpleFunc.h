@@ -10,8 +10,9 @@
  * @date 2024-07-29
  */
 class SimpleFunc:public InvisibleObject{
-	SimpleFunc();
-	virtual ~SimpleFunc();
+public:
+	SimpleFunc(){};
+	~SimpleFunc(){};
 };
 
 #endif

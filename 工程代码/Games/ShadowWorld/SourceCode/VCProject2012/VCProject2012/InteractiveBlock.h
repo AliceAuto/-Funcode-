@@ -9,8 +9,9 @@
  * @date 2024-07-29
  */
 class InteractiveBlock:public StaticEntity{
-	InteractiveBlock();
-	virtual ~InteractiveBlock();
+public:
+	InteractiveBlock(){};
+	~InteractiveBlock(){};
 
 };
 
