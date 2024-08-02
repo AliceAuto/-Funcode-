@@ -1,9 +1,20 @@
-﻿生成启动时间为 2024/8/2 13:45:40。
-项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
-Link:
-  VCProject2012.vcxproj -> C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
-已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
+﻿生成启动时间为 2024/8/2 17:12:34。
+项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Rebuild 个目标)。
+ClCompile:
+  D:\VS012\VC\bin\CL.exe /c /I..\..\VCProject2012\VCProject2012\include\Headers /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Controller.cpp Src\CSystem.cpp Src\DynamicSwitches.cpp Src\Model.cpp Src\UnitTesting.cpp Src\View.cpp
+  View.cpp
+  UnitTesting.cpp
+  Model.cpp
+  DynamicSwitches.cpp
+  CSystem.cpp
+  Controller.cpp
+  正在生成代码...
+ResourceCompile:
+  C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\VCTemplate.res" VCTemplate.rc 
+VCTemplate.rc(3): fatal error RC1015: cannot open include file 'resource.h'.
+  
+已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Rebuild 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:01.18
+已用时间 00:00:03.86
