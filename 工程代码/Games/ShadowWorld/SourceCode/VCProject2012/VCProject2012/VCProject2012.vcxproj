@@ -128,6 +128,9 @@
     <ClCompile Include="Src\View.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="include\headers\AI.h" />
+    <ClInclude Include="include\headers\BagSystem.h" />
     <ClInclude Include="include\headers\CGameMain.h" />
     <ClInclude Include="include\headers\CSprite.h" />
     <ClInclude Include="include\headers\CSystem.h" />
@@ -135,8 +138,11 @@
     <ClInclude Include="include\headers\DynamicSwitches.h" />
     <ClInclude Include="include\headers\EC.h" />
     <ClInclude Include="include\headers\Entity.h" />
+    <ClInclude Include="include\headers\EventDrivenSystem.h" />
+    <ClInclude Include="include\headers\Interaction.h" />
     <ClInclude Include="include\headers\InteractiveBlock.h" />
     <ClInclude Include="include\headers\InvisiableObject.h" />
+    <ClInclude Include="include\headers\Load_Save_Data.h" />
     <ClInclude Include="include\headers\NonEntity.h" />
     <ClInclude Include="include\headers\NonInteractiveBlock.h" />
     <ClInclude Include="include\headers\NPC.h" />
@@ -146,6 +152,7 @@
     <ClInclude Include="include\headers\SimpleFunc.h" />
     <ClInclude Include="include\headers\StaticEntity.h" />
     <ClInclude Include="include\headers\System.h" />
+    <ClInclude Include="include\headers\Menu.h" />
     <ClInclude Include="include\headers\VisiableObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
