@@ -55,6 +55,7 @@ enum KeyCodes
 	KEY_NULL          = 0x000,     ///< Invalid KeyCode
 	KEY_BACKSPACE     = 0x001,
 	KEY_TAB           = 0x002,
+
 	KEY_ENTER         = 0x003,
 	KEY_CONTROL       = 0x004,
 	KEY_ALT           = 0x005,

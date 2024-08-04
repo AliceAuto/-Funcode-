@@ -6,7 +6,7 @@
 
 
 #include <iostream>
-#include "headers\BagSystem.h"
+#include "headers\Controller.h"
  // For std::auto_ptr
 //===================================================
 //				此文件为单元测试入口			   //
@@ -26,50 +26,16 @@ int main() {
 *	+	+		+	+ 		+	+	 o   \\ I //   o     +	 +	     +	 +		 +	 +		 +	 +		 +	//
 *	  + 		  +			  +		 o	  \\_//	   o	   +		   +		   +		   +		   +//
 //==========================================================================================================*/
-  std::cout << "测试用例 1: 基础添加和移除测试" << std::endl;
-    Inventory inventory(5, 5); // 创建一个5x5的背包
+  AIController aiCreature(10.0f, 20.0f, 3.0f); // 初始位置(10, 20)，基础速度为3
 
-    inventory.addItem(1, 10);
-    inventory.addItem(2, 50);
-    inventory.addItem(1, 60); // 叠加物品ID 1
-    inventory.printInventory();
+    // 示例：AI系统生成指令
+    aiCreature.ReceiveAIInput(1.0f, 0.5f, "Attack");
+    aiCreature.Update(0.016f);
+    aiCreature.Render();
 
-    inventory.removeItem(1, 20); // 从背包中取出物品ID 1
-    inventory.printInventory();
-
-    std::cout << "测试用例 2: 边界测试" << std::endl;
-    Inventory smallInventory(2, 2); // 创建一个2x2的小背包
-
-    smallInventory.addItem(1, 30);
-    smallInventory.addItem(2, 30);
-    smallInventory.addItem(1, 40); // 尝试添加超出背包容量的物品
-    smallInventory.printInventory();
-
-    std::cout << "测试用例 3: 空槽和无物品情况" << std::endl;
-    Inventory emptyInventory(5, 5); // 创建一个5x5的空背包
-
-    emptyInventory.addItem(3, 30);
-    emptyInventory.printInventory();
-
-    emptyInventory.removeItem(4, 10); // 尝试从背包中移除不存在的物品
-    emptyInventory.printInventory();
-
-    std::cout << "测试用例 4: 多种物品测试" << std::endl;
-    Inventory multiItemInventory(5, 5); // 创建一个5x5的背包
-
-    multiItemInventory.addItem(4, 40);
-    multiItemInventory.addItem(5, 25);
-    multiItemInventory.addItem(4, 30); // 叠加物品ID 4
-    multiItemInventory.printInventory();
-
-    std::cout << "测试用例 5: 添加与移除组合测试" << std::endl;
-    Inventory comboInventory(5, 5); // 创建一个5x5的背包
-
-    comboInventory.addItem(6, 15);
-    comboInventory.removeItem(2, 10);
-    comboInventory.addItem(7, 50);
-    comboInventory.removeItem(6, 10);
-    comboInventory.printInventory();
+    aiCreature.ReceiveAIInput(0.0f, 0.0f, "Idle");
+    aiCreature.Update(0.016f);
+    aiCreature.Render();
 
 /*//==========================================================================================================
 *+			+			+ 		    +o	  //-\\	     o +		   +	        +		    +		    +	   //

@@ -1,7 +1,7 @@
-//-------------------------- 8/3/2024 -- 10:44:09 -----
+//-------------------------- 8/4/2024 -- 11:00:17 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+     (timed at roughly 2.89 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -453,10 +453,431 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs.
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
+t2dStaticSprite::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2324" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "13" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks1.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks2.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks3.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks4.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks5.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks6.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks7.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks8.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks9.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks10.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks11.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks12.cs.
+tools/imageEditor/scripts/FunCodeImage.ed.cs (45): Unable to find object: '1607' attempting to call function 'getCount'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "13" does not exist in set
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks1.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks2.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks3.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks4.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks5.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks6.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks7.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks8.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks9.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks10.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks11.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks12.cs.
+tools/imageEditor/scripts/FunCodeImage.ed.cs (45): Unable to find object: '1607' attempting to call function 'getCount'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "13" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "13" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editor.ed.cs (459): Unable to find function checkImageMapReference
+Set::remove: Object "13" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "13" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+Error loading level C:/Users/27427/AppData/Roaming/FunCode/FunCode/levelEditor/clipboard.cs. Invalid file.
+tools/levelEditor/scripts/levelManagement.ed.cs (308): Unable to find object: '0' attempting to call function 'getSceneObjectCount'
+Error loading level C:/Users/27427/AppData/Roaming/FunCode/FunCode/levelEditor/clipboard.cs. Invalid file.
+tools/levelEditor/scripts/levelManagement.ed.cs (308): Unable to find object: '0' attempting to call function 'getSceneObjectCount'
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks1.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks2.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks3.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks4.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks5.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks6.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks7.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks8.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks9.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks10.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks11.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks12.cs.
+GuiListBoxCtrl::getItemText - index out of range!
+tools/imageEditor/scripts/FunCodeImage.ed.cs (45): Unable to find object: '1607' attempting to call function 'getCount'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "9642" does not exist in set
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "41" does not exist in set
 tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 Set::getObject index out of range.

@@ -40,4 +40,52 @@
    new t2dSceneObjectGroup() {
       canSaveDynamicFields = "1";
    };
+   new t2dStaticSprite() {
+      imageMap = "enemyMissileImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "80.948 -72.213";
+      size = "16.000 8.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "2";
+   };
+   new t2dStaticSprite() {
+      imageMap = "enemyship1ImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "71.000 -42.000";
+      size = "32.000 16.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "3";
+   };
+   new t2dStaticSprite() {
+      imageMap = "particles5ImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "84.000 -51.000";
+      size = "8.000 8.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "4";
+   };
+   new t2dStaticSprite() {
+      imageMap = "particles5ImageMap1";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "-28.203 -9.151";
+      size = "8.000 8.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "5";
+   };
 };
