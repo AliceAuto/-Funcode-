@@ -9,6 +9,7 @@
 //
 class CSystem
 {
+
 public:
 	CSystem();
 	~CSystem();

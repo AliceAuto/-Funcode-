@@ -1,16 +1,31 @@
 
-#include "CSystem.h"
-#include "CGameMain.h"
+#include "CSystem.h"//					引擎接口文件
+#include "CGameMain.h"//				引用时游戏逻辑系统需要这个
+#include "headers\EventDrivenSystem.h"	//	包的构建与监听需要这个
+#include "Logger.h"	//					用来记录程序的运行日志
+#include <string>//						用来强制转化类型为string
+#include "Setting.h"//					会用到里面的一些枚举体
+
 //==========================================================================
-//
-// 引擎捕捉鼠标移动消息后，将调用到本函数
-// 参数 fMouseX, fMouseY：为鼠标当前坐标
-//
 void CSystem::OnMouseMove( const float fMouseX, const float fMouseY )
 {
 	// 可以在此添加游戏需要的响应函数
 	g_GameMain.OnMouseMove(fMouseX, fMouseY);
+
+	/*
+	// 创建事件并分发
+    MouseInputEvent mouseEvent(fMouseX, fMouseY);		//分发	鼠标移动事件 <fMouseX, fMouseY>
+
+
+	//触发事件
+    eventManager.DispatchEvent(mouseEvent); //			触发鼠标事件的		<xxx监听器>
+
+		
+	//日志记录
+    LogManager::Log("<"+std::to_string(fMouseY)+","+std::to_string(fMouseY)+">");//格式	<fMouseX, fMouseY>
+	*/
 }
+#include "headers\Controller.h"
 //==========================================================================
 //
 // 引擎捕捉鼠标点击消息后，将调用到本函数
@@ -43,6 +58,21 @@ void CSystem::OnKeyDown( const int iKey, const bool bAltPress, const bool bShift
 {
 	// 可以在此添加游戏需要的响应函数
 	g_GameMain.OnKeyDown(iKey, bAltPress, bShiftPress, bCtrlPress);
+
+	
+	// 创建事件并分发
+    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_ON);	//分发	按键按下事件 <Key, State>
+
+
+	//触发事件
+    eventManager.DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+
+		
+	//日志记录
+    LogManager::Log("<"+std::to_string(iKey)+","+std::to_string(bShiftPress)+"> 键盘按下");//格式	<Key, ShiftState>
+
+
+
 }
 //==========================================================================
 //
@@ -53,6 +83,24 @@ void CSystem::OnKeyUp( const int iKey )
 {
 	// 可以在此添加游戏需要的响应函数
 	g_GameMain.OnKeyUp(iKey);
+
+
+
+
+		
+	// 创建事件并分发
+    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_OFF);	//分发	按键按下事件 <Key, State>
+
+
+	//触发事件
+    eventManager.DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+
+		
+	//日志记录
+    LogManager::Log("<"+std::to_string(iKey)+"> 键盘弹起");//格式	<Key, ShiftState>
+
+
+
 }
 
 //===========================================================================

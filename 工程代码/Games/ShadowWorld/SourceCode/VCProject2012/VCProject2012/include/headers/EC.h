@@ -1,5 +1,5 @@
 
-#define CONSOLE    // (   CONSOLE   /   WIN    )
+#define WIN    // (   CONSOLE   /   WIN    )
 
 //ÐÞ¸Ä´Ë´¦
 

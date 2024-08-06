@@ -16,7 +16,7 @@ class	CGameMain
 {
 private:
 	int				m_iGameState;				// 游戏状态，0：结束或者等待开始；1：初始化；2：游戏进行中
-
+	
 
 public:
 	CGameMain();            //构造函数

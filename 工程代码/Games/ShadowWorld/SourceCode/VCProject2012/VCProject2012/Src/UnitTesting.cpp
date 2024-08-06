@@ -6,12 +6,18 @@
 
 
 #include <iostream>
-#include "headers\Controller.h"
+#include "headers\EventDrivenSystem.h"
+#include "CSystem.h"
+#include "headers\CGameMain.h"
+
+
+
  // For std::auto_ptr
 //===================================================
 //				此文件为单元测试入口			   //
 //===================================================
 int main() {
+
 
 	//在主函数内部进行单元测试
 	/*		注意
@@ -26,16 +32,8 @@ int main() {
 *	+	+		+	+ 		+	+	 o   \\ I //   o     +	 +	     +	 +		 +	 +		 +	 +		 +	//
 *	  + 		  +			  +		 o	  \\_//	   o	   +		   +		   +		   +		   +//
 //==========================================================================================================*/
-  AIController aiCreature(10.0f, 20.0f, 3.0f); // 初始位置(10, 20)，基础速度为3
 
-    // 示例：AI系统生成指令
-    aiCreature.ReceiveAIInput(1.0f, 0.5f, "Attack");
-    aiCreature.Update(0.016f);
-    aiCreature.Render();
 
-    aiCreature.ReceiveAIInput(0.0f, 0.0f, "Idle");
-    aiCreature.Update(0.016f);
-    aiCreature.Render();
 
 /*//==========================================================================================================
 *+			+			+ 		    +o	  //-\\	     o +		   +	        +		    +		    +	   //

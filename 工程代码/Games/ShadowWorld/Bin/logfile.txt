@@ -1,0 +1,92 @@
+下面是程序日志:
+<117,0> 键盘按下
+<117> 键盘弹起
+<36,0> 键盘按下
+state：to_right
+<36> 键盘弹起
+<33,0> 键盘按下
+<33> 键盘弹起
+<33,0> 键盘按下
+state：to_left
+<33> 键盘弹起
+<55,0> 键盘按下
+state：to_up
+state：to_up
+<55> 键盘弹起
+<51,0> 键盘按下
+state：to_down
+state：to_down
+<51> 键盘弹起
+<33,0> 键盘按下
+state：to_left
+state：to_left
+state：to_left
+<33> 键盘弹起
+<55,0> 键盘按下
+state：to_up
+state：to_up
+state：to_up
+state：to_up
+<55> 键盘弹起
+<51,0> 键盘按下
+state：to_down
+state：to_down
+<51> 键盘弹起
+<36,0> 键盘按下
+state：to_right
+state：to_right
+state：to_right
+<36> 键盘弹起
+<33,0> 键盘按下
+state：to_left
+state：to_left
+<33> 键盘弹起
+<55,0> 键盘按下
+state：to_up
+state：to_up
+state：to_up
+state：to_up
+<55> 键盘弹起
+<51,0> 键盘按下
+state：to_down
+state：to_down
+state：to_down
+state：to_down
+<51> 键盘弹起
+<36,0> 键盘按下
+state：to_right
+<36> 键盘弹起
+<55,0> 键盘按下
+state：to_up
+state：to_up
+<36,0> 键盘按下
+<55> 键盘弹起
+state：to_right
+<51,0> 键盘按下
+<36> 键盘弹起
+<33,0> 键盘按下
+<51> 键盘弹起
+state：to_left
+<55,0> 键盘按下
+<33> 键盘弹起
+state：to_up
+<36,0> 键盘按下
+state：to_up
+<36> 键盘弹起
+state：to_up
+state：to_up
+state：to_up
+<55> 键盘弹起
+<51,0> 键盘按下
+state：to_down
+state：to_down
+<51> 键盘弹起
+<55,0> 键盘按下
+state：to_up
+state：to_up
+state：to_up
+state：to_up
+state：to_up
+<55> 键盘弹起
+<55,0> 键盘按下
+<55> 键盘弹起

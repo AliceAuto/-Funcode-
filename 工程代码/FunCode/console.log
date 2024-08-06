@@ -1,7 +1,7 @@
-//-------------------------- 8/4/2024 -- 11:00:17 -----
+//-------------------------- 8/6/2024 -- 10:40:24 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.89 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -126,7 +126,7 @@ Video Init:
 
 Activating the OpenGL display device...
 Activating the OpenGL display device...
-Setting screen mode to 1312x1152x32 (w)...
+Setting screen mode to 1312x498x32 (w)...
 Creating a new window...
 Acquiring a new device context...
 Pixel format set:
@@ -453,8 +453,6 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs.
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
-t2dStaticSprite::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
@@ -480,30 +478,12 @@ t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "2324" does not exist in set
 tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
 Set::remove: Object "13" does not exist in set
-tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
@@ -515,98 +495,17 @@ t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks1.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks2.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks3.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks4.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks5.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks6.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks7.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks8.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks9.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks10.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks11.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks12.cs.
-tools/imageEditor/scripts/FunCodeImage.ed.cs (45): Unable to find object: '1607' attempting to call function 'getCount'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "13" does not exist in set
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks1.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks2.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks3.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks4.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks5.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks6.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks7.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks8.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks9.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks10.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks11.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks12.cs.
-tools/imageEditor/scripts/FunCodeImage.ed.cs (45): Unable to find object: '1607' attempting to call function 'getCount'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "13" does not exist in set
-tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
@@ -623,8 +522,7 @@ tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'Im
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "13" does not exist in set
-tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+Set::remove: Object "15" does not exist in set
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
@@ -651,7 +549,16 @@ tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'Im
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
@@ -783,74 +690,11 @@ tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'Im
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editor.ed.cs (459): Unable to find function checkImageMapReference
-Set::remove: Object "13" does not exist in set
-tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "13" does not exist in set
-tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-Error loading level C:/Users/27427/AppData/Roaming/FunCode/FunCode/levelEditor/clipboard.cs. Invalid file.
-tools/levelEditor/scripts/levelManagement.ed.cs (308): Unable to find object: '0' attempting to call function 'getSceneObjectCount'
-Error loading level C:/Users/27427/AppData/Roaming/FunCode/FunCode/levelEditor/clipboard.cs. Invalid file.
-tools/levelEditor/scripts/levelManagement.ed.cs (308): Unable to find object: '0' attempting to call function 'getSceneObjectCount'
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks1.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks2.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks3.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks4.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks5.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks6.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks7.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks8.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks9.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks10.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks11.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/resources/datablocks12.cs.
-GuiListBoxCtrl::getItemText - index out of range!
-tools/imageEditor/scripts/FunCodeImage.ed.cs (45): Unable to find object: '1607' attempting to call function 'getCount'
-tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "9642" does not exist in set
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
@@ -866,7 +710,6 @@ tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'Im
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
@@ -877,9 +720,388 @@ tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'Im
 tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
 tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
-Set::remove: Object "41" does not exist in set
-tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+t2dImageMapDatablock::calculateCellImageMap() - Invalid Cell Height of 3385.
+ImageMap(prevT2DImageMap)SrcBitmap(C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/images/e.png) Error: 'Invalid CELL Dimension!' (15)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 Set::getObject index out of range.
+Populating font cache with range 0x20 to 0xff (120 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial 80 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@�����ֺ��μ��� 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@���� Light 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@���� 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@΢���ź� Light 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@΢���ź� 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@Yu Gothic 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@MS UI Gothic 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@Malgun Gothic Semilight 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@Malgun Gothic 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@�����ֺ��μ��� 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@���� Light 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@���� 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@΢���ź� Light 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@΢���ź� 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@Yu Gothic 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@MS UI Gothic 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@Malgun Gothic Semilight 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@Malgun Gothic 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial 80 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/���� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/�ֻ�55��-�������� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Ҷ����ë������2.0�� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/΢���ź� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 133 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@������ 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@�����ֱʿ����鷨���� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@���� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@�ֻ�55��-�������� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@΢���ź� 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@SimSun-ExtB 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@Microsoft JhengHei 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@BatangChe 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@123 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/123 96 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial 80 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (120 fonts found)
+      o Writing 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/仙剑奇侠传-C语言/仙剑奇侠传/ARPGpal/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/TEST/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial 80 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/ShadowWorld/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@�����ֺ��μ��� 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@���� Light 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@���� 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@΢���ź� Light 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@΢���ź� 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@Yu Gothic 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@MS UI Gothic 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@Malgun Gothic Semilight 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/星际风云/Bin/common/data/fonts/@Malgun Gothic 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@�����ֺ��μ��� 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@���� Light 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@���� 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@΢���ź� Light 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@΢���ź� 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@Yu Gothic 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@MS UI Gothic 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@Malgun Gothic Semilight 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/星际风云/星际风云/Bin/common/data/fonts/@Malgun Gothic 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial 80 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/小水滴回家/小水滴回家_杨彬_吕成龙_陈子璇_白一诺_源代码/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/���� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/�ֻ�55��-�������� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Ҷ����ë������2.0�� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/΢���ź� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 133 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@������ 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@�����ֱʿ����鷨���� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@���� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@�ֻ�55��-�������� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@΢���ź� 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@SimSun-ExtB 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@Microsoft JhengHei 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@BatangChe 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/@123 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/Funcode获奖作品展示/Funcode获奖作品展示/天穹游侠/天穹游侠/Bin/common/data/fonts/123 96 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/xxXXx/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/dads/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/Funcode项目/ABC/ABC/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/环境/FunCode/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial 80 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
 Set::getObject index out of range.
 Exporting Particle Editor preferences.
 Exporting Scene Editor preferences.

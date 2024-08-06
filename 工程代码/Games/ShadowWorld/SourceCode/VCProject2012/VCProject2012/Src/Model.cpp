@@ -11,14 +11,15 @@
 	//										//
 	*/										//
 	//=======================================
-
-
+#include <iostream>
+#include "Logger.h"
 #include "CSprite.h"
 #include "CSystem.h"
 #include "CGameMain.h"
-
-
-
+#include "headers\EventDrivenSystem.h"
+#include "stdio.h"
+#include "headers\Controller.h"
+#include <functional>
 ///////////////////
 #include "EC.h" //	调试配置
 #ifdef WIN    //
@@ -38,7 +39,31 @@ int PASCAL WinMain(HINSTANCE hInstance,
 		return 0;
 
 	// To do : 在此使用API更改窗口标题
-	CSystem::SetWindowTitle("LessonX");
+	CSystem::SetWindowTitle("影之界");
+
+
+	//			这里是监听器的注册
+	//=================================================================
+		
+		eventManager.RegisterListener(EventType::MouseInput, onMouseInput);
+		
+
+		eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, &player, std::placeholders::_1));
+	//=======================================================================
+
+	//			这里是开发时重定向文件流的初始化
+	//=============================================================
+		 LogManager::StartLogging("logfile.txt");  // 启动日志记录
+		 // 输出日志信息
+		 LogManager::Log("下面是程序日志:");
+	//===================================================================
+   
+
+    
+
+    
+
+    
 
 	// 引擎主循环，处理屏幕图像刷新等工作
 	while( CSystem::EngineMainLoop() )
@@ -52,6 +77,10 @@ int PASCAL WinMain(HINSTANCE hInstance,
 
 	// 关闭游戏引擎
 	CSystem::ShutdownGameEngine();
+
+	LogManager::StopLogging();  // 停止日志记录
+
+
 	return 0;
 }
 

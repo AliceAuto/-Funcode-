@@ -85,6 +85,7 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalLibraryDirectories>..\..\VCProject2012\VCProject2012\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
     <Bscmake>
       <PreserveSbr>true</PreserveSbr>
@@ -123,7 +124,10 @@
     <ClCompile Include="Src\CSprite.cpp" />
     <ClCompile Include="Src\CSystem.cpp" />
     <ClCompile Include="Src\DynamicSwitches.cpp" />
+    <ClCompile Include="Src\EventDrivenSystem.cpp" />
+    <ClCompile Include="Src\Logger.cpp" />
     <ClCompile Include="Src\Model.cpp" />
+    <ClCompile Include="Src\Setting.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
     <ClCompile Include="Src\View.cpp" />
   </ItemGroup>
@@ -143,6 +147,7 @@
     <ClInclude Include="include\headers\InteractiveBlock.h" />
     <ClInclude Include="include\headers\InvisiableObject.h" />
     <ClInclude Include="include\headers\Load_Save_Data.h" />
+    <ClInclude Include="include\headers\Logger.h" />
     <ClInclude Include="include\headers\Manager.h" />
     <ClInclude Include="include\headers\NonEntity.h" />
     <ClInclude Include="include\headers\NonInteractiveBlock.h" />
