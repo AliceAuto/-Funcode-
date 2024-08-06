@@ -34,8 +34,8 @@
    layerSortMode30 = "Normal";
    layerSortMode31 = "Normal";
    DebugRendering = "0";
-      cameraPosition = "0 0";
-      cameraSize = "100 75";
+      cameraPosition = "0.000000 0.000000";
+      cameraSize = "100.000000 75.000000";
 
    new t2dSceneObjectGroup() {
       canSaveDynamicFields = "1";
@@ -43,7 +43,7 @@
    new t2dAnimatedSprite(character) {
       animationName = "to_down";
       canSaveDynamicFields = "1";
-      Position = "-1.250 -2.455";
+      Position = "-1.250 0.000";
       size = "27.500 20.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";

@@ -4,9 +4,10 @@
 
 //									控制器的构造函数
 //==============================================================================
-PlayerController::PlayerController(float initialX, float initialY, float speed)
-    : posX(initialX), posY(initialY), baseSpeed(speed), velocityX(0), velocityY(0) {
+PlayerController::PlayerController(float initialX, float initialY)
+    : posX(initialX), posY(initialY), facing(this->facings::up),velocityX(0), velocityY(0) {
     spritePtr = new CAnimateSprite("character");
+	soundSpritePtr = new CSound("running.ogg",true,1);
 }
 //=============================================================================================
 
@@ -53,56 +54,157 @@ void PlayerController::ProcessInput(const Event& event) {
 
 
 
-//			指示精灵行动并获得信息反馈
-//============================================
-void PlayerController::Move() {
-    spritePtr->SetSpriteLinearVelocityX(velocityX);
-    spritePtr->SetSpriteLinearVelocityY(velocityY);
 
+
+
+
+
+
+
+
+
+
+//			对状态进行实时更新
+//===========================================
+void PlayerController::UpdateState(){
+	//更新速度
+	spritePtr->SetSpriteLinearVelocityX(velocityX);
+    spritePtr->SetSpriteLinearVelocityY(velocityY);
+	//更新位置
     posX = spritePtr->GetSpritePositionX();
     posY = spritePtr->GetSpritePositionY();
-}
-//======================================================
-
-
-//			负责动画显示相关
-//=========================================
-void PlayerController::UpdateAnimation() {
-    static std::string direction;
-
-	static std::string temp;
+	//更新人物朝向
     if (velocityX == 0 && velocityY > 0) {
-        temp = "to_down";
+ 
+		this->facing = facings::down;
     } 
     else if (velocityX > 0 && velocityY == 0) {
-        temp = "to_right";
+
+		this->facing = facings::right;
     }
    else if (velocityX == 0 && velocityY < 0) {
-        temp = "to_up";
+
+		this->facing = facings::up;
     } 
    else if (velocityX < 0 && velocityY == 0) {
-        temp = "to_left";
+
+		this->facing = facings::left;
+    } 
+
+}
+//===============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//				渲染动画
+//========================================================================
+void PlayerController::UpdateAnimation() {
+	static std::string AniTemp;	//	用以更新动画
+    static std::string Ani;		//
+	//				判断要播放的动画
+	//____________________________________________
+    if (velocityX == 0 && velocityY > 0) {
+        Ani = "to_down";
+
+    } 
+    else if (velocityX > 0 && velocityY == 0) {
+        Ani = "to_right";
+
+    }
+   else if (velocityX == 0 && velocityY < 0) {
+        Ani = "to_up";
+
+    } 
+   else if (velocityX < 0 && velocityY == 0) {
+        Ani = "to_left";
+
     } 
 	else if (velocityX == 0 && velocityY == 0) {
-        temp = "to_static";
-    } 
-    if (temp!=direction) {
-        spritePtr->AnimateSpritePlayAnimation(temp.c_str(), false);
-		direction =temp;
-    }
-	else{
+        if (this->facing == facings::up)Ani = "to_up";
+		else if (this->facing == facings::down)Ani = "to_down";
+		else if (this->facing == facings::left)Ani = "to_left";
+		else if (this->facing == facings::right)Ani = "to_right";
 
-		if(spritePtr->IsAnimateSpriteAnimationFinished() && direction !="to_static"){
-			spritePtr->AnimateSpritePlayAnimation(temp.c_str(), true);
-			LogManager::Log("state："+direction);
+    } 
+	//___________________________________________________________________
+
+	//动画改变，对动画进行切换
+    if (AniTemp.empty()||AniTemp!=Ani) {
+		AniTemp	 = Ani;
+        spritePtr->AnimateSpritePlayAnimation(Ani.c_str(), false);
+		
+    }
+	//动画不改变，维持动画循环
+	else{
+		if(spritePtr->IsAnimateSpriteAnimationFinished()){
+			spritePtr->AnimateSpritePlayAnimation(Ani.c_str(), true);
+			
 		}
 	}
 }
 //=========================================================================================
 
+
+
+//				渲染音效
+//===========================================================
+void PlayerController::UpdateSound(){
+	static CSound * player;
+
+
+
+	if (this->velocityX!= 0||this->velocityY!=0)
+	{
+		if(player!= this->soundSpritePtr)
+		{
+			this->soundSpritePtr->PlaySoundA();
+			player = this ->soundSpritePtr; 
+			LogManager::Log("[声效]:跑动");
+			LogManager::Log(this->soundSpritePtr->GetName());
+		}
+	}
+	else{
+		this->soundSpritePtr->StopSound();
+		player = nullptr;
+		LogManager::Log("[声效停止]");
+	}
+}
+
+//============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
 //		更新控制器全方面状态
 //================================
 void PlayerController::Update() {
+	UpdateState();
     Render();
 }
 //=====================================
@@ -110,15 +212,19 @@ void PlayerController::Update() {
 
 
 
+
+
+
+
+
 //		负责实时渲染控制器
 //================================
 void PlayerController::Render() {
-	Move();
-    UpdateAnimation();
-    
+    UpdateAnimation();		//动画渲染
+	UpdateSound();			//音效渲染
 }
 //====================================
 
 
 
-PlayerController player(0, 0, 1.0f); // 初始化 player 对象
+PlayerController player(0, 0); // 初始化 player 对象

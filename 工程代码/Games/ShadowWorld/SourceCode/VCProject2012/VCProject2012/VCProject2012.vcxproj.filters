@@ -140,7 +140,7 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\UI.h">
-      <Filter>Resource Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

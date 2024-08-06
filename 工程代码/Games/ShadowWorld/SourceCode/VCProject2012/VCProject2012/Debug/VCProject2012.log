@@ -1,12 +1,12 @@
-﻿生成启动时间为 2024/8/6 10:55:08。
+﻿生成启动时间为 2024/8/6 16:11:28。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
   D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Controller.cpp
   Controller.cpp
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(32): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(35): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(38): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(41): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(33): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(36): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(39): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\controller.cpp(42): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
 Link:
   D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
   Debug\CGameMain.obj
@@ -29,4 +29,4 @@ BscMake:
 
 生成成功。
 
-已用时间 00:00:17.13
+已用时间 00:00:05.89

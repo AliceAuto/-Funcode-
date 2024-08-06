@@ -1,7 +1,7 @@
-//-------------------------- 8/6/2024 -- 10:55:28 -----
+//-------------------------- 8/6/2024 -- 16:11:36 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -112,10 +112,8 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/Shad
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/common/gameScripts/align.cs.
 
 FunCode (v1.7.5) initialized...
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/datablocks.cs...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/datablocks.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/persistent.cs.
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/gui/mainScreen.gui.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/gameScripts/game.cs.
@@ -123,23 +121,6 @@ Activating DirectInput...
 DirectInput joystick failed to enable!
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (to_static)
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

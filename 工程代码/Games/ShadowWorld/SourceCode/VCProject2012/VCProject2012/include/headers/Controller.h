@@ -9,24 +9,57 @@
 
 class PlayerController {
 public:
-    PlayerController(float initialX, float initialY, float speed);
+    PlayerController(float initialX, float initialY);
     ~PlayerController(); // 添加析构函数
+	
 
+	//					为外部系统提供的接口
+	//===================================================
     void ProcessInput(const Event& event); // 处理玩家输入
     void Update(); // 更新角色状态
     void Render(); // 渲染角色
-
+	//=====================================================
 private:
-    CAnimateSprite* spritePtr;
 
-    void Move(); // 移动角色
-    void UpdateAnimation(); // 更新角色动画
+	//				与引擎的接口
+	//============================================
+    CAnimateSprite* spritePtr;		//动画精灵指针
+	CSound * soundSpritePtr;		//音效精灵指针
+	//============================================
 
+
+
+
+	//				系统方法
+	//==========================================
+	void PlayerController::UpdateState();//对基本属性更新
+    void PlayerController::UpdateAnimation(); // 渲染动画
+	void PlayerController::UpdateSound();	//渲染音效
+	//============================================
+
+
+	//				基础属性
+	//==============================================
+	// [世界属性]
     float posX, posY; // 角色当前位置
-    float baseSpeed; // 基础移动速度
-    float velocityX, velocityY; // 角色当前的速度分量
+	float velocityX, velocityY; // 角色当前的速度分量
+
+	// [人物属性]
+
+	
+	//枚举体
+	static enum facings
+	{
+		up,
+		down,
+		left,
+		right
+	};
+	float facing;	//朝向
+    
+	//================================================
 };
 
-extern PlayerController player;
+extern PlayerController player;	//声明在这里,定义放CPP
 
 #endif // CONTROLLER_H
