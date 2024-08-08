@@ -6,7 +6,8 @@
 /////////////////////////////////////////////////////////////////////////////////
 #include <Stdio.h>
 #include "CGameMain.h"
-#include "headers\Controller.h"
+#include "headers\PlayerController.h"
+#include "Setting.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -74,20 +75,39 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 	};
 }
 
-//=============================================================================
-//
-// 每局开始前进行初始化，清空上一局相关数据
+//==============================================================================
 void CGameMain::GameInit()
 {
-	
+    LoadResourcesFromJSON(m_resourceBagPtrs, "resource.json");
+    
+    std::string playerID = m_control_Manager.CreateCharacterController(
+        "Player",
+        0.0f,
+        0.0f,
+        m_resourceBagPtrs["resources1"]
+    );
+
+ 
+	LogManager::Log(playerID);
+   PlayerController* controller = dynamic_cast<PlayerController*>(m_control_Manager.GetCharacterController(playerID));
+if (controller) {
+    eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
+    eventManager.RegisterListener(EventType::MouseInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
+	LogManager::Log("键盘监听绑定成功");
+
+} else {
+    LogManager::Log("键盘监听绑定失败");
 }
-//=============================================================================
-//
-// 每局游戏进行中
-void CGameMain::GameRun( float fDeltaTime )
+}	
+
+//==============================================================================
+void CGameMain::GameRun(float fDeltaTime)
 {
-	player.Update();
+	
+    m_control_Manager.UpdateAllControllers();
+    m_control_Manager.RenderAllControllers();
 }
+
 //=============================================================================
 //
 // 本局游戏结束

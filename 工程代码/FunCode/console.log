@@ -1,7 +1,7 @@
-//-------------------------- 8/6/2024 -- 18:12:30 -----
+//-------------------------- 8/8/2024 -- 20:57:24 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.92 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -452,7 +452,7 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/persistent.cs.
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs.
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
-Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
+Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/mainMenu.t2d.
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
@@ -467,17 +467,8 @@ t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
-t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
 Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.

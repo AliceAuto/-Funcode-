@@ -1,7 +1,6 @@
 
 #ifndef SETTING_H
 #define SETTING_H
-//
 
 /////////////////////////////////////////////////////////////////////////////////
 //
@@ -220,7 +219,6 @@ enum KeyCodes
 	KEY_BUTTON31      = 0x011F,
 	KEY_ANYKEY         = 0xfffe
 };
-
 
 
 

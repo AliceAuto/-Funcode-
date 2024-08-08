@@ -8,6 +8,8 @@ void onMouseInput(const Event& event) {
     std::cout << "Mouse Input: (" << mouseEvent.GetX() << ", " << mouseEvent.GetY() << ")\n";
 }
 
+
+//=======================================================
 void onKeyboardInput(const Event& event) {
     const KeyboardInputEvent& keyboardEvent = static_cast<const KeyboardInputEvent&>(event);
     std::cout << "Keyboard Input: Key=" << keyboardEvent.GetKey() << ", State=" << keyboardEvent.GetState() << "\n";

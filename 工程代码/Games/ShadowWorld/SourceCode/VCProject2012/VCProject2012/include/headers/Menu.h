@@ -5,7 +5,7 @@
 #include <map>
 #include <string>
 #include <cassert>
-
+#include "Logger.h"
 
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -571,6 +571,27 @@ public:
 	//
 	int			GetSpriteColorAlpha();
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // 类：CStaticSprite
@@ -605,6 +626,35 @@ public:
 	//
 	int			GetStaticSpriteFrame();
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // 类：CAnimateSprite
@@ -644,6 +694,29 @@ public:
 	//
 	bool		AnimateSpritePlayAnimation( const char *szAnim, const bool bRestore );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // 类：CTextSprite
@@ -678,6 +751,26 @@ public:
 	//
 	void		SetTextChar( char szChar );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // 类：CEffect
@@ -725,11 +818,23 @@ public:
 	//
 	void		DeleteEffect(); 
 };
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // 类：CSound
 // 播放声音的类，定义一个对象实例，调用播放函数即可实现声音的播放
 // 
+
 class CSound
 {
 private:
@@ -770,12 +875,60 @@ public:
 
 
 
+//===========================================================
+/*
+						衍生类
+*/
+//===========================================================
 
-//这是一个动画管理器，下标引用来放映对应的动画
-//=====================================================================
-
-//=============================================================================
 
 
-//
+//					[x]  按钮类  [x]
+
+
+
+#include "EventDrivenSystem.h"
+#include <unordered_map>
+#include <queue>
+#include <string>
+
+class Button : public CAnimateSprite {
+public:
+    enum ButtonState {
+        Normal,
+        Hover,
+        Clicked
+    };
+
+    Button(const char* szName);
+    ~Button();
+
+    void Update(); // 更新按钮状态
+    void Render(); // 渲染按钮动画和文字
+
+    void HandleEvent(const Event& event); // 处理事件
+    ButtonState GetState() const; // 获取按钮当前状态
+
+    void BindAnimation(ButtonState state, const char* animName);
+    void BindSound(ButtonState state, const char* soundName, bool loop = false, float volume = 1.0f);
+    void SetText(const char* text); // 设置按钮上的文字
+    void SetTextValue(int value); // 设置按钮上的数值文字
+
+private:
+    void UpdateState(const Event& event); // 更新按钮状态
+    void PlayAnimation(); // 播放当前状态的动画
+    void SetState(ButtonState newState); // 设置按钮状态
+
+    ButtonState state; // 当前按钮状态
+    ButtonState prevState; // 上一个按钮状态
+    std::queue<const Event*> eventQueue; // 事件队列
+    std::unordered_map<ButtonState, std::string> animNames; // 动画名称映射
+    std::unordered_map<ButtonState, CSound*> sounds; // 音效映射
+    CTextSprite* textSprite; // 按钮上的文字精灵
+};
+
+
+
+
+
 #endif CSPRITE_H

@@ -120,14 +120,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\CGameMain.cpp" />
-    <ClCompile Include="Src\Controller.cpp" />
+    <ClCompile Include="Src\CharacterController.cpp" />
     <ClCompile Include="Src\CSprite.cpp" />
     <ClCompile Include="Src\CSystem.cpp" />
-    <ClCompile Include="Src\DynamicSwitches.cpp" />
     <ClCompile Include="Src\EventDrivenSystem.cpp" />
     <ClCompile Include="Src\Logger.cpp" />
     <ClCompile Include="Src\Model.cpp" />
+    <ClCompile Include="Src\MonsterController.cpp" />
+    <ClCompile Include="Src\PlayerController.cpp" />
+    <ClCompile Include="Src\ResourceBag.cpp" />
     <ClCompile Include="Src\Setting.cpp" />
+    <ClCompile Include="Src\CharacterControllerManager.cpp" />
+    <ClCompile Include="Src\StateMachine.cpp" />
+    <ClCompile Include="Src\States.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
     <ClCompile Include="Src\View.cpp" />
   </ItemGroup>
@@ -135,32 +140,23 @@
     <ClInclude Include="include\headers\AI.h" />
     <ClInclude Include="include\headers\BagSystem.h" />
     <ClInclude Include="include\headers\CGameMain.h" />
+    <ClInclude Include="include\headers\CharacterController.h" />
     <ClInclude Include="include\headers\Controller.h" />
     <ClInclude Include="include\headers\CSprite.h" />
     <ClInclude Include="include\headers\CSystem.h" />
-    <ClInclude Include="include\headers\DynamicEntity.h" />
-    <ClInclude Include="include\headers\DynamicSwitches.h" />
     <ClInclude Include="include\headers\EC.h" />
-    <ClInclude Include="include\headers\Entity.h" />
     <ClInclude Include="include\headers\EventDrivenSystem.h" />
-    <ClInclude Include="include\headers\Interaction.h" />
-    <ClInclude Include="include\headers\InteractiveBlock.h" />
-    <ClInclude Include="include\headers\InvisiableObject.h" />
     <ClInclude Include="include\headers\Load_Save_Data.h" />
     <ClInclude Include="include\headers\Logger.h" />
-    <ClInclude Include="include\headers\Manager.h" />
-    <ClInclude Include="include\headers\NonEntity.h" />
-    <ClInclude Include="include\headers\NonInteractiveBlock.h" />
-    <ClInclude Include="include\headers\NPC.h" />
-    <ClInclude Include="include\headers\Object.h" />
-    <ClInclude Include="include\headers\PlayerCharacter.h" />
+    <ClInclude Include="include\headers\ResourceBag.h" />
+    <ClInclude Include="include\headers\CharacterControllerManager.h" />
+    <ClInclude Include="include\headers\MonsterController.h" />
+    <ClInclude Include="include\headers\PlayerController.h" />
     <ClInclude Include="include\headers\Setting.h" />
-    <ClInclude Include="include\headers\SimpleFunc.h" />
-    <ClInclude Include="include\headers\StaticEntity.h" />
-    <ClInclude Include="include\headers\System.h" />
+    <ClInclude Include="include\headers\StateMachine.h" />
+    <ClInclude Include="include\headers\States.h" />
     <ClInclude Include="include\headers\Menu.h" />
     <ClInclude Include="include\headers\UI.h" />
-    <ClInclude Include="include\headers\VisiableObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

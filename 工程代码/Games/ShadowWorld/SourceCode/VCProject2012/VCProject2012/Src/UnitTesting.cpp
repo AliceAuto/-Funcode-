@@ -9,7 +9,8 @@
 #include "headers\EventDrivenSystem.h"
 #include "CSystem.h"
 #include "headers\CGameMain.h"
-
+#include "StateMachine.h"
+#include "States.h"
 
 
  // For std::auto_ptr
@@ -32,6 +33,33 @@ int main() {
 *	+	+		+	+ 		+	+	 o   \\ I //   o     +	 +	     +	 +		 +	 +		 +	 +		 +	//
 *	  + 		  +			  +		 o	  \\_//	   o	   +		   +		   +		   +		   +//
 //==========================================================================================================*/
+
+	 StateMachine sm;
+
+
+    // 添加状态
+    sm.AddState("MainMenu", MainMenuState::CreateState());
+    sm.AddState("Game", GameState::CreateState());
+    sm.AddState("Settings", SettingsMenuState::CreateState());
+    sm.AddState("PauseMenu", PauseMenuState::CreateState());
+    sm.AddState("Exit", ExitMenuState::CreateState());
+
+    // 设置当前状态
+    sm.SetCurrentState("MainMenu");
+
+    int userChoice;
+    while (true) {
+        std::cin >> userChoice;
+        sm.Update(userChoice);
+
+        if (sm.GetCurrentStateName() == "Exit") {
+            break;
+        }
+    }
+
+    std::cout << "Exiting program." << std::endl;
+
+
 
 
 
