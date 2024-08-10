@@ -1,16 +1,40 @@
-/////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-/////////////////////////////////////////////////////////////////////////////////
+//====================================================================
+/*
+						游戏框架系统类声明
+*/
+//====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #ifndef _LESSON_X_H_
 #define _LESSON_X_H_
 //
 #include <Windows.h>
 #include "headers\PlayerController.h"
 #include <map>
-#include "CharacterControllerManager.h"
+#include "EntityManager.h"
 /////////////////////////////////////////////////////////////////////////////////
 //
 // 游戏总管类。负责处理游戏主循环、游戏初始化、结束等工作
@@ -18,7 +42,7 @@ class	CGameMain
 {
 private:
 	int				m_iGameState;				// 游戏状态，0：结束或者等待开始；1：初始化；2：游戏进行中
-	CharacterControllerManager m_control_Manager;
+	EntityManager m_control_Manager;
 	std::map <std::string,ResourceBag *> m_resourceBagPtrs;
 
 public:

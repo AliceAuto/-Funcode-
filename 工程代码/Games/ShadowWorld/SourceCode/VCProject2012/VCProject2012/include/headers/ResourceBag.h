@@ -1,3 +1,4 @@
+
 #ifndef RESOURCEBAG_H
 #define RESOURCEBAG_H
 

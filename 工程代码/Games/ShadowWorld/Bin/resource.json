@@ -1,13 +1,3 @@
 {
-    "resources1": 
-        {
-            "running": "running.ogg",
-            "Character": "character"
-        },
-    "resources2": 
-        {
-            "running": "running.ogg",
-            "Character": "character"
-        }
-    
-  }
+    "resources1": {"running":"running.ogg","Character":"character"}
+}

@@ -6,6 +6,36 @@
 #include <string>//						用来强制转化类型为string
 #include "Setting.h"//					会用到里面的一些枚举体
 
+
+
+
+
+//==========================================================================
+/*
+								游戏框架实现
+*/
+//==========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //==========================================================================
 void CSystem::OnMouseMove( const float fMouseX, const float fMouseY )
 {
@@ -25,7 +55,7 @@ void CSystem::OnMouseMove( const float fMouseX, const float fMouseY )
     LogManager::Log("<"+std::to_string(fMouseY)+","+std::to_string(fMouseY)+">");//格式	<fMouseX, fMouseY>
 	*/
 }
-#include "headers\Controller.h"
+
 //==========================================================================
 //
 // 引擎捕捉鼠标点击消息后，将调用到本函数

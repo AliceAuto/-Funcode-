@@ -1,13 +1,35 @@
-/////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-/////////////////////////////////////////////////////////////////////////////////
+
 #include <Stdio.h>
 #include "CGameMain.h"
 #include "headers\PlayerController.h"
 #include "Setting.h"
+#include "Logger.h"
+
+
+
+
+
+//============================================================
+/*
+						游戏框架系统实现
+*/
+//============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -78,34 +100,38 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 //==============================================================================
 void CGameMain::GameInit()
 {
+      // 加载资源
     LoadResourcesFromJSON(m_resourceBagPtrs, "resource.json");
     
-    std::string playerID = m_control_Manager.CreateCharacterController(
+    // 创建并管理 PlayerController 作为一个实体
+    std::string playerID = m_control_Manager.CreateEntity(
         "Player",
         0.0f,
         0.0f,
         m_resourceBagPtrs["resources1"]
     );
 
- 
-	LogManager::Log(playerID);
-   PlayerController* controller = dynamic_cast<PlayerController*>(m_control_Manager.GetCharacterController(playerID));
-if (controller) {
-    eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
-    eventManager.RegisterListener(EventType::MouseInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
-	LogManager::Log("键盘监听绑定成功");
+    LogManager::Log(playerID);
 
-} else {
-    LogManager::Log("键盘监听绑定失败");
-}
+    // 获取并绑定事件
+    Entity* entity = m_control_Manager.GetEntity(playerID);
+    PlayerController* controller = dynamic_cast<PlayerController*>(entity);
+    if (controller) {
+        eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
+        eventManager.RegisterListener(EventType::MouseInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
+        LogManager::Log("键盘监听绑定成功");
+    } else {
+        LogManager::Log("键盘监听绑定失败");
+    }
+
 }	
 
 //==============================================================================
 void CGameMain::GameRun(float fDeltaTime)
 {
 	
-    m_control_Manager.UpdateAllControllers();
-    m_control_Manager.RenderAllControllers();
+    m_control_Manager.UpdateAllEntities();
+
 }
 
 //=============================================================================

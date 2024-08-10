@@ -12,6 +12,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 状态机构造函数
 StateMachine::StateMachine() : currentState_(0) {}
 

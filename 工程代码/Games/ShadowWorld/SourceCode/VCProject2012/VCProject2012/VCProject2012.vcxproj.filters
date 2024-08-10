@@ -62,10 +62,19 @@
     <ClCompile Include="Src\MonsterController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EntityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NonInteractiveObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Src\ResourceBag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\CharacterControllerManager.cpp">
+    <ClCompile Include="Src\ResourceManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -100,9 +109,6 @@
     <ClInclude Include="include\headers\BagSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\Controller.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\Logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -124,10 +130,28 @@
     <ClInclude Include="include\headers\MonsterController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\headers\NonInteractiveObject .h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\EntityManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\TEST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\LoadResourcesFromJSON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\TEST_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="include\headers\ResourceBag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\CharacterControllerManager.h">
+    <ClInclude Include="include\headers\ResourceManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

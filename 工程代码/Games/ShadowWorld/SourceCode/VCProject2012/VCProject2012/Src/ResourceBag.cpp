@@ -3,6 +3,31 @@
 #include <iostream>
 #include <fstream>
 #include <json/json.h>
+			
+
+//==================================================================
+/*
+							资源包实现
+*/
+//==================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ResourceBag::ResourceBag() : running(nullptr), Character(nullptr) {
     LogManager::Log("ResourceBag 默认构造函数被调用。");
@@ -50,9 +75,11 @@ CSound* ResourceBag::GetSoundFromTag(const std::string& tag) {
 }
 
 CAnimateSprite* ResourceBag::GetSpriteFromTag(const std::string& tag) {
-    LogManager::Log("根据标签获取精灵资源: " + tag);
+	static int SpriteCode = 0;
+    LogManager::Log("根据标签获取精灵资源: " + tag+"_"+std::to_string(SpriteCode));
     // 确保 CAnimateSprite 构造函数和参数正确
-    return new CAnimateSprite(tag.c_str()); // 这里只是示例
+	SpriteCode++;
+    return new CAnimateSprite((tag+"_"+std::to_string(SpriteCode)).c_str(),tag.c_str()); // 这里为精灵克隆并附上名称代号(从1开始)
 }
 
 

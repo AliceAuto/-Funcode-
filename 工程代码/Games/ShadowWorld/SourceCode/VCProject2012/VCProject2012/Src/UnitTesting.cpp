@@ -2,18 +2,8 @@
 #ifdef CONSOLE//
 //=============
 
+#include "TEST_2.h"
 
-
-
-#include <iostream>
-#include "headers\EventDrivenSystem.h"
-#include "CSystem.h"
-#include "headers\CGameMain.h"
-#include "StateMachine.h"
-#include "States.h"
-
-
- // For std::auto_ptr
 //===================================================
 //				此文件为单元测试入口			   //
 //===================================================
@@ -34,34 +24,22 @@ int main() {
 *	  + 		  +			  +		 o	  \\_//	   o	   +		   +		   +		   +		   +//
 //==========================================================================================================*/
 
-	 StateMachine sm;
+ // 创建工厂并注册类型
+    SpriteFactory factory;
 
+    factory.registerType("newType", createCAnimateSprite); // ==================== 新添加
 
-    // 添加状态
-    sm.AddState("MainMenu", MainMenuState::CreateState());
-    sm.AddState("Game", GameState::CreateState());
-    sm.AddState("Settings", SettingsMenuState::CreateState());
-    sm.AddState("PauseMenu", PauseMenuState::CreateState());
-    sm.AddState("Exit", ExitMenuState::CreateState());
+    // 创建资源管理器
+    ResourceManager resourceManager(factory);
 
-    // 设置当前状态
-    sm.SetCurrentState("MainMenu");
+    // 从文件解析JSON并创建对象
+    if (resourceManager.loadFromFile("resource.json")) {
+        // 示例代码：获取和使用对象 (如果不需要这些操作，可以删除下面的代码)
+        ResourceManager::Bag& bag1 = resourceManager["bag1"];
+        CAnimateSprite* newObj = dynamic_cast<CAnimateSprite*>(bag1["field2"]);
 
-    int userChoice;
-    while (true) {
-        std::cin >> userChoice;
-        sm.Update(userChoice);
-
-        if (sm.GetCurrentStateName() == "Exit") {
-            break;
-        }
+        // 可以在这里添加处理对象的逻辑 (如果需要)
     }
-
-    std::cout << "Exiting program." << std::endl;
-
-
-
-
 
 /*//==========================================================================================================
 *+			+			+ 		    +o	  //-\\	     o +		   +	        +		    +		    +	   //
