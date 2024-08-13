@@ -233,7 +233,7 @@ $managedDatablockSet = new SimSet() {
       force16Bit = "0";
          canSaveDynamicFields = "1";
    };
-   new t2dImageMapDatablock(upgrade3ImageMap) {
+   new t2dImageMapDatablock(upgrade3ImageMap1) {
       imageName = "~/data/images/upgrade3";
       imageMode = "FULL";
       frameCount = "-1";
@@ -771,5 +771,15 @@ $managedDatablockSet = new SimSet() {
       preload = "1";
       allowUnload = "0";
       force16Bit = "0";
+   };
+   new t2dAnimationDatablock(StartGameButton) {
+      imageMap = "particles1ImageMap";
+      animationFrames = "0 1 2 3";
+      animationTime = "0.133333";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
    };
 };

@@ -8,8 +8,8 @@
 //====================================================================================
 
 // 构造函数
-PlayerController::PlayerController(float initialX, float initialY,ResourceBag* resourceBagPtr)
-    : CharacterController(initialX, initialY, resourceBagPtr) {
+PlayerController::PlayerController(float initialX, float initialY)
+    : CharacterController(initialX, initialY) {
     // 初始化玩家控制器的具体逻辑
 }
 

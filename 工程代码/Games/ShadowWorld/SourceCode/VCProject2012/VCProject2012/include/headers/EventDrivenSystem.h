@@ -2,7 +2,9 @@
 
 #include <unordered_map>
 #include <vector>
-  #include <functional>
+#include <functional>
+#include <algorithm>
+#include <typeinfo>
 
 //======================================================================================
 /*
@@ -158,18 +160,19 @@ private:
 //=================================================================
 class ButtonClickEvent : public Event {
 public:
-    ButtonClickEvent(int buttonId) : buttonName(buttonName) {}
+    ButtonClickEvent(std::string sender) : sender(sender) {}
 
     EventType GetType() const override {
         return EventType::ButtonClick;
     }
 
-    int GetButtonId() const {
-        return buttonName;
+    std::string GetButtonSender() const {
+        return sender;
     }
 
 private:
-    int buttonName;
+	std::string sender;//辨识发送者
+    
 };
 //===========================================================================================
 
@@ -185,22 +188,50 @@ public:
     // 使用 typedef 代替 using 声明
     typedef std::function<void(const Event&)> EventListener;
 
+    // 获取事件管理器的实例
+    static EventManager& Instance() {
+        static EventManager instance;
+        return instance;
+    }
+
     // 注册监听器
     void RegisterListener(EventType type, EventListener listener) {
-        listeners[type].push_back(listener);
+        auto& listenerList = listeners[type];
+        listenerList.push_back(listener);
     }
+
+    // 移除监听器
+    void RemoveListener(EventType type, EventListener listener) {
+     auto it = listeners.find(type);
+    if (it != listeners.end()) {
+        auto& listenerList = it->second;
+
+        for (auto it = listenerList.begin(); it != listenerList.end(); ) {
+            if (it->target<void(*)(const Event&)>() == listener.target<void(*)(const Event&)>()) {
+                it = listenerList.erase(it); // 移除并更新迭代器
+            } else {
+                ++it; // 仅更新迭代器
+            }
+        }
+    }
+}
 
     // 分发事件
     void DispatchEvent(const Event& event) const {
         EventType type = event.GetType();
-        if (listeners.find(type) != listeners.end()) {
-            for (const auto& listener : listeners.at(type)) {
+        auto it = listeners.find(type);
+        if (it != listeners.end()) {
+            for (const auto& listener : it->second) {
                 listener(event);
             }
         }
     }
 
+
+    EventManager() {} // 私有构造函数，防止外部实例化
 private:
+    EventManager(const EventManager&); // 禁用拷贝构造函数
+    EventManager& operator=(const EventManager&); // 禁用赋值操作
     std::unordered_map<EventType, std::vector<EventListener>> listeners;
 };
 //================================================================================================

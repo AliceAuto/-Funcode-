@@ -11,7 +11,7 @@ public:
     ~EntityManager();
 
     // 创建新的 CharacterController 实例
-    std::string CreateEntity(const std::string& type, float initialX, float initialY, ResourceBag* resourceBagPtr);
+    std::string CreateEntity(const std::string& type, float initialX, float initialY);
 
     // 获取指定 ID 的 CharacterController
     Entity * GetEntity(const std::string& id);
@@ -24,7 +24,7 @@ public:
 
 private:
     // 根据控制器类型创建新的控制器实例
-    Entity * CreateEntityInstance(const std::string& type, float initialX, float initialY, ResourceBag* resourceBagPtr);
+    Entity * CreateEntityInstance(const std::string& type, float initialX, float initialY);
 
     std::unordered_map<std::string, Entity *> entities;
     int nextID;

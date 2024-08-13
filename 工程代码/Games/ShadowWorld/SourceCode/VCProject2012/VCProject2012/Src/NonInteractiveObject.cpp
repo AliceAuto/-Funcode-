@@ -2,8 +2,8 @@
 #include "headers\NonInteractiveObject .h"
 
 // 构造函数
-NonInteractiveObject::NonInteractiveObject(float initialX, float initialY,  ResourceBag* resourceBagPtr)
-    : Entity(initialX, initialY, resourceBagPtr) {
+NonInteractiveObject::NonInteractiveObject(float initialX, float initialY)
+    : Entity(initialX, initialY) {
     // 可以在此初始化非交互对象的特有属性
 }
 

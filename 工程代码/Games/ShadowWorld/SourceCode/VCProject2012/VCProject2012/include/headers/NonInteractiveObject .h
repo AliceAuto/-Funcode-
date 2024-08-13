@@ -1,13 +1,25 @@
 #ifndef NONINTERACTIVEOBJECT_H
 #define NONINTERACTIVEOBJECT_H
 
+//严格定义     ==>     非软交互对象
+
+
+
+
+
+
+
+
+
+
+
 #include "Entity.h"
 
 // 非交互对象类声明
 class NonInteractiveObject : public Entity {
 public:
     // 构造函数
-    NonInteractiveObject(float initialX, float initialY,  ResourceBag* resourceBagPtr);
+    NonInteractiveObject(float initialX, float initialY);
 
     // 虚析构函数
     virtual ~NonInteractiveObject();

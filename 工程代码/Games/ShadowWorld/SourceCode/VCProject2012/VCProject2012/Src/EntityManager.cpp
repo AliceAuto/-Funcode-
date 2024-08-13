@@ -14,9 +14,9 @@ EntityManager::~EntityManager()
     entities.clear();
 }
 
-std::string EntityManager::CreateEntity(const std::string& type, float initialX, float initialY, ResourceBag* resourceBagPtr)
+std::string EntityManager::CreateEntity(const std::string& type, float initialX, float initialY)
 {
-    Entity* entity = CreateEntityInstance(type, initialX, initialY, resourceBagPtr);
+    Entity* entity = CreateEntityInstance(type, initialX, initialY);
     if (entity) {
         std::string id = "Entity_" + std::to_string(nextID++);
         entities[id] = entity;
@@ -25,10 +25,10 @@ std::string EntityManager::CreateEntity(const std::string& type, float initialX,
     return "";
 }
 
-Entity* EntityManager:: CreateEntityInstance(const std::string& type, float initialX, float initialY, ResourceBag* resourceBagPtr)
+Entity* EntityManager:: CreateEntityInstance(const std::string& type, float initialX, float initialY)
 {
     if (type == "Player") {
-        return new PlayerController(initialX, initialY, resourceBagPtr);
+        return new PlayerController(initialX, initialY);
     }
     // 可以添加更多的实体类型
     return nullptr;

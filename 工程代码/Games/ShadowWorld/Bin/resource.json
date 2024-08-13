@@ -1,3 +1,16 @@
 {
-    "resources1": {"running":"running.ogg","Character":"character"}
+    "resources1": 
+    {
+        "CAnimateSprite":
+        {"Character":"character"},
+        "CSound":
+        {"running":"running.ogg"}
+    },
+    "StartGameButton": 
+    {
+        "CAnimateSprite":
+        {"ButtonSprite":"StartGameButton"} ,
+        "CSound":
+        {"ButtonSound":"running.ogg"} 
+    }
 }

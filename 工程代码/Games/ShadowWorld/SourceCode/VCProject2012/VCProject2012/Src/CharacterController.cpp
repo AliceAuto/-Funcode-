@@ -1,19 +1,33 @@
 #include "CharacterController.h"
 #include "Logger.h"
 
-CharacterController::CharacterController(float initialX, float initialY, ResourceBag* resourceBagPtr)
-    : Entity(initialX, initialY, resourceBagPtr), facing(Facings::Down) {}
+CharacterController::CharacterController(float initialX, float initialY)
+    : Entity(initialX, initialY), facing(Facings::Down) {
+    // 其他初始化代码
+}
 
-CharacterController::~CharacterController() {}
+CharacterController::~CharacterController() {
+    // 清理代码，如果有需要的话
+}
 
 void CharacterController::UpdateState() {
     // 默认实现，可以被子类重写
-    if (resourceBagPtr != nullptr && resourceBagPtr->Character != nullptr) {
-        resourceBagPtr->Character->SetSpriteLinearVelocityX(velocityX);
-        resourceBagPtr->Character->SetSpriteLinearVelocityY(velocityY);
+	LogManager::Log("状态已更新");
+    CAnimateSprite* AnimatePtr = this ->resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
 
-        posX = resourceBagPtr->Character->GetSpritePositionX();
-        posY = resourceBagPtr->Character->GetSpritePositionY();
+    if (AnimatePtr) {
+        // 成功转换
+    } else {
+        // 转换失败
+        LogManager::Log("动态转换失败，资源类型错误或资源为空。");
+    }
+
+    if (AnimatePtr != nullptr) {
+		
+        AnimatePtr->SetSpriteLinearVelocity(velocityX, velocityY);LogManager::Log(std::to_string(AnimatePtr->GetSpriteLinearVelocityX()));
+		LogManager::Log(std::to_string(posX)+std::to_string(posY));
+        posX = AnimatePtr->GetSpritePositionX();
+        posY = AnimatePtr->GetSpritePositionY();
 
         if (velocityX == 0 && velocityY > 0) {
             facing = Facings::Down;
@@ -25,14 +39,17 @@ void CharacterController::UpdateState() {
             facing = Facings::Left;
         }
     } else {
-        LogManager::Log("资源指针为空");
+        LogManager::Log("资源指针为空：UpdateState");
     }
 }
 
 void CharacterController::UpdateAnimation() {
     // 默认实现，可以被子类重写
+	
+    CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
     static std::string currentAnimation;
-    if (resourceBagPtr == nullptr || resourceBagPtr->Character == nullptr) return;
+    
+    if (AnimatePtr == nullptr) return;
 
     std::string ani;
     if (velocityX == 0 && velocityY > 0) {
@@ -45,26 +62,32 @@ void CharacterController::UpdateAnimation() {
         ani = "to_left";
     }
 
-    if (currentAnimation != ani && resourceBagPtr != nullptr && resourceBagPtr->Character != nullptr) {
-        resourceBagPtr->Character->AnimateSpritePlayAnimation(ani.c_str(), false);
+    if (currentAnimation != ani && AnimatePtr != nullptr) {
+		LogManager::Log("动画已更换");
+        AnimatePtr->AnimateSpritePlayAnimation(ani.c_str(), false);
         currentAnimation = ani;
-    } else if (resourceBagPtr != nullptr && resourceBagPtr->Character != nullptr && resourceBagPtr->Character->IsAnimateSpriteAnimationFinished()) {
-        resourceBagPtr->Character->AnimateSpritePlayAnimation(ani.c_str(), true);
-        LogManager::Log("动画停止");
+    } else if (resourceBagPtr != nullptr && AnimatePtr != nullptr && AnimatePtr->IsAnimateSpriteAnimationFinished()) {
+		LogManager::Log("动画已更新====");
+        AnimatePtr->AnimateSpritePlayAnimation(ani.c_str(), true);
+		
     }
 }
 
 void CharacterController::UpdateSound() {
-    // 默认实现，可以被子类重写
+    // 默认实现，可以被子类重写 
+	LogManager::Log("声音已更新");
+    CSound* SoundPtr = resourceBagPtr->GetResource<CSound>("running").get();
     static std::string currentSound;
+ 
     if ((velocityX != 0 || velocityY != 0)) {
-        if (resourceBagPtr != nullptr && resourceBagPtr->running != nullptr && currentSound != resourceBagPtr->running->GetName()) {
-            resourceBagPtr->running->PlaySound();
-            currentSound = resourceBagPtr->running->GetName();
+        if (resourceBagPtr != nullptr && SoundPtr != nullptr && currentSound != SoundPtr->GetName()) {
+            SoundPtr->PlaySound();
+            currentSound = SoundPtr->GetName();
+			
         }
     } else {
         if (currentSound != "") {
-            resourceBagPtr->running->StopSound();
+            SoundPtr->StopSound();
             currentSound = "";
         }
     }

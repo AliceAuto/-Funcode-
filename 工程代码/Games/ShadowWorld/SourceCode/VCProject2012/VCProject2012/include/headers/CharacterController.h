@@ -1,11 +1,21 @@
 #ifndef CHARACTERCONTROLLER_H
 #define CHARACTERCONTROLLER_H
 
+// 严格定义    ==>     可以软交互的对象
+
+
+
+
+
+
+
+
+#include "EventDrivenSystem.h"
 #include "Entity.h"
 
 class CharacterController : public Entity {
 public:
-    CharacterController(float initialX, float initialY,  ResourceBag* resourceBagPtr);
+    CharacterController(float initialX, float initialY);
     virtual ~CharacterController(); // 虚析构函数
 
     // 处理输入（虚函数）

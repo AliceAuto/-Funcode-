@@ -1,25 +1,39 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
+
+//严格定义:   ==>   一切可见的对象
+
+
+
+
+
+
+
+
+
+
+
+
 #include <string>
 #include "ResourceBag.h"
 
 class Entity {
 public:
-    Entity(float initialX, float initialY,  ResourceBag * resourceBagPtr);
+    Entity(float initialX, float initialY);
     virtual ~Entity(); // 虚析构函数
 
     // 公共接口
-    void Update(); // 禁止子类重写的模板方法
-
-    // 资源管理接口
-    void LoadResources(ResourceBag * resourceBagPtr);
+    void Update(); // 更新实体状态
 
     // 物理属性接口
     float GetPosX() const;
     float GetPosY() const;
     float GetVelocityX() const;
     float GetVelocityY() const;
+
+    // 公开 ResourceBag 以便直接操作
+    ResourceBag* resourceBagPtr;
 
 protected:
     // 需要子类实现的虚函数
@@ -31,10 +45,12 @@ protected:
     void SetPosition(float x, float y);
     void SetVelocity(float vx, float vy);
 
+
+
+
     // 内部成员变量
     float posX, posY;
     float velocityX, velocityY;
-    ResourceBag * resourceBagPtr;
 };
 
 #endif // ENTITY_H

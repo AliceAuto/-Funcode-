@@ -74,7 +74,7 @@
     <ClCompile Include="Src\ResourceBag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\ResourceManager.cpp">
+    <ClCompile Include="Src\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,9 +95,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\EventDrivenSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\Load_Save_Data.h">
@@ -142,16 +139,13 @@
     <ClInclude Include="include\headers\TEST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\LoadResourcesFromJSON.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\TEST_2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\ResourceBag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\ResourceManager.h">
+    <ClInclude Include="include\headers\Container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

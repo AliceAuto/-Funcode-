@@ -44,7 +44,7 @@
 
 class MonsterController : public CharacterController {
 public:
-    MonsterController(float initialX, float initialY, ResourceBag * resourceBagPtr);
+    MonsterController(float initialX, float initialY );
     ~MonsterController();
 
 

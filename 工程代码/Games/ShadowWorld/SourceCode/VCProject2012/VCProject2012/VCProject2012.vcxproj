@@ -131,7 +131,7 @@
     <ClCompile Include="Src\NonInteractiveObject.cpp" />
     <ClCompile Include="Src\PlayerController.cpp" />
     <ClCompile Include="Src\ResourceBag.cpp" />
-    <ClCompile Include="Src\ResourceManager.cpp" />
+    <ClCompile Include="Src\Button.cpp" />
     <ClCompile Include="Src\Setting.cpp" />
     <ClCompile Include="Src\EntityManager.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
@@ -149,7 +149,6 @@
     <ClInclude Include="include\headers\EC.h" />
     <ClInclude Include="include\headers\Entity.h" />
     <ClInclude Include="include\headers\EventDrivenSystem.h" />
-    <ClInclude Include="include\headers\LoadResourcesFromJSON.h" />
     <ClInclude Include="include\headers\Load_Save_Data.h" />
     <ClInclude Include="include\headers\Logger.h" />
     <ClInclude Include="include\headers\NonInteractiveObject .h" />
@@ -157,13 +156,12 @@
     <ClInclude Include="include\headers\EntityManager.h" />
     <ClInclude Include="include\headers\MonsterController.h" />
     <ClInclude Include="include\headers\PlayerController.h" />
-    <ClInclude Include="include\headers\ResourceManager.h" />
+    <ClInclude Include="include\headers\Button.h" />
     <ClInclude Include="include\headers\Setting.h" />
     <ClInclude Include="include\headers\StateMachine.h" />
     <ClInclude Include="include\headers\States.h" />
-    <ClInclude Include="include\headers\Menu.h" />
     <ClInclude Include="include\headers\TEST.h" />
-    <ClInclude Include="include\headers\TEST_2.h" />
+    <ClInclude Include="include\headers\Container.h" />
     <ClInclude Include="include\headers\UI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

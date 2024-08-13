@@ -11,7 +11,7 @@
 
 class PlayerController : public CharacterController {
 public:
-    PlayerController(float initialX, float initialY,  ResourceBag* resourceBagPtr);
+    PlayerController(float initialX, float initialY);
     ~PlayerController() override;
 
 };

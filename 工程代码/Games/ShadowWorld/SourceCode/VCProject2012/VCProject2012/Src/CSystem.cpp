@@ -41,7 +41,13 @@ void CSystem::OnMouseMove( const float fMouseX, const float fMouseY )
 {
 	// 可以在此添加游戏需要的响应函数
 	g_GameMain.OnMouseMove(fMouseX, fMouseY);
+	 MouseInputEvent mouseEvent(fMouseX, fMouseY, false, false, false);
+    
+    // 分发事件
+    eventManager.DispatchEvent(mouseEvent);
 
+    // 日志记录
+    LogManager::Log("鼠标移动: (" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
 	/*
 	// 创建事件并分发
     MouseInputEvent mouseEvent(fMouseX, fMouseY);		//分发	鼠标移动事件 <fMouseX, fMouseY>
@@ -66,6 +72,18 @@ void CSystem::OnMouseClick( const int iMouseType, const float fMouseX, const flo
 {
 	// 可以在此添加游戏需要的响应函数
 	g_GameMain.OnMouseClick(iMouseType, fMouseX, fMouseY);
+	 bool isLeftPressed = (iMouseType == 0);
+    bool isMiddlePressed = (iMouseType == 1);
+    bool isRightPressed = (iMouseType == 2);
+
+    // 创建鼠标点击事件
+    MouseInputEvent mouseEvent(fMouseX, fMouseY, isLeftPressed, isMiddlePressed, isRightPressed);
+    
+    // 分发事件
+    eventManager.DispatchEvent(mouseEvent);
+
+    // 日志记录
+    LogManager::Log("鼠标点击: 类型=" + std::to_string(iMouseType) + " 坐标=(" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
 }
 //==========================================================================
 //

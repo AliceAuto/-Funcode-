@@ -4,8 +4,8 @@
 #include "headers\PlayerController.h"
 #include "Setting.h"
 #include "Logger.h"
-
-
+#include "headers\States.h"
+#include "headers\StateMachine.h"
 
 
 
@@ -101,36 +101,24 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 void CGameMain::GameInit()
 {
       // 加载资源
-    LoadResourcesFromJSON(m_resourceBagPtrs, "resource.json");
-    
-    // 创建并管理 PlayerController 作为一个实体
-    std::string playerID = m_control_Manager.CreateEntity(
-        "Player",
-        0.0f,
-        0.0f,
-        m_resourceBagPtrs["resources1"]
-    );
 
-    LogManager::Log(playerID);
-
-    // 获取并绑定事件
-    Entity* entity = m_control_Manager.GetEntity(playerID);
-    PlayerController* controller = dynamic_cast<PlayerController*>(entity);
-    if (controller) {
-        eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
-        eventManager.RegisterListener(EventType::MouseInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
-        LogManager::Log("键盘监听绑定成功");
-    } else {
-        LogManager::Log("键盘监听绑定失败");
-    }
+	 stateMachine = new StateMachine;
+    // 添加状态
+    stateMachine->AddState("MainMenu", std::unique_ptr<MainMenuState>(new MainMenuState()));
+    stateMachine->AddState("Game", std::unique_ptr<GameState>(new GameState()));
+    stateMachine->AddState("Settings", std::unique_ptr<SettingsMenuState>(new SettingsMenuState()));
+    stateMachine->AddState("PauseMenu", std::unique_ptr<PauseMenuState>(new PauseMenuState()));
+    stateMachine->AddState("Exit", std::unique_ptr<ExitMenuState>(new ExitMenuState()));
+    stateMachine->AddState("HighScore", std::unique_ptr<HighScoreState>(new HighScoreState()));
+    stateMachine->SetCurrentState("MainMenu");
 
 }	
 
 //==============================================================================
 void CGameMain::GameRun(float fDeltaTime)
 {
-	
-    m_control_Manager.UpdateAllEntities();
+
+  stateMachine->RefreshState();
 
 }
 

@@ -1,122 +1,114 @@
 #ifndef STATES_H
 #define STATES_H
 
+#include <string>
 #include "StateMachine.h"
-
-//============================================================
-/*
-					对状态接口类的拓展类
-*/
-//============================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#include "EventDrivenSystem.h"
+#include "Logger.h"
+#include "CSystem.h"
+#include "Button.h"
+#include "EntityManager.h"
 // 主菜单状态
 class MainMenuState : public State {
 public:
+
     MainMenuState();
-	~MainMenuState()override;
+    ~MainMenuState();
     void Enter() override;
     void Exit() override;
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
+    void HandleMouseInput(const MouseInputEvent& event) override;
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
+	void Refresh() override;
+	
 
-    static State* CreateState();
+	
+
+protected:
+    State* CreateState() const override;
+	EntityManager * m_control_Manager;
+	ButtonManager  * buttonManager;
 };
-
-
-
-
-
 
 // 游戏状态
 class GameState : public State {
 public:
     GameState();
-
+    ~GameState();
     void Enter() override;
     void Exit() override;
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
+    void HandleMouseInput(const MouseInputEvent& event) override;
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
-    static State* CreateState();
+protected:
+    State* CreateState() const override;
 };
-
-
-
-
-
 
 // 设置菜单状态
 class SettingsMenuState : public State {
 public:
     SettingsMenuState();
-
+    ~SettingsMenuState();
     void Enter() override;
     void Exit() override;
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
+    void HandleMouseInput(const MouseInputEvent& event) override;
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
-    static State* CreateState();
+protected:
+    State* CreateState() const override;
 };
-
-
-
-
-
 
 // 暂停菜单状态
 class PauseMenuState : public State {
 public:
     PauseMenuState();
-
+    ~PauseMenuState();
     void Enter() override;
     void Exit() override;
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
+    void HandleMouseInput(const MouseInputEvent& event) override;
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
-    static State* CreateState();
+protected:
+    State* CreateState() const override;
 };
-
-
-
-
 
 // 退出菜单状态
 class ExitMenuState : public State {
 public:
     ExitMenuState();
-
+    ~ExitMenuState();
     void Enter() override;
     void Exit() override;
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
+    void HandleMouseInput(const MouseInputEvent& event) override;
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
-    static State* CreateState();
+protected:
+    State* CreateState() const override;
 };
 
+// 高分状态
+class HighScoreState : public State {
+public:
+    HighScoreState();
+    ~HighScoreState();
+    void Enter() override;
+    void Exit() override;
+    void Update(int userChoice) override;
+    std::string GetNextState(int userChoice) override;
+    void HandleMouseInput(const MouseInputEvent& event) override;
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
+protected:
+    State* CreateState() const override;
+};
 
 #endif // STATES_H
