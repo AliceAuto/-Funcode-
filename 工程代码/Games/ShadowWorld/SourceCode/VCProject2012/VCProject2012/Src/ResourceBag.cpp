@@ -47,6 +47,7 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
                     LogManager::Log("信息: 创建动画, ID: " + id + ", 资源名称: " + resourceName);
                     auto sprite = std::make_shared<CAnimateSprite>(id.c_str(), resourceName.c_str());
                     sprite->SetSpritePosition(0, 0);
+
                     if(sprite)AddResource(name, sprite);
                 }
             } else if (typeName == "CSound") {

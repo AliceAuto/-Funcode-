@@ -1,7 +1,7 @@
-//-------------------------- 8/14/2024 -- 00:02:41 -----
+//-------------------------- 8/14/2024 -- 11:31:09 -----
 Processor Init:
-   Intel Pentium III, ~2.87 Ghz
-     (timed at roughly 2.88 Ghz)
+   Intel Pentium III, ~2.90 Ghz
+     (timed at roughly 2.91 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -124,6 +124,8 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/Shad
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/untitled.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/untitled.t2d.
 t2dSceneGraph::addToScene() - Object '1348' is already in a SceneGraph!.
+DirectInput deactivated.
+Activating DirectInput...
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

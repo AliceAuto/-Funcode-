@@ -1,8 +1,34 @@
-﻿生成启动时间为 2024/8/13 23:43:23。
+﻿生成启动时间为 2024/8/14 11:30:59。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\CharacterController.cpp Src\States.cpp
-  States.cpp
+  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\CharacterController.cpp Src\ResourceBag.cpp
+  ResourceBag.cpp
+d:\vs012\vc\include\memory(873): warning C4800: “float”: 将值强制为布尔值“true”或“false”(性能警告)
+          d:\vs012\vc\include\memory(972): 参见对正在编译的函数 模板 实例化“std::_Ref_count_obj<_Ty>::_Ref_count_obj<const char,float,float>(_V0_t &&,_V1_t &&,_V2_t &&)”的引用
+          with
+          [
+              _Ty=CSound,
+              _V0_t=const char *,
+              _V1_t=float,
+              _V2_t=float
+          ]
+          d:\vs012\vc\include\memory(972): 参见对正在编译的函数 模板 实例化“std::_Ref_count_obj<_Ty>::_Ref_count_obj<const char,float,float>(_V0_t &&,_V1_t &&,_V2_t &&)”的引用
+          with
+          [
+              _Ty=CSound,
+              _V0_t=const char *,
+              _V1_t=float,
+              _V2_t=float
+          ]
+          c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\resourcebag.cpp(58): 参见对正在编译的函数 模板 实例化“std::shared_ptr<_Ty> std::make_shared<CSound,const _Elem*,float,float>(_V0_t &&,_V1_t &&,_V2_t &&)”的引用
+          with
+          [
+              _Ty=CSound,
+              _Elem=char,
+              _V0_t=const char *,
+              _V1_t=float,
+              _V2_t=float
+          ]
   CharacterController.cpp
   正在生成代码...
 Link:
@@ -35,4 +61,4 @@ BscMake:
 
 生成成功。
 
-已用时间 00:00:09.21
+已用时间 00:00:08.27

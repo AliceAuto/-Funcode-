@@ -13,9 +13,10 @@ CharacterController::~CharacterController() {
 void CharacterController::UpdateState() {
     // 默认实现，可以被子类重写
 	LogManager::Log("状态已更新");
-    CAnimateSprite* AnimatePtr = this ->resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
+    CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
 
     if (AnimatePtr) {
+		LogManager::Log("DSADADA");
         // 成功转换
     } else {
         // 转换失败
@@ -25,7 +26,7 @@ void CharacterController::UpdateState() {
     if (AnimatePtr != nullptr) {
 		
         AnimatePtr->SetSpriteLinearVelocity(velocityX, velocityY);LogManager::Log(std::to_string(AnimatePtr->GetSpriteLinearVelocityX()));
-		LogManager::Log(std::to_string(posX)+std::to_string(posY));
+		LogManager::Log(AnimatePtr->GetName());
         posX = AnimatePtr->GetSpritePositionX();
         posY = AnimatePtr->GetSpritePositionY();
 
