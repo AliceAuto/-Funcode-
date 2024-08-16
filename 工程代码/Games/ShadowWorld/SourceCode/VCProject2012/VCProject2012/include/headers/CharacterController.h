@@ -17,7 +17,7 @@ class CharacterController : public Entity {
 public:
     CharacterController(float initialX, float initialY);
     virtual ~CharacterController(); // 虚析构函数
-
+	void Init (const std::string & bag) override;
     // 处理输入（虚函数）
     virtual void ProcessInput(const Event& event);
 
@@ -26,7 +26,8 @@ protected:
     virtual void UpdateState() override;
     virtual void UpdateAnimation() override;
     virtual void UpdateSound() override;
-
+	float forceX,forceY;
+	float mess;
     // 角色特有属性
     enum Facings { Up, Down, Left, Right };
     Facings facing;

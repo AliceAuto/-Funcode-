@@ -1,11 +1,24 @@
 #include "CharacterController.h"
 #include "Logger.h"
-
+#include <cmath>
 CharacterController::CharacterController(float initialX, float initialY)
-    : Entity(initialX, initialY), facing(Facings::Down) {
+    : Entity(initialX, initialY), facing(Facings::Down),forceX(0),forceY(0) {
+
+
+
     // 其他初始化代码
 }
-
+void CharacterController::Init(const std::string & bag){
+	//对物理人物进行初始化
+	this->resourceBagPtr->LoadFromJson(bag);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpritePosition(0,0);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteMass(100);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteAtRest(false);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteInertialMoment(100);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteAutoMassInertia(true);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteMaxLinearVelocity(30);
+	mess = this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->GetSpriteMass();
+}
 CharacterController::~CharacterController() {
     // 清理代码，如果有需要的话
 }
@@ -16,7 +29,7 @@ void CharacterController::UpdateState() {
     CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
 
     if (AnimatePtr) {
-		LogManager::Log("DSADADA");
+
         // 成功转换
     } else {
         // 转换失败
@@ -24,11 +37,40 @@ void CharacterController::UpdateState() {
     }
 
     if (AnimatePtr != nullptr) {
-		
-        AnimatePtr->SetSpriteLinearVelocity(velocityX, velocityY);LogManager::Log(std::to_string(AnimatePtr->GetSpriteLinearVelocityX()));
-		LogManager::Log(AnimatePtr->GetName());
-        posX = AnimatePtr->GetSpritePositionX();
-        posY = AnimatePtr->GetSpritePositionY();
+		// 初始化摩擦力
+       // 初始化摩擦力
+    static const float frictionCoefficient = 40; // 摩擦系数，根据需要调整
+    static const float velocityThreshold = 1; // 速度阈值，小于此值将速度设为零
+
+    // 更新速度
+    velocityX = AnimatePtr->GetSpriteLinearVelocityX();
+    velocityY = AnimatePtr->GetSpriteLinearVelocityY();
+
+    // 计算摩擦力
+    float frictionForceX = 0;
+    float frictionForceY = 0;
+
+    if (std::abs(velocityX) > velocityThreshold) {
+        frictionForceX = -frictionCoefficient * mess*(velocityX/std::abs(velocityX));
+    }
+    if (std::abs(velocityY) > velocityThreshold) {
+        frictionForceY = -frictionCoefficient * mess* (velocityY/std::abs(velocityY));
+    }
+
+    // 将摩擦力和外力应用到角色上
+    AnimatePtr->SetSpriteConstantForce(forceX + frictionForceX, forceY + frictionForceY, false);
+
+    // 如果速度低于阈值，直接将速度设为零
+    if (std::abs(velocityX) < velocityThreshold) {
+        AnimatePtr->SetSpriteLinearVelocityX(0);
+    }
+    if (std::abs(velocityY) < velocityThreshold) {
+        AnimatePtr->SetSpriteLinearVelocityY(0);
+    }
+
+    // 更新位置
+    posX = AnimatePtr->GetSpritePositionX();
+    posY = AnimatePtr->GetSpritePositionY();
 
         if (velocityX == 0 && velocityY > 0) {
             facing = Facings::Down;
@@ -68,7 +110,7 @@ void CharacterController::UpdateAnimation() {
         AnimatePtr->AnimateSpritePlayAnimation(ani.c_str(), false);
         currentAnimation = ani;
     } else if (resourceBagPtr != nullptr && AnimatePtr != nullptr && AnimatePtr->IsAnimateSpriteAnimationFinished()) {
-		LogManager::Log("动画已更新====");
+		LogManager::Log("动画已更新");
         AnimatePtr->AnimateSpritePlayAnimation(ani.c_str(), true);
 		
     }
@@ -102,16 +144,20 @@ void CharacterController::ProcessInput(const Event& event) {
         if (keyEvent.GetState() == KeyboardInputEvent::State::KEY_ON) {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
-                    velocityY = -10;
+                    forceY = -13000;
                     break;
                 case KeyCodes::KEY_S:
-                    velocityY = 10;
+                    forceY = 13000;
                     break;
                 case KeyCodes::KEY_A:
-                    velocityX = -10;
+                    forceX =-13000;
                     break;
                 case KeyCodes::KEY_D:
-                    velocityX = 10;
+                    forceX = 13000;
+                    break;
+				case KeyCodes::KEY_CAPSLOCK:
+                    forceX *=3;
+					forceY *=3;
                     break;
                 default:
                     break;
@@ -119,17 +165,25 @@ void CharacterController::ProcessInput(const Event& event) {
         } else {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
+					forceY = 0;
+                    break;
                 case KeyCodes::KEY_S:
-                    velocityY = 0;
+                    forceY = 0;
                     break;
                 case KeyCodes::KEY_A:
+					forceX = 0;
+                    break;
                 case KeyCodes::KEY_D:
-                    velocityX = 0;
+                    forceX = 0;
+                    break;
+				case KeyCodes::KEY_CAPSLOCK:
+                    forceX /=3;
+					forceY /=3;
                     break;
                 default:
                     break;
             }
         }
     }
-    LogManager::Log("< " + std::to_string(velocityX) + "," + std::to_string(velocityY) + ">");
+  
 }

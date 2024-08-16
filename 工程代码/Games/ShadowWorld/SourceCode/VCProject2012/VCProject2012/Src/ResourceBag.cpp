@@ -43,7 +43,7 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
             if (typeName == "CAnimateSprite") {
                 for (const auto& name : resourceInfo.getMemberNames()) {
                     std::string resourceName = resourceInfo[name].asString();
-                    std::string id = std::to_string(++IdCounter);
+                    std::string id = "ID_"+std::to_string(++IdCounter);
                     LogManager::Log("信息: 创建动画, ID: " + id + ", 资源名称: " + resourceName);
                     auto sprite = std::make_shared<CAnimateSprite>(id.c_str(), resourceName.c_str());
                     sprite->SetSpritePosition(0, 0);
@@ -53,7 +53,7 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
             } else if (typeName == "CSound") {
                 for (const auto& name : resourceInfo.getMemberNames()) {
                     std::string resourceName = resourceInfo[name].asString();
-                    std::string id = std::to_string(++IdCounter);
+                    std::string id = "ID_"+std::to_string(++IdCounter);
                     LogManager::Log("信息: 创建音效, ID: " + id + ", 资源名称: " + resourceName);
                     auto sound = std::make_shared<CSound>(resourceName.c_str(), static_cast<float>(1), static_cast<float>(1));
 					if (sound)AddResource(name, sound);
@@ -69,4 +69,5 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
         LogManager::Log("错误: " + std::string(e.what()));
         return false;
     }
+
 }

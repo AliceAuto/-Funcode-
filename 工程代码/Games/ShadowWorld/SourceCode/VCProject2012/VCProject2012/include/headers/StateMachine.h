@@ -16,10 +16,9 @@ public:
     // 状态管理接口
     virtual void Enter() = 0;               // 状态入口
     virtual void Exit() = 0;                // 状态出口
-    virtual void Update(int userChoice) = 0; // 状态更新逻辑
-    virtual void Refresh() {}
+  
+    virtual void Update() =0;
 
-    virtual std::string GetNextState(int userChoice) = 0; // 获取下一个状态
 
     // 事件处理接口
     virtual void HandleMouseInput(const MouseInputEvent& event) {}
@@ -30,8 +29,8 @@ protected:
     virtual State* CreateState() const = 0;
 
     // 注册和取消事件监听
-    virtual void RegisterEventListeners() {}
-    virtual void UnregisterEventListeners() {}
+    virtual void RegisterEventListeners() {};
+    virtual void UnregisterEventListeners() {};
 };
 
 // 状态机类
@@ -43,13 +42,13 @@ public:
     // 添加状态，直接传递状态对象
     void AddState(const std::string& name, std::unique_ptr<State> state);
 
-    void Update(int userChoice);  // 更新状态机当前状态
+    void ToNextState(const std::string & stateName);  // 更新状态机当前状态
 
     // (调试) 外部接口
     void SetCurrentState(const std::string& name); // 设置状态机当前的状态
     std::string GetCurrentStateName() const;       // 查询当前状态的名称
     State* GetState(const std::string& name) const; // 获取状态对象指针
-    void RefreshState();
+    void Update();
 
 private:
     std::map<std::string, std::unique_ptr<State>> states_; // 存储所有状态

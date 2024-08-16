@@ -44,7 +44,6 @@ void ResourceBag::AddResource(const std::string& name, std::shared_ptr<T> resour
 
 template <typename T>
 std::shared_ptr<T> ResourceBag::GetResource(const std::string& name) const {
-    LogManager::Log("INFO: 从 ResourceBag 获取资源: " + name);
     auto it = container_.find(name);
     if (it != container_.end()) {
         return std::static_pointer_cast<T>(it->second);

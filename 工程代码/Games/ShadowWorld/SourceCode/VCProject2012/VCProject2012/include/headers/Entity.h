@@ -25,7 +25,7 @@ public:
 
     // 公共接口
     void Update(); // 更新实体状态
-
+	virtual void Init(const std::string & bag){}
     // 物理属性接口
     float GetPosX() const;
     float GetPosY() const;

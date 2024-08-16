@@ -10,14 +10,24 @@ Button::Button(const std::string& label, ResourceBag* resourceBag)
 
 void Button::HandleMouseEvent(const MouseInputEvent& event) {
 	LogManager::Log("按钮:"+this->GetLabel()+"  捕获鼠标输入");
-    bool isMouseCurrentlyOver = this->resourceBagPtr->GetResource<CAnimateSprite>("ButtonSprite").get()->IsPointInSprite(event.GetX(),event.GetY());
-	LogManager::Log(std::to_string(isMouseCurrentlyOver));
+    bool isMouseCurrentlyOver = this->resourceBagPtr->GetResource<CSprite>("ButtonSprite").get()->IsPointInSprite(event.GetX(),event.GetY());
+	LogManager::Log("                                                              "+std::to_string(isMouseCurrentlyOver)+","+std::to_string(event.IsLeftPressed()));
+
     if (event.IsLeftPressed() && isMouseCurrentlyOver) {
         if (!isClicked) {
             isClicked = true;
             LogManager::Log("按钮点击: " + label_);
             UpdateAnimation();
             UpdateSound();
+			ButtonClickEvent buttonEvent("开始游戏");
+    
+			// 分发事件
+			eventManager.DispatchEvent(buttonEvent);
+
+
+
+
+			isClicked = false;
         }
     } else {
         isClicked = false;
@@ -35,17 +45,19 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
 }
 
 void Button::UpdateAnimation() {
+
     CAnimateSprite* sprite = resourceBagPtr->GetResource<CAnimateSprite>("ButtonSprite").get();
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
-            sprite->AnimateSpritePlayAnimation("clicked", false);
+            sprite->AnimateSpritePlayAnimation("clicked1", true);
         } else if (isMouseOver) {
             sprite->AnimateSpritePlayAnimation("hover", false);
         } else {
-            sprite->AnimateSpritePlayAnimation("normal", false);
+            sprite->AnimateSpritePlayAnimation("clicked", false);
         }
     }
+
 }
 
 void Button::UpdateSound() {

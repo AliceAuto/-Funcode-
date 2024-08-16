@@ -16,20 +16,20 @@ public:
     ~MainMenuState();
     void Enter() override;
     void Exit() override;
-    void Update(int userChoice) override;
-    std::string GetNextState(int userChoice) override;
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
-	void Refresh() override;
-	
-
-	
-
+    void Update() override;
+    void HandleButtonInput(const ButtonClickEvent& event);
 protected:
+	void RegisterEventListeners() override;
+    void UnregisterEventListeners()override;
     State* CreateState() const override;
 	EntityManager * m_control_Manager;
 	ButtonManager  * buttonManager;
+
 };
+
+
+
+
 
 // ÓÎÏ·×´Ì¬
 class GameState : public State {
@@ -38,8 +38,7 @@ public:
     ~GameState();
     void Enter() override;
     void Exit() override;
-    void Update(int userChoice) override;
-    std::string GetNextState(int userChoice) override;
+    void Update() override;
     void HandleMouseInput(const MouseInputEvent& event) override;
     void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
@@ -54,8 +53,7 @@ public:
     ~SettingsMenuState();
     void Enter() override;
     void Exit() override;
-    void Update(int userChoice) override;
-    std::string GetNextState(int userChoice) override;
+    void Update() override;
     void HandleMouseInput(const MouseInputEvent& event) override;
     void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
@@ -70,8 +68,7 @@ public:
     ~PauseMenuState();
     void Enter() override;
     void Exit() override;
-    void Update(int userChoice) override;
-    std::string GetNextState(int userChoice) override;
+    void Update() override;
     void HandleMouseInput(const MouseInputEvent& event) override;
     void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
@@ -86,8 +83,8 @@ public:
     ~ExitMenuState();
     void Enter() override;
     void Exit() override;
-    void Update(int userChoice) override;
-    std::string GetNextState(int userChoice) override;
+    void Update() override;
+ 
     void HandleMouseInput(const MouseInputEvent& event) override;
     void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
@@ -102,8 +99,8 @@ public:
     ~HighScoreState();
     void Enter() override;
     void Exit() override;
-    void Update(int userChoice) override;
-    std::string GetNextState(int userChoice) override;
+    void Update() override;
+ 
     void HandleMouseInput(const MouseInputEvent& event) override;
     void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 

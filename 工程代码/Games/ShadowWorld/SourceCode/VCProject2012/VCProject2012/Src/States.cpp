@@ -8,9 +8,23 @@ MainMenuState::MainMenuState() {
 m_control_Manager = new EntityManager;
  buttonManager = new ButtonManager;}
 MainMenuState::~MainMenuState() {
+		delete m_control_Manager;
+delete buttonManager;
 }
 
+void MainMenuState::RegisterEventListeners() {
+	eventManager.RegisterListener(EventType::ButtonClick, 
+        [this](const Event& event) { this->HandleButtonInput(static_cast<const ButtonClickEvent&>(event)); }
+	);
+}
+void MainMenuState::UnregisterEventListeners(){
+ EventManager::Instance().RemoveListener(EventType::ButtonClick, [this](const Event& event) {
+        const ButtonClickEvent& buttonEvent = static_cast<const ButtonClickEvent&>(event);
+        this->HandleButtonInput(buttonEvent);
+    });
+}
 void MainMenuState::Enter() {
+	
     LogManager::Log("已进入主菜单界面");
     CSystem::LoadMap("untitled.t2d");
     RegisterEventListeners();
@@ -26,66 +40,39 @@ void MainMenuState::Enter() {
     // 获取并绑定事件
     Entity* entity = m_control_Manager->GetEntity(playerID);
     PlayerController* controller = dynamic_cast<PlayerController*>(entity);
-	if(controller)controller->resourceBagPtr->LoadFromJson("resources1");
+	controller->Init("resources1");
 
-    if (controller) {
-        eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
-
-        LogManager::Log("键盘监听绑定成功");
-    } else {
-        LogManager::Log("键盘监听绑定失败");
-    }
 	Button * bptr  = new Button ("开始游戏");
 	bptr->resourceBagPtr->LoadFromJson("StartGameButton");
 	buttonManager->AddButton(bptr);
-	
-
-
-
-
 }
-void MainMenuState::Refresh(){
 
-	m_control_Manager->UpdateAllEntities();
-	buttonManager->Update();
 
-}
+
+
+
 void MainMenuState::Exit() {
     LogManager::Log("已退出主菜单");
-	delete m_control_Manager;
-delete buttonManager;
+
     UnregisterEventListeners();
 }
 
-void MainMenuState::Update(int userChoice) {
+void MainMenuState::Update() {
     // 主菜单的更新逻辑
-	
+	m_control_Manager->UpdateAllEntities();
+	buttonManager->Update();
 }
 
-std::string MainMenuState::GetNextState(int userChoice) {
-    switch (userChoice) {
-        case 1: return "Game";
-        case 2: return "Settings";
-        case 3: return "Exit";
-        case 4: return "PauseMenu";
-        default: return "";
-    }
-}
 
-void MainMenuState::HandleMouseInput(const MouseInputEvent& event) {
+void MainMenuState::HandleButtonInput(const ButtonClickEvent& event){
 	LogManager::Log("鼠标");
-    if (event.IsLeftPressed()) {
-
-        std::string sender = "exampleButton"; // Retrieve button sender from event
-        if (sender == "开始游戏") {
-            std::string nextState = GetNextState(1);
-            // Logic to transition to the next state
-        }
-    }
-}
-
-void MainMenuState::HandleKeyboardInput(const KeyboardInputEvent& event) {
-    // Handle keyboard input for MainMenuState
+	LogManager::Log("Sender: "+event.GetButtonSender());
+    std::string sender = event.GetButtonSender() ;
+	if (sender == "开始游戏"){
+			g_GameMain.stateMachine->ToNextState("Game");
+	}
+       
+        
 }
 
 State* MainMenuState::CreateState() const {
@@ -107,13 +94,10 @@ void GameState::Exit() {
     UnregisterEventListeners();
 }
 
-void GameState::Update(int userChoice) {
+void GameState::Update() {
     // 游戏状态更新逻辑
 }
 
-std::string GameState::GetNextState(int userChoice) {
-    return (userChoice == 0) ? "MainMenu" : "";
-}
 
 void GameState::HandleMouseInput(const MouseInputEvent& event) {
     // Handle mouse input for GameState
@@ -143,13 +127,11 @@ void SettingsMenuState::Exit() {
     UnregisterEventListeners();
 }
 
-void SettingsMenuState::Update(int userChoice) {
+void SettingsMenuState::Update() {
     // 设置菜单更新逻辑
 }
 
-std::string SettingsMenuState::GetNextState(int userChoice) {
-    return (userChoice == 1) ? "MainMenu" : "";
-}
+
 
 void SettingsMenuState::HandleMouseInput(const MouseInputEvent& event) {
     // Handle mouse input for SettingsMenuState
@@ -178,17 +160,10 @@ void PauseMenuState::Exit() {
     UnregisterEventListeners();
 }
 
-void PauseMenuState::Update(int userChoice) {
+void PauseMenuState::Update() {
     // 暂停菜单更新逻辑
 }
 
-std::string PauseMenuState::GetNextState(int userChoice) {
-    switch (userChoice) {
-        case 1: return "MainMenu";
-        case 2: return "Exit";
-        default: return "";
-    }
-}
 
 void PauseMenuState::HandleMouseInput(const MouseInputEvent& event) {
     // Handle mouse input for PauseMenuState
@@ -215,13 +190,10 @@ void ExitMenuState::Exit() {
     // 退出游戏状态清理
 }
 
-void ExitMenuState::Update(int userChoice) {
+void ExitMenuState::Update() {
     // 退出菜单更新逻辑
 }
 
-std::string ExitMenuState::GetNextState(int userChoice) {
-    return "";
-}
 
 void ExitMenuState::HandleMouseInput(const MouseInputEvent& event) {
     // Handle mouse input for ExitMenuState
@@ -250,13 +222,10 @@ void HighScoreState::Exit() {
     UnregisterEventListeners();
 }
 
-void HighScoreState::Update(int userChoice) {
+void HighScoreState::Update() {
     // 高分状态更新逻辑
 }
 
-std::string HighScoreState::GetNextState(int userChoice) {
-    return (userChoice == 1) ? "MainMenu" : "";
-}
 
 void HighScoreState::HandleMouseInput(const MouseInputEvent& event) {
     // Handle mouse input for HighScoreState

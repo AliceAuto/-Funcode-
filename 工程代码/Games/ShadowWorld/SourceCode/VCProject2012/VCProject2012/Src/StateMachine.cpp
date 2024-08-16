@@ -37,12 +37,10 @@ void StateMachine::SetCurrentState(const std::string& name) {
     }
 }
 // 更新状态机
-void StateMachine::Update(int userChoice) {
+void StateMachine:: ToNextState(const std::string & stateName) {
     if (currentState_) {
-        currentState_->Update(userChoice);
-        std::string nextState = currentState_->GetNextState(userChoice);
-        if (!nextState.empty() && nextState != currentStateName_) {
-            SetCurrentState(nextState);
+        if (stateName != currentStateName_) {
+            SetCurrentState(stateName);
         }
     }
 }
@@ -68,9 +66,9 @@ State* StateMachine::GetState(const std::string& name) const {
 }
 
 // 刷新当前状态
-void StateMachine::RefreshState() {
+void StateMachine::Update() {
 
     if (currentState_) {
-        currentState_->Refresh();	LogManager::Log("TAG");
+        currentState_->Update();
     }
 }

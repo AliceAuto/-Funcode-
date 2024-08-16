@@ -782,4 +782,33 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
+   new t2dAnimationDatablock(clicked) {
+      imageMap = "debris2ImageMap";
+      animationFrames = "0 1 2 3";
+      animationTime = "0.133333";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(clicked1) {
+      imageMap = "particles6ImageMap";
+      animationFrames = "0 1 2 3";
+      animationTime = "0.133333";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(hover) {
+      imageMap = "particles1ImageMap";
+      animationTime = "1";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
 };
