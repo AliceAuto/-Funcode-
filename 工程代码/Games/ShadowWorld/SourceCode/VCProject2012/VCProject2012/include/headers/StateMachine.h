@@ -7,7 +7,7 @@
 #include <string>
 #include "EventDrivenSystem.h"
 #include "Logger.h"
-
+#include "CollisionManager.h"
 // 状态接口
 class State {
 public:
@@ -23,7 +23,7 @@ public:
     // 事件处理接口
     virtual void HandleMouseInput(const MouseInputEvent& event) {}
     virtual void HandleKeyboardInput(const KeyboardInputEvent& event) {}
-
+	
 protected:
     // 工厂方法，创建状态实例
     virtual State* CreateState() const = 0;
@@ -50,7 +50,7 @@ public:
     State* GetState(const std::string& name) const; // 获取状态对象指针
     void Update();
 
-private:
+
     std::map<std::string, std::unique_ptr<State>> states_; // 存储所有状态
     State* currentState_;  // 当前状态指针
     std::string currentStateName_; // 当前状态名称
