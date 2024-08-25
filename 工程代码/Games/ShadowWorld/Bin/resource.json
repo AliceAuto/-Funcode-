@@ -2,7 +2,7 @@
     "resources1": 
     {
         "CAnimateSprite":
-        {"Character":"character"},
+        {"Entity":"character"},
         "CSound":
         {"running":"running.ogg"}
     },
@@ -12,5 +12,13 @@
         {"ButtonSprite":"StartGameButton"} ,
         "CSound":
         {"ButtonSound":"running.ogg"} 
+    },
+    "block": 
+    {
+        "CStaticSprite":
+        {"Entity":"block"} ,
+        "CSound":
+        {"ButtonSound":"running.ogg"} 
+
     }
 }

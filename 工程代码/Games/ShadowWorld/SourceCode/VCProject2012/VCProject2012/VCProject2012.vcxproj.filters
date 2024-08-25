@@ -77,6 +77,12 @@
     <ClCompile Include="Src\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Tiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CollisionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\EC.h">
@@ -148,5 +154,16 @@
     <ClInclude Include="include\headers\Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\headers\Tiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\CollisionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Bin\resource.json">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

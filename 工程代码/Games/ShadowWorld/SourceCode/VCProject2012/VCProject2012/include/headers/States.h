@@ -8,6 +8,7 @@
 #include "CSystem.h"
 #include "Button.h"
 #include "EntityManager.h"
+#include "CollisionManager.h"
 // Ö÷²Ëµ¥×´Ì¬
 class MainMenuState : public State {
 public:
@@ -42,7 +43,7 @@ public:
     void HandleMouseInput(const MouseInputEvent& event) override;
     void HandleKeyboardInput(const KeyboardInputEvent& event) override;
 
-protected:
+	EntityManager * m_control_Manager;
     State* CreateState() const override;
 };
 

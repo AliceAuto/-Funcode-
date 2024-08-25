@@ -1,121 +1,266 @@
-#ifndef AICONTROLLER_H
-#define AICONTROLLER_H
+#ifndef AI_H
+#define AI_H
 
-#include "Statemachine.h"
-#include "CharacterController.h"
-#include <memory> // For std::unique_ptr
-#include <cstdlib> // For std::rand
-#include <cmath> // For std::abs
+#include "StateMachine.h"
 
-// AI 状态基类
-class AIState : public State {
+// 巡逻状态类
+class PatrollingState : public State {
 public:
-    virtual ~AIState() {}
-    virtual void Enter() override = 0;
-    virtual void Exit() override = 0;
-    virtual void Update(int userChoice) override = 0;
-    virtual std::string GetNextState(int userChoice) override = 0;
+    void Enter() override {
+        std::cout << "Entering Patrolling State." << std::endl;
+        // 初始化巡逻路径或其他相关资源
+    }
+
+    void Exit() override {
+        std::cout << "Exiting Patrolling State." << std::endl;
+        // 清理巡逻路径或其他相关资源
+    }
+
+    void Update() override {
+        std::cout << "Updating Patrolling State." << std::endl;
+        // 更新巡逻逻辑，如移动到下一个巡逻点
+    }
+
+    void HandleMouseInput(const MouseInputEvent& event) override {
+        // 处理鼠标输入事件（如果需要）
+    }
+
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override {
+        // 处理键盘输入事件（如果需要）
+    }
 
 protected:
-    CharacterController* character; // 与角色控制器关联
+    State* CreateState() const override {
+        return new PatrollingState();
+    }
+
+    void RegisterEventListeners() override {
+        // 注册事件监听器（如果有）
+    }
+
+    void UnregisterEventListeners() override {
+        // 取消事件监听器（如果有）
+    }
 };
 
-// 随机移动状态
-class RandomMoveState : public AIState {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 追踪状态类#include "StateMachine.h"
+#include "StateMachine.h"
+#include <iostream>
+#include <vector>
+#include <memory>
+
+// 视觉探测子精灵类，用于检测障碍物
+class VisualSensor {
 public:
-    RandomMoveState(CharacterController* character) {
-        this->character = character;
-    }
+    // 检测路径中是否存在障碍物
+    bool IsObstacleInPath(const std::vector<std::vector<bool>>& map, const std::pair<int, int>& from, const std::pair<int, int>& to) {
+        // 简单实现：线性插值检查障碍物
+        int x1 = from.first, y1 = from.second;
+        int x2 = to.first, y2 = to.second;
+        int dx = abs(x2 - x1);
+        int dy = abs(y2 - y1);
+        int sx = (x1 < x2) ? 1 : -1;
+        int sy = (y1 < y2) ? 1 : -1;
+        int err = dx - dy;
 
-    virtual void Enter() override {
-        // 进入状态时的初始化
-    }
-
-    virtual void Exit() override {
-        // 退出状态时的清理
-    }
-
-    virtual void Update(int userChoice) override {
-        int direction = std::rand() % 4;
-        switch (direction) {
-            case 0: character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_W, KeyboardInputEvent::State::KEY_ON)); break;
-            case 1: character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_S, KeyboardInputEvent::State::KEY_ON)); break;
-            case 2: character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_A, KeyboardInputEvent::State::KEY_ON)); break;
-            case 3: character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_D, KeyboardInputEvent::State::KEY_ON)); break;
+        while (true) {
+            if (x1 >= 0 && x1 < map[0].size() && y1 >= 0 && y1 < map.size()) {
+                if (map[y1][x1]) return true;
+            }
+            if (x1 == x2 && y1 == y2) break;
+            int e2 = err * 2;
+            if (e2 > -dy) {
+                err -= dy;
+                x1 += sx;
+            }
+            if (e2 < dx) {
+                err += dx;
+                y1 += sy;
+            }
         }
-    }
-
-    virtual std::string GetNextState(int userChoice) override {
-        // 返回下一个状态的名称，这里可以是逻辑
-        return "ChasingState"; // 示例返回，实际逻辑可能不同
+        return false;
     }
 };
 
-// 追逐玩家状态
-class ChasingState : public AIState {
+
+// 追踪状态类
+class ChasingState : public State {
 public:
-    ChasingState(CharacterController* character, CharacterController* target) {
-        this->character = character;
-        this->target = target;
+    ChasingState() : visualSensor_(new VisualSensor()) {}
+
+    void Enter() override {
+        std::cout << "Entering Chasing State." << std::endl;
+        // 初始化追踪目标
     }
 
-    virtual void Enter() override {
-        // 进入状态时的初始化
+    void Exit() override {
+        std::cout << "Exiting Chasing State." << std::endl;
+        // 停止追踪目标
     }
 
-    virtual void Exit() override {
-        // 退出状态时的清理
-    }
+    void Update() override {
+        std::cout << "Updating Chasing State." << std::endl;
 
-    virtual void Update(int userChoice) override {
-        if (!target) return;
+        if (targetPosition_ == std::make_pair(-1, -1)) {
+            std::cout << "No target set, cannot chase." << std::endl;
+            return;
+        }
 
-        float deltaX = target->GetPosX() - character->GetPosX();
-        float deltaY = target->GetPosY() - character->GetPosY();
+        // 获取当前位置
+        std::pair<int, int> currentPosition = GetCurrentPosition();
 
-        if (std::abs(deltaX) > std::abs(deltaY)) {
-            if (deltaX > 0) {
-                character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_D, KeyboardInputEvent::State::KEY_ON));
+        if (visualSensor_->IsObstacleInPath(map_, currentPosition, targetPosition_)) {
+            // 有障碍物，检查脚印
+            std::pair<int, int> footprint = FindFootprint();
+            if (footprint != std::make_pair(-1, -1)) {
+                // 目标有脚印，向脚印移动
+                MoveToPosition(footprint);
             } else {
-                character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_A, KeyboardInputEvent::State::KEY_ON));
+                // 脚印消失，不再追踪
+                std::cout << "No visible footprints, stopping chase." << std::endl;
+                Exit();
             }
         } else {
-            if (deltaY > 0) {
-                character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_S, KeyboardInputEvent::State::KEY_ON));
-            } else {
-                character->ProcessInput(KeyboardInputEvent(KeyCodes::KEY_W, KeyboardInputEvent::State::KEY_ON));
-            }
+            // 无障碍物，直接向目标移动
+            MoveToPosition(targetPosition_);
+        }
+
+        // 检查是否到达目标
+        if (currentPosition == targetPosition_) {
+            std::cout << "Reached target!" << std::endl;
+            // 切换到攻击状态
+            // ToNextState("AttackingState");
         }
     }
 
-    virtual std::string GetNextState(int userChoice) override {
-        // 返回下一个状态的名称，这里可以是逻辑
-        return "RandomMoveState"; // 示例返回，实际逻辑可能不同
+    void HandleMouseInput(const MouseInputEvent& event) override {
+        // 处理鼠标输入事件（如果需要）
+    }
+
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override {
+        // 处理键盘输入事件（如果需要）
+    }
+
+    void SetTargetPosition(const std::pair<int, int>& targetPosition) {
+        targetPosition_ = targetPosition;
+    }
+
+    void SetMap(const std::vector<std::vector<bool>>& map) {
+        map_ = map;
     }
 
 private:
-    CharacterController* target;
+    VisualSensor* visualSensor_; // 使用裸指针以兼容旧版本的编译器
+    std::pair<int, int> targetPosition_; // 目标位置，默认为无效值
+    std::vector<std::vector<bool>> map_; // 地图数据
+
+    std::pair<int, int> GetCurrentPosition() {
+        // 获取当前 AI 位置
+        // 这里返回一个示例位置
+        return std::make_pair(0, 0); // 实际实现应从 AI 对象中获取位置
+    }
+
+    void MoveToPosition(const std::pair<int, int>& position) {
+        // 移动 AI 到指定位置
+        std::cout << "Moving to position: (" << position.first << ", " << position.second << ")" << std::endl;
+        // 实际移动逻辑
+    }
+
+    std::pair<int, int> FindFootprint() {
+        // 查找可见脚印
+        // 这里简单返回一个示例脚印位置
+        return std::make_pair(5, 5); // 实际实现应根据脚印的位置进行查找
+    }
+
+    State* CreateState() const override {
+        return new ChasingState();
+    }
+
+    void RegisterEventListeners() override {
+        // 注册事件监听器（如果有）
+    }
+
+    void UnregisterEventListeners() override {
+        // 取消事件监听器（如果有）
+    }
 };
 
-// AI 控制器
-class AIController {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 攻击状态类
+class AttackingState : public State {
 public:
-    AIController(CharacterController* character) : character_(character) {}
-
-    void SetStateMachine(StateMachine* stateMachine) {
-        this->stateMachine.reset(stateMachine);
-        stateMachine->SetCurrentState("RandomMoveState"); // 初始状态
+    void Enter() override {
+        std::cout << "Entering Attacking State." << std::endl;
+        // 初始化攻击状态或其他相关资源
     }
 
-    void Update(int userChoice) {
-        if (stateMachine) {
-            stateMachine->Update(userChoice);
-        }
+    void Exit() override {
+        std::cout << "Exiting Attacking State." << std::endl;
+        // 结束攻击或清理相关资源
     }
 
-private:
-    CharacterController* character_;
-    std::unique_ptr<StateMachine> stateMachine;
+    void Update() override {
+        std::cout << "Updating Attacking State." << std::endl;
+        // 更新攻击逻辑，如执行攻击动作
+    }
+
+    void HandleMouseInput(const MouseInputEvent& event) override {
+        // 处理鼠标输入事件（如果需要）
+    }
+
+    void HandleKeyboardInput(const KeyboardInputEvent& event) override {
+        // 处理键盘输入事件（如果需要）
+    }
+
+protected:
+    State* CreateState() const override {
+        return new AttackingState();
+    }
+
+    void RegisterEventListeners() override {
+        // 注册事件监听器（如果有）
+    }
+
+    void UnregisterEventListeners() override {
+        // 取消事件监听器（如果有）
+    }
 };
 
-#endif // AICONTROLLER_H
+#endif // AISTATES_H
