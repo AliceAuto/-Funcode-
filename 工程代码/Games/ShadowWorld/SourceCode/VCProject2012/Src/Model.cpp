@@ -54,6 +54,10 @@
 
 
 
+// 声明事件处理函数
+void onMouseInput(const Event& event);
+void onKeyboardInput(const Event& event);
+
 // 主函数入口
 int PASCAL WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
@@ -74,13 +78,15 @@ int PASCAL WinMain(HINSTANCE hInstance,
     // 启动日志记录
     LogManager::StartLogging("logfile.txt");
     LogManager::Log("下面是程序日志:");
-	
 
-
-    // 设置初始状态
-    
     // 创建状态机并添加状态
-;
+    StateMachine sm;
+    sm.AddState("MainMenu", MainMenuState::CreateState());
+    sm.AddState("Game", GameState::CreateState());
+    sm.AddState("Settings", SettingsMenuState::CreateState());
+    sm.AddState("PauseMenu", PauseMenuState::CreateState());
+    sm.AddState("Exit", ExitMenuState::CreateState());
+
     // 引擎主循环
     while (CSystem::EngineMainLoop())
     {

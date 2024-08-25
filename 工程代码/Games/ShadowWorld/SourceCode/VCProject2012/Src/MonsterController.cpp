@@ -22,8 +22,13 @@
 
 
 // 构造函数
-MonsterController::MonsterController(float initialX, float initialY)
-    : CharacterController(initialX,initialY) {}
+<<<<<<< Updated upstream
+MonsterController::MonsterController(float initialX, float initialY, ResourceBag * resourceBagPtr)
+    : CharacterController(initialX,initialY,resourceBagPtr) {}
+=======
+MonsterController::MonsterController(float initialX, float initialY,std::string & resourceBag)
+    : CharacterController(initialX,initialY,resourceBag) {}
+>>>>>>> Stashed changes
 
 // 析构函数
 MonsterController::~MonsterController() {}

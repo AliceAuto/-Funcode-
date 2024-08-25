@@ -1,17 +1,74 @@
 #ifndef STATEMACHINE_H
 #define STATEMACHINE_H
+//=================================================
+/*
+			此文件声明了:状态接口、状态机
+*/
+//==================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #include <iostream>
 #include <map>
-#include <memory>
 #include <string>
-#include "EventDrivenSystem.h"
-#include "Logger.h"
-#include "CollisionManager.h"
+<<<<<<< Updated upstream
+
+
+
+
+
+
+
 // 状态接口
 class State {
 public:
-    virtual ~State() {}
+	// [  外部接口  ]
+    virtual ~State() {}//									【供状态机调用】
+    virtual void Enter() = 0;								//状态入口			
+    virtual void Exit() = 0;								//状态出口		
+    virtual void Update(int userChoice) = 0;				//全权负责	此状态下的特有逻辑
+    virtual std::string GetNextState(int userChoice) = 0;	//获得状态转移目标  
+
+private:			
+	//[  内部接口 ]
+=======
+#include "EventDrivenSystem.h"
+#include "Logger.h"
+#include "CollisionManager.h"
+#include "EntityManager.h"
+// 状态接口
+class State {
+public:
+	State()
+	{
+	m_control_Manager = new EntityManager;
+	}
+    virtual ~State() {
+	delete m_control_Manager;
+	}
 
     // 状态管理接口
     virtual void Enter() = 0;               // 状态入口
@@ -23,37 +80,49 @@ public:
     // 事件处理接口
     virtual void HandleMouseInput(const MouseInputEvent& event) {}
     virtual void HandleKeyboardInput(const KeyboardInputEvent& event) {}
-	
+	EntityManager * m_control_Manager;
 protected:
+>>>>>>> Stashed changes
     // 工厂方法，创建状态实例
-    virtual State* CreateState() const = 0;
-
-    // 注册和取消事件监听
-    virtual void RegisterEventListeners() {};
-    virtual void UnregisterEventListeners() {};
+    static State* CreateState() { return 0; }				
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 状态机类
 class StateMachine {
 public:
     StateMachine();
-    ~StateMachine(); // 显示声明析构函数
+    ~StateMachine();
 
-    // 添加状态，直接传递状态对象
-    void AddState(const std::string& name, std::unique_ptr<State> state);
+	// [  外部接口  ]
+    void AddState(const std::string& name, State* state);	//		【在状态机】添加状态 (申请状态对象[键-值])
+    void Update(int userChoice);							//		更新【状态机】当前状态
 
-    void ToNextState(const std::string & stateName);  // 更新状态机当前状态
-
-    // (调试) 外部接口
-    void SetCurrentState(const std::string& name); // 设置状态机当前的状态
-    std::string GetCurrentStateName() const;       // 查询当前状态的名称
-    State* GetState(const std::string& name) const; // 获取状态对象指针
-    void Update();
+	//	[ (调试) 外部接口  ]
+	void SetCurrentState(const std::string& name);			//		设置【状态机】当前的状态
+    std::string GetCurrentStateName() const;				//		查询获得 当前状态【的键】
+    State* GetState(const std::string& name) const;			//		快速查询 状态对象
 
 
-    std::map<std::string, std::unique_ptr<State>> states_; // 存储所有状态
-    State* currentState_;  // 当前状态指针
-    std::string currentStateName_; // 当前状态名称
+private:
+	//[  内部接口  ]
+    std::map<std::string, State*> states_;		//		<String,State *> 存储所有状态
+    State* currentState_;						//		当前状态指针
+    std::string currentStateName_;				//		当前状态对象 【的键】
 };
 
 #endif // STATEMACHINE_H

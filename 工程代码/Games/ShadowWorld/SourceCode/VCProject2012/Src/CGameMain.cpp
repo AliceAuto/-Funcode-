@@ -4,8 +4,8 @@
 #include "headers\PlayerController.h"
 #include "Setting.h"
 #include "Logger.h"
-#include "headers\States.h"
-#include "headers\StateMachine.h"
+
+
 
 
 
@@ -101,24 +101,36 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 void CGameMain::GameInit()
 {
       // 加载资源
+    LoadResourcesFromJSON(m_resourceBagPtrs, "resource.json");
+    
+    // 创建并管理 PlayerController 作为一个实体
+    std::string playerID = m_control_Manager.CreateEntity(
+        "Player",
+        0.0f,
+        0.0f,
+        m_resourceBagPtrs["resources1"]
+    );
 
-	 stateMachine = new StateMachine;
-    // 添加状态
-    stateMachine->AddState("MainMenu", std::unique_ptr<MainMenuState>(new MainMenuState()));
-    stateMachine->AddState("Game", std::unique_ptr<GameState>(new GameState()));
-    stateMachine->AddState("Settings", std::unique_ptr<SettingsMenuState>(new SettingsMenuState()));
-    stateMachine->AddState("PauseMenu", std::unique_ptr<PauseMenuState>(new PauseMenuState()));
-    stateMachine->AddState("Exit", std::unique_ptr<ExitMenuState>(new ExitMenuState()));
-    stateMachine->AddState("HighScore", std::unique_ptr<HighScoreState>(new HighScoreState()));
-    stateMachine->SetCurrentState("MainMenu");
+    LogManager::Log(playerID);
+
+    // 获取并绑定事件
+    Entity* entity = m_control_Manager.GetEntity(playerID);
+    PlayerController* controller = dynamic_cast<PlayerController*>(entity);
+    if (controller) {
+        eventManager.RegisterListener(EventType::KeyboardInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
+        eventManager.RegisterListener(EventType::MouseInput, std::bind(&PlayerController::ProcessInput, controller, std::placeholders::_1));
+        LogManager::Log("键盘监听绑定成功");
+    } else {
+        LogManager::Log("键盘监听绑定失败");
+    }
 
 }	
 
 //==============================================================================
 void CGameMain::GameRun(float fDeltaTime)
 {
-
-  stateMachine->Update();
+	
+    m_control_Manager.UpdateAllEntities();
 
 }
 
@@ -134,13 +146,17 @@ void CGameMain::GameEnd()
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 {
+<<<<<<< Updated upstream
+	
+=======
 	 MouseInputEvent mouseEvent(fMouseX, fMouseY, false, false, false);
     
     // 分发事件
-    eventManager.DispatchEvent(mouseEvent);
+    EventManager::Instance().DispatchEvent(mouseEvent);
 
     // 日志记录
     LogManager::Log("鼠标移动: (" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
+>>>>>>> Stashed changes
 }
 //==========================================================================
 //
@@ -149,6 +165,9 @@ void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseClick( const int iMouseType, const float fMouseX, const float fMouseY )
 {
+<<<<<<< Updated upstream
+	
+=======
 	 bool isLeftPressed = (iMouseType == 0);
     bool isMiddlePressed = (iMouseType == 1);
     bool isRightPressed = (iMouseType == 2);
@@ -157,10 +176,11 @@ void CGameMain::OnMouseClick( const int iMouseType, const float fMouseX, const f
     MouseInputEvent mouseEvent(fMouseX, fMouseY, isLeftPressed, isMiddlePressed, isRightPressed);
     
     // 分发事件
-    eventManager.DispatchEvent(mouseEvent);
+    EventManager::Instance().DispatchEvent(mouseEvent);
 
     // 日志记录
     LogManager::Log("鼠标点击: 类型=" + std::to_string(iMouseType) + " 坐标=(" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
+>>>>>>> Stashed changes
 }
 //==========================================================================
 //
@@ -178,16 +198,17 @@ void CGameMain::OnMouseUp( const int iMouseType, const float fMouseX, const floa
 // 参数 iAltPress, iShiftPress，iCtrlPress：键盘上的功能键Alt，Ctrl，Shift当前是否也处于按下状态(0未按下，1按下)
 void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress )
 {	
-		// 创建事件并分发
-    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_ON);	//分发	按键按下事件 <Key, State>
 
+<<<<<<< Updated upstream
+=======
 
 	//触发事件
-    eventManager.DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+    EventManager::Instance().DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
 	
 		
 	//日志记录
     LogManager::Log("<"+std::to_string(iKey)+","+std::to_string(bShiftPress)+"> 键盘按下");//格式	<Key, ShiftState>
+>>>>>>> Stashed changes
 }
 //==========================================================================
 //
@@ -195,19 +216,23 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
 // 参数 iKey：弹起的键，值见 enum KeyCodes 宏定义
 void CGameMain::OnKeyUp( const int iKey )
 {
+<<<<<<< Updated upstream
+	
+=======
 			
 	// 创建事件并分发
     KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_OFF);	//分发	按键按下事件 <Key, State>
 
 
 	//触发事件
-    eventManager.DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+    EventManager::Instance().DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
 
 		
 	//日志记录
     LogManager::Log("<"+std::to_string(iKey)+"> 键盘弹起");//格式	<Key, ShiftState>
 
 
+>>>>>>> Stashed changes
 }
 //===========================================================================
 //
@@ -217,12 +242,6 @@ void CGameMain::OnKeyUp( const int iKey )
 void CGameMain::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 {
 	
-
-	Entity* spriteA =static_cast<GameState*>(stateMachine->currentState_)->m_control_Manager->GetEntity(szSrcName);
-    Entity* spriteB = static_cast<GameState*>(stateMachine->currentState_)->m_control_Manager->GetEntity(szTarName);
-	
-	if (spriteA)spriteA->ifCollision(spriteB);LogManager::Log(szSrcName);
-	if (spriteB) spriteB->ifCollision(spriteA);LogManager::Log(szTarName);
 }
 //===========================================================================
 //
