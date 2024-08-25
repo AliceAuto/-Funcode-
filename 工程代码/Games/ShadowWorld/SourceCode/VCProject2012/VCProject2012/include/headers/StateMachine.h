@@ -34,7 +34,6 @@
 #include <iostream>
 #include <map>
 #include <string>
-<<<<<<< Updated upstream
 
 
 
@@ -54,35 +53,6 @@ public:
 
 private:			
 	//[  内部接口 ]
-=======
-#include "EventDrivenSystem.h"
-#include "Logger.h"
-#include "CollisionManager.h"
-#include "EntityManager.h"
-// 状态接口
-class State {
-public:
-	State()
-	{
-	m_control_Manager = new EntityManager;
-	}
-    virtual ~State() {
-	delete m_control_Manager;
-	}
-
-    // 状态管理接口
-    virtual void Enter() = 0;               // 状态入口
-    virtual void Exit() = 0;                // 状态出口
-  
-    virtual void Update() =0;
-
-
-    // 事件处理接口
-    virtual void HandleMouseInput(const MouseInputEvent& event) {}
-    virtual void HandleKeyboardInput(const KeyboardInputEvent& event) {}
-	EntityManager * m_control_Manager;
-protected:
->>>>>>> Stashed changes
     // 工厂方法，创建状态实例
     static State* CreateState() { return 0; }				
 };
