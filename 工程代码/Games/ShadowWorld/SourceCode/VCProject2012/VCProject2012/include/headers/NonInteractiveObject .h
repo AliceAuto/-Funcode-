@@ -23,7 +23,7 @@ public:
 
     // 虚析构函数
     virtual ~NonInteractiveObject();
-	void Init (const std::string & bag) override;
+
 protected:
     // 提供默认实现，允许子类选择性重写
     virtual void UpdateState() override;

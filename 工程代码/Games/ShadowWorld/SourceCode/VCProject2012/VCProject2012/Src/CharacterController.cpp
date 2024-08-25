@@ -11,13 +11,13 @@ CharacterController::CharacterController(float initialX, float initialY)
 void CharacterController::Init(const std::string & bag){
 	//对物理人物进行初始化
 	this->resourceBagPtr->LoadFromJson(bag);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpritePosition(posX,posY);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMass(100);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteAtRest(false);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteInertialMoment(100);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteAutoMassInertia(true);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMaxLinearVelocity(20);
-	mess = this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->GetSpriteMass();
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpritePosition(0,0);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteMass(100);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteAtRest(false);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteInertialMoment(100);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteAutoMassInertia(true);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->SetSpriteMaxLinearVelocity(30);
+	mess = this->resourceBagPtr->GetResource<CAnimateSprite>("Character").get()->GetSpriteMass();
 }
 CharacterController::~CharacterController() {
     // 清理代码，如果有需要的话
@@ -26,7 +26,7 @@ CharacterController::~CharacterController() {
 void CharacterController::UpdateState() {
     // 默认实现，可以被子类重写
 	LogManager::Log("状态已更新");
-    CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+    CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
 
     if (AnimatePtr) {
 
@@ -89,7 +89,7 @@ void CharacterController::UpdateState() {
 void CharacterController::UpdateAnimation() {
     // 默认实现，可以被子类重写
 	
-    CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+    CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Character").get();
     static std::string currentAnimation;
     
     if (AnimatePtr == nullptr) return;
@@ -144,19 +144,20 @@ void CharacterController::ProcessInput(const Event& event) {
         if (keyEvent.GetState() == KeyboardInputEvent::State::KEY_ON) {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
-                    forceY -= 80000;
+                    forceY = -13000;
                     break;
                 case KeyCodes::KEY_S:
-                    forceY += 80000;
+                    forceY = 13000;
                     break;
                 case KeyCodes::KEY_A:
-                    forceX -=80000;
+                    forceX =-13000;
                     break;
                 case KeyCodes::KEY_D:
-                    forceX += 80000;
+                    forceX = 13000;
                     break;
-				case KeyCodes::KEY_SPACE:
-                    this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMaxLinearVelocity(200);
+				case KeyCodes::KEY_CAPSLOCK:
+                    forceX *=3;
+					forceY *=3;
                     break;
                 default:
                     break;
@@ -164,19 +165,20 @@ void CharacterController::ProcessInput(const Event& event) {
         } else {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
-					forceY +=80000 ;
+					forceY = 0;
                     break;
                 case KeyCodes::KEY_S:
-                    forceY -= 80000;
+                    forceY = 0;
                     break;
                 case KeyCodes::KEY_A:
-					forceX += 80000;
+					forceX = 0;
                     break;
                 case KeyCodes::KEY_D:
-                    forceX -= 80000;
+                    forceX = 0;
                     break;
-				case KeyCodes::KEY_SPACE:
-                    this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMaxLinearVelocity(20);
+				case KeyCodes::KEY_CAPSLOCK:
+                    forceX /=3;
+					forceY /=3;
                     break;
                 default:
                     break;

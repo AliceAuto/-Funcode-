@@ -31,10 +31,10 @@ public:
     float GetPosY() const;
     float GetVelocityX() const;
     float GetVelocityY() const;
-	
+
     // 公开 ResourceBag 以便直接操作
     ResourceBag* resourceBagPtr;
-	virtual void ifCollision(Entity * otherEntity);
+
 protected:
     // 需要子类实现的虚函数
     virtual void UpdateState() = 0;

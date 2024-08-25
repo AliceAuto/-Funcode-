@@ -20,7 +20,6 @@ ResourceBag::~ResourceBag() {
 
 bool ResourceBag::LoadFromJson(const std::string& packageName) {
     try {
-		
         LogManager::Log("信息: 从 JSON 文件加载资源: " + resourceFilename);
         std::ifstream file(resourceFilename.c_str(), std::ifstream::binary);
         if (!file.is_open()) {
@@ -40,7 +39,7 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
 
         for (const auto& typeName : resources.getMemberNames()) {
             const Json::Value& resourceInfo = resources[typeName];
-			LogManager::Log(typeName);
+
             if (typeName == "CAnimateSprite") {
                 for (const auto& name : resourceInfo.getMemberNames()) {
                     std::string resourceName = resourceInfo[name].asString();
@@ -51,8 +50,7 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
 
                     if(sprite)AddResource(name, sprite);
                 }
-            } 
-			else if (typeName == "CSound") {
+            } else if (typeName == "CSound") {
                 for (const auto& name : resourceInfo.getMemberNames()) {
                     std::string resourceName = resourceInfo[name].asString();
                     std::string id = "ID_"+std::to_string(++IdCounter);
@@ -60,42 +58,7 @@ bool ResourceBag::LoadFromJson(const std::string& packageName) {
                     auto sound = std::make_shared<CSound>(resourceName.c_str(), static_cast<float>(1), static_cast<float>(1));
 					if (sound)AddResource(name, sound);
                 }
-            }
-			else if (typeName == "CEffect") {
-                for (const auto& name : resourceInfo.getMemberNames()) {
-                    std::string resourceName = resourceInfo[name].asString();
-                    std::string id = "ID_"+std::to_string(++IdCounter);
-                    LogManager::Log("信息: 创建特效, ID: " + id + ", 资源名称: " + resourceName);
-                    auto cEffect = std::make_shared<CEffect>(resourceName.c_str(), id.c_str(), static_cast<float>(1));
-					if (cEffect)AddResource(name, cEffect);
-
-                }
-            }
-			else if (typeName == "CTextSprite") {
-                for (const auto& name : resourceInfo.getMemberNames()) {
-                    std::string resourceName = resourceInfo[name].asString();
-                    std::string id = "ID_"+std::to_string(++IdCounter);
-                    LogManager::Log("信息: 创建字体, ID: " + id + ", 资源名称: " + resourceName);
-                    auto cTextSprite = std::make_shared<CTextSprite>(id.c_str(), resourceName.c_str());
-					if (cTextSprite)AddResource(name, cTextSprite);
-                }
-            }
-			else if (typeName == "CStaticSprite") {
-				
-                for (const auto& name : resourceInfo.getMemberNames()) {
-					
-                    std::string resourceName = resourceInfo[name].asString();
-                    std::string id = "ID_"+std::to_string(++IdCounter);
-                    LogManager::Log("信息: 创建静态精灵, ID: " + id + ", 资源名称: " + resourceName);
-                    auto cStaticSprite = std::make_shared<CStaticSprite>(id.c_str(), resourceName.c_str());
-					if (cStaticSprite)AddResource(name, cStaticSprite);
-			
-					
-                }
-            }
-			
-
-			else {
+            } else {
                 LogManager::Log("错误: 未识别的资源类型: " + typeName);
             }
         }
