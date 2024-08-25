@@ -217,12 +217,6 @@ void CGameMain::OnKeyUp( const int iKey )
 void CGameMain::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 {
 	
-
-	Entity* spriteA =static_cast<GameState*>(stateMachine->currentState_)->m_control_Manager->GetEntity(szSrcName);
-    Entity* spriteB = static_cast<GameState*>(stateMachine->currentState_)->m_control_Manager->GetEntity(szTarName);
-	
-	if (spriteA)spriteA->ifCollision(spriteB);LogManager::Log(szSrcName);
-	if (spriteB) spriteB->ifCollision(spriteA);LogManager::Log(szTarName);
 }
 //===========================================================================
 //

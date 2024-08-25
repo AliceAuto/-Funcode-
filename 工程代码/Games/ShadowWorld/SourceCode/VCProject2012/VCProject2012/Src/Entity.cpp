@@ -22,9 +22,7 @@ void Entity::Update() {
     UpdateSound();
 }
 
-void Entity::ifCollision(Entity * otherEntity){
-LogManager::Log("======================Åö============================================================================");
-}
+
 
 float Entity::GetPosX() const {
     return posX;
