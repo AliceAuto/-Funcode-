@@ -5,15 +5,9 @@
 
 class CharacterController : public Entity {
 public:
-<<<<<<< Updated upstream
     CharacterController(float initialX, float initialY,  ResourceBag* resourceBagPtr);
     virtual ~CharacterController(); // 虚析构函数
 
-=======
-    CharacterController(float initialX, float initialY,std::string & resourceBag);
-    virtual ~CharacterController(); // 虚析构函数
-	void Init () override;
->>>>>>> Stashed changes
     // 处理输入（虚函数）
     virtual void ProcessInput(const Event& event);
 

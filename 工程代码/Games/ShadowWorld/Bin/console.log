@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
 //-------------------------- 8/10/2024 -- 23:52:39 -----
-=======
-//-------------------------- 8/25/2024 -- 14:15:11 -----
->>>>>>> Stashed changes
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.88 Ghz)
+     (timed at roughly 2.91 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -123,17 +119,11 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/Shad
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/gameScripts/game.cs.
 Activating DirectInput...
 DirectInput joystick failed to enable!
-<<<<<<< Updated upstream
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
 t2dSceneGraph::addToScene() - Object '1343' is already in a SceneGraph!.
-=======
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d.
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/untitled.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/untitled.t2d.
-Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
-Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dAnimatedSprite.
->>>>>>> Stashed changes
 DirectInput deactivated.
-Activating DirectInput...
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
