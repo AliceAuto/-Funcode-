@@ -1,16 +1,8 @@
-<<<<<<< Updated upstream
 ﻿生成启动时间为 2024/8/10 23:52:31。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
   D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\ResourceManager.cpp
   ResourceManager.cpp
-=======
-﻿生成启动时间为 2024/8/25 14:14:59。
-项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
-ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Button.cpp
-  Button.cpp
->>>>>>> Stashed changes
 Link:
   D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
   Debug\CGameMain.obj
@@ -41,8 +33,4 @@ BscMake:
 
 生成成功。
 
-<<<<<<< Updated upstream
 已用时间 00:00:05.82
-=======
-已用时间 00:00:09.36
->>>>>>> Stashed changes
