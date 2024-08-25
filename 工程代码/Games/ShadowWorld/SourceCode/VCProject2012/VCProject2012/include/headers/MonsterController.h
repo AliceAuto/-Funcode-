@@ -44,7 +44,11 @@
 
 class MonsterController : public CharacterController {
 public:
+<<<<<<< Updated upstream
     MonsterController(float initialX, float initialY, ResourceBag * resourceBagPtr);
+=======
+    MonsterController(float initialX, float initialY,std::string & resourceBag );
+>>>>>>> Stashed changes
     ~MonsterController();
 
 

@@ -200,7 +200,16 @@ public:
         }
     }
 
+<<<<<<< Updated upstream
 private:
+=======
+
+    // 私有构造函数，防止外部实例化
+private:
+	EventManager() {} 
+    EventManager(const EventManager&); // 禁用拷贝构造函数
+    EventManager& operator=(const EventManager&); // 禁用赋值操作
+>>>>>>> Stashed changes
     std::unordered_map<EventType, std::vector<EventListener>> listeners;
 };
 //================================================================================================
@@ -210,8 +219,7 @@ private:
 
 
 // 外部事件管理器声明
-extern EventManager eventManager;
+
 
 // 事件处理函数声明
-void onMouseInput(const Event& event);
-void onKeyboardInput(const Event& event);
+
