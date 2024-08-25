@@ -146,7 +146,17 @@ void CGameMain::GameEnd()
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 {
+<<<<<<< Updated upstream
 	
+=======
+	 MouseInputEvent mouseEvent(fMouseX, fMouseY, false, false, false);
+    
+    // 分发事件
+    EventManager::Instance().DispatchEvent(mouseEvent);
+
+    // 日志记录
+    LogManager::Log("鼠标移动: (" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
+>>>>>>> Stashed changes
 }
 //==========================================================================
 //
@@ -155,7 +165,22 @@ void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseClick( const int iMouseType, const float fMouseX, const float fMouseY )
 {
+<<<<<<< Updated upstream
 	
+=======
+	 bool isLeftPressed = (iMouseType == 0);
+    bool isMiddlePressed = (iMouseType == 1);
+    bool isRightPressed = (iMouseType == 2);
+
+    // 创建鼠标点击事件
+    MouseInputEvent mouseEvent(fMouseX, fMouseY, isLeftPressed, isMiddlePressed, isRightPressed);
+    
+    // 分发事件
+    EventManager::Instance().DispatchEvent(mouseEvent);
+
+    // 日志记录
+    LogManager::Log("鼠标点击: 类型=" + std::to_string(iMouseType) + " 坐标=(" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
+>>>>>>> Stashed changes
 }
 //==========================================================================
 //
@@ -174,6 +199,16 @@ void CGameMain::OnMouseUp( const int iMouseType, const float fMouseX, const floa
 void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress )
 {	
 
+<<<<<<< Updated upstream
+=======
+
+	//触发事件
+    EventManager::Instance().DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+	
+		
+	//日志记录
+    LogManager::Log("<"+std::to_string(iKey)+","+std::to_string(bShiftPress)+"> 键盘按下");//格式	<Key, ShiftState>
+>>>>>>> Stashed changes
 }
 //==========================================================================
 //
@@ -181,7 +216,23 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
 // 参数 iKey：弹起的键，值见 enum KeyCodes 宏定义
 void CGameMain::OnKeyUp( const int iKey )
 {
+<<<<<<< Updated upstream
 	
+=======
+			
+	// 创建事件并分发
+    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_OFF);	//分发	按键按下事件 <Key, State>
+
+
+	//触发事件
+    EventManager::Instance().DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+
+		
+	//日志记录
+    LogManager::Log("<"+std::to_string(iKey)+"> 键盘弹起");//格式	<Key, ShiftState>
+
+
+>>>>>>> Stashed changes
 }
 //===========================================================================
 //
