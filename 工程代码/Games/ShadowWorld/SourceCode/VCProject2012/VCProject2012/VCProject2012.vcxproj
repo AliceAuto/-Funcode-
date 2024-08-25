@@ -121,6 +121,7 @@
   <ItemGroup>
     <ClCompile Include="Src\CGameMain.cpp" />
     <ClCompile Include="Src\CharacterController.cpp" />
+    <ClCompile Include="Src\CollisionManager.cpp" />
     <ClCompile Include="Src\CSprite.cpp" />
     <ClCompile Include="Src\CSystem.cpp" />
     <ClCompile Include="Src\Entity.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="Src\EntityManager.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
     <ClCompile Include="Src\States.cpp" />
+    <ClCompile Include="Src\Tiled.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
     <ClCompile Include="Src\View.cpp" />
   </ItemGroup>
@@ -144,6 +146,7 @@
     <ClInclude Include="include\headers\BagSystem.h" />
     <ClInclude Include="include\headers\CGameMain.h" />
     <ClInclude Include="include\headers\CharacterController.h" />
+    <ClInclude Include="include\headers\CollisionManager.h" />
     <ClInclude Include="include\headers\CSprite.h" />
     <ClInclude Include="include\headers\CSystem.h" />
     <ClInclude Include="include\headers\EC.h" />
@@ -162,7 +165,11 @@
     <ClInclude Include="include\headers\States.h" />
     <ClInclude Include="include\headers\TEST.h" />
     <ClInclude Include="include\headers\Container.h" />
+    <ClInclude Include="include\headers\Tiled.h" />
     <ClInclude Include="include\headers\UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Bin\resource.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

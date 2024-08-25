@@ -732,7 +732,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(people) {
+   new t2dImageMapDatablock(people1) {
       imageName = "~/data/images/e.png";
       imageMode = "CELL";
       frameCount = "-1";
@@ -805,6 +805,36 @@ $managedDatablockSet = new SimSet() {
    new t2dAnimationDatablock(hover) {
       imageMap = "particles1ImageMap";
       animationTime = "1";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(to_run_up) {
+      imageMap = "people1";
+      animationFrames = "3 4 5 6 7 8";
+      animationTime = "0.199999";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(to_run_right) {
+      imageMap = "people1";
+      animationFrames = "18 19 20 21 22 23";
+      animationTime = "0.199999";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(to_run_dowm) {
+      imageMap = "people1";
+      animationFrames = "33 34 35 36 37 38";
+      animationTime = "0.199999";
       animationCycle = "1";
       randomStart = "0";
       startFrame = "0";

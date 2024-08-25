@@ -3,25 +3,36 @@
 #include "headers\Button.h"
 
 // MainMenuState 实现
-MainMenuState::MainMenuState() { 
-	
+MainMenuState::MainMenuState() 
+{ 
 m_control_Manager = new EntityManager;
- buttonManager = new ButtonManager;}
-MainMenuState::~MainMenuState() {
+ buttonManager = new ButtonManager;
+}
+MainMenuState::~MainMenuState() 
+{
 		delete m_control_Manager;
-delete buttonManager;
+		delete buttonManager;
 }
 
 void MainMenuState::RegisterEventListeners() {
+	//按钮管理器
 	eventManager.RegisterListener(EventType::ButtonClick, 
-        [this](const Event& event) { this->HandleButtonInput(static_cast<const ButtonClickEvent&>(event)); }
+    [this](const Event& event) { this->HandleButtonInput(static_cast<const ButtonClickEvent&>(event)); }
 	);
+
+
+
 }
 void MainMenuState::UnregisterEventListeners(){
- EventManager::Instance().RemoveListener(EventType::ButtonClick, [this](const Event& event) {
-        const ButtonClickEvent& buttonEvent = static_cast<const ButtonClickEvent&>(event);
-        this->HandleButtonInput(buttonEvent);
+	//按钮管理器
+	EventManager::Instance().RemoveListener(EventType::ButtonClick, [this](const Event& event) {
+    const ButtonClickEvent& buttonEvent = static_cast<const ButtonClickEvent&>(event);
+    this->HandleButtonInput(buttonEvent);
     });
+
+
+
+
 }
 void MainMenuState::Enter() {
 	
@@ -29,22 +40,15 @@ void MainMenuState::Enter() {
     CSystem::LoadMap("untitled.t2d");
     RegisterEventListeners();
 	
-    std::string playerID =m_control_Manager->CreateEntity(
-        "Player",
-        0.0f,
-        0.0f
-    );
-
-    LogManager::Log(playerID);
 
     // 获取并绑定事件
-    Entity* entity = m_control_Manager->GetEntity(playerID);
-    PlayerController* controller = dynamic_cast<PlayerController*>(entity);
-	controller->Init("resources1");
+   
 
 	Button * bptr  = new Button ("开始游戏");
 	bptr->resourceBagPtr->LoadFromJson("StartGameButton");
 	buttonManager->AddButton(bptr);
+
+
 }
 
 
@@ -79,23 +83,118 @@ State* MainMenuState::CreateState() const {
     return new MainMenuState();
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // GameState 实现
-GameState::GameState() {}
-GameState::~GameState() {}
+GameState::GameState() 
+{
+ LogManager::Log("=========================================================");
+m_control_Manager = new EntityManager;
+
+
+}
+GameState::~GameState()
+{
+		
+delete m_control_Manager;
+}
 
 void GameState::Enter() {
     LogManager::Log("进入游戏状态");
     CSystem::LoadMap("gameScene.t2d");
     RegisterEventListeners();
+	
+std::string player1 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Player\"				,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"resources1\"				\n"
+	"}"
+   );
+
+std::string block1 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"				,\n"
+            "  \"posX\"			:			0.0							,\n"
+			"  \"posY\"			:			0.0							,\n"
+			"  \"resourceBag\"  :			\"block\"						\n"
+	"}"
+    );//
+std::string block2 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"			,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"block\"					\n"
+	"}"
+    );
+std::string block3 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"			,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"block\"					\n"
+	"}"
+    );
+std::string block4 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"			,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"block\"					\n"
+	"}"
+    );
+std::string block5 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"			,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"block\"					\n"
+	"}"
+    );
+std::string block6 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"			,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"block\"					\n"
+	"}"
+    );
+std::string block7 =m_control_Manager->CreateEntity(
+	"{\n"
+	        "  \"TypeName\"		:			\"Obstacle\"			,\n"
+            "  \"posX\"			:			0.0						,\n"
+			"  \"posY\"			:			0.0						,\n"
+			"  \"resourceBag\"  :			\"block\"					\n"
+	"}"
+    );
+
+
+
 }
 
 void GameState::Exit() {
     LogManager::Log("退出游戏状态");
+	
     UnregisterEventListeners();
 }
 
 void GameState::Update() {
     // 游戏状态更新逻辑
+	m_control_Manager->UpdateAllEntities();
+
 }
 
 
@@ -110,6 +209,17 @@ void GameState::HandleKeyboardInput(const KeyboardInputEvent& event) {
 State* GameState::CreateState() const {
     return new GameState();
 }
+
+
+
+
+
+
+
+
+
+
+
 
 // SettingsMenuState 实现
 SettingsMenuState::SettingsMenuState() {}
@@ -144,6 +254,17 @@ void SettingsMenuState::HandleKeyboardInput(const KeyboardInputEvent& event) {
 State* SettingsMenuState::CreateState() const {
     return new SettingsMenuState();
 }
+
+
+
+
+
+
+
+
+
+
+
 
 // PauseMenuState 实现
 PauseMenuState::PauseMenuState() {}

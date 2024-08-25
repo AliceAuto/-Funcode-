@@ -5,7 +5,7 @@
 #include <functional>
 #include <algorithm>
 #include <typeinfo>
-
+#include "Logger.h"
 //======================================================================================
 /*
 								事件驱动系统 接口声明
@@ -42,7 +42,7 @@ enum class EventType {
     MouseInput,
     KeyboardInput,
 	ButtonClick,  // 新增按钮点击事件类型
-    EventB
+    Collision
 };
 
 
@@ -152,6 +152,45 @@ private:
     int state;
 };
 //==============================================================================================
+
+
+
+
+
+
+
+
+// 精灵碰撞事件类
+//=================================================================
+class CollisionEvent : public Event {
+public:
+    CollisionEvent(const std::string& A,const std::string& B ) : A(A), B(B) {
+	}
+
+    EventType GetType() const override {
+        return EventType::Collision;
+    }
+
+    const std::string& GetA ()const {
+        return A;
+    }
+	const std::string& GetB ()const {
+        return B;
+    }
+
+private:
+	const std::string& A;
+	const std::string& B;
+    
+};
+//===========================================================================================
+
+
+
+
+
+
+
 
 
 
