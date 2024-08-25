@@ -6,6 +6,7 @@
 
 class Entity {
 public:
+<<<<<<< Updated upstream
     Entity(float initialX, float initialY,  ResourceBag * resourceBagPtr);
     virtual ~Entity(); // 虚析构函数
 
@@ -15,6 +16,14 @@ public:
     // 资源管理接口
     void LoadResources(ResourceBag * resourceBagPtr);
 
+=======
+    Entity(float initialX, float initialY,std::string & resourceBag);
+    virtual ~Entity(); // 虚析构函数
+
+    // 公共接口
+    void Update(); // 更新实体状态
+	virtual void Init();
+>>>>>>> Stashed changes
     // 物理属性接口
     float GetPosX() const;
     float GetPosY() const;
