@@ -1,7 +1,7 @@
-//-------------------------- 8/25/2024 -- 15:17:23 -----
+//-------------------------- 8/25/2024 -- 15:09:46 -----
 Processor Init:
-   Intel Pentium III, ~2.93 Ghz
-     (timed at roughly 2.93 Ghz)
+   Intel Pentium III, ~2.90 Ghz
+     (timed at roughly 2.91 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -472,6 +472,7 @@ t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/"
 Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.
