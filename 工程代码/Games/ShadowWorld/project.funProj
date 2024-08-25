@@ -4,7 +4,11 @@
    <Version>v1.7.5</Version>
    <MinVersion>v1.1.4</MinVersion>
    <Creator>Torque Game Builder</Creator>
+<<<<<<< Updated upstream
    <LastLevel>Bin/game/data/levels/level.t2d</LastLevel>
+=======
+   <LastLevel>Bin/game/data/levels/gameScene.t2d</LastLevel>
+>>>>>>> Stashed changes
    <ProjectName>ShadowWorld</ProjectName>
    <ProjectType>CPP</ProjectType>
    <JavaDevVersion>JCreator</JavaDevVersion>
