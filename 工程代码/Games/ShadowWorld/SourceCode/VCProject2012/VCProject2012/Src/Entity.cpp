@@ -1,7 +1,20 @@
 #include "Entity.h"
 
+<<<<<<< Updated upstream
 Entity::Entity(float initialX, float initialY, ResourceBag* resourceBagPtr)
     : posX(initialX), posY(initialY), velocityX(0), velocityY(0), resourceBagPtr(resourceBagPtr) {}
+=======
+
+
+
+
+
+
+Entity::Entity(float initialX, float initialY,std::string & resourceBag)
+    : posX(initialX), posY(initialY), velocityX(0), velocityY(0), resourceBagPtr(new ResourceBag) {
+		this->resourceBagPtr->LoadFromJson(resourceBag);
+}
+>>>>>>> Stashed changes
 
 Entity::~Entity() {
     // 假设 ResourceBag 是由外部管理的，这里不需要删除
@@ -17,7 +30,9 @@ void Entity::Update() {
 void Entity::LoadResources(ResourceBag* resourceBagPtr) {
     this->resourceBagPtr = resourceBagPtr;
 }
-
+void Entity::Init(){
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpritePosition(posX, posY);
+}
 float Entity::GetPosX() const {
     return posX;
 }
