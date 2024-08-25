@@ -2,10 +2,8 @@
 
 #include <unordered_map>
 #include <vector>
-#include <functional>
-#include <algorithm>
-#include <typeinfo>
-#include "Logger.h"
+  #include <functional>
+
 //======================================================================================
 /*
 								事件驱动系统 接口声明
@@ -42,7 +40,7 @@ enum class EventType {
     MouseInput,
     KeyboardInput,
 	ButtonClick,  // 新增按钮点击事件类型
-    Collision
+    EventB
 };
 
 
@@ -156,62 +154,22 @@ private:
 
 
 
-
-
-
-
-// 精灵碰撞事件类
-//=================================================================
-class CollisionEvent : public Event {
-public:
-    CollisionEvent(const std::string& A,const std::string& B ) : A(A), B(B) {
-	}
-
-    EventType GetType() const override {
-        return EventType::Collision;
-    }
-
-    const std::string& GetA ()const {
-        return A;
-    }
-	const std::string& GetB ()const {
-        return B;
-    }
-
-private:
-	const std::string& A;
-	const std::string& B;
-    
-};
-//===========================================================================================
-
-
-
-
-
-
-
-
-
-
-
 // 按钮点击事件类
 //=================================================================
 class ButtonClickEvent : public Event {
 public:
-    ButtonClickEvent(std::string sender) : sender(sender) {}
+    ButtonClickEvent(int buttonId) : buttonName(buttonName) {}
 
     EventType GetType() const override {
         return EventType::ButtonClick;
     }
 
-    std::string GetButtonSender() const {
-        return sender;
+    int GetButtonId() const {
+        return buttonName;
     }
 
 private:
-	std::string sender;//辨识发送者
-    
+    int buttonName;
 };
 //===========================================================================================
 
@@ -227,50 +185,31 @@ public:
     // 使用 typedef 代替 using 声明
     typedef std::function<void(const Event&)> EventListener;
 
-    // 获取事件管理器的实例
-    static EventManager& Instance() {
-        static EventManager instance;
-        return instance;
-    }
-
     // 注册监听器
     void RegisterListener(EventType type, EventListener listener) {
-        auto& listenerList = listeners[type];
-        listenerList.push_back(listener);
+        listeners[type].push_back(listener);
     }
-
-    // 移除监听器
-    void RemoveListener(EventType type, EventListener listener) {
-     auto it = listeners.find(type);
-    if (it != listeners.end()) {
-        auto& listenerList = it->second;
-
-        for (auto it = listenerList.begin(); it != listenerList.end(); ) {
-            if (it->target<void(*)(const Event&)>() == listener.target<void(*)(const Event&)>()) {
-                it = listenerList.erase(it); // 移除并更新迭代器
-            } else {
-                ++it; // 仅更新迭代器
-            }
-        }
-    }
-}
 
     // 分发事件
     void DispatchEvent(const Event& event) const {
         EventType type = event.GetType();
-        auto it = listeners.find(type);
-        if (it != listeners.end()) {
-            for (const auto& listener : it->second) {
+        if (listeners.find(type) != listeners.end()) {
+            for (const auto& listener : listeners.at(type)) {
                 listener(event);
             }
         }
     }
 
-
-    EventManager() {} // 私有构造函数，防止外部实例化
+<<<<<<< Updated upstream
 private:
+=======
+
+    // 私有构造函数，防止外部实例化
+private:
+	EventManager() {} 
     EventManager(const EventManager&); // 禁用拷贝构造函数
     EventManager& operator=(const EventManager&); // 禁用赋值操作
+>>>>>>> Stashed changes
     std::unordered_map<EventType, std::vector<EventListener>> listeners;
 };
 //================================================================================================
@@ -280,8 +219,7 @@ private:
 
 
 // 外部事件管理器声明
-extern EventManager eventManager;
+
 
 // 事件处理函数声明
-void onMouseInput(const Event& event);
-void onKeyboardInput(const Event& event);
+

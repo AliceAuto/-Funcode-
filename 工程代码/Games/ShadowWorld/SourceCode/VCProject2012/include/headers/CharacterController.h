@@ -1,23 +1,19 @@
 #ifndef CHARACTERCONTROLLER_H
 #define CHARACTERCONTROLLER_H
 
-// 严格定义    ==>     可以软交互的对象
-
-
-
-
-
-
-
-
-#include "EventDrivenSystem.h"
 #include "Entity.h"
 
 class CharacterController : public Entity {
 public:
-    CharacterController(float initialX, float initialY);
+<<<<<<< Updated upstream
+    CharacterController(float initialX, float initialY,  ResourceBag* resourceBagPtr);
     virtual ~CharacterController(); // 虚析构函数
-	void Init (const std::string & bag) override;
+
+=======
+    CharacterController(float initialX, float initialY,std::string & resourceBag);
+    virtual ~CharacterController(); // 虚析构函数
+	void Init () override;
+>>>>>>> Stashed changes
     // 处理输入（虚函数）
     virtual void ProcessInput(const Event& event);
 
@@ -26,8 +22,7 @@ protected:
     virtual void UpdateState() override;
     virtual void UpdateAnimation() override;
     virtual void UpdateSound() override;
-	float forceX,forceY;
-	float mess;
+
     // 角色特有属性
     enum Facings { Up, Down, Left, Right };
     Facings facing;

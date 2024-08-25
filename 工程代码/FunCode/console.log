@@ -1,7 +1,7 @@
-//-------------------------- 8/25/2024 -- 16:05:14 -----
+//-------------------------- 8/25/2024 -- 16:12:46 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.91 Ghz)
+     (timed at roughly 2.89 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -472,7 +472,6 @@ t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.

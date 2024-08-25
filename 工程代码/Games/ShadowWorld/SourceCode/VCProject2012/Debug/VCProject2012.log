@@ -1,64 +1,20 @@
-﻿生成启动时间为 2024/8/25 16:05:47。
+<<<<<<< Updated upstream
+﻿生成启动时间为 2024/8/10 23:52:31。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Button.cpp Src\CGameMain.cpp Src\CSprite.cpp Src\CSystem.cpp Src\CharacterController.cpp Src\CollisionManager.cpp Src\Entity.cpp Src\EntityManager.cpp Src\EventDrivenSystem.cpp Src\Logger.cpp Src\Model.cpp Src\MonsterController.cpp Src\NonInteractiveObject.cpp Src\PlayerController.cpp Src\ResourceBag.cpp Src\Setting.cpp Src\StateMachine.cpp Src\States.cpp Src\Tiled.cpp Src\UnitTesting.cpp Src\View.cpp
-  View.cpp
-  UnitTesting.cpp
-  Tiled.cpp
-  States.cpp
-  StateMachine.cpp
-  Setting.cpp
-  ResourceBag.cpp
-d:\vs012\vc\include\memory(873): warning C4800: “float”: 将值强制为布尔值“true”或“false”(性能警告)
-          d:\vs012\vc\include\memory(972): 参见对正在编译的函数 模板 实例化“std::_Ref_count_obj<_Ty>::_Ref_count_obj<const char,float,float>(_V0_t &&,_V1_t &&,_V2_t &&)”的引用
-          with
-          [
-              _Ty=CSound,
-              _V0_t=const char *,
-              _V1_t=float,
-              _V2_t=float
-          ]
-          d:\vs012\vc\include\memory(972): 参见对正在编译的函数 模板 实例化“std::_Ref_count_obj<_Ty>::_Ref_count_obj<const char,float,float>(_V0_t &&,_V1_t &&,_V2_t &&)”的引用
-          with
-          [
-              _Ty=CSound,
-              _V0_t=const char *,
-              _V1_t=float,
-              _V2_t=float
-          ]
-          c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\resourcebag.cpp(60): 参见对正在编译的函数 模板 实例化“std::shared_ptr<_Ty> std::make_shared<CSound,const _Elem*,float,float>(_V0_t &&,_V1_t &&,_V2_t &&)”的引用
-          with
-          [
-              _Ty=CSound,
-              _Elem=char,
-              _V0_t=const char *,
-              _V1_t=float,
-              _V2_t=float
-          ]
-  PlayerController.cpp
-  NonInteractiveObject.cpp
-  MonsterController.cpp
-  Model.cpp
-  Logger.cpp
-  EventDrivenSystem.cpp
-  EntityManager.cpp
-  Entity.cpp
-  CollisionManager.cpp
-  CharacterController.cpp
-  CSystem.cpp
-  CSprite.cpp
-  CGameMain.cpp
-  正在生成代码...
-  正在编译...
+  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\ResourceManager.cpp
+  ResourceManager.cpp
+=======
+﻿生成启动时间为 2024/8/25 14:14:59。
+项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
+ClCompile:
+  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Button.cpp
   Button.cpp
-  正在生成代码...
-ResourceCompile:
-  C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\VCTemplate.res" VCTemplate.rc 
+>>>>>>> Stashed changes
 Link:
   D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
   Debug\CGameMain.obj
   Debug\CharacterController.obj
-  Debug\CollisionManager.obj
   Debug\CSprite.obj
   Debug\CSystem.obj
   Debug\Entity.obj
@@ -69,21 +25,24 @@ Link:
   Debug\NonInteractiveObject.obj
   Debug\PlayerController.obj
   Debug\ResourceBag.obj
-  Debug\Button.obj
+  Debug\ResourceManager.obj
   Debug\Setting.obj
   Debug\EntityManager.obj
   Debug\StateMachine.obj
   Debug\States.obj
-  Debug\Tiled.obj
   Debug\UnitTesting.obj
   Debug\View.obj
 CGameMain.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
 CommonClass_2010.Lib(CommonClass.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“CommonClass_2010.Lib(CommonClass.obj)”或在“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
   VCProject2012.vcxproj -> C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
 BscMake:
-  D:\VS012\VC\bin\bscmake.exe /nologo /o"..\..\..\Bin\Game.bsc" /n Debug\CGameMain.sbr Debug\CharacterController.sbr Debug\CollisionManager.sbr Debug\CSprite.sbr Debug\CSystem.sbr Debug\Entity.sbr Debug\EventDrivenSystem.sbr Debug\Logger.sbr Debug\Model.sbr Debug\MonsterController.sbr Debug\NonInteractiveObject.sbr Debug\PlayerController.sbr Debug\ResourceBag.sbr Debug\Button.sbr Debug\Setting.sbr Debug\EntityManager.sbr Debug\StateMachine.sbr Debug\States.sbr Debug\Tiled.sbr Debug\UnitTesting.sbr Debug\View.sbr
+  D:\VS012\VC\bin\bscmake.exe /nologo /o"..\..\..\Bin\Game.bsc" /n Debug\CGameMain.sbr Debug\CharacterController.sbr Debug\CSprite.sbr Debug\CSystem.sbr Debug\Entity.sbr Debug\EventDrivenSystem.sbr Debug\Logger.sbr Debug\Model.sbr Debug\MonsterController.sbr Debug\NonInteractiveObject.sbr Debug\PlayerController.sbr Debug\ResourceBag.sbr Debug\ResourceManager.sbr Debug\Setting.sbr Debug\EntityManager.sbr Debug\StateMachine.sbr Debug\States.sbr Debug\UnitTesting.sbr Debug\View.sbr
 已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:22.44
+<<<<<<< Updated upstream
+已用时间 00:00:05.82
+=======
+已用时间 00:00:09.36
+>>>>>>> Stashed changes
