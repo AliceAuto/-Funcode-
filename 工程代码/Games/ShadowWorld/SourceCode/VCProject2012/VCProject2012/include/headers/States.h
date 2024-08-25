@@ -2,7 +2,6 @@
 #define STATES_H
 
 #include "StateMachine.h"
-<<<<<<< Updated upstream
 
 //============================================================
 /*
@@ -34,14 +33,6 @@
 
 
 
-=======
-#include "EventDrivenSystem.h"
-#include "Logger.h"
-#include "CSystem.h"
-#include "Button.h"
-
-#include "CollisionManager.h"
->>>>>>> Stashed changes
 // Ö÷²Ëµ¥×´Ì¬
 class MainMenuState : public State {
 public:
@@ -49,17 +40,8 @@ public:
 	~MainMenuState()override;
     void Enter() override;
     void Exit() override;
-<<<<<<< Updated upstream
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
-=======
-    void Update() override;
-    void HandleButtonInput(const ButtonClickEvent& event);
-protected:
-	void RegisterEventListeners() override;
-    void UnregisterEventListeners()override;
-    State* CreateState() const override;
->>>>>>> Stashed changes
 
     static State* CreateState();
 };
@@ -76,20 +58,10 @@ public:
 
     void Enter() override;
     void Exit() override;
-<<<<<<< Updated upstream
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
 
     static State* CreateState();
-=======
-    void Update() override;
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
-protected:
-	void RegisterEventListeners() override;
-    void UnregisterEventListeners()override;
-    State* CreateState() const override;
->>>>>>> Stashed changes
 };
 
 
@@ -107,14 +79,7 @@ public:
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
 
-<<<<<<< Updated upstream
     static State* CreateState();
-=======
-protected:
-	void RegisterEventListeners() override;
-    void UnregisterEventListeners()override;
-    State* CreateState() const override;
->>>>>>> Stashed changes
 };
 
 
@@ -132,14 +97,7 @@ public:
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
 
-<<<<<<< Updated upstream
     static State* CreateState();
-=======
-protected:
-	void RegisterEventListeners() override;
-    void UnregisterEventListeners()override;
-    State* CreateState() const override;
->>>>>>> Stashed changes
 };
 
 
@@ -156,24 +114,9 @@ public:
     void Update(int userChoice) override;
     std::string GetNextState(int userChoice) override;
 
-<<<<<<< Updated upstream
     static State* CreateState();
-=======
-protected:
-	void RegisterEventListeners() override;
-    void UnregisterEventListeners()override;
-    State* CreateState() const override;
->>>>>>> Stashed changes
 };
 
 
-<<<<<<< Updated upstream
-=======
-protected:
-	void RegisterEventListeners() override;
-    void UnregisterEventListeners()override;
-    State* CreateState() const override;
-};
->>>>>>> Stashed changes
 
 #endif // STATES_H
