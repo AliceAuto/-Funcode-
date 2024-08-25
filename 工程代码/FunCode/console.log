@@ -1,11 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
 >>>>>>> parent of 2ae7059 (d)
+=======
+>>>>>>> parent of 5c1f154 (f)
 //-------------------------- 8/10/2024 -- 10:36:09 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
      (timed at roughly 2.90 Ghz)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -15,6 +19,8 @@ Processor Init:
      (timed at roughly 2.88 Ghz)
 >>>>>>> Stashed changes
 >>>>>>> parent of 2ae7059 (d)
+=======
+>>>>>>> parent of 5c1f154 (f)
    FPU detected
    MMX detected
    SSE detected
@@ -481,9 +487,12 @@ pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
 >>>>>>> parent of 2ae7059 (d)
+=======
+>>>>>>> parent of 5c1f154 (f)
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/level.t2d.
 t2dSceneGraph::addToScene() - Object '3164' is already in a SceneGraph!.
@@ -760,12 +769,15 @@ Populating font cache with range 0x20 to 0xff (32 fonts found)
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 >>>>>>> Stashed changes
 >>>>>>> parent of 2ae7059 (d)
+=======
+>>>>>>> parent of 5c1f154 (f)
 Set::getObject index out of range.
 Exporting Particle Editor preferences.
 Exporting Scene Editor preferences.
