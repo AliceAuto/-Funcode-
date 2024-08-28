@@ -17,14 +17,14 @@ public:
     ~MainMenuState();
     void Enter() override;
     void Exit() override;
-    void Update() override;
+    void Update(float fDeltaTime) override;
     void HandleButtonInput(const ButtonClickEvent& event);
 protected:
 	void RegisterEventListeners() override;
     void UnregisterEventListeners()override;
     State* CreateState() const override;
-	EntityManager * m_control_Manager;
-	ButtonManager  * buttonManager;
+	
+
 
 };
 
@@ -39,11 +39,9 @@ public:
     ~GameState();
     void Enter() override;
     void Exit() override;
-    void Update() override;
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
+    void Update(float fDeltaTime) override;
 
-	EntityManager * m_control_Manager;
+
     State* CreateState() const override;
 };
 
@@ -54,9 +52,8 @@ public:
     ~SettingsMenuState();
     void Enter() override;
     void Exit() override;
-    void Update() override;
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
+    void Update(float fDeltaTime) override;
+
 
 protected:
     State* CreateState() const override;
@@ -69,9 +66,8 @@ public:
     ~PauseMenuState();
     void Enter() override;
     void Exit() override;
-    void Update() override;
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
+    void Update(float fDeltaTime) override;
+
 
 protected:
     State* CreateState() const override;
@@ -84,10 +80,9 @@ public:
     ~ExitMenuState();
     void Enter() override;
     void Exit() override;
-    void Update() override;
+    void Update(float fDeltaTime) override;
  
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
+
 
 protected:
     State* CreateState() const override;
@@ -100,10 +95,9 @@ public:
     ~HighScoreState();
     void Enter() override;
     void Exit() override;
-    void Update() override;
+    void Update(float fDeltaTime) override;
  
-    void HandleMouseInput(const MouseInputEvent& event) override;
-    void HandleKeyboardInput(const KeyboardInputEvent& event) override;
+
 
 protected:
     State* CreateState() const override;

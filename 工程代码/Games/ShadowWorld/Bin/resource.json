@@ -9,7 +9,7 @@
     "StartGameButton": 
     {
         "CAnimateSprite":
-        {"ButtonSprite":"StartGameButton"} ,
+        {"Entity":"StartGameButton"} ,
         "CSound":
         {"ButtonSound":"running.ogg"} 
     },

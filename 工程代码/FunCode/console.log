@@ -1,7 +1,7 @@
-//-------------------------- 8/25/2024 -- 15:09:46 -----
+//-------------------------- 8/28/2024 -- 13:19:24 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.91 Ghz)
+     (timed at roughly 2.90 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -455,6 +455,8 @@ tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullCo
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/untitled.t2d.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
 Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dAnimatedSprite.
+Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
+Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dAnimatedSprite.
 t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (StartGameButton)
 tools/levelEditor/scripts/forms/objectLibrary/AnimatedSprites.ed.cs (60): Unable to find object: '' attempting to call function 'getFrameSize'
 t2dSceneObject::setSize() - Invalid number of parameters!
@@ -472,7 +474,7 @@ t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/"
+tools/levelEditor/scripts/levelManagement.ed.cs (342): Unable to find object: '' attempting to call function 'setActive'
 Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.

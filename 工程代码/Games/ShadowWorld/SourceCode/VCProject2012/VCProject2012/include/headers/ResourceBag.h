@@ -11,7 +11,8 @@
 
 class ResourceBag {
 public:
-    ResourceBag();
+
+    ResourceBag(const std::string & Entity_ID);
     ~ResourceBag();
 
     template <typename T>
@@ -24,9 +25,9 @@ public:
 
 private:
     std::unordered_map<std::string, std::shared_ptr<void>> container_;
-
+	std::string Entity_ID;
     static const std::string resourceFilename;
-    static int IdCounter;
+    long  IdCounter;
 };
 
 // 模板实现直接放在头文件中

@@ -15,9 +15,10 @@
 
 class CharacterController : public Entity {
 public:
-    CharacterController(float initialX, float initialY);
+    CharacterController(float initialX, float initialY,const std::string& resourceBagName);
     virtual ~CharacterController(); // 虚析构函数
-	void Init (const std::string & bag) override;
+	void Init () override;
+	void breakdown () override;
     // 处理输入（虚函数）
     virtual void ProcessInput(const Event& event);
 

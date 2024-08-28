@@ -1,28 +1,43 @@
 #include "Button.h"
 #include "Logger.h"
 
-Button::Button(const std::string& label) 
-    : Entity(0.0f, 0.0f), label_(label), isMouseOver(false), isClicked(false), resourceBagPtr(new ResourceBag) {}
+Button::Button(float initialX, float initialY,const std::string& resourceBagName,const std::string& label) 
+    : Entity(initialX, initialY,resourceBagName), label_(label), isMouseOver(false), isClicked(false),isListenerRegistered(false) 
+{
+}
+Button::~Button(){
+	Button::UnregisterMouseListener() ;
+}
 
-Button::Button(const std::string& label, ResourceBag* resourceBag)
-    : Entity(0.0f, 0.0f), label_(label), isMouseOver(false), isClicked(false), resourceBagPtr(resourceBag) {}
+
+void Button::Init()
+{
+	this->Entity::Init();
+	this->RegisterMouseListener();
+}
+
+void Button::breakdown()
+{
+	this->Entity::breakdown();
+	this->UnregisterMouseListener();
+}
+
 
 
 void Button::HandleMouseEvent(const MouseInputEvent& event) {
 	LogManager::Log("按钮:"+this->GetLabel()+"  捕获鼠标输入");
-    bool isMouseCurrentlyOver = this->resourceBagPtr->GetResource<CSprite>("ButtonSprite").get()->IsPointInSprite(event.GetX(),event.GetY());
-	LogManager::Log("                                                              "+std::to_string(isMouseCurrentlyOver)+","+std::to_string(event.IsLeftPressed()));
-
+    bool isMouseCurrentlyOver = this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->IsPointInSprite(event.GetX(),event.GetY());
+	
     if (event.IsLeftPressed() && isMouseCurrentlyOver) {
         if (!isClicked) {
             isClicked = true;
             LogManager::Log("按钮点击: " + label_);
             UpdateAnimation();
             UpdateSound();
-			ButtonClickEvent buttonEvent("开始游戏");
+			ButtonClickEvent buttonEvent(label_);
     
 			// 分发事件
-			eventManager.DispatchEvent(buttonEvent);
+			EventManager::Instance().DispatchEvent(buttonEvent);
 
 
 
@@ -44,9 +59,12 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
 
 }
 
+
+
+
 void Button::UpdateAnimation() {
 
-    CAnimateSprite* sprite = resourceBagPtr->GetResource<CAnimateSprite>("ButtonSprite").get();
+    CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
@@ -62,52 +80,35 @@ void Button::UpdateAnimation() {
 
 void Button::UpdateSound() {
 	LogManager::Log("[鼠标声音]");
-    CSound* sound = resourceBagPtr->GetResource<CSound>("ButtonSound").get();
+    CSound* sound = this->Entity::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
     if (sound && isClicked) {
         sound->PlaySound();
     }
 }
 
-ButtonManager::ButtonManager() {
-        // 注册鼠标输入监听器，将其绑定到 ButtonManager 的 HandleMouseInput 方法
-   eventManager.RegisterListener(EventType::MouseInput, 
-        [this](const Event& event) { this->HandleMouseInput(static_cast<const MouseInputEvent&>(event)); }
-    );
-    LogManager::Log("鼠标监听器绑定成功!");
 
-}
 
-ButtonManager::~ButtonManager() {
-    EventManager::Instance().RemoveListener(EventType::MouseInput, [this](const Event& event) {
-        const MouseInputEvent& mouseEvent = static_cast<const MouseInputEvent&>(event);
-        this->HandleMouseInput(mouseEvent);
-    });
-	LogManager::Log("鼠标监听器绑定!");
-    for (auto& pair : buttons_) {
-        delete pair.second;
-    }
-    buttons_.clear();
-}
 
-void ButtonManager::AddButton(Button* button) {
-    if (button) buttons_[button->GetLabel()] = button;
-}
+void Button::RegisterMouseListener() {
+    if (!this->isListenerRegistered) {
+        // 保存 lambda 表达式到 std::function 对象//
 
-void ButtonManager::HandleMouseInput(const MouseInputEvent& event) {
-	LogManager::Log("按钮管理器监听到鼠标信息");
-    for (auto& pair : buttons_) {
-        pair.second->HandleMouseEvent(event);
+
+        EventManager::Instance().RegisterListener(EventType::MouseInput, Entity::ID +"button_mouse_info",[this](const Event& event) 
+		{
+            this->HandleMouseEvent(static_cast<const MouseInputEvent&>(event));
+        });
+        this->isListenerRegistered = true;
+        LogManager::Log("成功注册一个鼠标监听");
     }
 }
 
-void ButtonManager::Update() {
-    for (auto& pair : buttons_) {
-        pair.second->UpdateAnimation();
-        pair.second->UpdateSound();
+void Button::UnregisterMouseListener() {
+    if (this->isListenerRegistered) {
+        EventManager::Instance().RemoveListener(EventType::MouseInput, Entity::ID +"button_mouse_info");
+        this->isListenerRegistered = false;
+        LogManager::Log("成功注销一个鼠标监听");
     }
 }
 
-Button* ButtonManager::GetButtonByLabel(const std::string& label) const {
-    auto it = buttons_.find(label);
-    return it != buttons_.end() ? it->second : nullptr;
-}
+

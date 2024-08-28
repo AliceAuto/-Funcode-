@@ -1,23 +1,28 @@
 #include "CharacterController.h"
 #include "Logger.h"
 #include <cmath>
-CharacterController::CharacterController(float initialX, float initialY)
-    : Entity(initialX, initialY), facing(Facings::Down),forceX(0),forceY(0) {
+CharacterController::CharacterController(float initialX, float initialY,const std::string& resourceBagName)
+    : Entity(initialX, initialY,resourceBagName), facing(Facings::Down),forceX(0),forceY(0) {
 
 
 
     // 其他初始化代码
 }
-void CharacterController::Init(const std::string & bag){
+void CharacterController::Init(){
 	//对物理人物进行初始化
-	this->resourceBagPtr->LoadFromJson(bag);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpritePosition(posX,posY);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMass(100);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteAtRest(false);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteInertialMoment(100);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteAutoMassInertia(true);
-	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMaxLinearVelocity(20);
-	mess = this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->GetSpriteMass();
+	this->Entity::Init();
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SetSpritePosition(posX,posY);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SetSpriteMass(100);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SetSpriteAtRest(false);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SetSpriteInertialMoment(100);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SetSpriteAutoMassInertia(true);
+	this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SetSpriteMaxLinearVelocity(20);
+	mess = this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->GetSpriteMass();
+}
+
+void CharacterController::breakdown(){
+	//对物理人物进行初始化
+	Entity::breakdown();
 }
 CharacterController::~CharacterController() {
     // 清理代码，如果有需要的话
@@ -25,6 +30,7 @@ CharacterController::~CharacterController() {
 
 void CharacterController::UpdateState() {
     // 默认实现，可以被子类重写
+
 	LogManager::Log("状态已更新");
     CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 
@@ -141,7 +147,7 @@ void CharacterController::ProcessInput(const Event& event) {
         LogManager::Log("键盘事件接收成功,正在处理输入信息");
         const KeyboardInputEvent& keyEvent = static_cast<const KeyboardInputEvent&>(event);
         LogManager::Log("[处理] 拆解输入包...");
-        if (keyEvent.GetState() == KeyboardInputEvent::State::KEY_ON) {
+        if (keyEvent.GetState() == KeyboardInputEvent::KeyState::KEY_ON) {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
                     forceY -= 80000;

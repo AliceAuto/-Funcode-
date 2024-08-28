@@ -26,13 +26,17 @@ public:
     void DeleteEntity(const std::string& id);
 
     // 更新所有 Entity，包括更新和渲染
-    void UpdateAllEntities();
+    void Update();
+	//加载所有实体
+	void EntityManager::LoadAllEntitys();
+	void EntityManager::breakDownAllEntitys();
+
 
 private:
     // 根据控制器类型创建新的控制器实例
     Entity* CreateEntityInstance(const std::string& type, Json::Value root);
 
-
+	long long Id_couter;
     // 存储精灵名称到 Entity 的映射
     std::unordered_map<std::string, Entity*> spriteNameToEntity;
     // 生成唯一 ID

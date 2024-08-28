@@ -4,227 +4,107 @@
 #include <vector>
 #include <functional>
 #include <algorithm>
-#include <typeinfo>
+#include <string>
 #include "Logger.h"
+
 //======================================================================================
 /*
-								事件驱动系统 接口声明
+                                事件驱动系统 接口声明
 */
 //======================================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 枚举事件类型
-enum class EventType {
+enum EventType {
     MouseInput,
     KeyboardInput,
-	ButtonClick,  // 新增按钮点击事件类型
+    ButtonClick,
     Collision
 };
 
-
-
-
-
-
 // 事件基类
-//=========================================
 class Event {
 public:
     virtual ~Event() {}
     virtual EventType GetType() const = 0;
 };
-//===================================================
-
-
-
-
-
-
 
 // 鼠标输入事件
-//====================================================
 class MouseInputEvent : public Event {
 public:
-    // 构造函数
     MouseInputEvent(float x, float y, bool isLeftPressed, bool isMiddlePressed, bool isRightPressed)
         : x(x), y(y), isLeftPressed(isLeftPressed), isMiddlePressed(isMiddlePressed), isRightPressed(isRightPressed) {}
 
-    // 获取事件类型
-    EventType GetType() const override 
-	{
-        return EventType::MouseInput;
+    EventType GetType() const override {
+        return MouseInput;
     }
 
-    // 公有的 getter 方法
-    float GetX() const
-	{
-        return x;
-    }
-
-    float GetY() const
-	{
-        return y;
-    }
-
-    bool IsLeftPressed() const 
-	{
-        return isLeftPressed;
-    }
-
-    bool IsMiddlePressed() const 
-	{
-        return isMiddlePressed;
-    }
-
-    bool IsRightPressed() const
-	{
-        return isRightPressed;
-    }
+    float GetX() const { return x; }
+    float GetY() const { return y; }
+    bool IsLeftPressed() const { return isLeftPressed; }
+    bool IsMiddlePressed() const { return isMiddlePressed; }
+    bool IsRightPressed() const { return isRightPressed; }
 
 private:
-    // 私有的数据成员
-    float x;
-    float y;
-    bool isLeftPressed;
-    bool isMiddlePressed;
-    bool isRightPressed;
+    float x, y;
+    bool isLeftPressed, isMiddlePressed, isRightPressed;
 };
-//========================================================================
-
-
-
-
-
-
-
-
-
-
 
 // 键盘输入事件
-//===============================================================
 class KeyboardInputEvent : public Event {
 public:
-    KeyboardInputEvent(int key, int state) : key(key), state(state) {}
+    enum KeyState {
+        KEY_ON,
+        KEY_OFF
+    };
+
+    KeyboardInputEvent(int key, KeyState state) : key(key), state(state) {}
 
     EventType GetType() const override {
-        return EventType::KeyboardInput;
+        return KeyboardInput;
     }
 
-    int GetKey() const {
-        return key;
-    }
+    int GetKey() const { return key; }
+    KeyState GetState() const { return state; }
 
-    int GetState() const {
-        return state;
-    }
-static enum	State{
-	KEY_ON,
-	KEY_OFF
-	};
 private:
-
     int key;
-    int state;
+    KeyState state;
 };
-//==============================================================================================
-
-
-
-
-
-
-
 
 // 精灵碰撞事件类
-//=================================================================
 class CollisionEvent : public Event {
 public:
-    CollisionEvent(const std::string& A,const std::string& B ) : A(A), B(B) {
-	}
+    CollisionEvent(const std::string& A, const std::string& B) : A(A), B(B) {}
 
     EventType GetType() const override {
-        return EventType::Collision;
+        return Collision;
     }
 
-    const std::string& GetA ()const {
-        return A;
-    }
-	const std::string& GetB ()const {
-        return B;
-    }
+    const std::string& GetA() const { return A; }
+    const std::string& GetB() const { return B; }
 
 private:
-	const std::string& A;
-	const std::string& B;
-    
+    std::string A, B;
 };
-//===========================================================================================
-
-
-
-
-
-
-
-
-
-
 
 // 按钮点击事件类
-//=================================================================
 class ButtonClickEvent : public Event {
 public:
-    ButtonClickEvent(std::string sender) : sender(sender) {}
+    ButtonClickEvent(const std::string& sender) : sender(sender) {}
 
     EventType GetType() const override {
-        return EventType::ButtonClick;
+        return ButtonClick;
     }
 
-    std::string GetButtonSender() const {
-        return sender;
-    }
+    std::string GetButtonSender() const { return sender; }
 
 private:
-	std::string sender;//辨识发送者
-    
+    std::string sender;
 };
-//===========================================================================================
-
-
-
-
-
 
 // 事件管理器类
-//===========================================================
 class EventManager {
 public:
-    // 使用 typedef 代替 using 声明
     typedef std::function<void(const Event&)> EventListener;
 
     // 获取事件管理器的实例
@@ -233,55 +113,50 @@ public:
         return instance;
     }
 
-    // 注册监听器
-    void RegisterListener(EventType type, EventListener listener) {
-        auto& listenerList = listeners[type];
-        listenerList.push_back(listener);
+    // 注册监听器，指定事件类型
+    void RegisterListener(EventType type, const std::string& listenerID, EventListener listener) {
+        listeners[type].push_back(std::make_pair(listenerID, listener));
     }
 
-    // 移除监听器
-    void RemoveListener(EventType type, EventListener listener) {
-     auto it = listeners.find(type);
-    if (it != listeners.end()) {
-        auto& listenerList = it->second;
-
-        for (auto it = listenerList.begin(); it != listenerList.end(); ) {
-            if (it->target<void(*)(const Event&)>() == listener.target<void(*)(const Event&)>()) {
-                it = listenerList.erase(it); // 移除并更新迭代器
-            } else {
-                ++it; // 仅更新迭代器
-            }
-        }
+    // 移除监听器，指定事件类型
+    void RemoveListener(EventType type, const std::string& listenerID) {
+        std::vector<std::pair<std::string, EventListener>>& listenerList = listeners[type];
+        listenerList.erase(
+            std::remove_if(listenerList.begin(), listenerList.end(),
+                [&](const std::pair<std::string, EventListener>& pair) {
+                    return pair.first == listenerID;
+                }),
+            listenerList.end()
+        );
     }
-}
 
     // 分发事件
-    void DispatchEvent(const Event& event) const {
+    void DispatchEvent(const Event& event) {
         EventType type = event.GetType();
         auto it = listeners.find(type);
         if (it != listeners.end()) {
-            for (const auto& listener : it->second) {
-                listener(event);
+            // 使用临时容器来避免迭代器失效
+            std::vector<EventListener> tempListeners;
+            for (const auto& pair : it->second) {
+                tempListeners.push_back(pair.second);
+            }
+            for (const auto& listener : tempListeners) {
+                try {
+                    listener(event);
+                } catch (const std::exception& e) {
+                    LogManager::Log("Exception: " + std::string(e.what()));
+                }
             }
         }
     }
 
+    // 清理所有监听器
+    void ClearListeners() {
+        listeners.clear();
+    }
 
-    EventManager() {} // 私有构造函数，防止外部实例化
 private:
-    EventManager(const EventManager&); // 禁用拷贝构造函数
-    EventManager& operator=(const EventManager&); // 禁用赋值操作
-    std::unordered_map<EventType, std::vector<EventListener>> listeners;
+    EventManager() {} // 私有构造函数，防止外部实例化
+
+    std::unordered_map<EventType, std::vector<std::pair<std::string, EventListener>>> listeners;
 };
-//================================================================================================
-
-
-
-
-
-// 外部事件管理器声明
-extern EventManager eventManager;
-
-// 事件处理函数声明
-void onMouseInput(const Event& event);
-void onKeyboardInput(const Event& event);

@@ -1,36 +1,64 @@
 #ifndef NONINTERACTIVEOBJECT_H
 #define NONINTERACTIVEOBJECT_H
 
-//严格定义     ==>     非软交互对象
-
-
-
-
-
-
-
-
-
-
-
 #include "Entity.h"
+#include <string>
 
 // 非交互对象类声明
 class NonInteractiveObject : public Entity {
 public:
     // 构造函数
-    NonInteractiveObject(float initialX, float initialY);
+    NonInteractiveObject(float initialX, float initialY, const std::string& resourceBagName);
 
     // 虚析构函数
     virtual ~NonInteractiveObject();
-	void Init (const std::string & bag) override;
+
+    // 初始化函数
+    void Init() override;
+	void breakdown() override;
+	
 protected:
     // 提供默认实现，允许子类选择性重写
     virtual void UpdateState() override;
     virtual void UpdateAnimation() override;
     virtual void UpdateSound() override;
+};
 
-    // 其他非交互对象特有的属性和方法
+// 物理性实体类声明
+class PhysicalObject : public NonInteractiveObject {
+public:
+    // 构造函数
+    PhysicalObject(float initialX, float initialY, const std::string& resourceBagName);
+
+    // 虚析构函数
+    virtual ~PhysicalObject();
+	void Init() override;
+	void breakdown() override;
+protected:
+    // 重写更新状态，处理物理运动
+    void UpdateState() override;
+    void UpdateAnimation() override;
+    void UpdateSound() override;
+
+    // 物理性实体特有的属性
+    float velocityX;
+    float velocityY;
+    void ApplyPhysics();
+};
+
+// 障碍物实体类声明
+class ObstacleObject : public NonInteractiveObject {
+public:
+    // 构造函数
+    ObstacleObject(float initialX, float initialY, const std::string& resourceBagName);
+
+    // 虚析构函数
+    virtual ~ObstacleObject();
+	void Init() override;
+	void breakdown() override;
+protected:
+    // 重写更新状态，处理位置不变的逻辑
+    void UpdateState() override;
 };
 
 #endif // NONINTERACTIVEOBJECT_H

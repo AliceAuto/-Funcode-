@@ -8,29 +8,30 @@
 #include "EventDrivenSystem.h"
 #include "Logger.h"
 #include "CollisionManager.h"
+#include "EntityManager.h"
 // 状态接口
 class State {
 public:
-    virtual ~State() {}
+	State();
+	virtual ~State();
 
     // 状态管理接口
     virtual void Enter() = 0;               // 状态入口
     virtual void Exit() = 0;                // 状态出口
   
-    virtual void Update() =0;
+    virtual void Update(float fDeltaTime) =0;
 
 
     // 事件处理接口
-    virtual void HandleMouseInput(const MouseInputEvent& event) {}
-    virtual void HandleKeyboardInput(const KeyboardInputEvent& event) {}
-	
+	// 注册和取消事件监听
+    virtual void RegisterEventListeners() {};
+    virtual void UnregisterEventListeners() {};
+	EntityManager * entityManager;
 protected:
     // 工厂方法，创建状态实例
     virtual State* CreateState() const = 0;
 
-    // 注册和取消事件监听
-    virtual void RegisterEventListeners() {};
-    virtual void UnregisterEventListeners() {};
+    
 };
 
 // 状态机类
@@ -48,9 +49,8 @@ public:
     void SetCurrentState(const std::string& name); // 设置状态机当前的状态
     std::string GetCurrentStateName() const;       // 查询当前状态的名称
     State* GetState(const std::string& name) const; // 获取状态对象指针
-    void Update();
-
-
+    void Update(float fDeltaTime);
+  
     std::map<std::string, std::unique_ptr<State>> states_; // 存储所有状态
     State* currentState_;  // 当前状态指针
     std::string currentStateName_; // 当前状态名称

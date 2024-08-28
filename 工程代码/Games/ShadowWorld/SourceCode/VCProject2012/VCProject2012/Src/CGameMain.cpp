@@ -118,7 +118,7 @@ void CGameMain::GameInit()
 void CGameMain::GameRun(float fDeltaTime)
 {
 
-  stateMachine->Update();
+  stateMachine->Update(fDeltaTime);
 
 }
 
@@ -137,7 +137,7 @@ void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 	 MouseInputEvent mouseEvent(fMouseX, fMouseY, false, false, false);
     
     // 分发事件
-    eventManager.DispatchEvent(mouseEvent);
+    EventManager::Instance().DispatchEvent(mouseEvent);
 
     // 日志记录
     LogManager::Log("鼠标移动: (" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
@@ -157,7 +157,7 @@ void CGameMain::OnMouseClick( const int iMouseType, const float fMouseX, const f
     MouseInputEvent mouseEvent(fMouseX, fMouseY, isLeftPressed, isMiddlePressed, isRightPressed);
     
     // 分发事件
-    eventManager.DispatchEvent(mouseEvent);
+    EventManager::Instance().DispatchEvent(mouseEvent);
 
     // 日志记录
     LogManager::Log("鼠标点击: 类型=" + std::to_string(iMouseType) + " 坐标=(" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
@@ -179,11 +179,11 @@ void CGameMain::OnMouseUp( const int iMouseType, const float fMouseX, const floa
 void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress )
 {	
 		// 创建事件并分发
-    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_ON);	//分发	按键按下事件 <Key, State>
+    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::KeyState::KEY_ON);	//分发	按键按下事件 <Key, State>
 
 
 	//触发事件
-    eventManager.DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+    EventManager::Instance().DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
 	
 		
 	//日志记录
@@ -197,11 +197,11 @@ void CGameMain::OnKeyUp( const int iKey )
 {
 			
 	// 创建事件并分发
-    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::State::KEY_OFF);	//分发	按键按下事件 <Key, State>
+    KeyboardInputEvent keyboardEvent(iKey,	KeyboardInputEvent::KeyState::KEY_OFF);	//分发	按键按下事件 <Key, State>
 
 
 	//触发事件
-    eventManager.DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
+    EventManager::Instance().DispatchEvent(keyboardEvent); //			触发键盘事件的		<xxx监听器>
 
 		
 	//日志记录
@@ -218,8 +218,8 @@ void CGameMain::OnSpriteColSprite( const char *szSrcName, const char *szTarName 
 {
 	
 
-	Entity* spriteA =static_cast<GameState*>(stateMachine->currentState_)->m_control_Manager->GetEntity(szSrcName);
-    Entity* spriteB = static_cast<GameState*>(stateMachine->currentState_)->m_control_Manager->GetEntity(szTarName);
+	Entity* spriteA =static_cast<GameState*>(stateMachine->currentState_)->entityManager->GetEntity(szSrcName);
+    Entity* spriteB = static_cast<GameState*>(stateMachine->currentState_)->entityManager->GetEntity(szTarName);
 	
 	if (spriteA)spriteA->ifCollision(spriteB);LogManager::Log(szSrcName);
 	if (spriteB) spriteB->ifCollision(spriteA);LogManager::Log(szTarName);

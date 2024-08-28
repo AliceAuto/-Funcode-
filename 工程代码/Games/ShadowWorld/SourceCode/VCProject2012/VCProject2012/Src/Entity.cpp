@@ -7,15 +7,30 @@
 
 
 
-Entity::Entity(float initialX, float initialY)
-    : posX(initialX), posY(initialY), velocityX(0), velocityY(0), resourceBagPtr(new ResourceBag) {
-
+Entity::Entity(float initialX, float initialY,const std::string& resourceBagName)
+    : posX(initialX), posY(initialY), velocityX(0), velocityY(0),ResourceBagName(resourceBagName),ID(""),resourceBagPtr(nullptr) {
 }
 
 Entity::~Entity() {
-    delete resourceBagPtr; // 释放 ResourceBag 实例
-}
 
+}
+void Entity::Init() 
+
+{  
+	if(!resourceBagPtr){
+		resourceBagPtr =new ResourceBag(ID);
+		this->resourceBagPtr->LoadFromJson(ResourceBagName);
+        this->resourceBagPtr->GetResource<CSprite>("Entity")->SetSpritePosition(this->posX, this->posY);
+	}
+ 
+}
+void Entity::breakdown() 
+{  
+	if(resourceBagPtr){
+		delete resourceBagPtr;
+	} // 释放 ResourceBag 实例
+ 
+}
 void Entity::Update() {
     UpdateState();
     UpdateAnimation();

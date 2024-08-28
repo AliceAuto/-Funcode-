@@ -44,9 +44,10 @@
 
 class MonsterController : public CharacterController {
 public:
-    MonsterController(float initialX, float initialY );
+    MonsterController(float initialX, float initialY,const std::string& resourceBagName );
     ~MonsterController();
-
+	void Init() override;
+	void breakdown() override;
 
 };
 

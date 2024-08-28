@@ -69,4 +69,13 @@
       WorldLimitMax = "50.000 37.500";
          mountID = "4";
    };
+   new t2dAnimatedSprite(StartGameButton) {
+      animationName = "clicked";
+      canSaveDynamicFields = "1";
+      Position = "3.000 2.000";
+      size = "16.000 16.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "5";
+   };
 };

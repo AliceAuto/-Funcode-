@@ -8,36 +8,22 @@
 // Button ¿‡
 class Button : public Entity {
 public:
-	Button(const std::string& label);
-    Button(const std::string& label, ResourceBag* resourceBag);
+	Button(float initialX, float initialY,const std::string& resourceBagName,const std::string& label);
+    ~Button();
 
     void HandleMouseEvent(const MouseInputEvent& event);
 	virtual void UpdateState(){};
 	virtual void UpdateAnimation();
 	virtual void UpdateSound();
-
+	void Init() override;
+	void breakdown() override;
     const std::string& GetLabel() const { return label_; }
-
-    ResourceBag* resourceBagPtr;
+	void RegisterMouseListener();
+	void UnregisterMouseListener();
 private:
+	bool isListenerRegistered;
     std::string label_;
     bool isMouseOver;
     bool isClicked;
    
-};
-
-// ButtonManager ¿‡
-class ButtonManager {
-public:
-    ButtonManager();
-    ~ButtonManager();
-
-    void AddButton(Button* button);
-    void HandleMouseInput(const MouseInputEvent& event);
-    void Update();
-
-    Button* GetButtonByLabel(const std::string& label) const;
-
-private:
-    std::unordered_map<std::string, Button*> buttons_;
 };
