@@ -30,7 +30,6 @@
 #include "MonsterController.h"
 #include "PlayerController.h"
 #include "StateMachine.h"
-#include "States.h"
 #include "json\json.h"
 #include "Setting.h"
 
@@ -88,7 +87,7 @@ int PASCAL WinMain(HINSTANCE hInstance,
         float fTimeDelta = CSystem::GetTimeDelta();
 
         // 更新游戏主循环
-        g_GameMain.GameMainLoop(fTimeDelta);
+        CGameMain::GetInstance().GameMainLoop(fTimeDelta);
 
         // 更新控制器
     }

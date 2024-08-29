@@ -1,75 +1,175 @@
 #include "StateMachine.h"
+
+//_______________________________________________________
+//=======================================================
+
+
+//_____________________________________
 State::State()
 {
 	entityManager = new EntityManager;
 }
+//_____________________________________
+
+
+
+
+//___________________________
 State::~State()
 {
 	delete entityManager;
 }
+//___________________________
 
+//_______________________________________________________
+//=======================================================
+
+
+
+
+
+
+
+
+
+//____________________________________________________________________________________________________________________________________________________________________________________
+//====================================================================================================================================================================================
+
+
+//[说明]
 // 状态机构造函数
-StateMachine::StateMachine() : currentState_(nullptr) {
-
-}
-
-// 状态机析构函数
-StateMachine::~StateMachine() {
-    
-}
-
-// 设置当前状态
-void StateMachine::SetCurrentState(const std::string& name) {
-
-    auto it = states_.find(name);
-    if (it != states_.end()) {
-        if (currentState_) {
-            currentState_->Exit();
-        }
-        currentState_ = it->second.get();
-        currentStateName_ = name;
-        currentState_->Enter();
-        LogManager::Log("Current state set to: " + name);
-    } else {
-        LogManager::Log("State not found: " + name);
-    }
-}
-// 更新状态机
-void StateMachine:: ToNextState(const std::string & stateName) {
-
-    if (currentState_) {
-        if (stateName != currentStateName_) {
-            SetCurrentState(stateName);
-        }
-    }
-	
-}
-// 查询当前状态名称
-std::string StateMachine::GetCurrentStateName() const {
-    return currentStateName_;
-}
-
-// 添加状态
-void StateMachine::AddState(const std::string& name, std::unique_ptr<State> state) {
-    // 通过名称添加状态
-    states_[name] = std::move(state);
-}
-
-// 获取状态对象
-State* StateMachine::GetState(const std::string& name) const {
-    auto it = states_.find(name);
-    if (it != states_.end()) {
-		 
-        return it->second.get();
-    }
-    return nullptr;
-}
-
-// 刷新当前状态
-void StateMachine::Update(float fDeltaTime) {
-	
-
-    if (currentState_) {
-        currentState_->Update(fDeltaTime);
+//_______________________________________________________
+	StateMachine::StateMachine() : currentState_(nullptr)
+	{
 	}
-}
+//_______________________________________________________
+
+
+
+
+
+
+
+
+
+
+//[说明]
+// 状态机析构函数
+//____________________________
+	StateMachine::~StateMachine() 
+	{
+	}
+//____________________________
+
+
+
+
+//[说明]
+// 设置当前状态
+//_____________________________________________________________
+	void StateMachine::SetCurrentState(const std::string& name)
+	{
+		auto it = states_.find(name);
+		if (it != states_.end())
+		{
+			if (currentState_) 
+			{
+				currentState_->Exit();
+			}
+			currentState_ = it->second.get();
+			currentStateName_ = name;
+			currentState_->Enter();
+			LogManager::Log("Current state set to: " + name);
+		} else 
+		{
+			LogManager::Log("State not found: " + name);
+		}
+	}
+//_____________________________________________________________
+
+
+
+
+
+//[说明]
+// 更新状态机
+//________________________________________________________________
+	void StateMachine:: ToNextState(const std::string & stateName) 
+	{
+		if (currentState_) 
+		{
+			if (stateName != currentStateName_) 
+			{
+				SetCurrentState(stateName);
+			}
+		}
+	}
+//________________________________________________________________
+
+
+
+
+
+//[说明]
+// 查询当前状态名称
+//_________________________________________________________
+	std::string StateMachine::GetCurrentStateName() const 
+	{
+		return currentStateName_;
+	}
+//_________________________________________________________
+
+
+
+
+
+//[说明]
+// 添加状态
+//__________________________________________________________________________________
+	void StateMachine::AddState(const std::string& name, std::unique_ptr<State> state) 
+	{
+		// 通过名称添加状态
+		states_[name] = std::move(state);
+	}
+//__________________________________________________________________________________
+
+
+
+
+
+//[说明]
+// 获取状态对象
+//___________________________________________________________________
+	State* StateMachine::GetState(const std::string& name) const 
+	{
+		auto it = states_.find(name);
+		if (it != states_.end()) 
+		{
+			return it->second.get();
+		}
+		return nullptr;
+	}
+//___________________________________________________________________
+
+
+
+
+//[说明]
+// 刷新当前状态
+//_____________________________________________
+
+	void StateMachine::Update(float fDeltaTime)
+	{
+		if (currentState_) 
+		{
+			currentState_->Update(fDeltaTime);
+		}
+	}
+//_____________________________________________
+
+
+
+
+
+//____________________________________________________________________________________________________________________________________________________________________________________
+//====================================================================================================================================================================================

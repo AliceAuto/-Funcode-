@@ -61,4 +61,36 @@ protected:
     void UpdateState() override;
 };
 
+
+//子弹类
+class Bullet : public NonInteractiveObject {
+public:
+    // 构造函数
+    Bullet(float initialX, float initialY, const std::string& resourceBagName, float speed, float direction);
+
+    // 析构函数
+    virtual ~Bullet();
+
+    // 初始化
+    virtual void Init() override;
+
+    // 资源清理
+    virtual void breakdown() override;
+
+    // 更新状态
+    virtual void UpdateState() override;
+
+    // 更新动画
+    virtual void UpdateAnimation() override;
+
+    // 更新声音
+    virtual void UpdateSound() override;
+
+private:
+    float speed;       // 子弹的速度
+    float direction;   // 子弹的方向（以弧度为单位）
+	
+    // 移动子弹
+};
+
 #endif // NONINTERACTIVEOBJECT_H

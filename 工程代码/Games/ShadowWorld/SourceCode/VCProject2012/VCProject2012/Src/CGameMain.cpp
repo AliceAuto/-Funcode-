@@ -4,7 +4,7 @@
 #include "headers\PlayerController.h"
 #include "Setting.h"
 #include "Logger.h"
-#include "headers\States.h"
+#include "headers\SceneStates.h"
 #include "headers\StateMachine.h"
 
 
@@ -35,7 +35,7 @@
 //
 //
 
-CGameMain		g_GameMain;	
+
 
 //==============================================================================
 //

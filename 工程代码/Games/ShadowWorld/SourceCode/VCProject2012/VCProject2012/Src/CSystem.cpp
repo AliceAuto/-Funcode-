@@ -40,7 +40,7 @@
 void CSystem::OnMouseMove( const float fMouseX, const float fMouseY )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnMouseMove(fMouseX, fMouseY);
+	CGameMain::GetInstance().OnMouseMove(fMouseX, fMouseY);
 	
 	/*
 	// 创建事件并分发
@@ -65,7 +65,7 @@ void CSystem::OnMouseMove( const float fMouseX, const float fMouseY )
 void CSystem::OnMouseClick( const int iMouseType, const float fMouseX, const float fMouseY )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnMouseClick(iMouseType, fMouseX, fMouseY);
+	CGameMain::GetInstance().OnMouseClick(iMouseType, fMouseX, fMouseY);
 	
 }
 //==========================================================================
@@ -77,7 +77,7 @@ void CSystem::OnMouseClick( const int iMouseType, const float fMouseX, const flo
 void CSystem::OnMouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnMouseUp(iMouseType, fMouseX, fMouseY);
+	CGameMain::GetInstance().OnMouseUp(iMouseType, fMouseX, fMouseY);
 }
 //==========================================================================
 //
@@ -88,7 +88,7 @@ void CSystem::OnMouseUp( const int iMouseType, const float fMouseX, const float 
 void CSystem::OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnKeyDown(iKey, bAltPress, bShiftPress, bCtrlPress);
+	CGameMain::GetInstance().OnKeyDown(iKey, bAltPress, bShiftPress, bCtrlPress);
 
 	
 
@@ -104,7 +104,7 @@ void CSystem::OnKeyDown( const int iKey, const bool bAltPress, const bool bShift
 void CSystem::OnKeyUp( const int iKey )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnKeyUp(iKey);
+	CGameMain::GetInstance().OnKeyUp(iKey);
 
 
 
@@ -123,7 +123,7 @@ void CSystem::OnKeyUp( const int iKey )
 void CSystem::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnSpriteColSprite(szSrcName, szTarName);
+	CGameMain::GetInstance().OnSpriteColSprite(szSrcName, szTarName);
 }
 
 //===========================================================================
@@ -136,7 +136,7 @@ void CSystem::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 void CSystem::OnSpriteColWorldLimit( const char *szName, const int iColSide )
 {
 	// 可以在此添加游戏需要的响应函数
-	g_GameMain.OnSpriteColWorldLimit(szName, iColSide);
+	CGameMain::GetInstance().OnSpriteColWorldLimit(szName, iColSide);
 
 }
 

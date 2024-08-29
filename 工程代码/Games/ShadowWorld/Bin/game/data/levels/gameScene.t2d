@@ -52,23 +52,6 @@
       CollisionPolyList = "-0.206 -0.123 0.530 -0.133 0.525 0.682 -0.221 0.668";
          mountID = "2";
    };
-   new t2dScroller(block) {
-      imageMap = "upgrade3ImageMap1";
-      useSourceRect = "0";
-      sourceRect = "2.36006e-039 0 2.37773e-039 6.20699e-039";
-      canSaveDynamicFields = "1";
-      Position = "4.000 -9.000";
-      size = "8.000 8.000";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      CollisionActiveSend = "1";
-      CollisionActiveReceive = "1";
-      CollisionPhysicsSend = "1";
-      CollisionPhysicsReceive = "1";
-      CollisionResponseMode = "RIGID";
-      LinkPoints = "-0.380 0.845";
-         mountID = "3";
-   };
    new t2dTextObject() {
       canSaveDynamicFields = "1";
       Position = "40.821 19.245";
@@ -90,12 +73,46 @@
       snapToInteger = "0";
       noUnicode = "0";
          hideOverlap = "0";
+         mountID = "3";
+   };
+   new t2dStaticSprite(Bullet_1) {
+      imageMap = "particles1ImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.36006e-039 0 2.36006e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "63.500 -31.500";
+      size = "3.000 3.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "1";
+      CollisionPhysicsReceive = "1";
+      CollisionLayers = "-67108865";
+      CollisionResponseMode = "RIGID";
+      CollisionPolyList = "-0.358 0.309 -0.491 0.226 -0.506 -0.034 -0.378 -0.344 -0.103 -0.496 0.157 -0.481 0.358 -0.393 0.457 -0.157 0.467 0.049 0.403 0.285 0.226 0.437 -0.108 0.452";
          mountID = "4";
+   };
+   new t2dStaticSprite(block) {
+      imageMap = "upgrade3ImageMap1";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 2.36006e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "61.442 21.722";
+      size = "8.000 8.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsReceive = "1";
+      CollisionResponseMode = "RIGID";
+      CollisionPolyList = "-0.692 -0.717 -0.417 -0.908 0.010 -1.000 0.638 -0.776 0.962 -0.285 0.953 0.344 0.668 0.791 0.250 0.977 -0.300 0.997 -0.692 0.781 -0.908 0.486 -1.000 0.083 -0.992 -0.285";
+         mountID = "5";
    };
    new t2dTileLayer() {
       LayerFile = "~/data/tilemaps/untitled.lyr";
       canSaveDynamicFields = "1";
-      Position = "-0.000 0.000";
       size = "100.000 80.000";
       WorldLimitMin = "0.000 0.000";
       WorldLimitMax = "0.000 0.000";
@@ -104,6 +121,6 @@
       CollisionPhysicsReceive = "1";
       CollisionMaxIterations = "1";
       CollisionResponseMode = "BOUNCE";
-         mountID = "5";
+         mountID = "6";
    };
 };

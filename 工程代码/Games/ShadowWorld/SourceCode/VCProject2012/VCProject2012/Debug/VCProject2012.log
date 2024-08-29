@@ -1,17 +1,17 @@
-﻿生成启动时间为 2024/8/28 13:25:32。
+﻿生成启动时间为 2024/8/29 18:48:18。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\StateMachine.cpp
-  StateMachine.cpp
+  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\CharacterController.cpp Src\Entity.cpp
+  Entity.cpp
+  CharacterController.cpp
+  正在生成代码...
 Link:
   D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
   Debug\CGameMain.obj
   Debug\CharacterController.obj
-  Debug\CollisionManager.obj
   Debug\CSprite.obj
   Debug\CSystem.obj
   Debug\Entity.obj
-  Debug\EventDrivenSystem.obj
   Debug\Logger.obj
   Debug\Model.obj
   Debug\MonsterController.obj
@@ -19,10 +19,10 @@ Link:
   Debug\PlayerController.obj
   Debug\ResourceBag.obj
   Debug\Button.obj
+  Debug\SceneStates.obj
   Debug\Setting.obj
   Debug\EntityManager.obj
   Debug\StateMachine.obj
-  Debug\States.obj
   Debug\Tiled.obj
   Debug\UnitTesting.obj
   Debug\View.obj
@@ -30,9 +30,9 @@ CGameMain.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR�
 CommonClass_2010.Lib(CommonClass.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“CommonClass_2010.Lib(CommonClass.obj)”或在“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
   VCProject2012.vcxproj -> C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
 BscMake:
-  D:\VS012\VC\bin\bscmake.exe /nologo /o"..\..\..\Bin\Game.bsc" /n Debug\CGameMain.sbr Debug\CharacterController.sbr Debug\CollisionManager.sbr Debug\CSprite.sbr Debug\CSystem.sbr Debug\Entity.sbr Debug\EventDrivenSystem.sbr Debug\Logger.sbr Debug\Model.sbr Debug\MonsterController.sbr Debug\NonInteractiveObject.sbr Debug\PlayerController.sbr Debug\ResourceBag.sbr Debug\Button.sbr Debug\Setting.sbr Debug\EntityManager.sbr Debug\StateMachine.sbr Debug\States.sbr Debug\Tiled.sbr Debug\UnitTesting.sbr Debug\View.sbr
+  D:\VS012\VC\bin\bscmake.exe /nologo /o"..\..\..\Bin\Game.bsc" /n Debug\CGameMain.sbr Debug\CharacterController.sbr Debug\CSprite.sbr Debug\CSystem.sbr Debug\Entity.sbr Debug\Logger.sbr Debug\Model.sbr Debug\MonsterController.sbr Debug\NonInteractiveObject.sbr Debug\PlayerController.sbr Debug\ResourceBag.sbr Debug\Button.sbr Debug\SceneStates.sbr Debug\Setting.sbr Debug\EntityManager.sbr Debug\StateMachine.sbr Debug\Tiled.sbr Debug\UnitTesting.sbr Debug\View.sbr
 已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:07.22
+已用时间 00:00:08.50

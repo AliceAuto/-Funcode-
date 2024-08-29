@@ -41,13 +41,7 @@
     <ClCompile Include="Src\Setting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\EventDrivenSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Logger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\States.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Src\StateMachine.cpp">
@@ -80,7 +74,7 @@
     <ClCompile Include="Src\Tiled.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\CollisionManager.cpp">
+    <ClCompile Include="Src\SceneStates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -118,12 +112,6 @@
     <ClInclude Include="include\headers\UI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\StateMachine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\States.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\CharacterController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -158,6 +146,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\CollisionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\SceneStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\StateMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

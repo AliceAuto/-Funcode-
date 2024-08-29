@@ -20,5 +20,13 @@
         "CSound":
         {"ButtonSound":"running.ogg"} 
 
+    },
+    "Bullet_1": 
+    {
+        "CStaticSprite":
+        {"Entity":"Bullet_1"} ,
+        "CSound":
+        {"ButtonSound":"running.ogg"} 
+
     }
 }
