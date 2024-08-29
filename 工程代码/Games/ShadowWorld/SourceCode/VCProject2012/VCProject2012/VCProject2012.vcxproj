@@ -135,16 +135,13 @@
     <ClCompile Include="Src\Setting.cpp" />
     <ClCompile Include="Src\EntityManager.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
-    <ClCompile Include="Src\Tiled.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
-    <ClCompile Include="Src\View.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\AI.h" />
     <ClInclude Include="include\headers\BagSystem.h" />
     <ClInclude Include="include\headers\CGameMain.h" />
     <ClInclude Include="include\headers\CharacterController.h" />
-    <ClInclude Include="include\headers\CollisionManager.h" />
     <ClInclude Include="include\headers\CSprite.h" />
     <ClInclude Include="include\headers\CSystem.h" />
     <ClInclude Include="include\headers\EC.h" />
@@ -161,10 +158,7 @@
     <ClInclude Include="include\headers\SceneStates.h" />
     <ClInclude Include="include\headers\Setting.h" />
     <ClInclude Include="include\headers\StateMachine.h" />
-    <ClInclude Include="include\headers\TEST.h" />
     <ClInclude Include="include\headers\Container.h" />
-    <ClInclude Include="include\headers\Tiled.h" />
-    <ClInclude Include="include\headers\UI.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Bin\resource.json" />

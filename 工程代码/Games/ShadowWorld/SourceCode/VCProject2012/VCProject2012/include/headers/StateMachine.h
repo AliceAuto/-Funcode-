@@ -7,7 +7,6 @@
 #include <string>
 #include "EventDrivenSystem.h"
 #include "Logger.h"
-#include "CollisionManager.h"
 #include "EntityManager.h"
 
 

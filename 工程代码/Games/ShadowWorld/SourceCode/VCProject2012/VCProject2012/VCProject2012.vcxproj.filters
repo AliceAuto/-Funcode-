@@ -13,6 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
+    <Filter Include="Header Files\View">
+      <UniqueIdentifier>{22d47897-c802-4f6b-86b2-fe88e9aa38dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model">
+      <UniqueIdentifier>{ae8267fb-e443-4a88-b344-2572042360dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SharedService">
+      <UniqueIdentifier>{ff553413-54d5-4809-9fb3-93345636f2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{d202aceb-fe5c-438f-a393-7a1d5e8b7f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View">
+      <UniqueIdentifier>{09162b32-008f-4adc-9747-c237a67b771f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SharedService">
+      <UniqueIdentifier>{a396de48-f281-4e86-a9e2-5221a2b4ccad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\Controller">
+      <UniqueIdentifier>{0e5e21be-a3d7-4125-949a-437e2c6dd633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{ab843e26-223d-4e5a-a8dc-8996089c79a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc">
@@ -20,139 +44,121 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Src\UnitTesting.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\CSprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\CSystem.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Src\Button.cpp">
+      <Filter>Source Files\View</Filter>
     </ClCompile>
     <ClCompile Include="Src\CGameMain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Model.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\View.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Setting.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Logger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\StateMachine.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\CharacterController.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
-    <ClCompile Include="Src\PlayerController.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Src\CSprite.cpp">
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
-    <ClCompile Include="Src\MonsterController.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Src\CSystem.cpp">
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\Entity.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\EntityManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Logger.cpp">
+      <Filter>Source Files\SharedService</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Model.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MonsterController.cpp">
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\NonInteractiveObject.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PlayerController.cpp">
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\ResourceBag.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Button.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Tiled.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\SceneStates.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Setting.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StateMachine.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UnitTesting.cpp">
+      <Filter>Source Files\SharedService</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\headers\EC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\CSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\CSprite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\CGameMain.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Setting.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\EventDrivenSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Load_Save_Data.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\AI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\BagSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\Logger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\UI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\CharacterController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\PlayerController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\MonsterController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\NonInteractiveObject .h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Entity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\EntityManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\TEST.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\ResourceBag.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Container.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\SharedService</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\Button.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\View</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\Tiled.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\headers\CharacterController.h">
+      <Filter>Header Files\Model</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\CollisionManager.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\headers\CGameMain.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\BagSystem.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\AI.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Container.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\CSprite.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\CSystem.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\EC.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Entity.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\EntityManager.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\EventDrivenSystem.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\MonsterController.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\NonInteractiveObject .h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\PlayerController.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\ResourceBag.h">
+      <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\SceneStates.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Setting.h">
+      <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\StateMachine.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Load_Save_Data.h">
+      <Filter>Header Files\SharedService</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
