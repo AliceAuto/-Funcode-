@@ -31,11 +31,11 @@
     <Filter Include="Source Files\SharedService">
       <UniqueIdentifier>{a396de48-f281-4e86-a9e2-5221a2b4ccad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Model\Controller">
-      <UniqueIdentifier>{0e5e21be-a3d7-4125-949a-437e2c6dd633}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Controller">
       <UniqueIdentifier>{ab843e26-223d-4e5a-a8dc-8996089c79a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controller">
+      <UniqueIdentifier>{52a4678f-a735-46b2-a90e-d076ce012129}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,9 +46,6 @@
   <ItemGroup>
     <ClCompile Include="Src\Button.cpp">
       <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\CGameMain.cpp">
-      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\CharacterController.cpp">
       <Filter>Source Files\Model</Filter>
@@ -80,9 +77,6 @@
     <ClCompile Include="Src\PlayerController.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
-    <ClCompile Include="Src\ResourceBag.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
     <ClCompile Include="Src\SceneStates.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
@@ -95,6 +89,12 @@
     <ClCompile Include="Src\UnitTesting.cpp">
       <Filter>Source Files\SharedService</Filter>
     </ClCompile>
+    <ClCompile Include="Src\CGameMain.cpp">
+      <Filter>Source Files\SharedService</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ResourceBag.cpp">
+      <Filter>Source Files\SharedService</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\Logger.h">
@@ -104,9 +104,6 @@
       <Filter>Header Files\View</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\CharacterController.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\CGameMain.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\BagSystem.h">
@@ -145,19 +142,22 @@
     <ClInclude Include="include\headers\PlayerController.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\ResourceBag.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\SceneStates.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Setting.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\StateMachine.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\Load_Save_Data.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\CGameMain.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\ResourceBag.h">
+      <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Setting.h">
       <Filter>Header Files\SharedService</Filter>
     </ClInclude>
   </ItemGroup>

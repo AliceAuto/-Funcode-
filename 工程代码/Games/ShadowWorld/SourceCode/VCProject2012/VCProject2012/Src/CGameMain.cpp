@@ -220,9 +220,6 @@ void CGameMain::OnSpriteColSprite( const char *szSrcName, const char *szTarName 
 
 	Entity* spriteA =static_cast<GameState*>(stateMachine->currentState_)->entityManager->GetEntity(szSrcName);
     Entity* spriteB = static_cast<GameState*>(stateMachine->currentState_)->entityManager->GetEntity(szTarName);
-	
-	if (spriteA)spriteA->ifCollision(spriteB);LogManager::Log(szSrcName);
-	if (spriteB) spriteB->ifCollision(spriteA);LogManager::Log(szTarName);
 }
 //===========================================================================
 //

@@ -6,7 +6,7 @@
 #include "Entity.h"
 #include "json/json.h"
 
-
+//==========================================================================================================
 class EntityManager {
 public:
     EntityManager();
@@ -41,5 +41,6 @@ private:
     std::unordered_map<std::string, Entity*> spriteNameToEntity;
     // Éú³ÉÎ¨Ò» ID
 };
+//==========================================================================================================
 
 #endif // ENTITYMANAGER_H

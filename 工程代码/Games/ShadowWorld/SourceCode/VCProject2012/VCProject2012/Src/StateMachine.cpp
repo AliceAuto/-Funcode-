@@ -21,6 +21,38 @@ State::~State()
 }
 //___________________________
 
+
+
+
+//___________________________
+void State::update(float fDeltaTime){
+	this->entityManager->Update();
+	this->Update(fDeltaTime);
+}
+//___________________________
+
+
+
+
+//___________________________
+void State::enter()
+{
+	this->Enter();
+}
+//___________________________
+
+
+
+//___________________________
+void State::exit()
+{
+
+	this->Exit();
+}
+//___________________________
+
+
+
 //_______________________________________________________
 //=======================================================
 
@@ -74,11 +106,11 @@ State::~State()
 		{
 			if (currentState_) 
 			{
-				currentState_->Exit();
+				currentState_->exit();
 			}
 			currentState_ = it->second.get();
 			currentStateName_ = name;
-			currentState_->Enter();
+			currentState_->enter();
 			LogManager::Log("Current state set to: " + name);
 		} else 
 		{
@@ -162,7 +194,7 @@ State::~State()
 	{
 		if (currentState_) 
 		{
-			currentState_->Update(fDeltaTime);
+			currentState_->update(fDeltaTime);
 		}
 	}
 //_____________________________________________

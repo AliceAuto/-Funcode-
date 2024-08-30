@@ -29,9 +29,11 @@ public:
 	State();
 	virtual ~State();
     // 状态管理接口
-    virtual void Enter() = 0;               // 状态入口
-    virtual void Exit() = 0;                // 状态出口
-    virtual void Update(float fDeltaTime) =0;
+                 // 状态出口
+    void update(float fDeltaTime);
+	void enter();
+	void exit();
+	
     // 事件处理接口
 	// 注册和取消事件监听
     virtual void RegisterEventListeners() {};
@@ -40,6 +42,10 @@ public:
 protected:
     // 工厂方法，创建状态实例
     virtual State* CreateState() const = 0;
+private:
+	virtual void Update(float fDeltaTime) =0;
+	virtual void Enter() = 0;               // 状态入口
+    virtual void Exit() = 0;   
 };
 //=========================================================================
 

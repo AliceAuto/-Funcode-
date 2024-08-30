@@ -88,7 +88,7 @@ CharacterController::~CharacterController() {
 void CharacterController::UpdateState() {
     LogManager::Log("状态已更新");
     auto AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
-
+	LogManager::Log(std::to_string(velocityX));
     if (AnimatePtr) {
         // 初始化摩擦力
         static const float frictionCoefficient = 40; // 摩擦系数，根据需要调整
@@ -150,7 +150,7 @@ void CharacterController::UpdateState() {
 void CharacterController::UpdateAnimation() {
     CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
     static std::string currentAnimation;
-
+	
     if (AnimatePtr == nullptr) return;
 
     std::string ani;
