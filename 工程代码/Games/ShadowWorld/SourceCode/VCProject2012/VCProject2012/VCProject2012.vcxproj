@@ -125,7 +125,7 @@
     <ClCompile Include="Src\CSystem.cpp" />
     <ClCompile Include="Src\Entity.cpp" />
     <ClCompile Include="Src\Logger.cpp" />
-    <ClCompile Include="Src\Model.cpp" />
+    <ClCompile Include="Src\Main.cpp" />
     <ClCompile Include="Src\MonsterController.cpp" />
     <ClCompile Include="Src\NonInteractiveObject.cpp" />
     <ClCompile Include="Src\PlayerController.cpp" />

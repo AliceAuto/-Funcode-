@@ -241,12 +241,7 @@ GameState::GameState() : State() {
     );
     
     // 创建更多障碍物
-    std::string block2 = entityManager->CreateEntity("{ ... }");
-    std::string block3 = entityManager->CreateEntity("{ ... }");
-    std::string block4 = entityManager->CreateEntity("{ ... }");
-    std::string block5 = entityManager->CreateEntity("{ ... }");
-    std::string block6 = entityManager->CreateEntity("{ ... }");
-    std::string block7 = entityManager->CreateEntity("{ ... }");
+ 
 }
 //____________________________________________________________________________________________________________
 
@@ -279,7 +274,7 @@ void GameState::Enter() {
 //____________________________________________________________________________________________________________
 void GameState::Exit() {
     LogManager::Log("退出游戏状态");
-    entityManager->breakDownAllEntitys();
+
 }
 //____________________________________________________________________________________________________________
 
@@ -351,7 +346,7 @@ void SettingsMenuState::Enter() {
 //____________________________________________________________________________________________________________
 void SettingsMenuState::Exit() {
     LogManager::Log("退出设置菜单");
-    entityManager->breakDownAllEntitys();
+
 }
 //____________________________________________________________________________________________________________
 
@@ -494,7 +489,7 @@ void ExitMenuState::Enter() {
 // Exit 函数：退出退出菜单状态，清理所有实体
 //____________________________________________________________________________________________________________
 void ExitMenuState::Exit() {
-    entityManager->breakDownAllEntitys();
+
 }
 //____________________________________________________________________________________________________________
 

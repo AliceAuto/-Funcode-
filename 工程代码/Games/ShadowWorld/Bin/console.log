@@ -1,7 +1,7 @@
-//-------------------------- 8/29/2024 -- 23:40:20 -----
+//-------------------------- 8/30/2024 -- 20:54:46 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.89 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -141,6 +141,15 @@ t2dSceneGraph::addToScene() - Object '1378' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1379' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1380' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1381' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1382' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1383' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1384' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1385' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1386' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1387' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1388' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1389' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1390' is already in a SceneGraph!.
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

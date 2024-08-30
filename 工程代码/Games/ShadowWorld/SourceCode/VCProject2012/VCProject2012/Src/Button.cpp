@@ -16,8 +16,7 @@ void Button::Init()
 	this->RegisterMouseListener();
 }
 
-void Button::breakdown()
-{
+void Button::breakdown(){
 	this->Entity::breakdown();
 	this->UnregisterMouseListener();
 }
@@ -35,7 +34,6 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
             UpdateAnimation();
             UpdateSound();
 			ButtonClickEvent buttonEvent(label_);
-    
 			// 分发事件
 			EventManager::Instance().DispatchEvent(buttonEvent);
 

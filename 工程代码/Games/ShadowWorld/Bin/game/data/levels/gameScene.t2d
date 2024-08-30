@@ -48,7 +48,8 @@
       CollisionActiveReceive = "1";
       CollisionPhysicsSend = "1";
       CollisionPhysicsReceive = "1";
-      CollisionResponseMode = "BOUNCE";
+      CollisionLayers = "-536870912";
+      CollisionResponseMode = "CLAMP";
       CollisionPolyList = "-0.206 -0.123 0.530 -0.133 0.525 0.682 -0.221 0.668";
          mountID = "2";
    };
@@ -89,8 +90,8 @@
       CollisionActiveReceive = "1";
       CollisionPhysicsSend = "1";
       CollisionPhysicsReceive = "1";
-      CollisionLayers = "-67108865";
-      CollisionResponseMode = "RIGID";
+      CollisionLayers = "1";
+      CollisionResponseMode = "BOUNCE";
       CollisionPolyList = "-0.358 0.309 -0.491 0.226 -0.506 -0.034 -0.378 -0.344 -0.103 -0.496 0.157 -0.481 0.358 -0.393 0.457 -0.157 0.467 0.049 0.403 0.285 0.226 0.437 -0.108 0.452";
          mountID = "4";
    };
@@ -98,7 +99,7 @@
       imageMap = "upgrade3ImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "0 0 2.36006e-039 6.22914e-039";
+      sourceRect = "2.36006e-039 0 2.36006e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "61.442 21.722";
       size = "8.000 8.000";

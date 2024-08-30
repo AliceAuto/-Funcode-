@@ -46,7 +46,7 @@ void State::enter()
 //___________________________
 void State::exit()
 {
-
+	this->entityManager->breakDownAllEntitys();
 	this->Exit();
 }
 //___________________________
