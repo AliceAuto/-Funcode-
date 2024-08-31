@@ -3,14 +3,14 @@
     {
         "CAnimateSprite":
         {"Entity":"character"},
-        "CSound":
+        "CSound_Loop":
         {"running":"running.ogg"}
     },
     "StartGameButton": 
     {
         "CAnimateSprite":
         {"Entity":"StartGameButton"} ,
-        "CSound":
+        "CSound_Once":
         {"ButtonSound":"whoosh_mono.wav"} 
     },
     "block": 
