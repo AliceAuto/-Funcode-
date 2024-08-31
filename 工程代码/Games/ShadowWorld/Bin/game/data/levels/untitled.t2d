@@ -45,37 +45,16 @@
       WorldLimitMax = "50.000 37.500";
          mountID = "2";
    };
-   new t2dAnimatedSprite(StartGameButton) {
-      animationName = "clicked";
-      canSaveDynamicFields = "1";
-      Position = "77.000 -29.500";
-      size = "16.000 16.000";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      CollisionActiveSend = "1";
-      CollisionPhysicsSend = "1";
-      CollisionResponseMode = "BOUNCE";
-      CollisionPolyList = "-0.943 0.152 -0.899 -0.265 -0.766 -0.565 -0.496 -0.800 -0.236 -0.933 0.142 -0.948 0.417 -0.879 0.683 -0.727 0.938 -0.285 0.850 0.295 0.688 0.579 0.388 0.815 0.118 0.913 -0.196 0.913 -0.506 0.746 -0.800 0.516";
-         mountID = "3";
-   };
-   new t2dScroller() {
-      imageMap = "upgrade3ImageMap1";
+   new t2dStaticSprite(StartGameButton) {
+      imageMap = "StartGameButtonImageMap";
+      frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37773e-039 0 2.36006e-039 6.20699e-039";
+      sourceRect = "0 0 0 0";
       canSaveDynamicFields = "1";
-      Position = "-6.865 -23.198";
-      size = "8.000 8.000";
+      Position = "69.244 -4.268";
+      size = "20.125 8.125";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "4";
-   };
-   new t2dAnimatedSprite(StartGameButton) {
-      animationName = "clicked";
-      canSaveDynamicFields = "1";
-      Position = "3.000 2.000";
-      size = "16.000 16.000";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "5";
+         mountID = "3";
    };
 };

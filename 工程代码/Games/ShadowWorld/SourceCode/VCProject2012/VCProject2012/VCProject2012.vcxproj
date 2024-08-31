@@ -134,6 +134,7 @@
     <ClCompile Include="Src\SceneStates.cpp" />
     <ClCompile Include="Src\Setting.cpp" />
     <ClCompile Include="Src\EntityManager.cpp" />
+    <ClCompile Include="Src\SharedService\Timer.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
   </ItemGroup>
@@ -157,6 +158,7 @@
     <ClInclude Include="include\headers\Button.h" />
     <ClInclude Include="include\headers\SceneStates.h" />
     <ClInclude Include="include\headers\Setting.h" />
+    <ClInclude Include="include\headers\SharedService\Timer.h" />
     <ClInclude Include="include\headers\StateMachine.h" />
     <ClInclude Include="include\headers\Container.h" />
   </ItemGroup>

@@ -101,6 +101,9 @@
     <ClCompile Include="Src\UnitTesting.cpp">
       <Filter>Source Files\Entrance</Filter>
     </ClCompile>
+    <ClCompile Include="Src\SharedService\Timer.cpp">
+      <Filter>Source Files\SharedService</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\Logger.h">
@@ -165,6 +168,9 @@
     </ClInclude>
     <ClInclude Include="include\headers\CSprite.h">
       <Filter>Header Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\SharedService\Timer.h">
+      <Filter>Header Files\SharedService</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
