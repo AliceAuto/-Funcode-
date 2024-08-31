@@ -9,19 +9,21 @@
 class Timer {
 public:
     typedef unsigned long Duration;  // 时间间隔（毫秒）
+    typedef std::function<bool(std::time_t)> TimeCondition;  // 时间条件函数类型
     typedef std::function<void()> Callback;  // 定时器回调函数类型
 
     Timer();
     ~Timer();
 
     // 设置定时器
-    void setTimer(Duration duration, Callback callback);
+    void setTimer(Duration duration, TimeCondition condition, Callback callback);
 
 private:
     void checkTimers();  // 内部方法：检查并处理定时器事件
 
     struct TimerEvent {
         std::time_t expiration;  // 事件触发时间（秒）
+        TimeCondition condition;  // 时间条件函数
         Callback callback;  // 事件触发时调用的回调函数
     };
 

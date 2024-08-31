@@ -1,7 +1,7 @@
-//-------------------------- 8/31/2024 -- 11:54:53 -----
+//-------------------------- 8/31/2024 -- 15:05:54 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+     (timed at roughly 2.91 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -131,12 +131,8 @@ Error: cannot change namespace parent linkage of StartGameButton from t2dAnimati
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
 Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
 t2dSceneGraph::addToScene() - Object '1361' is already in a SceneGraph!.
-Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d.
-t2dSceneGraph::addToScene() - Object '1371' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1372' is already in a SceneGraph!.
 DirectInput deactivated.
+Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
 Deleting the GL rendering context...

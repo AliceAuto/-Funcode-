@@ -12,15 +12,17 @@ public:
     ~Button();
 
     void HandleMouseEvent(const MouseInputEvent& event);
-	virtual void UpdateState(){};
-	virtual void UpdateAnimation();
-	virtual void UpdateSound();
+	void UpdateState()override{};
+	void UpdateAnimation()override{};
+	void UpdateSound()override{};
 	void Init() override;
 	void breakdown() override;
     const std::string& GetLabel() const { return label_; }
 	void RegisterMouseListener();
 	void UnregisterMouseListener();
 private:
+	void updateAnimation();
+	void updateSound();
 	bool isListenerRegistered;
     std::string label_;
     bool isMouseOver;

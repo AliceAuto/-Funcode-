@@ -2,8 +2,9 @@
 #include "Logger.h"
 
 Button::Button(float initialX, float initialY,const std::string& resourceBagName,const std::string& label) 
-    : Entity(initialX, initialY,resourceBagName), label_(label), isMouseOver(false), isClicked(false),isListenerRegistered(false) 
+    : Entity(initialX, initialY,resourceBagName), label_(label), isMouseOver(false), isClicked(false),isListenerRegistered(false)
 {
+	
 }
 Button::~Button(){
 	Button::UnregisterMouseListener() ;
@@ -13,6 +14,7 @@ Button::~Button(){
 void Button::Init()
 {
 	this->Entity::Init();
+	CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 	this->RegisterMouseListener();
 }
 
@@ -31,8 +33,8 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
         if (!isClicked) {
             isClicked = true;
             LogManager::Log("按钮点击: " + label_);
-            UpdateAnimation();
-            UpdateSound();
+            updateAnimation();
+            updateSound();
 			ButtonClickEvent buttonEvent(label_);
 			// 分发事件
 			EventManager::Instance().DispatchEvent(buttonEvent);
@@ -47,11 +49,13 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
         if (isMouseCurrentlyOver && !isMouseOver) {
             isMouseOver = true;
             LogManager::Log("鼠标进入按钮: " + label_);
-            UpdateAnimation();
+            updateAnimation();
+            updateSound();
         } else if (!isMouseCurrentlyOver && isMouseOver) {
             isMouseOver = false;
             LogManager::Log("鼠标离开按钮: " + label_);
-            UpdateAnimation();
+            updateAnimation();
+            updateSound();
         }
     }
 
@@ -60,27 +64,38 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
 
 
 
-void Button::UpdateAnimation() {
-
+void Button::updateAnimation() {
     CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
-            sprite->AnimateSpritePlayAnimation("clicked1", true);
+            sprite->SetSpriteScale(1.5);
+			
         } else if (isMouseOver) {
-            sprite->AnimateSpritePlayAnimation("hover", false);
+			LogManager::Log("				按钮持续放大");
+		
+			sprite->SetSpriteScale(0.9);
         } else {
-            sprite->AnimateSpritePlayAnimation("clicked", false);
+			sprite->SetSpriteScale(1.1);
         }
     }
 
 }
 
-void Button::UpdateSound() {
+void Button::updateSound() {
 	LogManager::Log("[鼠标声音]");
-    CSound* sound = this->Entity::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
-    if (sound && isClicked) {
-        sound->PlaySound();
+     CSound* sound =this->Entity::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
+
+    if (sound) {
+        if (isClicked) {
+			
+        } 
+		else if (isMouseOver) {
+			sound->PlaySoundA();
+        }
+		else {
+
+        }
     }
 }
 

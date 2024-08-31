@@ -11,7 +11,7 @@
         "CAnimateSprite":
         {"Entity":"StartGameButton"} ,
         "CSound":
-        {"ButtonSound":"running.ogg"} 
+        {"ButtonSound":"whoosh_mono.wav"} 
     },
     "block": 
     {

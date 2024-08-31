@@ -81,7 +81,7 @@
 						std::string resourceName = resourceInfo[name].asString();
 						std::string id = Entity_ID+std::to_string(++IdCounter);
 						LogManager::Log("		信息: 创建音效, ID: " + id + ", 资源名称: " + resourceName);
-						auto sound = std::make_shared<CSound>(resourceName.c_str(), static_cast<float>(1), static_cast<float>(1));
+						auto sound = std::make_shared<CSound>(resourceName.c_str(), static_cast<float>(0), static_cast<float>(1));
 						if (sound)AddResource(name, sound);
 					}
 				}
