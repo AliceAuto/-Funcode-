@@ -7,7 +7,7 @@
 #include "Logger.h"
 #include "CSystem.h"
 #include "Button.h"
-#include "EntityManager.h"
+#include "ObjectManager.h"
 
 // Ö÷²Ëµ¥×´Ì¬
 class MainMenuState : public State {

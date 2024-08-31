@@ -10,7 +10,7 @@
 #include <Windows.h>
 #include "headers/PlayerController.h"
 #include <map>
-#include "EntityManager.h"
+#include "ObjectManager.h"
 #include "StateMachine.h"
 
 // 游戏总管类。负责处理游戏主循环、游戏初始化、结束等工作

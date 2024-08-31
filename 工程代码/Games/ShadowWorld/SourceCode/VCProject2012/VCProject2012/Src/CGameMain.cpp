@@ -218,8 +218,8 @@ void CGameMain::OnSpriteColSprite( const char *szSrcName, const char *szTarName 
 {
 	
 
-	Entity* spriteA =static_cast<GameState*>(stateMachine->currentState_)->entityManager->GetEntity(szSrcName);
-    Entity* spriteB = static_cast<GameState*>(stateMachine->currentState_)->entityManager->GetEntity(szTarName);
+	Object* spriteA =static_cast<GameState*>(stateMachine->currentState_)->objectManager->GetObject(szSrcName);
+    Object* spriteB = static_cast<GameState*>(stateMachine->currentState_)->objectManager->GetObject(szTarName);
 }
 //===========================================================================
 //

@@ -7,7 +7,7 @@
 #include <string>
 #include "EventDrivenSystem.h"
 #include "Logger.h"
-#include "EntityManager.h"
+#include "ObjectManager.h"
 
 
 
@@ -38,7 +38,7 @@ public:
 	// 注册和取消事件监听
     virtual void RegisterEventListeners() {};
     virtual void UnregisterEventListeners() {};
-	EntityManager * entityManager;
+	ObjectManager * objectManager;
 protected:
     // 工厂方法，创建状态实例
     virtual State* CreateState() const = 0;

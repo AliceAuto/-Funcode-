@@ -128,15 +128,16 @@
     <ClCompile Include="Src\Main.cpp" />
     <ClCompile Include="Src\MonsterController.cpp" />
     <ClCompile Include="Src\NonInteractiveObject.cpp" />
+    <ClCompile Include="Src\Object.cpp" />
     <ClCompile Include="Src\PlayerController.cpp" />
     <ClCompile Include="Src\ResourceBag.cpp" />
     <ClCompile Include="Src\Button.cpp" />
     <ClCompile Include="Src\SceneStates.cpp" />
     <ClCompile Include="Src\Setting.cpp" />
-    <ClCompile Include="Src\EntityManager.cpp" />
-    <ClCompile Include="Src\SharedService\Timer.cpp" />
+    <ClCompile Include="Src\ObjectManager.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\AI.h" />
@@ -151,8 +152,9 @@
     <ClInclude Include="include\headers\Load_Save_Data.h" />
     <ClInclude Include="include\headers\Logger.h" />
     <ClInclude Include="include\headers\NonInteractiveObject .h" />
+    <ClInclude Include="include\headers\Object.h" />
     <ClInclude Include="include\headers\ResourceBag.h" />
-    <ClInclude Include="include\headers\EntityManager.h" />
+    <ClInclude Include="include\headers\ObjectManager.h" />
     <ClInclude Include="include\headers\MonsterController.h" />
     <ClInclude Include="include\headers\PlayerController.h" />
     <ClInclude Include="include\headers\Button.h" />

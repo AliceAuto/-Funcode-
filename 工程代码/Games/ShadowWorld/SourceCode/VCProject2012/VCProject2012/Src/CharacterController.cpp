@@ -274,7 +274,7 @@ void CharacterController::ProcessInput(const Event& event)
 
 				// 创建子弹
 				float bulletSpeed = 200.0f; // 你可以根据需要调整子弹的速度
-				std::string bulletID = CGameMain::GetInstance().stateMachine->currentState_->entityManager->CreateEntity(
+				std::string bulletID = CGameMain::GetInstance().stateMachine->currentState_->objectManager->CreateObject(
 					"{\n"
 					"  \"TypeName\"      : \"Bullet\",\n"
 					"  \"posX\"          : " + std::to_string(posX) + ",\n"
@@ -284,7 +284,7 @@ void CharacterController::ProcessInput(const Event& event)
 					"  \"resourceBag\"   : \"Bullet_1\"\n"
 					"}"
 				);
-				CGameMain::GetInstance().stateMachine->currentState_->entityManager->GetEntityBySpriteName(bulletID)->Init();
+				CGameMain::GetInstance().stateMachine->currentState_->objectManager->GetObjectBySpriteName(bulletID)->Init();
 				LogManager::Log("子弹创建成功，ID: " + bulletID);
 			}
 		

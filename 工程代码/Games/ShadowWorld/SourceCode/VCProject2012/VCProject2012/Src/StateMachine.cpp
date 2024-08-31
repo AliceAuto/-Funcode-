@@ -7,7 +7,7 @@
 //_____________________________________
 State::State()
 {
-	entityManager = new EntityManager;
+	objectManager = new ObjectManager;
 }
 //_____________________________________
 
@@ -17,7 +17,7 @@ State::State()
 //___________________________
 State::~State()
 {
-	delete entityManager;
+	delete objectManager;
 }
 //___________________________
 
@@ -26,7 +26,7 @@ State::~State()
 
 //___________________________
 void State::update(float fDeltaTime){
-	this->entityManager->Update();
+	this->objectManager->Update();
 	this->Update(fDeltaTime);
 }
 //___________________________
@@ -46,7 +46,7 @@ void State::enter()
 //___________________________
 void State::exit()
 {
-	this->entityManager->breakDownAllEntitys();
+	this->objectManager->breakDownAllObjects();
 	this->Exit();
 }
 //___________________________

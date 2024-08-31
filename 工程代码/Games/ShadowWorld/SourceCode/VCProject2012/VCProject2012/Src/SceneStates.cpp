@@ -16,7 +16,7 @@
 // 构造函数：初始化主菜单状态
 //____________________________________________________________________________________________________________
 MainMenuState::MainMenuState(): State() {		
-    std::string Button = entityManager->CreateEntity(
+    std::string Button = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"Button\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
@@ -101,7 +101,7 @@ void MainMenuState::UnregisterEventListeners(){
 void MainMenuState::Enter() {	
     LogManager::Log("已进入主菜单界面");
     CSystem::LoadMap("untitled.t2d");
-    entityManager->LoadAllEntitys();
+    objectManager->LoadAllObjects();
     RegisterEventListeners();
 }
 //____________________________________________________________________________________________________________
@@ -222,7 +222,7 @@ State* MainMenuState::CreateState() const {
 // 构造函数：初始化游戏状态
 //____________________________________________________________________________________________________________
 GameState::GameState() : State() {
-    std::string player1 = entityManager->CreateEntity(
+    std::string player1 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"Player\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
@@ -231,7 +231,7 @@ GameState::GameState() : State() {
         "}"
     );
 
-    std::string block1 = entityManager->CreateEntity(
+    std::string block1 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"ObstacleObject\"        ,\n"
         "  \"posX\"          :           0.0                      ,\n"
@@ -263,7 +263,7 @@ GameState::~GameState() {
 void GameState::Enter() {
     LogManager::Log("进入游戏状态");
     CSystem::LoadMap("gameScene.t2d");
-    entityManager->LoadAllEntitys();
+    objectManager->LoadAllObjects();
 }
 //____________________________________________________________________________________________________________
 

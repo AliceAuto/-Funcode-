@@ -56,9 +56,6 @@
     <ClCompile Include="Src\Entity.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
-    <ClCompile Include="Src\EntityManager.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Logger.cpp">
       <Filter>Source Files\SharedService</Filter>
     </ClCompile>
@@ -101,8 +98,14 @@
     <ClCompile Include="Src\UnitTesting.cpp">
       <Filter>Source Files\Entrance</Filter>
     </ClCompile>
-    <ClCompile Include="Src\SharedService\Timer.cpp">
+    <ClCompile Include="Timer.cpp">
       <Filter>Source Files\SharedService</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ObjectManager.cpp">
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +125,6 @@
       <Filter>Header Files\SharedService</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\Entity.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\EntityManager.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\EventDrivenSystem.h">
@@ -171,6 +171,12 @@
     </ClInclude>
     <ClInclude Include="include\headers\SharedService\Timer.h">
       <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Object.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\ObjectManager.h">
+      <Filter>Header Files\Model</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
