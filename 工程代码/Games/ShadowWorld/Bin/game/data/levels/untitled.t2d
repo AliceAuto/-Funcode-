@@ -49,7 +49,7 @@
       imageMap = "StartGameButtonImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "0 0 0 0";
+      sourceRect = "0 0 2.36006e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "69.244 -4.268";
       size = "20.125 8.125";

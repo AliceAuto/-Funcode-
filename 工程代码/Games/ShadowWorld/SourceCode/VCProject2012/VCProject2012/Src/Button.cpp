@@ -77,6 +77,7 @@ void Button::updateAnimation() {
 			sprite->SetSpriteScale(0.9);
         } else {
 			sprite->SetSpriteScale(1.1);
+			LogManager::Log("				按钮持续缩小");
         }
     }
 
