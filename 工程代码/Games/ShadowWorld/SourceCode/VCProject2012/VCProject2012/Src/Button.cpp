@@ -14,7 +14,11 @@ Button::~Button(){
 void Button::Init()
 {
 	this->Entity::Init();
+	CTextSprite* text =this->Entity::resourceBagPtr->GetResource<CTextSprite>("ButtonText").get();
 	CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+	
+	text->SpriteMountToSprite( sprite->GetName(),0, 0 );
+	text->SetTextString(this->label_.c_str());
 	this->RegisterMouseListener();
 }
 
@@ -66,17 +70,22 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
 
 void Button::updateAnimation() {
     CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+	CTextSprite* text =this->Entity::resourceBagPtr->GetResource<CTextSprite>("ButtonText").get();
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
-            sprite->SetSpriteScale(1.5);
+            text->SetSpriteScale(1.5);
+			sprite->SetSpriteScale(1.5);
 			
         } else if (isMouseOver) {
 			LogManager::Log("				按钮持续放大");
 		
+			text->SetSpriteScale(0.9);
 			sprite->SetSpriteScale(0.9);
         } else {
+			text->SetSpriteScale(1.1);
 			sprite->SetSpriteScale(1.1);
+
 			LogManager::Log("				按钮持续缩小");
         }
     }

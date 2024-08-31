@@ -11,7 +11,9 @@
         "CAnimateSprite":
         {"Entity":"StartGameButton"} ,
         "CSound_Once":
-        {"ButtonSound":"whoosh_mono.wav"} 
+        {"ButtonSound":"whoosh_mono.wav"} ,
+        "CTextSprite":
+        {"ButtonText":"ComTypeText"} 
     },
     "block": 
     {
