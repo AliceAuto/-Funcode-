@@ -27,11 +27,11 @@ MainMenuState::MainMenuState(): State() {
     );
 	std::string Button1 = objectManager->CreateObject(
         "{\n"
-        "  \"TypeName\"      :           \"Button_ArtPhoto\"                ,\n"
+        "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
         "  \"posX\"          :           30.0                      ,\n"
-        "  \"posY\"          :           30.0                      ,\n"
-        "  \"resourceBag\"   :           \"Button_Art\"       ,\n"
-        "  \"label\"         :           \"Startde\"              \n"
+        "  \"posY\"          :           0.0                    ,\n"
+        "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
+        "  \"label\"         :           \"Setting\"              \n"
         "}"
     );
 
@@ -183,6 +183,9 @@ void MainMenuState::HandleButtonInput(const ButtonClickEvent& event) {
     std::string sender = event.GetButtonSender();
     if (sender == "StartGame") {
         CGameMain::GetInstance().stateMachine->ToNextState("Game");
+    }
+	else if (sender == "Setting") {
+        CGameMain::GetInstance().stateMachine->ToNextState("Settings");
     }
 }
 //____________________________________________________________________________________________________________

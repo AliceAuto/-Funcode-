@@ -1,4 +1,4 @@
-//-------------------------- 9/1/2024 -- 10:54:22 -----
+//-------------------------- 9/1/2024 -- 11:07:13 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
      (timed at roughly 2.90 Ghz)
@@ -135,32 +135,9 @@ t2dSceneGraph::addToScene() - Object '1364' is already in a SceneGraph!.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
 Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
 t2dSceneGraph::addToScene() - Object '1365' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1366' is already in a SceneGraph!.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d.
-t2dSceneGraph::addToScene() - Object '1375' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1376' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1377' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1378' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1379' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1380' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1381' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1382' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1383' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1384' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1385' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1386' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1387' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1388' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1389' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1390' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1391' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1392' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1393' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1394' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1395' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1396' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1397' is already in a SceneGraph!.
+Error loading level game/data/levels/settingsMenu.t2d. Invalid file.
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

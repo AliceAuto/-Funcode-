@@ -43,6 +43,12 @@
     <Filter Include="Header Files\API">
       <UniqueIdentifier>{323e2bfc-8e8d-4912-bb68-f99ccd40abb9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\UI">
+      <UniqueIdentifier>{d7e3acd9-26f6-4756-b055-bb0b1b95845a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\UI">
+      <UniqueIdentifier>{ee1ac50f-0a96-42f6-901f-7bdcca06e006}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc">
@@ -86,9 +92,6 @@
     <ClCompile Include="Src\CSystem.cpp">
       <Filter>Source Files\API</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Button.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Main.cpp">
       <Filter>Source Files\Entrance</Filter>
     </ClCompile>
@@ -106,6 +109,9 @@
     </ClCompile>
     <ClCompile Include="Src\ObjectManager.cpp">
       <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Button.cpp">
+      <Filter>Source Files\Model\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -154,9 +160,6 @@
     <ClInclude Include="include\headers\EC.h">
       <Filter>Header Files\EntranceSelector</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\Button.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\CGameMain.h">
       <Filter>Header Files\Drivement</Filter>
     </ClInclude>
@@ -177,6 +180,9 @@
     </ClInclude>
     <ClInclude Include="include\headers\ObjectManager.h">
       <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Button.h">
+      <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
