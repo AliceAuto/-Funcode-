@@ -25,6 +25,7 @@ void Button::breakdown(){
 
 
 void Button::HandleMouseEvent(const MouseInputEvent& event) {
+	if (isOn){
 	LogManager::Log("按钮:"+this->GetLabel()+"  捕获鼠标输入");
     bool isMouseCurrentlyOver = this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->IsPointInSprite(event.GetX(),event.GetY());
 	
@@ -32,8 +33,8 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
         if (!isClicked) {
             isClicked = true;
             LogManager::Log("按钮点击: " + label_);
-            updateAnimation();
-            updateSound();
+            this->updateAnimation();
+            this->updateSound();
 			ButtonClickEvent buttonEvent(label_);
 			// 分发事件
 			EventManager::Instance().DispatchEvent(buttonEvent);
@@ -48,16 +49,16 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
         if (isMouseCurrentlyOver && !isMouseOver) {
             isMouseOver = true;
             LogManager::Log("鼠标进入按钮: " + label_);
-            updateAnimation();
-            updateSound();
+            this->updateAnimation();
+            this->updateSound();
         } else if (!isMouseCurrentlyOver && isMouseOver) {
             isMouseOver = false;
             LogManager::Log("鼠标离开按钮: " + label_);
-            updateAnimation();
-            updateSound();
+            this->updateAnimation();
+            this->updateSound();
         }
     }
-
+	}
 }
 
 
@@ -68,12 +69,12 @@ void Button::updateAnimation() {
 }
 
 void Button::updateSound() {
+	if (isOn)
+	{
 	LogManager::Log("[鼠标声音]");
-     CSound* sound =this->Entity::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
-
+    CSound* sound =this->Entity::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
     if (sound) {
-        if (isClicked) {
-			
+        if (isClicked) {	
         } 
 		else if (isMouseOver) {
 			sound->PlaySoundA();
@@ -81,7 +82,8 @@ void Button::updateSound() {
 		else {
 
         }
-    }
+	}
+	}
 }
 
 
@@ -140,8 +142,8 @@ void RenderButton::updateAnimation(){
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
-            text->SetSpriteScale(1.5);
-			sprite->SetSpriteScale(1.5);
+            text->SetSpriteScale(1.3);
+			sprite->SetSpriteScale(1.3);
 			
         } else if (isMouseOver) {
 			LogManager::Log("				按钮持续放大");
@@ -179,7 +181,7 @@ void ArtButton::updateAnimation(){
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
-			sprite->SetSpriteScale(1.5);
+			sprite->SetSpriteScale(1.3);
         } else if (isMouseOver) {
 			LogManager::Log("				按钮持续放大");
 			sprite->SetSpriteScale(0.9);

@@ -8,8 +8,9 @@ class Object {
 public:
     Object(float initialX, float initialY, const std::string& resourceBagName);
     virtual ~Object(); // 虚析构函数
-
+	
     // 公共接口
+	bool isOn;		//对象的可用状态
     void Update(); // 更新实体状态
     virtual void Init();
     virtual void breakdown();

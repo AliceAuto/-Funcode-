@@ -38,6 +38,7 @@ void State::update(float fDeltaTime){
 void State::enter()
 {
 	this->Enter();
+	this->RegisterEventListeners();
 }
 //___________________________
 
@@ -45,7 +46,7 @@ void State::enter()
 
 //___________________________
 void State::exit()
-{
+{   this->UnregisterEventListeners();
 	this->objectManager->breakDownAllObjects();
 	this->Exit();
 }

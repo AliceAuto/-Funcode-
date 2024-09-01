@@ -6,7 +6,7 @@
         "CSound_Loop":
         {"running":"running.ogg"}
     },
-    "StartGameButton": 
+    "Button_Text&Render": 
     {
         "CAnimateSprite":
         {"Entity":"StartGameButton"} ,
@@ -14,6 +14,13 @@
         {"ButtonSound":"whoosh_mono.wav"} ,
         "CTextSprite":
         {"ButtonText":"ComTypeText"} 
+    },
+    "Button_Art": 
+    {
+        "CAnimateSprite":
+        {"Entity":"StartGameButton"} ,
+        "CSound_Once":
+        {"ButtonSound":"whoosh_mono.wav"} 
     },
     "block": 
     {

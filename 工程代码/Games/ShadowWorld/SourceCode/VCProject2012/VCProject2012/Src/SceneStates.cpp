@@ -21,11 +21,22 @@ MainMenuState::MainMenuState(): State() {
         "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
         "  \"posY\"          :           0.0                      ,\n"
-        "  \"resourceBag\"   :           \"StartGameButton\"       ,\n"
-        "  \"label\"         :           \"开始游戏\"              \n"
+        "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
+        "  \"label\"         :           \"StartGame\"              \n"
         "}"
     );
+	std::string Button1 = objectManager->CreateObject(
+        "{\n"
+        "  \"TypeName\"      :           \"Button_ArtPhoto\"                ,\n"
+        "  \"posX\"          :           30.0                      ,\n"
+        "  \"posY\"          :           30.0                      ,\n"
+        "  \"resourceBag\"   :           \"Button_Art\"       ,\n"
+        "  \"label\"         :           \"Startde\"              \n"
+        "}"
+    );
+
 }
+
 //____________________________________________________________________________________________________________
 
 
@@ -102,7 +113,7 @@ void MainMenuState::Enter() {
     LogManager::Log("已进入主菜单界面");
     CSystem::LoadMap("untitled.t2d");
     objectManager->LoadAllObjects();
-    RegisterEventListeners();
+
 }
 //____________________________________________________________________________________________________________
 
@@ -123,8 +134,7 @@ void MainMenuState::Enter() {
 //____________________________________________________________________________________________________________
 void MainMenuState::Exit() {
     LogManager::Log("已退出主菜单");
-    
-    UnregisterEventListeners();
+
 }
 //____________________________________________________________________________________________________________
 
@@ -171,7 +181,7 @@ void MainMenuState::HandleButtonInput(const ButtonClickEvent& event) {
     LogManager::Log("Sender: " + event.GetButtonSender());
     
     std::string sender = event.GetButtonSender();
-    if (sender == "开始游戏") {
+    if (sender == "StartGame") {
         CGameMain::GetInstance().stateMachine->ToNextState("Game");
     }
 }

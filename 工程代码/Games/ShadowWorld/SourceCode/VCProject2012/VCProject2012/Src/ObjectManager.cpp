@@ -67,6 +67,10 @@
 				{
 					object = CreateObjectInstance("Button_Text&Photo", root);
 				}
+			else if (typeName == "Button_ArtPhoto")
+				{
+					object = CreateObjectInstance("Button_ArtPhoto", root);
+				}
 			else if (typeName == "Bullet")
 				{
 					object = CreateObjectInstance("Bullet", root);
@@ -131,6 +135,13 @@
 			std::string resourceBag = root.get("resourceBag", "").asString();
 			std::string label = root.get("label", "").asString();
 			return new RenderButton(posX, posY,resourceBag,label);
+		}
+		else if (type == "Button_ArtPhoto"){
+			float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
+			float posY = static_cast<float>(root.get("posY", 0.0).asDouble());
+			std::string resourceBag = root.get("resourceBag", "").asString();
+			std::string label = root.get("label", "").asString();
+			return new ArtButton(posX, posY,resourceBag,label);
 		}
 		//×Óµ¯
 		else if (type == "Bullet") {

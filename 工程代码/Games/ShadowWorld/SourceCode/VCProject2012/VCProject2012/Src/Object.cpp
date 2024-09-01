@@ -19,7 +19,7 @@
 //   - resourceBagName: 资源包的名称
 //____________________________________________________________________________________________________________
 Object::Object(float initialX, float initialY, const std::string& resourceBagName)
-    : posX(initialX), posY(initialY), velocityX(0), velocityY(0), ResourceBagName(resourceBagName), ID(""), resourceBagPtr(nullptr)
+    : posX(initialX), posY(initialY), velocityX(0), velocityY(0), ResourceBagName(resourceBagName), ID(""), resourceBagPtr(nullptr),isOn(false)
     // 其他初始化代码
 		{
     
@@ -47,11 +47,13 @@ Object::~Object() {
 // 如果资源包指针为空，则创建并加载资源包
 //____________________________________________________________________________________________________________
 void Object::Init() {  
+
     if (!resourceBagPtr) {
         resourceBagPtr = new ResourceBag(ID);
         this->resourceBagPtr->LoadFromJson(ResourceBagName);
         this->resourceBagPtr->GetResource<CSprite>("Entity")->SetSpritePosition(this->posX, this->posY);
     }
+	isOn = true;
 }
 //____________________________________________________________________________________________________________
 
@@ -67,6 +69,7 @@ void Object::breakdown() {
         delete resourceBagPtr;
         resourceBagPtr = nullptr; // 释放后将指针置为 nullptr
     }
+	isOn = false;
 }
 //____________________________________________________________________________________________________________
 
