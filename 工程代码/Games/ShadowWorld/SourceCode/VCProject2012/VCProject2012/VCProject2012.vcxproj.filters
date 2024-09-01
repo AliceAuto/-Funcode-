@@ -49,6 +49,18 @@
     <Filter Include="Header Files\Model\UI">
       <UniqueIdentifier>{ee1ac50f-0a96-42f6-901f-7bdcca06e006}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Model\GameObject">
+      <UniqueIdentifier>{4cdcf7fb-34e0-4e07-bb8d-c5fbe4bbb94d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\GameObject">
+      <UniqueIdentifier>{afac7647-0cc5-4b66-a394-2c0b15bc4ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\BaseModel">
+      <UniqueIdentifier>{b7f251a4-153b-4ec1-995a-823b311305c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\BaseModel">
+      <UniqueIdentifier>{b707e4f0-4cea-44b5-8de7-1eac3f18bd3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc">
@@ -56,32 +68,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Src\CharacterController.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Entity.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Logger.cpp">
       <Filter>Source Files\SharedService</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\MonsterController.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\NonInteractiveObject.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\PlayerController.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\SceneStates.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Setting.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\StateMachine.cpp">
-      <Filter>Source Files\Model</Filter>
     </ClCompile>
     <ClCompile Include="Src\ResourceBag.cpp">
       <Filter>Source Files\SharedService</Filter>
@@ -104,25 +92,46 @@
     <ClCompile Include="Timer.cpp">
       <Filter>Source Files\SharedService</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Object.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\ObjectManager.cpp">
-      <Filter>Source Files\Model</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Button.cpp">
       <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DataShower.cpp">
+      <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CharacterController.cpp">
+      <Filter>Source Files\Model\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity.cpp">
+      <Filter>Source Files\Model\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MonsterController.cpp">
+      <Filter>Source Files\Model\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NonInteractiveObject.cpp">
+      <Filter>Source Files\Model\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PlayerController.cpp">
+      <Filter>Source Files\Model\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object.cpp">
+      <Filter>Source Files\Model\BaseModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ObjectManager.cpp">
+      <Filter>Source Files\Model\BaseModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStates.cpp">
+      <Filter>Source Files\Model\BaseModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Setting.cpp">
+      <Filter>Source Files\Model\BaseModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StateMachine.cpp">
+      <Filter>Source Files\Model\BaseModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\Logger.h">
       <Filter>Header Files\SharedService</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\CharacterController.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\BagSystem.h">
-      <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\AI.h">
       <Filter>Header Files\SharedService</Filter>
@@ -130,26 +139,8 @@
     <ClInclude Include="include\headers\Container.h">
       <Filter>Header Files\SharedService</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\Entity.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\EventDrivenSystem.h">
       <Filter>Header Files\SharedService</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\MonsterController.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\NonInteractiveObject .h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\PlayerController.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\SceneStates.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\StateMachine.h">
-      <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\Load_Save_Data.h">
       <Filter>Header Files\SharedService</Filter>
@@ -163,9 +154,6 @@
     <ClInclude Include="include\headers\CGameMain.h">
       <Filter>Header Files\Drivement</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\Setting.h">
-      <Filter>Header Files\Model</Filter>
-    </ClInclude>
     <ClInclude Include="include\headers\CSystem.h">
       <Filter>Header Files\API</Filter>
     </ClInclude>
@@ -175,14 +163,44 @@
     <ClInclude Include="include\headers\SharedService\Timer.h">
       <Filter>Header Files\SharedService</Filter>
     </ClInclude>
+    <ClInclude Include="include\headers\Button.h">
+      <Filter>Header Files\Model\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\DataShower.h">
+      <Filter>Header Files\Model\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\CharacterController.h">
+      <Filter>Header Files\Model\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\PlayerController.h">
+      <Filter>Header Files\Model\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\MonsterController.h">
+      <Filter>Header Files\Model\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\NonInteractiveObject .h">
+      <Filter>Header Files\Model\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Entity.h">
+      <Filter>Header Files\Model\GameObject</Filter>
+    </ClInclude>
     <ClInclude Include="include\headers\Object.h">
+      <Filter>Header Files\Model\BaseModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\BagSystem.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\ObjectManager.h">
-      <Filter>Header Files\Model</Filter>
+      <Filter>Header Files\Model\BaseModel</Filter>
     </ClInclude>
-    <ClInclude Include="include\headers\Button.h">
-      <Filter>Header Files\Model\UI</Filter>
+    <ClInclude Include="include\headers\SceneStates.h">
+      <Filter>Header Files\Model\BaseModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\StateMachine.h">
+      <Filter>Header Files\Model\BaseModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Setting.h">
+      <Filter>Header Files\Model\BaseModel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
