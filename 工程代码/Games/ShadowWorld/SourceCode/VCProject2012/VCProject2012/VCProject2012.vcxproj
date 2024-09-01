@@ -137,6 +137,7 @@
     <ClCompile Include="Src\Setting.cpp" />
     <ClCompile Include="Src\ObjectManager.cpp" />
     <ClCompile Include="Src\StateMachine.cpp" />
+    <ClCompile Include="Src\UI.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
@@ -165,6 +166,7 @@
     <ClInclude Include="include\headers\SharedService\Timer.h" />
     <ClInclude Include="include\headers\StateMachine.h" />
     <ClInclude Include="include\headers\Container.h" />
+    <ClInclude Include="include\headers\UI.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Bin\resource.json" />

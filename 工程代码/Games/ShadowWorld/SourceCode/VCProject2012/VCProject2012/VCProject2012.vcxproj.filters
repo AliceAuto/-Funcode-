@@ -22,9 +22,6 @@
     <Filter Include="Source Files\Model">
       <UniqueIdentifier>{d202aceb-fe5c-438f-a393-7a1d5e8b7f3a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\SharedService">
-      <UniqueIdentifier>{a396de48-f281-4e86-a9e2-5221a2b4ccad}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\API">
       <UniqueIdentifier>{ab843e26-223d-4e5a-a8dc-8996089c79a8}</UniqueIdentifier>
     </Filter>
@@ -61,6 +58,9 @@
     <Filter Include="Header Files\Model\BaseModel">
       <UniqueIdentifier>{b707e4f0-4cea-44b5-8de7-1eac3f18bd3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\UI\SharedService">
+      <UniqueIdentifier>{a396de48-f281-4e86-a9e2-5221a2b4ccad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc">
@@ -69,10 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Logger.cpp">
-      <Filter>Source Files\SharedService</Filter>
+      <Filter>Source Files\Model\UI\SharedService</Filter>
     </ClCompile>
     <ClCompile Include="Src\ResourceBag.cpp">
-      <Filter>Source Files\SharedService</Filter>
+      <Filter>Source Files\Model\UI\SharedService</Filter>
     </ClCompile>
     <ClCompile Include="Src\CSprite.cpp">
       <Filter>Source Files\API</Filter>
@@ -90,7 +90,7 @@
       <Filter>Source Files\Entrance</Filter>
     </ClCompile>
     <ClCompile Include="Timer.cpp">
-      <Filter>Source Files\SharedService</Filter>
+      <Filter>Source Files\Model\UI\SharedService</Filter>
     </ClCompile>
     <ClCompile Include="Src\Button.cpp">
       <Filter>Source Files\Model\UI</Filter>
@@ -127,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="Src\StateMachine.cpp">
       <Filter>Source Files\Model\BaseModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI.cpp">
+      <Filter>Source Files\Model\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +204,9 @@
     </ClInclude>
     <ClInclude Include="include\headers\Setting.h">
       <Filter>Header Files\Model\BaseModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\UI.h">
+      <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

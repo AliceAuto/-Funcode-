@@ -9,7 +9,7 @@ public:
     virtual ~Entity(); // 虚析构函数
 
     // 公共接口
-    void Update(); // 更新实体状态
+
     virtual void Init();
     virtual void breakdown();
     virtual void ifCollision(Entity* otherEntity);

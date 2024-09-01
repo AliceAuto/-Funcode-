@@ -1,10 +1,9 @@
 #include "Button.h"
 #include "Logger.h"
 
-Button::Button(float initialX, float initialY,const std::string& resourceBagName,const std::string& label) 
-    : Entity(initialX, initialY,resourceBagName), label_(label), isMouseOver(false), isClicked(false),isListenerRegistered(false)
+Button::Button(float initialX, float initialY, const std::string& resourceBagName, const std::string& label) 
+    :UI(initialX, initialY, resourceBagName, label),isMouseOver(false), isClicked(false), isListenerRegistered(false)
 {
-	
 }
 Button::~Button(){
 	Button::UnregisterMouseListener() ;
@@ -13,12 +12,12 @@ Button::~Button(){
 
 void Button::Init()
 {
-	this->Entity::Init();
+	this->UI::Init();
 	Button::RegisterMouseListener();
 }
 
 void Button::breakdown(){
-	this->Entity::breakdown();
+	this->UI::breakdown();
 	this->UnregisterMouseListener();
 }
 
@@ -27,15 +26,15 @@ void Button::breakdown(){
 void Button::HandleMouseEvent(const MouseInputEvent& event) {
 	if (isOn){
 	LogManager::Log("按钮:"+this->GetLabel()+"  捕获鼠标输入");
-    bool isMouseCurrentlyOver = this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->IsPointInSprite(event.GetX(),event.GetY());
+    bool isMouseCurrentlyOver = this->UI::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->IsPointInSprite(event.GetX(),event.GetY());
 	
     if (event.IsLeftPressed() && isMouseCurrentlyOver) {
         if (!isClicked) {
             isClicked = true;
-            LogManager::Log("按钮点击: " + label_);
+            LogManager::Log("按钮点击: " +  GetLabel());
             this->updateAnimation();
             this->updateSound();
-			ButtonClickEvent buttonEvent(label_);
+			ButtonClickEvent buttonEvent( GetLabel());
 			// 分发事件
 			EventManager::Instance().DispatchEvent(buttonEvent);
 
@@ -48,12 +47,12 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
         isClicked = false;
         if (isMouseCurrentlyOver && !isMouseOver) {
             isMouseOver = true;
-            LogManager::Log("鼠标进入按钮: " + label_);
+            LogManager::Log("鼠标进入按钮: " +  GetLabel());
             this->updateAnimation();
             this->updateSound();
         } else if (!isMouseCurrentlyOver && isMouseOver) {
             isMouseOver = false;
-            LogManager::Log("鼠标离开按钮: " + label_);
+            LogManager::Log("鼠标离开按钮: " +  GetLabel());
             this->updateAnimation();
             this->updateSound();
         }
@@ -63,16 +62,15 @@ void Button::HandleMouseEvent(const MouseInputEvent& event) {
 
 
 
-
 void Button::updateAnimation() {
- 
+    // 默认动画更新实现 (可以在子类中重写)
 }
 
 void Button::updateSound() {
 	if (isOn)
 	{
 	LogManager::Log("[鼠标声音]");
-    CSound* sound =this->Entity::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
+    CSound* sound =this->UI::resourceBagPtr->GetResource<CSound>("ButtonSound").get();
     if (sound) {
         if (isClicked) {	
         } 
@@ -94,7 +92,7 @@ void Button::RegisterMouseListener() {
         // 保存 lambda 表达式到 std::function 对象//
 
 
-        EventManager::Instance().RegisterListener(EventType::MouseInput, Entity::ID +"button_mouse_info",[this](const Event& event) 
+        EventManager::Instance().RegisterListener(EventType::MouseInput, UI::ID +"button_mouse_info",[this](const Event& event) 
 		{
             this->HandleMouseEvent(static_cast<const MouseInputEvent&>(event));
         });
@@ -105,7 +103,7 @@ void Button::RegisterMouseListener() {
 
 void Button::UnregisterMouseListener() {
     if (this->isListenerRegistered) {
-        EventManager::Instance().RemoveListener(EventType::MouseInput, Entity::ID +"button_mouse_info");
+        EventManager::Instance().RemoveListener(EventType::MouseInput, UI::ID +"button_mouse_info");
         this->isListenerRegistered = false;
         LogManager::Log("成功注销一个鼠标监听");
     }
@@ -127,18 +125,18 @@ RenderButton::~RenderButton()
 void RenderButton::Init()
 {
 	Button::Init();
-	CTextSprite* text =this->Entity::resourceBagPtr->GetResource<CTextSprite>("ButtonText").get();
-	CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+	CTextSprite* text =this->UI::resourceBagPtr->GetResource<CTextSprite>("ButtonText").get();
+	CAnimateSprite* sprite =this->UI::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 	text->SpriteMountToSprite( sprite->GetName(),0, 0 );
-	text->SetTextString(this->label_.c_str());
+	text->SetTextString(this-> GetLabel().c_str());
 }
 
 
 
 void RenderButton::updateAnimation(){
 
-    CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
-	CTextSprite* text =this->Entity::resourceBagPtr->GetResource<CTextSprite>("ButtonText").get();//
+    CAnimateSprite* sprite =this->UI::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+	CTextSprite* text =this->UI::resourceBagPtr->GetResource<CTextSprite>("ButtonText").get();//
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {
@@ -177,7 +175,7 @@ void ArtButton::Init()
 
 void ArtButton::updateAnimation(){
 
-    CAnimateSprite* sprite =this->Entity::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+    CAnimateSprite* sprite =this->UI::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 	LogManager::Log("[鼠标动画]");
     if (sprite) {
         if (isClicked) {

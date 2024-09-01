@@ -11,7 +11,7 @@ public:
 	
     // 公共接口
 	bool isOn;		//对象的可用状态
-    void Update(); // 更新实体状态
+    virtual void Update(); // 更新实体状态
     virtual void Init();
     virtual void breakdown();
 

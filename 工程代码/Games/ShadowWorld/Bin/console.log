@@ -1,7 +1,7 @@
-//-------------------------- 9/1/2024 -- 11:07:13 -----
+//-------------------------- 9/1/2024 -- 11:51:07 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -137,7 +137,12 @@ Error: cannot change namespace parent linkage of StartGameButton from t2dAnimati
 t2dSceneGraph::addToScene() - Object '1365' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1366' is already in a SceneGraph!.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
-Error loading level game/data/levels/settingsMenu.t2d. Invalid file.
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d.
+t2dSceneGraph::addToScene() - Object '1376' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1377' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1378' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1379' is already in a SceneGraph!.
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
