@@ -63,9 +63,9 @@
 				{
 					object = CreateObjectInstance("ObstacleObject", root);
 				}
-			else if (typeName == "Button")
+			else if (typeName == "Button_Text&Photo")
 				{
-					object = CreateObjectInstance("Button", root);
+					object = CreateObjectInstance("Button_Text&Photo", root);
 				}
 			else if (typeName == "Bullet")
 				{
@@ -125,12 +125,12 @@
 			return new ObstacleObject(posX, posY,resourceBag);
 		}
 		//
-		else if (type == "Button") {
+		else if (type == "Button_Text&Photo"){
 			float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
 			float posY = static_cast<float>(root.get("posY", 0.0).asDouble());
 			std::string resourceBag = root.get("resourceBag", "").asString();
 			std::string label = root.get("label", "").asString();
-			return new Button(posX, posY,resourceBag,label);
+			return new RenderButton(posX, posY,resourceBag,label);
 		}
 		//×Óµ¯
 		else if (type == "Bullet") {

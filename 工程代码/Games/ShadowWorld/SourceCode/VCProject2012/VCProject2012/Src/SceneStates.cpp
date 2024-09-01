@@ -18,7 +18,7 @@
 MainMenuState::MainMenuState(): State() {		
     std::string Button = objectManager->CreateObject(
         "{\n"
-        "  \"TypeName\"      :           \"Button\"                ,\n"
+        "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
         "  \"posY\"          :           0.0                      ,\n"
         "  \"resourceBag\"   :           \"StartGameButton\"       ,\n"
