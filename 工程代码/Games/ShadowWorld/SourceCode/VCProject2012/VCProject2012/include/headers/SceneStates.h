@@ -18,7 +18,7 @@ public:
     void Enter() override;
     void Exit() override;
     void Update(float fDeltaTime) override;
-    void HandleButtonInput(const ButtonClickEvent& event);
+   
 protected:
 	void RegisterEventListeners() override;
     void UnregisterEventListeners()override;

@@ -8,7 +8,9 @@ Button::Button(float initialX, float initialY, const std::string& resourceBagNam
 Button::~Button(){
 	Button::UnregisterMouseListener() ;
 }
-
+void Button::SetClickHandler(std::function<void()> handler) {
+    clickHandler = handler;
+}
 
 void Button::Init()
 {
@@ -22,43 +24,43 @@ void Button::breakdown(){
 }
 
 
-
 void Button::HandleMouseEvent(const MouseInputEvent& event) {
-	if (isOn){
-	LogManager::Log("按钮:"+this->GetLabel()+"  捕获鼠标输入");
-    bool isMouseCurrentlyOver = this->UI::resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->IsPointInSprite(event.GetX(),event.GetY());
-	
-    if (event.IsLeftPressed() && isMouseCurrentlyOver) {
-        if (!isClicked) {
-            isClicked = true;
-            LogManager::Log("按钮点击: " +  GetLabel());
-            this->updateAnimation();
-            this->updateSound();
-			ButtonClickEvent buttonEvent( GetLabel());
-			// 分发事件
-			EventManager::Instance().DispatchEvent(buttonEvent);
+    if (isOn) {
+        LogManager::Log("按钮:" + this->GetLabel() + " 捕获鼠标输入");
+        bool isMouseCurrentlyOver = this->Object::resourceBagPtr->GetResource<CAnimateSprite>("Entity")->IsPointInSprite(event.GetX(), event.GetY());
+        
+        if (event.IsLeftPressed() && isMouseCurrentlyOver) {
+            if (!isClicked) {
+                isClicked = true;
+                LogManager::Log("按钮点击: " + GetLabel());
+                this->updateAnimation();
+                this->updateSound();
 
-
-
-
-			isClicked = false;
-        }
-    } else {
-        isClicked = false;
-        if (isMouseCurrentlyOver && !isMouseOver) {
-            isMouseOver = true;
-            LogManager::Log("鼠标进入按钮: " +  GetLabel());
-            this->updateAnimation();
-            this->updateSound();
-        } else if (!isMouseCurrentlyOver && isMouseOver) {
-            isMouseOver = false;
-            LogManager::Log("鼠标离开按钮: " +  GetLabel());
-            this->updateAnimation();
-            this->updateSound();
+                // 调用按钮的点击处理逻辑
+                if (clickHandler) {
+                    clickHandler();
+                }
+                isClicked = false;
+            }
+        } else {
+            isClicked = false;
+            if (isMouseCurrentlyOver && !isMouseOver) {
+                isMouseOver = true;
+                LogManager::Log("鼠标进入按钮: " + GetLabel());
+                this->updateAnimation();
+                this->updateSound();
+            } else if (!isMouseCurrentlyOver && isMouseOver) {
+                isMouseOver = false;
+                LogManager::Log("鼠标离开按钮: " + GetLabel());
+                this->updateAnimation();
+                this->updateSound();
+            }
         }
     }
-	}
 }
+
+
+
 
 
 

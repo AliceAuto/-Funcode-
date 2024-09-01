@@ -16,7 +16,8 @@
 // 构造函数：初始化主菜单状态
 //____________________________________________________________________________________________________________
 MainMenuState::MainMenuState(): State() {		
-    std::string Button = objectManager->CreateObject(
+	//在主菜单状态添加一个"无文本绑定"、"位置为(0,0)"、"资源包为<Button_Text&Render>"、"标签为<StartGame>"的按钮
+    std::string Button0 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
@@ -25,6 +26,9 @@ MainMenuState::MainMenuState(): State() {
         "  \"label\"         :           \"StartGame\"              \n"
         "}"
     );
+	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button0))->SetClickHandler([this]() {
+            CGameMain::GetInstance().stateMachine->ToNextState("Game");
+        });
 	std::string Button1 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
@@ -34,6 +38,9 @@ MainMenuState::MainMenuState(): State() {
         "  \"label\"         :           \"Setting\"              \n"
         "}"
     );
+	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button1))->SetClickHandler([this]() {
+            CGameMain::GetInstance().stateMachine->ToNextState("Settings");
+        });
 
 }
 
@@ -69,12 +76,7 @@ MainMenuState::~MainMenuState() {
 // 注册事件监听器：用于处理按钮点击事件
 //_________________________________________________________________________________________
 void MainMenuState::RegisterEventListeners() {
-    LogManager::Log("注册一个按钮监听器");
 
-    EventManager::Instance().RegisterListener(
-        EventType::ButtonClick, "MainState_mouse_info",
-        [this](const Event& event) { this->HandleButtonInput(static_cast<const ButtonClickEvent&>(event)); }
-    );
 }
 //_________________________________________________________________________________________
 
@@ -91,8 +93,7 @@ void MainMenuState::RegisterEventListeners() {
 // 注销事件监听器：取消按钮点击事件的监听
 //_______________________________________________________________________________________________________________________
 void MainMenuState::UnregisterEventListeners(){
-    EventManager::Instance().RemoveListener(EventType::ButtonClick, "MainState_mouse_info");
-    LogManager::Log("注销一个按钮监听器");
+
 }
 //_______________________________________________________________________________________________________________________
 
@@ -173,22 +174,6 @@ void MainMenuState::Update(float fDeltaTime) {
 
 
 
-// [说明]
-// 处理按钮输入事件：根据按钮点击的事件处理相应的逻辑
-//____________________________________________________________________________________________________________
-void MainMenuState::HandleButtonInput(const ButtonClickEvent& event) {
-    LogManager::Log("鼠标");
-    LogManager::Log("Sender: " + event.GetButtonSender());
-    
-    std::string sender = event.GetButtonSender();
-    if (sender == "StartGame") {
-        CGameMain::GetInstance().stateMachine->ToNextState("Game");
-    }
-	else if (sender == "Setting") {
-        CGameMain::GetInstance().stateMachine->ToNextState("Settings");
-    }
-}
-//____________________________________________________________________________________________________________
 
 
 

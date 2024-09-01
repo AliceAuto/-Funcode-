@@ -24,13 +24,14 @@ public:
     
 	void RegisterMouseListener();
 	void UnregisterMouseListener();
-	
+	void SetClickHandler(std::function<void()> handler);
 protected:
-	
+	static void HandleButtonClick(const Event& event);
 	void updateAnimation()override;
 	void updateSound()override;
 	bool isListenerRegistered;
     bool isMouseOver;
+	std::function<void()> clickHandler;  // 存储按钮点击的处理逻辑
     bool isClicked;
    
 };
