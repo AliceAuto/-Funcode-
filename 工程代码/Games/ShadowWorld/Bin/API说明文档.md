@@ -369,18 +369,24 @@
 
 ```cpp
 // 创建一个按钮对象
-Button myButton(100.0f, 200.0f, "ResourceBagName", "StartGame");
+	//在主菜单状态添加一个"无文本绑定"、"位置为(0,0)"、"资源包为<Button_Text&Render>"、"标签为<StartGame>"的按钮
+    std::string Button0 = objectManager->CreateObject(
+        "{\n"
+        "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
+        "  \"posX\"          :           0.0                      ,\n"
+        "  \"posY\"          :           0.0                      ,\n"
+        "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
+        "  \"label\"         :           \"StartGame\"              \n"
+        "}"
+    );
+	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button0))->SetClickHandler
+		([this]() 
+	{
+            CGameMain::GetInstance().stateMachine->ToNextState("Game");//为按钮设置处理逻辑,这个意思是会调用这个函数 切换状态 
+	}
+		);
 
-// 初始化按钮
-myButton.Init();
 
-// 处理鼠标事件（通常在主循环中）
-void OnMouseEvent(const MouseInputEvent& event) {
-    myButton.HandleMouseEvent(event);
-}
-
-// 清理按钮
-myButton.breakdown();
 ```
 # CharacterController 类开发文档
 

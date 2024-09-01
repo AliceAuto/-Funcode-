@@ -1,7 +1,8 @@
-﻿生成启动时间为 2024/9/1 13:06:24。
+﻿生成启动时间为 2024/9/1 13:43:26。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Button.cpp
+  D:\VS012\VC\bin\CL.exe /c /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\Button.cpp Src\SceneStates.cpp
+  SceneStates.cpp
   Button.cpp
 c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\button.cpp(146): warning C4305: “参数”: 从“double”到“const float”截断
 c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\button.cpp(147): warning C4305: “参数”: 从“double”到“const float”截断
@@ -12,6 +13,7 @@ c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcpro
 c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\button.cpp(185): warning C4305: “参数”: 从“double”到“const float”截断
 c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\button.cpp(188): warning C4305: “参数”: 从“double”到“const float”截断
 c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\button.cpp(190): warning C4305: “参数”: 从“double”到“const float”截断
+  正在生成代码...
 Link:
   D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
   Debug\CGameMain.obj
@@ -44,4 +46,4 @@ BscMake:
 
 生成成功。
 
-已用时间 00:00:07.06
+已用时间 00:00:09.59
