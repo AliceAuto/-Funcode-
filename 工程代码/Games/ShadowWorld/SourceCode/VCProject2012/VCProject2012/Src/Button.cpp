@@ -9,6 +9,7 @@ Button::~Button(){
 	Button::UnregisterMouseListener() ;
 }
 void Button::SetClickHandler(std::function<void()> handler) {
+	LogManager::Log(GetLabel()+":已设置事件处理体 "  );
     clickHandler = handler;
 }
 
@@ -147,12 +148,12 @@ void RenderButton::updateAnimation(){
 			
         } else if (isMouseOver) {
 			LogManager::Log("				按钮持续放大");
-		
-			text->SetSpriteScale(0.9);
-			sprite->SetSpriteScale(0.9);
-        } else {
 			text->SetSpriteScale(1.1);
 			sprite->SetSpriteScale(1.1);
+			
+        } else {
+			text->SetSpriteScale(0.9);
+			sprite->SetSpriteScale(0.9);
 
 			LogManager::Log("				按钮持续缩小");
         }

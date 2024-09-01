@@ -26,9 +26,20 @@ MainMenuState::MainMenuState(): State() {
         "  \"label\"         :           \"StartGame\"              \n"
         "}"
     );
-	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button0))->SetClickHandler([this]() {
-            CGameMain::GetInstance().stateMachine->ToNextState("Game");
-        });
+	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button0))->SetClickHandler
+		([this]() 
+	{
+            CGameMain::GetInstance().stateMachine->ToNextState("Game");//为按钮设置处理逻辑,这个意思是会调用这个函数 切换状态 
+	}
+		);
+
+
+
+
+
+
+
+	//在主菜单状态添加一个"有文本绑定"、"位置为(0,0)"、"资源包为<Button_Text&Render>"、"标签为<StartGame>"的按钮
 	std::string Button1 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
@@ -38,9 +49,12 @@ MainMenuState::MainMenuState(): State() {
         "  \"label\"         :           \"Setting\"              \n"
         "}"
     );
-	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button1))->SetClickHandler([this]() {
-            CGameMain::GetInstance().stateMachine->ToNextState("Settings");
-        });
+	static_cast<Button*>(objectManager->GetObjectBySpriteName(Button1))->SetClickHandler
+		([this]() 
+	{
+            CGameMain::GetInstance().stateMachine->ToNextState("Settings");//为按钮设置处理逻辑,这个意思是会调用这个函数 切换状态 
+	}
+		);
 
 }
 
