@@ -6,8 +6,11 @@
 #include "EventDrivenSystem.h"
 #include "Logger.h"
 #include "CSystem.h"
-#include "Button.h"
+#include "IMouseUi.h"
 #include "ObjectManager.h"
+//==========================================================================================================================
+//														以下是状态声明层
+//=======================================================================================================================
 
 // 主菜单状态
 class MainMenuState : public State {
@@ -27,7 +30,6 @@ protected:
 
 
 };
-
 
 
 

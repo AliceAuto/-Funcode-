@@ -132,7 +132,7 @@
     <ClCompile Include="Src\Object.cpp" />
     <ClCompile Include="Src\PlayerController.cpp" />
     <ClCompile Include="Src\ResourceBag.cpp" />
-    <ClCompile Include="Src\Button.cpp" />
+    <ClCompile Include="Src\IMouseUi.cpp" />
     <ClCompile Include="Src\SceneStates.cpp" />
     <ClCompile Include="Src\Setting.cpp" />
     <ClCompile Include="Src\ObjectManager.cpp" />
@@ -161,7 +161,7 @@
     <ClInclude Include="include\headers\ObjectManager.h" />
     <ClInclude Include="include\headers\MonsterController.h" />
     <ClInclude Include="include\headers\PlayerController.h" />
-    <ClInclude Include="include\headers\Button.h" />
+    <ClInclude Include="include\headers\IMouseUi.h" />
     <ClInclude Include="include\headers\SceneStates.h" />
     <ClInclude Include="include\headers\Setting.h" />
     <ClInclude Include="include\headers\SharedService\Timer.h" />

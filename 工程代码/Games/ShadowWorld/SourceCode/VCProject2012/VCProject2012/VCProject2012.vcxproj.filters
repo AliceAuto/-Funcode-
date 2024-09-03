@@ -89,9 +89,6 @@
     <ClCompile Include="Timer.cpp">
       <Filter>Source Files\SharedService</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Button.cpp">
-      <Filter>Source Files\Model\UI</Filter>
-    </ClCompile>
     <ClCompile Include="Src\DataShower.cpp">
       <Filter>Source Files\Model\UI</Filter>
     </ClCompile>
@@ -134,6 +131,9 @@
     <ClCompile Include="Src\CSprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Src\IMouseUi.cpp">
+      <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\Logger.h">
@@ -168,9 +168,6 @@
     </ClInclude>
     <ClInclude Include="include\headers\SharedService\Timer.h">
       <Filter>Header Files\SharedService</Filter>
-    </ClInclude>
-    <ClInclude Include="include\headers\Button.h">
-      <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\DataShower.h">
       <Filter>Header Files\Model\UI</Filter>
@@ -212,6 +209,9 @@
       <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\Video.h">
+      <Filter>Header Files\Model\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\IMouseUi.h">
       <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
   </ItemGroup>
