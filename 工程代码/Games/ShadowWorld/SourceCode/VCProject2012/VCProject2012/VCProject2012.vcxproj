@@ -139,6 +139,7 @@
     <ClCompile Include="Src\StateMachine.cpp" />
     <ClCompile Include="Src\UI.cpp" />
     <ClCompile Include="Src\UnitTesting.cpp" />
+    <ClCompile Include="Src\Video.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +168,7 @@
     <ClInclude Include="include\headers\StateMachine.h" />
     <ClInclude Include="include\headers\Container.h" />
     <ClInclude Include="include\headers\UI.h" />
+    <ClInclude Include="include\headers\Video.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Bin\resource.json" />

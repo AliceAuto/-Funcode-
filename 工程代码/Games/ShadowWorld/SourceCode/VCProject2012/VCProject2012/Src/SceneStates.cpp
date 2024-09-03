@@ -43,8 +43,8 @@ MainMenuState::MainMenuState(): State() {
 	std::string Button1 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"Button_Text&Photo\"                ,\n"
-        "  \"posX\"          :           30.0                      ,\n"
-        "  \"posY\"          :           0.0                    ,\n"
+        "  \"posX\"          :           0.0                      ,\n"
+        "  \"posY\"          :           5.0                    ,\n"
         "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
         "  \"label\"         :           \"Setting\"              \n"
         "}"
@@ -127,7 +127,7 @@ void MainMenuState::UnregisterEventListeners(){
 void MainMenuState::Enter() {	
     LogManager::Log("已进入主菜单界面");
     CSystem::LoadMap("untitled.t2d");
-    objectManager->LoadAllObjects();
+    
 
 }
 //____________________________________________________________________________________________________________
@@ -275,7 +275,6 @@ GameState::~GameState() {
 void GameState::Enter() {
     LogManager::Log("进入游戏状态");
     CSystem::LoadMap("gameScene.t2d");
-    objectManager->LoadAllObjects();
 }
 //____________________________________________________________________________________________________________
 

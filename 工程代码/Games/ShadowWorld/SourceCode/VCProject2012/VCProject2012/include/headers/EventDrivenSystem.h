@@ -18,6 +18,7 @@ enum EventType {
     MouseInput,
     KeyboardInput,
     ButtonClick,
+	OperateInput,
     Collision
 };
 
@@ -47,6 +48,31 @@ public:
 private:
     float x, y;
     bool isLeftPressed, isMiddlePressed, isRightPressed;
+};
+
+
+// 操作输入事件
+class OperateEvent : public Event {
+public:
+	static enum OperateType
+	{
+	LeftClicked,
+	MouseOut,
+	MouseInter,
+	MouseHover,
+	None
+	};
+    OperateEvent(OperateType Operation,std::string Sender):operation(Operation),sender(Sender){}
+	~OperateEvent(){}
+    EventType GetType() const override {
+        return OperateInput;
+    }
+
+    const OperateType& GetOperation() const { return operation; }
+	const std::string& GetSender() const { return sender; }
+private:
+	std::string sender;
+	OperateType operation;
 };
 
 // 键盘输入事件

@@ -51,6 +51,7 @@ protected:
 class ObstacleObject : public NonInteractiveObject {
 public:
     // 构造函数
+
     ObstacleObject(float initialX, float initialY, const std::string& resourceBagName);
 
     // 虚析构函数

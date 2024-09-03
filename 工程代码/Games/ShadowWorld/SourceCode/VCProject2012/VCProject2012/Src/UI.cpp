@@ -24,13 +24,13 @@ void UI::breakdown() {
 
 
 void UI::UpdateState() {
+	Object::UpdateState();
     // 更新 UI 状态的实现
 }
 
-void UI::UpdateAnimation() {
-    // 更新 UI 动画的实现
+void UI::UpdateAnimation(){
+	Object::UpdateAnimation();
 }
-
-void UI::UpdateSound() {
-    // 更新 UI 声音的实现
+void UI::UpdateSound(){
+	Object::UpdateSound();
 }

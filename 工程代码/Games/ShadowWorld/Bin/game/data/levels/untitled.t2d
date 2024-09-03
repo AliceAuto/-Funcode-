@@ -33,7 +33,7 @@
    layerSortMode29 = "Normal";
    layerSortMode30 = "Normal";
    layerSortMode31 = "Normal";
-   DebugRendering = "128";
+   DebugRendering = "0";
       cameraPosition = "0.000000 0.000000";
       cameraSize = "100.000000 75.000000";
 
@@ -51,8 +51,8 @@
       useSourceRect = "0";
       sourceRect = "2.36006e-039 0 2.36006e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "69.938 -4.063";
-      size = "20.125 8.125";
+      Position = "60.090 -9.327";
+      size = "10.179 4.110";
       Layer = "2";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -64,8 +64,8 @@
    };
    new t2dTextObject(ComTypeText) {
       canSaveDynamicFields = "1";
-      Position = "69.938 -4.063";
-      size = "0.000 3.000";
+      Position = "60.090 -9.327";
+      size = "0.000 2.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       SrcBlendFactor = "ONE";
@@ -73,7 +73,7 @@
       wordWrap = "0";
       hideOverflow = "1";
       textAlign = "Center";
-      lineHeight = "3";
+      lineHeight = "2";
       aspectRatio = "1";
       lineSpacing = "0";
       characterSpacing = "0";
@@ -87,5 +87,17 @@
          mountID = "4";
          mountToID = "3";
          snapToIntegerPos = "1";
+   };
+   new t2dScroller() {
+      imageMap = "ringImageMap";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "0.232 -1.439";
+      size = "74.822 67.123";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      LinkPoints = "0.000 0.000";
+         mountID = "5";
    };
 };

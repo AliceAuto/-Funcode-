@@ -58,7 +58,7 @@
     <Filter Include="Header Files\Model\BaseModel">
       <UniqueIdentifier>{b707e4f0-4cea-44b5-8de7-1eac3f18bd3b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Model\UI\SharedService">
+    <Filter Include="Source Files\SharedService">
       <UniqueIdentifier>{a396de48-f281-4e86-a9e2-5221a2b4ccad}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -69,13 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Logger.cpp">
-      <Filter>Source Files\Model\UI\SharedService</Filter>
+      <Filter>Source Files\SharedService</Filter>
     </ClCompile>
     <ClCompile Include="Src\ResourceBag.cpp">
-      <Filter>Source Files\Model\UI\SharedService</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\CSprite.cpp">
-      <Filter>Source Files\API</Filter>
+      <Filter>Source Files\SharedService</Filter>
     </ClCompile>
     <ClCompile Include="Src\CSystem.cpp">
       <Filter>Source Files\API</Filter>
@@ -90,7 +87,7 @@
       <Filter>Source Files\Entrance</Filter>
     </ClCompile>
     <ClCompile Include="Timer.cpp">
-      <Filter>Source Files\Model\UI\SharedService</Filter>
+      <Filter>Source Files\SharedService</Filter>
     </ClCompile>
     <ClCompile Include="Src\Button.cpp">
       <Filter>Source Files\Model\UI</Filter>
@@ -130,6 +127,12 @@
     </ClCompile>
     <ClCompile Include="Src\UI.cpp">
       <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Video.cpp">
+      <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CSprite.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +209,9 @@
       <Filter>Header Files\Model\BaseModel</Filter>
     </ClInclude>
     <ClInclude Include="include\headers\UI.h">
+      <Filter>Header Files\Model\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Video.h">
       <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
   </ItemGroup>

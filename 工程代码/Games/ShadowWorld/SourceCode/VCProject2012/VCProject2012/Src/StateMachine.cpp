@@ -39,6 +39,7 @@ void State::enter()
 {
 	this->Enter();
 	this->RegisterEventListeners();
+	objectManager->LoadAllObjects();
 }
 //___________________________
 
@@ -46,8 +47,9 @@ void State::enter()
 
 //___________________________
 void State::exit()
-{   this->UnregisterEventListeners();
-	this->objectManager->breakDownAllObjects();
+{
+   this->objectManager->breakDownAllObjects();
+   this->UnregisterEventListeners();
 	this->Exit();
 }
 //___________________________

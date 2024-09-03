@@ -27,6 +27,7 @@
 //____________________________________________________________
 	ObjectManager::~ObjectManager()
 	{
+		breakDownAllObjects();
 		for (auto& pair : spriteNameToObject) 
 		{
 			delete pair.second;
@@ -72,6 +73,10 @@
 					object = CreateObjectInstance("Button_ArtPhoto", root);
 				}
 			else if (typeName == "Bullet")
+				{
+					object = CreateObjectInstance("Bullet", root);
+				}
+			else if (typeName == "DataShower_TextWin")
 				{
 					object = CreateObjectInstance("Bullet", root);
 				}
@@ -137,6 +142,14 @@
 			return new RenderButton(posX, posY,resourceBag,label);
 		}
 		else if (type == "Button_ArtPhoto"){
+			float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
+			float posY = static_cast<float>(root.get("posY", 0.0).asDouble());
+			std::string resourceBag = root.get("resourceBag", "").asString();
+			std::string label = root.get("label", "").asString();
+			return new ArtButton(posX, posY,resourceBag,label);
+		}
+
+		else if (type == "DataShower_TextWin"){
 			float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
 			float posY = static_cast<float>(root.get("posY", 0.0).asDouble());
 			std::string resourceBag = root.get("resourceBag", "").asString();
@@ -217,6 +230,7 @@
 					break;
 				}
 			}
+			
 			delete it->second;
 		   spriteNameToObject.erase(it);
 		}

@@ -15,18 +15,16 @@ public:
 
 protected:
     // 需要子类实现的虚函数
-    virtual void UpdateState() override;
-    virtual void UpdateAnimation() override;
-    virtual void UpdateSound() override;
 
     // 内部成员变量可以根据需要添加
     // ...
-
+	void UpdateState()override;
+	void UpdateAnimation()override;
+	void UpdateSound()override;
 private:
     // 私有成员变量或方法（如果有）
     // ...
-	virtual void updateAnimation(){};
-	virtual void updateSound(){};
+	
 	std::string label_;
 };
 
