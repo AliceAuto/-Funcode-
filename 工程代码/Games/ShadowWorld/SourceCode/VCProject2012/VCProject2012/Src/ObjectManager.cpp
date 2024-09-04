@@ -80,6 +80,10 @@
 				{
 					object = CreateObjectInstance("Bullet", root);
 				}
+			else if (typeName == "IMouse_DragUI")
+				{
+					object = CreateObjectInstance("IMouse_DragUI", root);
+				}
 			if (object) 
 			{
 				const std::string ID= "ID_"+std::to_string(++Id_couter)+"_";
@@ -155,6 +159,13 @@
 			std::string resourceBag = root.get("resourceBag", "").asString();
 			std::string label = root.get("label", "").asString();
 			return new ArtButton(posX, posY,resourceBag,label);
+		}
+		else if (type == "IMouse_DragUI"){
+			float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
+			float posY = static_cast<float>(root.get("posY", 0.0).asDouble());
+			std::string resourceBag = root.get("resourceBag", "").asString();
+			std::string label = root.get("label", "").asString();
+			return new DraggableBlock(posX, posY,resourceBag,label);
 		}
 		//×Óµ¯
 		else if (type == "Bullet") {

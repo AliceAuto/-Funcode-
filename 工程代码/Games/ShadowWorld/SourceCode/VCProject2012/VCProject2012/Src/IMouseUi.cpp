@@ -80,9 +80,21 @@ void IMouseUi::HandleMouseEvent(const MouseInputEvent& event) {
             Operating = OperateEvent::OperateType::MouseInter;
             EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::MouseInter,ID)); // 发送鼠标进入事件
         } else {
+			if(event.IsLeftPressed()){
+			LogManager::Log("鼠标左键拖动在IMouseUi: " + GetLabel());
+			EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::DragInput,ID)); // 发送正在拖动事件
+			Operating = OperateEvent::OperateType::DragInput;
+			}
+			else if (!event.IsLeftPressed())
+			{
+			LogManager::Log("鼠标左键结束拖动在IMouseUi: " + GetLabel());
+			EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::DragOverInput,ID)); // 发送正在拖动事件
+			Operating = OperateEvent::OperateType::DragOverInput;
             // 鼠标悬浮在区域内
             LogManager::Log("鼠标悬浮在IMouseUi: " + GetLabel());
-            Operating = OperateEvent::OperateType::MouseHover;
+			Operating = OperateEvent::OperateType::MouseHover;
+			}
+
             // 在这里可以处理悬浮状态的逻辑
         }
     } else {
@@ -147,7 +159,7 @@ Button::Button(float initialX, float initialY, const std::string& resourceBagNam
 {
 }
 Button::~Button(){
-	Button::UnregisterMouseListener() ;
+	this->Button::UnregisterListener() ;
 }
 void Button::SetClickHandler(const std::function<void()>&  handler) {
 	LogManager::Log(GetLabel()+":已设置事件处理体 "  );
@@ -157,12 +169,12 @@ void Button::SetClickHandler(const std::function<void()>&  handler) {
 void Button::Init()
 {
 	this->IMouseUi::Init();
-	Button::RegisterMouseListener();
+	this->Button::RegisterListener();
 }
 
 void Button::breakdown(){
 	this->IMouseUi::breakdown();
-	this->UnregisterMouseListener();
+	this->UnregisterListener();
 }
 void Button::UpdateState() {
 	IMouseUi::UpdateState();
@@ -237,7 +249,7 @@ void Button::UpdateSound() {
 
 
 
-void Button::RegisterMouseListener() {
+void Button::RegisterListener() {
     if (!this->isListenerRegistered) {
         // 保存 lambda 表达式到 std::function 对象//
 
@@ -251,7 +263,7 @@ void Button::RegisterMouseListener() {
     }
 }
 
-void Button::UnregisterMouseListener() {
+void Button::UnregisterListener() {
     if (this->isListenerRegistered) {
         EventManager::Instance().RemoveListener(EventType::OperateInput, ID +"button_Operate_info");
         this->isListenerRegistered = false;
@@ -268,7 +280,7 @@ void Button::UnregisterMouseListener() {
 RenderButton::RenderButton(float initialX, float initialY,const std::string& resourceBagName,const std::string& label)
 : Button(initialX, initialY,resourceBagName,label)
 {
-RenderButton::UnregisterMouseListener() ;
+
 }
 RenderButton::~RenderButton()
 {
@@ -285,7 +297,7 @@ void RenderButton::Init()
 }
 void RenderButton::breakdown(){
 	this->Button::breakdown();
-	this->UnregisterMouseListener();
+
 }
 
 void RenderButton::UpdateState() {
@@ -327,7 +339,7 @@ void RenderButton::UpdateSound(){
 ArtButton::ArtButton(float initialX, float initialY,const std::string& resourceBagName,const std::string& label)
 : Button(initialX, initialY,resourceBagName,label)
 {
-	ArtButton::UnregisterMouseListener() ;
+
 }
 ArtButton::~ArtButton()
 {
@@ -339,8 +351,9 @@ void ArtButton::Init()
 }
 void ArtButton::breakdown(){
 	this->Button::breakdown();
-	this->UnregisterMouseListener();
+
 }
+
 void ArtButton::UpdateState() {
 	Button::UpdateState();
     // 更新 UI 状态的实现
@@ -369,5 +382,90 @@ void ArtButton::UpdateAnimation(){
 void ArtButton::UpdateSound(){
 	if(isOn){
 	Button::UpdateSound();
+	}
+}
+//=============================================================================================================================================
+//															这是可拖动 积木组件类实现
+//===========================================================================================================================================
+
+
+DraggableBlock::DraggableBlock(float initialX, float initialY, const std::string& resourceBagName, const std::string& label)
+    : IMouseUi(initialX, initialY, resourceBagName, label), isDragging(false),SetX(0),SetY(0),isListenerRegistered(false)
+{
+}
+
+DraggableBlock::~DraggableBlock() {
+    UnregisterListener();
+}
+
+void DraggableBlock::Init() {
+    IMouseUi::Init();
+	this->RegisterListener();
+}
+
+void DraggableBlock::breakdown() {
+    IMouseUi::breakdown();
+	this->UnregisterListener();
+   
+}
+
+void DraggableBlock::RegisterListener(){
+if (!this->isListenerRegistered) {
+        // 保存 lambda 表达式到 std::function 对象//
+
+
+        EventManager::Instance().RegisterListener(EventType::OperateInput, ID +"IDrag_Operate_info",[this](const Event& event) 
+		{
+            this->HandleOperateEvent(static_cast<const OperateEvent&>(event));
+        });
+        this->isListenerRegistered = true;
+        LogManager::Log("成功注册一个拖动操作事件监听");
+    }}
+void DraggableBlock::UnregisterListener(){if (this->isListenerRegistered) {
+        EventManager::Instance().RemoveListener(EventType::OperateInput, ID +"IDrag_Operate_info");
+        this->isListenerRegistered = false;
+        LogManager::Log("成功注销一个拖动操作事件监听");
+    }}
+
+
+
+void DraggableBlock::HandleOperateEvent(const OperateEvent& event) {
+	if (event.GetOperation()==OperateEvent::OperateType::DragInput){
+		isDragging = true;
+	}
+	else if (event.GetOperation()==OperateEvent::OperateType::DragOverInput){
+
+		isDragging = false;
+
+	
+	}
+
+}
+
+void DraggableBlock::UpdateState() {
+	if(isOn){
+	CAnimateSprite* sprite =this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+	IMouseUi::UpdateState();
+	if (isDragging){
+		posX = Mouse::Instance().x;
+		posY= Mouse::Instance().y;
+	sprite->SetSpritePosition(posX,posY);
+	}
+    // 更新 UI 状态的实现
+	}
+}
+
+
+void DraggableBlock::UpdateAnimation(){
+	if(isOn){
+	IMouseUi::UpdateAnimation();
+    CAnimateSprite* sprite =this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+
+	}
+}
+
+void DraggableBlock::UpdateSound(){
+	if(isOn){
+
 	}
 }

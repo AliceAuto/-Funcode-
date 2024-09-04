@@ -58,6 +58,8 @@ public:
 	{
 	LeftClicked,
 	MouseOut,
+	DragInput,
+	DragOverInput,
 	MouseInter,
 	MouseHover,
 	None

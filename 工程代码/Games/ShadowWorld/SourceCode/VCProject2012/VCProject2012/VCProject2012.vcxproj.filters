@@ -119,9 +119,6 @@
     <ClCompile Include="Src\Setting.cpp">
       <Filter>Source Files\Model\BaseModel</Filter>
     </ClCompile>
-    <ClCompile Include="Src\StateMachine.cpp">
-      <Filter>Source Files\Model\BaseModel</Filter>
-    </ClCompile>
     <ClCompile Include="Src\UI.cpp">
       <Filter>Source Files\Model\UI</Filter>
     </ClCompile>
@@ -133,6 +130,12 @@
     </ClCompile>
     <ClCompile Include="Src\IMouseUi.cpp">
       <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Device.cpp">
+      <Filter>Source Files\SharedService</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StateMachine.cpp">
+      <Filter>Source Files\Model\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +216,9 @@
     </ClInclude>
     <ClInclude Include="include\headers\IMouseUi.h">
       <Filter>Header Files\Model\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\Device.h">
+      <Filter>Header Files\SharedService</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

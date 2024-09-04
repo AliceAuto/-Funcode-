@@ -124,6 +124,7 @@
     <ClCompile Include="Src\CSprite.cpp" />
     <ClCompile Include="Src\CSystem.cpp" />
     <ClCompile Include="Src\DataShower.cpp" />
+    <ClCompile Include="Src\Device.cpp" />
     <ClCompile Include="Src\Entity.cpp" />
     <ClCompile Include="Src\Logger.cpp" />
     <ClCompile Include="Src\Main.cpp" />
@@ -150,6 +151,7 @@
     <ClInclude Include="include\headers\CSprite.h" />
     <ClInclude Include="include\headers\CSystem.h" />
     <ClInclude Include="include\headers\DataShower.h" />
+    <ClInclude Include="include\headers\Device.h" />
     <ClInclude Include="include\headers\EC.h" />
     <ClInclude Include="include\headers\Entity.h" />
     <ClInclude Include="include\headers\EventDrivenSystem.h" />

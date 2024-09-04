@@ -56,7 +56,21 @@ MainMenuState::MainMenuState(): State() {
 	}
 		);
 
+
+
+
+		std::string Drag = objectManager->CreateObject(
+        "{\n"
+        "  \"TypeName\"      :           \"IMouse_DragUI\"                ,\n"
+        "  \"posX\"          :           0.0                      ,\n"
+        "  \"posY\"          :           15.0                    ,\n"
+        "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
+        "  \"label\"         :           \"Setting\"              \n"
+        "}"
+    );
+
 }
+
 
 //____________________________________________________________________________________________________________
 

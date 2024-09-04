@@ -6,7 +6,11 @@
 #include "CSprite.h"
 #include "EventDrivenSystem.h"
 #include "UI.h"
-
+#include "Device.h"
+// Button 类
+//======================================================
+//				这是UI鼠标输入处理的接口
+//======================================================
 class IMouseUi:public UI		//这是一个鼠标可交互的UI接口
 {
 public:
@@ -44,9 +48,9 @@ protected:
 
 
 // Button 类
-//======================================================
-//				这是按钮通类的接口
-//======================================================
+//==============================================================================================================================================================
+//																	这是按钮通类的接口
+//==============================================================================================================================================================
 class Button : public IMouseUi {
 public:
 	Button(float initialX, float initialY,const std::string& resourceBagName,const std::string& label);
@@ -56,8 +60,8 @@ public:
 	void Init() override;
 	void breakdown() override;
     
-	void RegisterMouseListener();
-	void UnregisterMouseListener();
+	void RegisterListener();
+	void UnregisterListener();
 	void SetClickHandler(const std::function<void()>& handler);
 
 protected:
@@ -87,6 +91,7 @@ protected:
 	void UpdateState()override;
 	void UpdateAnimation()override;
 	void UpdateSound()override;
+	bool isListenerRegistered; 
 
 };
 //=======================================================================================
@@ -105,4 +110,42 @@ protected:
 	void UpdateState()override;
 	void UpdateAnimation()override;
 	void UpdateSound()override;
+	bool isListenerRegistered; 
+
 };
+
+
+// Button 类
+//==============================================================================================================================================================
+//																	这是可拖动 积木组件 通类的接口
+//==============================================================================================================================================================
+
+
+class DraggableBlock : public IMouseUi {
+public:
+    DraggableBlock(float initialX, float initialY, const std::string& resourceBagName, const std::string& label);
+    virtual ~DraggableBlock();
+
+    virtual void Init() override;
+    virtual void breakdown() override;
+	void HandleOperateEvent(const OperateEvent& event) override;
+	void RegisterListener();
+	void UnregisterListener();
+protected:
+	void UpdateState()override;
+	void UpdateAnimation()override;
+	void UpdateSound()override;
+private:
+	bool isListenerRegistered; 
+    bool isDragging;
+    float SetX;
+    float SetY;
+
+};
+//===================================================
+//			这里是一个拖动放置物品的声明
+//===================================================
+
+//===================================================
+//			这里是一个对技能拖动施放的声明
+//===================================================

@@ -6,8 +6,7 @@
 #include "Logger.h"
 #include "headers\SceneStates.h"
 #include "headers\StateMachine.h"
-
-
+#include "Device.h"
 
 //============================================================
 /*
@@ -134,13 +133,17 @@ void CGameMain::GameEnd()
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 {
-	 MouseInputEvent mouseEvent(fMouseX, fMouseY, false, false, false);
+	 
     
-    // 分发事件
-    EventManager::Instance().DispatchEvent(mouseEvent);
+   
 
     // 日志记录
     LogManager::Log("鼠标移动: (" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
+	Mouse::Instance().x=fMouseX;
+	Mouse::Instance().y = fMouseY;
+	MouseInputEvent mouseEvent(Mouse::Instance().x, Mouse::Instance().y , Mouse::Instance().leftPressed,Mouse::Instance().middlePressed, Mouse::Instance().rightPressed); 
+	// 分发事件
+    EventManager::Instance().DispatchEvent(mouseEvent);
 }
 //==========================================================================
 //
@@ -149,18 +152,22 @@ void CGameMain::OnMouseMove( const float fMouseX, const float fMouseY )
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseClick( const int iMouseType, const float fMouseX, const float fMouseY )
 {
-	 bool isLeftPressed = (iMouseType == 0);
-    bool isMiddlePressed = (iMouseType == 1);
-    bool isRightPressed = (iMouseType == 2);
 
+	if (iMouseType ==0){Mouse::Instance().leftPressed=true;
+	}
+	else if (iMouseType ==1){Mouse::Instance().middlePressed=true;
+	}
+	else if (iMouseType ==2){Mouse::Instance().rightPressed=true;
+	}
     // 创建鼠标点击事件
-    MouseInputEvent mouseEvent(fMouseX, fMouseY, isLeftPressed, isMiddlePressed, isRightPressed);
+    MouseInputEvent mouseEvent(Mouse::Instance().x, Mouse::Instance().y, Mouse::Instance().leftPressed, Mouse::Instance().middlePressed, Mouse::Instance().rightPressed);
     
     // 分发事件
     EventManager::Instance().DispatchEvent(mouseEvent);
-
+	
     // 日志记录
     LogManager::Log("鼠标点击: 类型=" + std::to_string(iMouseType) + " 坐标=(" + std::to_string(fMouseX) + ", " + std::to_string(fMouseY) + ")");
+
 }
 //==========================================================================
 //
@@ -169,7 +176,16 @@ void CGameMain::OnMouseClick( const int iMouseType, const float fMouseX, const f
 // 参数 fMouseX, fMouseY：为鼠标当前坐标
 void CGameMain::OnMouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
 {
-	
+	if (iMouseType ==0){Mouse::Instance().leftPressed=false;
+	}
+	else if (iMouseType ==1){Mouse::Instance().middlePressed=false;
+	}
+	else if (iMouseType ==2){Mouse::Instance().rightPressed=false;
+	}
+	 MouseInputEvent mouseEvent(Mouse::Instance().x, Mouse::Instance().y, Mouse::Instance().leftPressed, Mouse::Instance().middlePressed, Mouse::Instance().rightPressed);
+    
+    // 分发事件
+    EventManager::Instance().DispatchEvent(mouseEvent);
 }
 //==========================================================================
 //
