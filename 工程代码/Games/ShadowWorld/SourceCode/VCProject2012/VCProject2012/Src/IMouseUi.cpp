@@ -54,60 +54,55 @@ void IMouseUi::HandleMouseEvent(const MouseInputEvent& event) {
 
     bool isMouseCurrentlyOver = this->Object::resourceBagPtr->GetResource<CAnimateSprite>("Entity")->IsPointInSprite(event.GetX(), event.GetY());
 
-    // 处理点击事件
     if (event.IsLeftPressed()) {
         if (isMouseCurrentlyOver) {
             if (!isClicked) {
                 isClicked = true;
                 LogManager::Log("IMouseUi点击: " + GetLabel());
                 Operating = OperateEvent::OperateType::LeftClicked;
-                EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::LeftClicked,ID)); // 发送左键单击事件
+                EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::LeftClicked, ID)); // 发送左键单击事件
             }
         } else {
             isClicked = false; // 如果点击在区域外，不需要处理点击事件
         }
     } else {
-        // 处理点击释放的情况
-        isClicked = false;
+        if (isClicked && isMouseCurrentlyOver) {
+            // 鼠标左键释放时触发事件
+            isClicked = false;
+            LogManager::Log("IMouseUi点击结束: " + GetLabel());
+            Operating = OperateEvent::OperateType::LeftClickedRelease;
+            EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::LeftClickedRelease, ID)); // 发送左键释放事件
+        }
     }
 
-    // 处理鼠标进入、悬浮和离开状态
     if (isMouseCurrentlyOver) {
         if (!isMouseOver) {
-            // 鼠标从外部进入区域
             isMouseOver = true;
             LogManager::Log("鼠标进入IMouseUi: " + GetLabel());
             Operating = OperateEvent::OperateType::MouseInter;
-            EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::MouseInter,ID)); // 发送鼠标进入事件
+            EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::MouseInter, ID));
         } else {
-			if(event.IsLeftPressed()){
-			LogManager::Log("鼠标左键拖动在IMouseUi: " + GetLabel());
-			EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::DragInput,ID)); // 发送正在拖动事件
-			Operating = OperateEvent::OperateType::DragInput;
-			}
-			else if (!event.IsLeftPressed())
-			{
-			LogManager::Log("鼠标左键结束拖动在IMouseUi: " + GetLabel());
-			EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::DragOverInput,ID)); // 发送正在拖动事件
-			Operating = OperateEvent::OperateType::DragOverInput;
-            // 鼠标悬浮在区域内
-            LogManager::Log("鼠标悬浮在IMouseUi: " + GetLabel());
-			Operating = OperateEvent::OperateType::MouseHover;
-			}
-
-            // 在这里可以处理悬浮状态的逻辑
+            if (event.IsLeftPressed()) {
+                LogManager::Log("鼠标左键拖动在IMouseUi: " + GetLabel());
+                EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::DragInput, ID));
+                Operating = OperateEvent::OperateType::DragInput;
+            } else if (!event.IsLeftPressed()) {
+                LogManager::Log("鼠标左键结束拖动在IMouseUi: " + GetLabel());
+                EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::DragOverInput, ID));
+                Operating = OperateEvent::OperateType::DragOverInput;
+                LogManager::Log("鼠标悬浮在IMouseUi: " + GetLabel());
+                Operating = OperateEvent::OperateType::MouseHover;
+            }
         }
     } else {
         if (isMouseOver) {
-            // 鼠标从区域内离开
             isMouseOver = false;
             LogManager::Log("鼠标离开IMouseUi: " + GetLabel());
             Operating = OperateEvent::OperateType::MouseOut;
-            EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::MouseOut,ID)); // 发送鼠标离开事件
+            EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::MouseOut, ID));
         }
     }
 }
-
 
 
 
@@ -191,12 +186,14 @@ void Button::HandleOperateEvent(const OperateEvent& event) {
         if (event.GetOperation() == OperateEvent::OperateType::LeftClicked && event.GetSender() == ID) {
 			
 			
-			EventHandler();
+			
 			
 		}
-		else if (event.GetOperation() == OperateEvent::OperateType::MouseInter) {
+		else if (event.GetOperation() == OperateEvent::OperateType::LeftClickedRelease&& event.GetSender() == ID) {EventHandler();
 		}
-		else if (event.GetOperation() == OperateEvent::OperateType::MouseOut) {
+		else if (event.GetOperation() == OperateEvent::OperateType::MouseInter&& event.GetSender() == ID) {
+		}
+		else if (event.GetOperation() == OperateEvent::OperateType::MouseOut&& event.GetSender() == ID) {
 		}
 
 		
@@ -430,10 +427,10 @@ void DraggableBlock::UnregisterListener(){if (this->isListenerRegistered) {
 
 
 void DraggableBlock::HandleOperateEvent(const OperateEvent& event) {
-	if (event.GetOperation()==OperateEvent::OperateType::DragInput){
+	if (event.GetOperation()==OperateEvent::OperateType::DragInput&& event.GetSender() == ID){
 		isDragging = true;
 	}
-	else if (event.GetOperation()==OperateEvent::OperateType::DragOverInput){
+	else if (event.GetOperation()==OperateEvent::OperateType::DragOverInput&& event.GetSender() == ID){
 
 		isDragging = false;
 

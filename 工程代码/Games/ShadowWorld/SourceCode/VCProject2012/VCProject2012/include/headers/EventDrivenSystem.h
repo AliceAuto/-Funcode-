@@ -57,6 +57,7 @@ public:
 	static enum OperateType
 	{
 	LeftClicked,
+	LeftClickedRelease,
 	MouseOut,
 	DragInput,
 	DragOverInput,
