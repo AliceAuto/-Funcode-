@@ -69,13 +69,29 @@ MainMenuState::MainMenuState(): State() {
         "}"
     );
 
-
+		std::string Drag1 = objectManager->CreateObject(
+        "{\n"
+        "  \"TypeName\"      :           \"IMouse_DragUI\"                ,\n"
+        "  \"posX\"          :           0.0                      ,\n"
+        "  \"posY\"          :           15.0                    ,\n"
+        "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
+        "  \"label\"         :           \"Setting\"              \n"
+        "}"
+    );
 
 		//绑定点
 		std::string BindPoint1 = objectManager->CreateObject(
         "{\n"
         "  \"TypeName\"      :           \"UI_BindPoint\"                ,\n"
         "  \"posX\"          :           20.0                      ,\n"
+        "  \"posY\"          :           20.0                      \n"
+        "}"
+    );
+		//绑定点
+		std::string BindPoint2 = objectManager->CreateObject(
+        "{\n"
+        "  \"TypeName\"      :           \"UI_BindPoint\"                ,\n"
+        "  \"posX\"          :           10.0                      ,\n"
         "  \"posY\"          :           20.0                      \n"
         "}"
     );

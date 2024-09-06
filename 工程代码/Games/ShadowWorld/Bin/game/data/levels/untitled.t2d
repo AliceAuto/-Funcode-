@@ -94,7 +94,7 @@
    };
    new t2dShapeVector(BindPoint) {
       canSaveDynamicFields = "1";
-      Position = "5.335 -14.030";
+      Position = "89.335 -14.030";
       size = "1.361 1.361";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";

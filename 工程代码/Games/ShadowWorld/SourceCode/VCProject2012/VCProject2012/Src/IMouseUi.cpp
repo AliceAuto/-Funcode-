@@ -1,6 +1,6 @@
 #include "IMouseUi.h"
 #include "Logger.h"
-
+#include "Device.h"
 //===========================================================================================================================================================================
 //																				以下为UI输入处理层
 //=======================================================================================================================================================================
@@ -49,7 +49,8 @@ void IMouseUi::HandleMouseEvent(const MouseInputEvent& event) {
     if (!isOn) {
         return; // 如果对象未启用，忽略事件
     }
-
+	if(Mouse::Instance().ChannelOccupancy ||(!Mouse::Instance().ChannelOccupancy&&Mouse::Instance().keyWords==ID)){ 
+	{
     LogManager::Log("IMouseUi:" + this->GetLabel() + " 捕获鼠标输入");
 
     bool isMouseCurrentlyOver = this->Object::resourceBagPtr->GetResource<CAnimateSprite>("Entity")->IsPointInSprite(event.GetX(), event.GetY());
@@ -101,11 +102,13 @@ void IMouseUi::HandleMouseEvent(const MouseInputEvent& event) {
             Operating = OperateEvent::OperateType::MouseOut;
             EventManager::Instance().DispatchEvent(OperateEvent(OperateEvent::OperateType::MouseOut, ID));
         }
-    }
+	}
+	}
+	
 }
 
 
-
+}
 
 
 
@@ -181,8 +184,8 @@ void Button::UpdateState() {
 void Button::HandleOperateEvent(const OperateEvent& event) {
     if (isOn) {
         LogManager::Log("按钮:" + this->GetLabel() + " 捕获鼠标输入");
-
-        
+		if(Mouse::Instance().ChannelOccupancy ||(!Mouse::Instance().ChannelOccupancy&&Mouse::Instance().keyWords==ID)){ 
+	{
         if (event.GetOperation() == OperateEvent::OperateType::LeftClicked && event.GetSender() == ID) {
 			
 			Operating = OperateEvent::OperateType::LeftClicked;
@@ -201,9 +204,9 @@ void Button::HandleOperateEvent(const OperateEvent& event) {
 			Operating = OperateEvent::OperateType::MouseOut;
 		}
 
-		
+		}
 	}
-
+	}
 }
 
 
@@ -432,28 +435,37 @@ void DraggableBlock::UnregisterListener(){if (this->isListenerRegistered) {
 
 
 void DraggableBlock::HandleOperateEvent(const OperateEvent& event) {
+	if(Mouse::Instance().ChannelOccupancy ||(!Mouse::Instance().ChannelOccupancy&&Mouse::Instance().keyWords==ID)){ 
+	{
 	if (event.GetOperation()==OperateEvent::OperateType::DragInput&& event.GetSender() == ID){
 		Operating = OperateEvent::OperateType::DragInput;
+		Mouse::Instance().keyWords = ID;
+		Mouse::Instance().ChannelOccupancy =false;//这里锁定鼠标
 		isDragging = true;
 	}
 	else if (event.GetOperation()==OperateEvent::OperateType::DragOverInput&& event.GetSender() == ID){
 		Operating = OperateEvent::OperateType::DragOverInput;
+		Mouse::Instance().keyWords = ID;
+		Mouse::Instance().ChannelOccupancy =true;//这里解锁鼠标
 		isDragging = false;
 
-	
-	}
 
+	}
+	}
+	}
 }
 
 void DraggableBlock::UpdateState() {
 	if(isOn){
 	CAnimateSprite* sprite =this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
 	IMouseUi::UpdateState();
-	if (isDragging){
+	if (isDragging)
+	{
 		posX = Mouse::Instance().x;
 		posY= Mouse::Instance().y;
-	sprite->SetSpritePosition(posX,posY);
+		sprite->SetSpritePosition(posX,posY);
 	}
+	
     // 更新 UI 状态的实现
 	}
 }

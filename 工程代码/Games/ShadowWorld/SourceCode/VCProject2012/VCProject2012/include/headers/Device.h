@@ -1,6 +1,6 @@
 #ifndef DEVICE_H
 #define DEVICE_H
-
+#include "Object.h"
 class Mouse {
 public:
     // 获取唯一实例的静态方法
@@ -13,7 +13,8 @@ public:
     bool leftPressed;
     bool middlePressed;
     bool rightPressed;
-
+	bool ChannelOccupancy; //鼠标通道上锁情况
+	std::string keyWords;//锁定秘钥-为Object的ID
 private:
     // 私有构造函数
     Mouse();

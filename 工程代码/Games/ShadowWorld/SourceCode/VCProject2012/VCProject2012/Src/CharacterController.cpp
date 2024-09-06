@@ -2,6 +2,7 @@
 #include "Logger.h"
 #include <cmath>
 #include "CGameMain.h"
+#include "Device.h"
 //======================================================
 /*
                         CharacterController 类的实现
@@ -213,6 +214,8 @@ void CharacterController::UpdateSound() {
 //____________________________________________________________________________________________________________
 void CharacterController::ProcessInput(const Event& event) 
 {  
+	 if(Mouse::Instance().ChannelOccupancy ||(!Mouse::Instance().ChannelOccupancy&&Mouse::Instance().keyWords==ID)){ 
+	{
 	if (event.GetType() == EventType::KeyboardInput) 
 	{
         LogManager::Log("键盘事件接收成功,正在处理输入信息");
@@ -291,4 +294,7 @@ void CharacterController::ProcessInput(const Event& event)
 		}
 	}
 }
+	}
+}
+
 //____________________________________________________________________________________________________________
