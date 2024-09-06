@@ -12,7 +12,7 @@ public:
 
     virtual void Init();
     virtual void breakdown();
-    virtual void ifCollision(Entity* otherEntity);
+    void ifCollision(Object * otherObject) override;
 protected:
     // 需要子类实现的虚函数
 	void UpdateState() ;

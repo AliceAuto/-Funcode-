@@ -232,10 +232,14 @@ void CGameMain::OnKeyUp( const int iKey )
 // 参数 szTarName：被碰撞的精灵名字
 void CGameMain::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 {
-	
 
-	Object* spriteA =static_cast<GameState*>(stateMachine->currentState_)->objectManager->GetObject(szSrcName);
-    Object* spriteB = static_cast<GameState*>(stateMachine->currentState_)->objectManager->GetObject(szTarName);
+	
+	Object* spriteA =static_cast<GameState*>(stateMachine->currentState_)->objectManager->GetObjectBySpriteName(szSrcName);
+    Object* spriteB = static_cast<GameState*>(stateMachine->currentState_)->objectManager->GetObjectBySpriteName(szTarName);
+	if (spriteA||spriteB){
+	spriteA->ifCollision(spriteB);
+	spriteB->ifCollision(spriteA);
+	}
 }
 //===========================================================================
 //

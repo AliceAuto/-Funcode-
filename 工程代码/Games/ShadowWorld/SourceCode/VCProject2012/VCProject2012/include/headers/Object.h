@@ -20,7 +20,7 @@ public:
     float GetPosY() const;
     float GetVelocityX() const;
     float GetVelocityY() const;
-
+	virtual void ifCollision(Object * otherObject){LogManager::Log(ID+"<发生碰撞>");};
     // 公开 ResourceBag 以便直接操作
     ResourceBag * resourceBagPtr;
     std::string ID;
@@ -40,5 +40,4 @@ protected:
     float posX, posY;
     float velocityX, velocityY;
 };
-
 #endif // ENTITY_H

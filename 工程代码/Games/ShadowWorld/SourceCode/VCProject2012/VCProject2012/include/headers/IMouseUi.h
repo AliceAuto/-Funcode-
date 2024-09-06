@@ -131,15 +131,16 @@ public:
 	void HandleOperateEvent(const OperateEvent& event) override;
 	void RegisterListener();
 	void UnregisterListener();
+	
+    bool isDragging;
+    float SetX;
+    float SetY;
 protected:
 	void UpdateState()override;
 	void UpdateAnimation()override;
 	void UpdateSound()override;
 private:
 	bool isListenerRegistered; 
-    bool isDragging;
-    float SetX;
-    float SetY;
 
 };
 //===================================================

@@ -23,8 +23,7 @@ public:
 	//json读取可变参数
     std::string CreateObject(const std::string& jsonString);
 
-    // 获取指定 ID 的 Entity
-    Object* GetObject(const std::string& id);
+ 
 
     // 根据精灵名称获取 Entity
     Object* GetObjectBySpriteName(const std::string& spriteName);

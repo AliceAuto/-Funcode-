@@ -3,7 +3,7 @@
 #include <iostream>
 #include "headers\NonInteractiveObject .h"
 #include "IMouseUi.h"
-
+#include "BindPoint.h"
 
 
 
@@ -83,6 +83,10 @@
 			else if (typeName == "IMouse_DragUI")
 				{
 					object = CreateObjectInstance("IMouse_DragUI", root);
+				}
+			else if (typeName == "UI_BindPoint")
+				{
+					object = CreateObjectInstance("UI_BindPoint", root);
 				}
 			if (object) 
 			{
@@ -167,6 +171,12 @@
 			std::string label = root.get("label", "").asString();
 			return new DraggableBlock(posX, posY,resourceBag,label);
 		}
+		//绑定点
+		else if (type == "UI_BindPoint"){
+			float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
+			float posY = static_cast<float>(root.get("posY", 0.0).asDouble());
+			return new BindPoint(posX, posY);
+		}
 		//子弹
 		else if (type == "Bullet") {
         float posX = static_cast<float>(root.get("posX", 0.0).asDouble());
@@ -186,22 +196,6 @@
 
 
 
-//[说明]
-// 获取指定 ID 的实体
-//________________________________________________________________
-	Object* ObjectManager::GetObject(const std::string& name)
-	{
-		auto it =  spriteNameToObject.find(name);
-		if (it !=  spriteNameToObject.end()) 
-		{
-			return it->second;
-		}
-		return nullptr;
-	}
-//________________________________________________________________
-
-
-
 
 
 
@@ -210,12 +204,38 @@
 //___________________________________________________________________________________
 	Object* ObjectManager::GetObjectBySpriteName(const std::string& spriteName)
 	{
-		auto it = spriteNameToObject.find(spriteName);
-		if (it != spriteNameToObject.end()) 
-		{
-			return it->second;
-		}
-		return nullptr;
+		
+    std::string numberStr; // 用来存储构建的ID_x
+
+    // 查找 "ID_" 的位置并提取其后的数字部分
+    size_t startPos = spriteName.find("ID_");
+    if (startPos == std::string::npos) {
+        LogManager::Log("Failed to find 'ID_' in spriteName: " + spriteName);
+        return nullptr;
+    }
+
+    startPos += 3; // 跳过 "ID_" 这三位，找到数字的起始位置
+    size_t endPos = spriteName.find('_', startPos); // 从 "ID_" 之后开始找第二个 '_'
+
+    // 确保解析位置合法
+    if (endPos != std::string::npos) {
+        // 提取从开头到第二个 '_' 为止的部分，即 "ID_x"
+        numberStr = spriteName.substr(0, endPos);
+    } else {
+        LogManager::Log("Failed to parse spriteName: " + spriteName);
+        return nullptr;
+    }
+
+    LogManager::Log("Parsed sprite ID: " + numberStr);
+
+    // 查找对象
+    auto it = spriteNameToObject.find(numberStr+"_");
+    if (it != spriteNameToObject.end()) {
+        return it->second;
+    }
+
+    LogManager::Log("Object not found for spriteName: " + numberStr);
+    return nullptr;
 	}
 //___________________________________________________________________________________
 

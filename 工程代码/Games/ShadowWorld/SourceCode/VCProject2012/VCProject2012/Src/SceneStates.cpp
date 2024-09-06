@@ -69,6 +69,16 @@ MainMenuState::MainMenuState(): State() {
         "}"
     );
 
+
+
+		//°ó¶¨µã
+		std::string BindPoint1 = objectManager->CreateObject(
+        "{\n"
+        "  \"TypeName\"      :           \"UI_BindPoint\"                ,\n"
+        "  \"posX\"          :           20.0                      ,\n"
+        "  \"posY\"          :           20.0                      \n"
+        "}"
+    );
 }
 
 

@@ -137,6 +137,9 @@
     <ClCompile Include="Src\StateMachine.cpp">
       <Filter>Source Files\Model\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="Src\BindPoint.cpp">
+      <Filter>Source Files\Model\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\headers\Logger.h">
@@ -219,6 +222,9 @@
     </ClInclude>
     <ClInclude Include="include\headers\Device.h">
       <Filter>Header Files\SharedService</Filter>
+    </ClInclude>
+    <ClInclude Include="include\headers\BindPoint.h">
+      <Filter>Header Files\Model\UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

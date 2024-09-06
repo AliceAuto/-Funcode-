@@ -38,4 +38,11 @@
         {"ButtonSound":"running.ogg"} 
 
     }
+    ,
+    "BindPoint": 
+    {
+        "CStaticSprite":
+        {"Entity":"BindPoint"} 
+
+    }
 }

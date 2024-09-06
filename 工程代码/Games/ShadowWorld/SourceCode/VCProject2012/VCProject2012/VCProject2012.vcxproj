@@ -119,6 +119,7 @@
     <ResourceCompile Include="VCTemplate.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Src\BindPoint.cpp" />
     <ClCompile Include="Src\CGameMain.cpp" />
     <ClCompile Include="Src\CharacterController.cpp" />
     <ClCompile Include="Src\CSprite.cpp" />
@@ -146,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="include\headers\AI.h" />
     <ClInclude Include="include\headers\BagSystem.h" />
+    <ClInclude Include="include\headers\BindPoint.h" />
     <ClInclude Include="include\headers\CGameMain.h" />
     <ClInclude Include="include\headers\CharacterController.h" />
     <ClInclude Include="include\headers\CSprite.h" />
