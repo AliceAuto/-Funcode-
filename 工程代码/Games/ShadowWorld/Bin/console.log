@@ -1,4 +1,4 @@
-//-------------------------- 9/4/2024 -- 14:12:50 -----
+//-------------------------- 9/6/2024 -- 10:06:25 -----
 Processor Init:
    Intel Pentium III, ~2.93 Ghz
      (timed at roughly 2.92 Ghz)
@@ -131,10 +131,6 @@ Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameBut
 Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
 Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
-t2dSceneGraph::addToScene() - Object '1365' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '1366' is already in a SceneGraph!.
-Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
-Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
 t2dSceneGraph::addToScene() - Object '1367' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1368' is already in a SceneGraph!.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
@@ -142,9 +138,16 @@ Error: cannot change namespace parent linkage of StartGameButton from t2dAnimati
 t2dSceneGraph::addToScene() - Object '1369' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1370' is already in a SceneGraph!.
 Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
-Error loading level game/data/levels/settingsMenu.t2d. Invalid file.
+Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
+t2dSceneGraph::addToScene() - Object '1371' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1372' is already in a SceneGraph!.
 DirectInput deactivated.
-Shutting down the OpenGL display device...
-Making the GL rendering context not current...
-Deleting the GL rendering context...
-Releasing the device context...
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...

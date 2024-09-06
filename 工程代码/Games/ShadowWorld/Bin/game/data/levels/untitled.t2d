@@ -49,7 +49,7 @@
       imageMap = "StartGameButtonImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.36006e-039 0 2.36006e-039 6.22914e-039";
+      sourceRect = "2.36006e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "60.090 -9.327";
       size = "10.179 4.110";
@@ -91,7 +91,7 @@
    new t2dScroller() {
       imageMap = "ringImageMap";
       useSourceRect = "0";
-      sourceRect = "0 0 0 0";
+      sourceRect = "0 0 2.37773e-039 6.20699e-039";
       canSaveDynamicFields = "1";
       Position = "0.232 -1.439";
       size = "74.822 67.123";
@@ -99,5 +99,20 @@
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.000 0.000";
          mountID = "5";
+   };
+   new t2dStaticSprite() {
+      imageMap = "enemyship3cImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "13.747 -8.110";
+      size = "16.000 16.000";
+      WorldLimitMode = "STICKY";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      ConstantForce = "0.000 30.000";
+      LinearVelocity = "30.000 0.000";
+         mountID = "6";
    };
 };

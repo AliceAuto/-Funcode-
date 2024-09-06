@@ -1,7 +1,7 @@
-//-------------------------- 9/4/2024 -- 13:45:22 -----
+//-------------------------- 9/6/2024 -- 09:45:39 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.89 Ghz)
+     (timed at roughly 2.90 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -452,7 +452,10 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/ga
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/persistent.cs.
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/managed/brushes.cs.
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
-Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/gameScene.t2d.
+Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/ShadowWorld/Bin/game/data/levels/untitled.t2d.
+Namespace::unlinkClass - cannot unlink namespace parent linkage for StartGameButton for t2dAnimationDatablock.
+Error: cannot change namespace parent linkage of StartGameButton from t2dAnimationDatablock to t2dStaticSprite.
+t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (StartGameButton)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
 t2dParticleEmitter::setImageMap() - t2dImageMapDatablock Datablock is invalid! (particles5ImageMap)
