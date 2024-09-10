@@ -22,7 +22,7 @@
 //   - resourceBagName: 资源包的名称
 //____________________________________________________________________________________________________________
 CharacterController::CharacterController(float initialX, float initialY, const std::string& resourceBagName)
-    : Entity(initialX, initialY, resourceBagName), facing(Facings::Down), forceX(0), forceY(0) {
+    : Entity(initialX, initialY, resourceBagName), facing(Facings::Down),VelocityX(0),VelocityY(0) {
     // 其他初始化代码
 }
 //____________________________________________________________________________________________________________
@@ -45,7 +45,6 @@ void CharacterController::Init() {
         animateSprite->SetSpriteAtRest(false);
         animateSprite->SetSpriteInertialMoment(100);
         animateSprite->SetSpriteAutoMassInertia(true);
-        animateSprite->SetSpriteMaxLinearVelocity(20);
         mess = animateSprite->GetSpriteMass();
     } else {
         LogManager::Log("初始化失败：无法获取 CAnimateSprite 资源。");
@@ -92,34 +91,10 @@ void CharacterController::UpdateState() {
 	LogManager::Log(std::to_string(velocityX));
     if (AnimatePtr) {
         // 初始化摩擦力
-        static const float frictionCoefficient = 40; // 摩擦系数，根据需要调整
-        static const float velocityThreshold = 1; // 速度阈值，小于此值将速度设为零
 
         // 更新速度
         velocityX = AnimatePtr->GetSpriteLinearVelocityX();
-        velocityY = AnimatePtr->GetSpriteLinearVelocityY();
-
-        // 计算摩擦力
-        float frictionForceX = 0;
-        float frictionForceY = 0;
-
-        if (std::abs(velocityX) > velocityThreshold) {
-            frictionForceX = -frictionCoefficient * mess * (velocityX / std::abs(velocityX));
-        }
-        if (std::abs(velocityY) > velocityThreshold) {
-            frictionForceY = -frictionCoefficient * mess * (velocityY / std::abs(velocityY));
-        }
-
-        // 将摩擦力和外力应用到角色上
-        AnimatePtr->SetSpriteConstantForce(forceX + frictionForceX, forceY + frictionForceY, false);
-
-        // 如果速度低于阈值，直接将速度设为零
-        if (std::abs(velocityX) < velocityThreshold) {
-            AnimatePtr->SetSpriteLinearVelocityX(0);
-        }
-        if (std::abs(velocityY) < velocityThreshold) {
-            AnimatePtr->SetSpriteLinearVelocityY(0);
-        }
+		velocityY = AnimatePtr->GetSpriteLinearVelocityY();
 
         // 更新位置
         posX = AnimatePtr->GetSpritePositionX();
@@ -224,19 +199,19 @@ void CharacterController::ProcessInput(const Event& event)
         if (keyEvent.GetState() == KeyboardInputEvent::KeyState::KEY_ON) {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
-                    forceY -= 80000;
+                    VelocityY = -80;
                     break;
                 case KeyCodes::KEY_S:
-                    forceY += 80000;
+                    VelocityY = 20;
                     break;
                 case KeyCodes::KEY_A:
-                    forceX -= 80000;
+                    VelocityX = -20;
                     break;
                 case KeyCodes::KEY_D:
-                    forceX += 80000;
+                    VelocityX = 20;
                     break;
                 case KeyCodes::KEY_SPACE:
-                    this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMaxLinearVelocity(200);
+                    VelocityX *= 10;
                     break;
                 default:
                     break;
@@ -244,19 +219,19 @@ void CharacterController::ProcessInput(const Event& event)
         } else {
             switch (keyEvent.GetKey()) {
                 case KeyCodes::KEY_W:
-                    forceY += 80000;
+                    VelocityY =0;
                     break;
                 case KeyCodes::KEY_S:
-                    forceY -= 80000;
+                    VelocityY =0;
                     break;
                 case KeyCodes::KEY_A:
-                    forceX += 80000;
+                    VelocityX =0;
                     break;
                 case KeyCodes::KEY_D:
-                    forceX -= 80000;
+                    VelocityX=0;
                     break;
                 case KeyCodes::KEY_SPACE:
-                    this->resourceBagPtr->GetResource<CAnimateSprite>("Entity").get()->SetSpriteMaxLinearVelocity(20);
+					
                     break;
                 default:
                     break;
@@ -295,6 +270,9 @@ void CharacterController::ProcessInput(const Event& event)
 	}
 }
 	}
+	 CAnimateSprite* AnimatePtr = resourceBagPtr->GetResource<CAnimateSprite>("Entity").get();
+	 AnimatePtr->SetSpriteLinearVelocity(VelocityX,VelocityY);
+
 }
 
 //____________________________________________________________________________________________________________

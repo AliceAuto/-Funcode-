@@ -15,6 +15,11 @@
         "CTextSprite":
         {"ButtonText":"ComTypeText"} 
     },
+    "ButtonTest": 
+    {
+        "CAnimateSprite":
+        {"Entity":"ButtonTest"}
+    },
     "Button_Art": 
     {
         "CAnimateSprite":

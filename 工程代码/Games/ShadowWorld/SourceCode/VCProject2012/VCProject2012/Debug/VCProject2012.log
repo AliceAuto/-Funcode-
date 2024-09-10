@@ -1,51 +1,9 @@
-﻿生成启动时间为 2024/9/6 19:33:33。
+﻿生成启动时间为 2024/9/7 20:25:00。
 项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
-ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /Iinclude\headers /Iinclude\json /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\lib" /I../../Header /I"C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Src\IMouseUi.cpp
-  IMouseUi.cpp
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(222): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(225): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(228): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(323): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(327): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(330): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(375): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(378): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(380): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\desktop\-funcode-\工程代码\games\shadowworld\sourcecode\vcproject2012\vcproject2012\src\imouseui.cpp(482): warning C4305: “参数”: 从“double”到“const float”截断
 Link:
-  D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\VCProject2012\VCProject2012\lib\debug json_vc71_libmtd.lib Winmm.lib CommonClass_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
-  Debug\BindPoint.obj
-  Debug\CGameMain.obj
-  Debug\CharacterController.obj
-  Debug\CSprite.obj
-  Debug\CSystem.obj
-  Debug\DataShower.obj
-  Debug\Device.obj
-  Debug\Entity.obj
-  Debug\Logger.obj
-  Debug\Main.obj
-  Debug\MonsterController.obj
-  Debug\NonInteractiveObject.obj
-  Debug\Object.obj
-  Debug\PlayerController.obj
-  Debug\ResourceBag.obj
-  Debug\IMouseUi.obj
-  Debug\SceneStates.obj
-  Debug\Setting.obj
-  Debug\ObjectManager.obj
-  Debug\StateMachine.obj
-  Debug\UI.obj
-  Debug\UnitTesting.obj
-  Debug\Video.obj
-  Debug\Timer.obj
-BindPoint.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
-CommonClass_2010.Lib(CommonClass.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“CommonClass_2010.Lib(CommonClass.obj)”或在“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
   VCProject2012.vcxproj -> C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
-BscMake:
-  D:\VS012\VC\bin\bscmake.exe /nologo /o"..\..\..\Bin\Game.bsc" /n Debug\BindPoint.sbr Debug\CGameMain.sbr Debug\CharacterController.sbr Debug\CSprite.sbr Debug\CSystem.sbr Debug\DataShower.sbr Debug\Device.sbr Debug\Entity.sbr Debug\Logger.sbr Debug\Main.sbr Debug\MonsterController.sbr Debug\NonInteractiveObject.sbr Debug\Object.sbr Debug\PlayerController.sbr Debug\ResourceBag.sbr Debug\IMouseUi.sbr Debug\SceneStates.sbr Debug\Setting.sbr Debug\ObjectManager.sbr Debug\StateMachine.sbr Debug\UI.sbr Debug\UnitTesting.sbr Debug\Video.sbr Debug\Timer.sbr
 已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\ShadowWorld\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:08.60
+已用时间 00:00:01.07

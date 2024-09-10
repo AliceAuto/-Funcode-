@@ -1,6 +1,10 @@
 #include "IMouseUi.h"
 #include "Logger.h"
 #include "Device.h"
+#include "StateMachine.h"
+#include "SceneStates.h"
+#include "BindPoint.h"
+#include "CGameMain.h"
 //===========================================================================================================================================================================
 //																				以下为UI输入处理层
 //=======================================================================================================================================================================
@@ -45,6 +49,8 @@ void IMouseUi::UpdateSound(){
 	UI::UpdateSound();
 	}
 }
+//=================================================================================================================================================
+//												输入处理
 void IMouseUi::HandleMouseEvent(const MouseInputEvent& event) {
     if (!isOn) {
         return; // 如果对象未启用，忽略事件
@@ -109,10 +115,11 @@ void IMouseUi::HandleMouseEvent(const MouseInputEvent& event) {
 
 
 }
+//================================================================================================================================
 
 
-
-
+//=====================================================================================
+//								注销鼠标监听
 void IMouseUi::RegisterMouseListener() {
     if (!this->isListenerRegistered) {
         // 保存 lambda 表达式到 std::function 对象//
@@ -126,7 +133,8 @@ void IMouseUi::RegisterMouseListener() {
         LogManager::Log("成功注册一个鼠标监听");
     }
 }
-
+//=====================================================================================
+//								注销鼠标监听
 void IMouseUi::UnregisterMouseListener() {
     if (this->isListenerRegistered) {
         EventManager::Instance().RemoveListener(EventType::MouseInput, ID +"IMouseUi_mouse_info");
@@ -179,7 +187,8 @@ void Button::UpdateState() {
     // 更新 UI 状态的实现
 }
 
-
+//=================================================================================================================================================
+//												输入处理
 
 void Button::HandleOperateEvent(const OperateEvent& event) {
     if (isOn) {
@@ -209,7 +218,7 @@ void Button::HandleOperateEvent(const OperateEvent& event) {
 	}
 }
 
-
+//=================================================================================================================================================
 
 
 
@@ -253,7 +262,8 @@ void Button::UpdateSound() {
 
 
 
-
+//=====================================================================================
+//								注册鼠标监听
 void Button::RegisterListener() {
     if (!this->isListenerRegistered) {
         // 保存 lambda 表达式到 std::function 对象//
@@ -267,7 +277,8 @@ void Button::RegisterListener() {
         LogManager::Log("成功注册一个操作事件监听");
     }
 }
-
+//=====================================================================================
+//								注销鼠标监听
 void Button::UnregisterListener() {
     if (this->isListenerRegistered) {
         EventManager::Instance().RemoveListener(EventType::OperateInput, ID +"button_Operate_info");
@@ -395,7 +406,7 @@ void ArtButton::UpdateSound(){
 
 
 DraggableBlock::DraggableBlock(float initialX, float initialY, const std::string& resourceBagName, const std::string& label)
-    : IMouseUi(initialX, initialY, resourceBagName, label), isDragging(false),SetX(0),SetY(0),isListenerRegistered(false)
+    : IMouseUi(initialX, initialY, resourceBagName, label), isDragging(false),SetX(0),SetY(0),isListenerRegistered(false),LastBindPointID("")
 {
 }
 
@@ -413,7 +424,8 @@ void DraggableBlock::breakdown() {
 	this->UnregisterListener();
    
 }
-
+//=====================================================================================
+//								注册鼠标监听
 void DraggableBlock::RegisterListener(){
 if (!this->isListenerRegistered) {
         // 保存 lambda 表达式到 std::function 对象//
@@ -426,6 +438,8 @@ if (!this->isListenerRegistered) {
         this->isListenerRegistered = true;
         LogManager::Log("成功注册一个拖动操作事件监听");
     }}
+//=====================================================================================
+//								注销鼠标监听
 void DraggableBlock::UnregisterListener(){if (this->isListenerRegistered) {
         EventManager::Instance().RemoveListener(EventType::OperateInput, ID +"IDrag_Operate_info");
         this->isListenerRegistered = false;
@@ -433,7 +447,8 @@ void DraggableBlock::UnregisterListener(){if (this->isListenerRegistered) {
     }}
 
 
-
+//=================================================================================================================================================
+//												输入处理
 void DraggableBlock::HandleOperateEvent(const OperateEvent& event) {
 	if(Mouse::Instance().ChannelOccupancy ||(!Mouse::Instance().ChannelOccupancy&&Mouse::Instance().keyWords==ID)){ 
 	{
@@ -454,6 +469,7 @@ void DraggableBlock::HandleOperateEvent(const OperateEvent& event) {
 	}
 	}
 }
+//=================================================================================================================================================
 
 void DraggableBlock::UpdateState() {
 	if(isOn){
@@ -465,9 +481,15 @@ void DraggableBlock::UpdateState() {
 		posY= Mouse::Instance().y;
 		sprite->SetSpritePosition(posX,posY);
 	}
+	else{
+		if (LastBindPointID!=""){
+		this->resourceBagPtr->GetResource<CAnimateSprite>("Entity")->SpriteMountToSprite(LastBindPointID.c_str(),SetX,SetY);
+	}
+	}
 	
     // 更新 UI 状态的实现
 	}
+	
 }
 
 

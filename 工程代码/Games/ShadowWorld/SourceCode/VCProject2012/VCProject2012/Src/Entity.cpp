@@ -37,6 +37,8 @@ Entity::~Entity() {
 //____________________________________________________________________________________________________________
 void Entity::Init() {
     this->Object::Init(); // 调用基类的初始化函数
+	this->resourceBagPtr->GetResource<CSprite>("Entity")->SetSpriteConstantForceGravitic( true);
+		this->resourceBagPtr->GetResource<CSprite>("Entity")->SetSpriteConstantForceY( 200 );
 
 }
 //____________________________________________________________________________________________________________

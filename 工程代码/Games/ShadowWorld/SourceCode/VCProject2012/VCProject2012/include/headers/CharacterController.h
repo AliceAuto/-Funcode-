@@ -28,7 +28,7 @@ protected:
     virtual void UpdateState() override;
     virtual void UpdateAnimation() override;
     virtual void UpdateSound() override;
-	float forceX,forceY;
+	float VelocityX,VelocityY;
 	float mess;
     // 角色特有属性
     enum Facings { Up, Down, Left, Right };

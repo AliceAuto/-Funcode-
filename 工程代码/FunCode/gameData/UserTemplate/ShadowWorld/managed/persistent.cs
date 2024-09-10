@@ -1,1 +1,0 @@
-$persistentObjectSet = new SimSet();

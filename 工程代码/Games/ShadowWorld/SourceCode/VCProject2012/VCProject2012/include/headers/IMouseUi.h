@@ -131,7 +131,7 @@ public:
 	void HandleOperateEvent(const OperateEvent& event) override;
 	void RegisterListener();
 	void UnregisterListener();
-	
+	std::string LastBindPointID;
     bool isDragging;
     float SetX;
     float SetY;

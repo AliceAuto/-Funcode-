@@ -53,13 +53,11 @@
       canSaveDynamicFields = "1";
       Position = "60.090 -9.327";
       size = "10.179 4.110";
-      Layer = "2";
+      Layer = "7";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
       CollisionActiveReceive = "1";
-      CollisionPhysicsSend = "1";
-      CollisionPhysicsReceive = "1";
       SrcBlendFactor = "ONE";
       DstBlendFactor = "DST_ALPHA";
       BlendColor = "0.898039 0.898039 0.898039 1";
@@ -105,5 +103,20 @@
       fillColor = "0.5 0.5 0.5 1";
       FillMode = "1";
          mountID = "5";
+   };
+   new t2dStaticSprite(ButtonTest) {
+      imageMap = "upgrade1ImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 2.36006e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "54.473 0.483";
+      size = "8.945 3.630";
+      Layer = "7";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+         mountID = "6";
    };
 };

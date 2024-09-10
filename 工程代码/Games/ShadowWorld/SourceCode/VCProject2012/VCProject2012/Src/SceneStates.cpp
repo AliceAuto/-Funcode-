@@ -74,7 +74,7 @@ MainMenuState::MainMenuState(): State() {
         "  \"TypeName\"      :           \"IMouse_DragUI\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
         "  \"posY\"          :           15.0                    ,\n"
-        "  \"resourceBag\"   :           \"Button_Text&Render\"       ,\n"
+        "  \"resourceBag\"   :           \"ButtonTest\"       ,\n"
         "  \"label\"         :           \"Setting\"              \n"
         "}"
     );
@@ -278,19 +278,11 @@ GameState::GameState() : State() {
         "{\n"
         "  \"TypeName\"      :           \"Player\"                ,\n"
         "  \"posX\"          :           0.0                      ,\n"
-        "  \"posY\"          :           0.0                      ,\n"
+        "  \"posY\"          :           30.0                      ,\n"
         "  \"resourceBag\"   :           \"resources1\"            \n"
         "}"
     );
 
-    std::string block1 = objectManager->CreateObject(
-        "{\n"
-        "  \"TypeName\"      :           \"ObstacleObject\"        ,\n"
-        "  \"posX\"          :           0.0                      ,\n"
-        "  \"posY\"          :           0.0                      ,\n"
-        "  \"resourceBag\"   :           \"block\"                 \n"
-        "}"
-    );
     
     // 创建更多障碍物
  

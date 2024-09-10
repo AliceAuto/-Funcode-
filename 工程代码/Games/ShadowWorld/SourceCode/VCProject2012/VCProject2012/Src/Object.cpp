@@ -52,6 +52,7 @@ void Object::Init() {
         resourceBagPtr = new ResourceBag(ID);
         this->resourceBagPtr->LoadFromJson(ResourceBagName);
         this->resourceBagPtr->GetResource<CSprite>("Entity")->SetSpritePosition(this->posX, this->posY);
+		
     }
 	isOn = true;
 }

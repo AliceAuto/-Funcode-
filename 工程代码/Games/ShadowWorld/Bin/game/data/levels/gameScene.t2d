@@ -34,13 +34,14 @@
    layerSortMode30 = "Normal";
    layerSortMode31 = "Normal";
    DebugRendering = "0";
-      cameraPosition = "0 0";
-      cameraSize = "100 75";
+      cameraPosition = "0.000000 2.500000";
+      cameraSize = "100.000000 75.000000";
 
    new t2dAnimatedSprite(character) {
       animationName = "to_left";
       canSaveDynamicFields = "1";
-      Position = "68.686 1.303";
+      Position = "66.843 -0.541";
+      size = "6.313 6.313";
       Layer = "1";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -48,9 +49,8 @@
       CollisionActiveReceive = "1";
       CollisionPhysicsSend = "1";
       CollisionPhysicsReceive = "1";
-      CollisionLayers = "-536870912";
-      CollisionResponseMode = "CLAMP";
-      CollisionPolyList = "-0.206 -0.123 0.530 -0.133 0.525 0.682 -0.221 0.668";
+      CollisionResponseMode = "BOUNCE";
+      CollisionPolyList = "-0.216 -1.000 0.530 -1.000 0.525 0.682 -0.221 0.668";
          mountID = "2";
    };
    new t2dTextObject() {
@@ -80,10 +80,10 @@
       imageMap = "particles1ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37773e-039 0 2.36006e-039 6.22914e-039";
+      sourceRect = "2.36006e-039 0 2.36006e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "63.500 -31.500";
-      size = "3.000 3.000";
+      Position = "62.448 -32.552";
+      size = "0.895 0.895";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
@@ -97,7 +97,7 @@
       imageMap = "upgrade3ImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37773e-039 0 2.36006e-039 6.22914e-039";
+      sourceRect = "2.36006e-039 0 2.36006e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "61.442 21.722";
       size = "8.000 8.000";
@@ -112,6 +112,7 @@
    new t2dTileLayer() {
       LayerFile = "~/data/tilemaps/untitled.lyr";
       canSaveDynamicFields = "1";
+      Position = "-1.303 71.933";
       size = "100.000 80.000";
       WorldLimitMin = "0.000 0.000";
       WorldLimitMax = "0.000 0.000";
@@ -119,7 +120,40 @@
       CollisionPhysicsSend = "1";
       CollisionPhysicsReceive = "1";
       CollisionMaxIterations = "1";
-      CollisionResponseMode = "BOUNCE";
+      CollisionResponseMode = "CLAMP";
+      LinkPoints = "0.409 -0.507 0.337 -0.900 0.000 0.000";
          mountID = "6";
+   };
+   new t2dPath() {
+      pathType = "LINEAR";
+      pathModeEnum = "WRAP";
+      canSaveDynamicFields = "1";
+      Position = "164.068 25.655";
+      size = "51.865 91.309";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "7";
+         node0 = "190.000015 60.000000 0.000000 10.000000";
+         node1 = "158.510101 64.774017 0.000000 10.000000";
+         node2 = "143.517105 71.309433 0.000000 10.000000";
+         node3 = "141.210480 65.000015 0.000000 10.000000";
+         node4 = "141.594925 49.999992 0.000000 10.000000";
+         node5 = "138.134979 -19.999985 0.000000 10.000000";
+         node6 = "157.356796 40.000000 0.000000 10.000000";
+         node7 = "169.999985 41.707840 0.000000 10.000000";
+         nodeCount = "8";
+         object0 = "8 2 1 10.000000 1 1 0.000000 -1 WRAP";
+         objectCount = "0";
+   };
+   new t2dScroller() {
+      imageMap = "bgmountains1ImageMap";
+      useSourceRect = "0";
+      sourceRect = "2.36006e-039 0 2.36006e-039 6.20699e-039";
+      canSaveDynamicFields = "1";
+      Position = "151.597 -2.493";
+      size = "64.000 16.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "8";
    };
 };

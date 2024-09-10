@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1420212242 source:c:\users\funcode2021\baozang\sourcecode\icon.rc
+
+1618041688 source:c:\users\funcode2021\baozang\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonAPI.h"
+	"LessonX.h"
+
+1461256728 c:\users\funcode2021\baozang\sourcecode\header\commonapi.h
+	<windows.h>
+
+1618046817 c:\users\funcode2021\baozang\sourcecode\header\lessonx.h
+	<Windows.h>
+
+1617450979 source:c:\users\funcode2021\baozang\sourcecode\src\main.cpp
+	"CommonAPI.h"
+	"LessonX.h"
+
+1629268049 source:d:\工作区\我的项目\funcode2021\baozang\sourcecode\icon.rc
+
+1617450979 source:d:\工作区\我的项目\funcode2021\baozang\sourcecode\src\main.cpp
+	"CommonAPI.h"
+	"LessonX.h"
+
+1461256728 d:\工作区\我的项目\funcode2021\baozang\sourcecode\header\commonapi.h
+	<windows.h>
+
+1630913306 d:\工作区\我的项目\funcode2021\baozang\sourcecode\header\lessonx.h
+	<Windows.h>
+	<stdlib.h>
+	<time.h>
+
+1631128715 source:d:\工作区\我的项目\funcode2021\baozang\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonAPI.h"
+	"LessonX.h"
+

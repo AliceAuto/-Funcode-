@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="..\Src\LessonX.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="109872" topLine="683" />
+		</Cursor>
+		<Folding>
+			<Collapse line="400" />
+			<Collapse line="704" />
+			<Collapse line="1340" />
+			<Collapse line="1384" />
+			<Collapse line="1399" />
+			<Collapse line="1519" />
+			<Collapse line="1532" />
+			<Collapse line="1705" />
+			<Collapse line="1835" />
+			<Collapse line="2044" />
+			<Collapse line="2114" />
+			<Collapse line="2162" />
+			<Collapse line="2169" />
+			<Collapse line="2208" />
+			<Collapse line="2230" />
+			<Collapse line="2265" />
+			<Collapse line="2275" />
+			<Collapse line="2320" />
+			<Collapse line="2327" />
+			<Collapse line="2375" />
+			<Collapse line="2410" />
+			<Collapse line="2423" />
+			<Collapse line="2435" />
+			<Collapse line="2505" />
+			<Collapse line="2660" />
+			<Collapse line="2680" />
+			<Collapse line="2734" />
+			<Collapse line="2821" />
+			<Collapse line="2881" />
+			<Collapse line="2903" />
+			<Collapse line="2942" />
+			<Collapse line="2987" />
+			<Collapse line="3085" />
+			<Collapse line="3098" />
+			<Collapse line="3219" />
+			<Collapse line="3244" />
+			<Collapse line="3275" />
+			<Collapse line="3291" />
+			<Collapse line="3319" />
+			<Collapse line="3351" />
+			<Collapse line="3396" />
+			<Collapse line="3427" />
+			<Collapse line="3458" />
+			<Collapse line="3489" />
+			<Collapse line="3556" />
+			<Collapse line="3584" />
+			<Collapse line="3621" />
+			<Collapse line="3644" />
+			<Collapse line="3689" />
+			<Collapse line="3728" />
+			<Collapse line="3809" />
+			<Collapse line="3907" />
+			<Collapse line="3998" />
+			<Collapse line="4065" />
+			<Collapse line="4157" />
+			<Collapse line="4231" />
+			<Collapse line="4281" />
+			<Collapse line="4343" />
+		</Folding>
+	</File>
+	<File name="..\Src\Main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3917" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="..\Icon.rc" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\Header\LessonX.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4792" topLine="116" />
+		</Cursor>
+	</File>
+	<File name="..\Header\CommonAPI.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="29889" topLine="733" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
