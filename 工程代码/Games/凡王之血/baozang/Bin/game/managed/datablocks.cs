@@ -42,26 +42,6 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(logoImageMap) {
-      imageName = "~/data/images/logo.png";
-      imageMode = "FULL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "-1";
-      cellCountY = "-1";
-      cellWidth = "0";
-      cellHeight = "0";
-      preload = "1";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
    new t2dImageMapDatablock(MainMenuBgImageMap) {
       imageName = "~/data/images/MainMenuBg.jpg";
       imageMode = "FULL";
@@ -1885,7 +1865,7 @@ $managedDatablockSet = new SimSet() {
    new t2dAnimationDatablock(Skil1l_WaitAnimation) {
       imageMap = "Skill_WaitImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35";
-      animationTime = "4";
+      animationTime = "0.642857";
       animationCycle = "0";
       randomStart = "0";
       startFrame = "0";
@@ -2392,7 +2372,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dAnimationDatablock(Z_pugongAnimation) {
+   new t2dAnimationDatablock(_) {
       imageMap = "Z_pugongImageMap11";
       animationFrames = "5 5 5 5 5 0 0 1 2 3 4 5";
       animationTime = "0.4";
@@ -9729,6 +9709,96 @@ $managedDatablockSet = new SimSet() {
       cellWidth = "0";
       cellHeight = "0";
       preload = "1";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dImageMapDatablock(zhulinDY_bgImageMap1) {
+      imageName = "~/data/images/zhulinDY_bg.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "3";
+      cellCountY = "3";
+      cellWidth = "600";
+      cellHeight = "600";
+      preload = "0";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dAnimationDatablock(zhulinDY_bgAnimation) {
+      imageMap = "zhulinDY_bgImageMap1";
+      animationFrames = "0 1 2 3 4 5 6 7 8";
+      animationTime = "0.5";
+      animationCycle = "1";
+      randomStart = "1";
+      startFrame = "0";
+      animationPingPong = "1";
+      animationReverse = "0";
+   };
+   new t2dImageMapDatablock(erjinengImageMap11) {
+      imageName = "~/data/images/erjineng.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "9";
+      cellCountY = "9";
+      cellWidth = "111";
+      cellHeight = "111";
+      preload = "0";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dAnimationDatablock(Z_pugongAnimation5) {
+      imageMap = "erjinengImageMap11";
+      animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80";
+      animationTime = "2.69989";
+      animationCycle = "0";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(Z_pugongAnimation) {
+      imageMap = "Z_pugongImageMap11";
+      animationFrames = "0 1 2 3 4 5";
+      animationTime = "0.222222";
+      animationCycle = "0";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dImageMapDatablock(jianghu_BGImageMap1) {
+      imageName = "~/data/images/jianghu_BG.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "3";
+      cellCountY = "3";
+      cellWidth = "276";
+      cellHeight = "207";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };

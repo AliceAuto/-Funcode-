@@ -45,7 +45,7 @@ float       g_UseTime = 0;          // 每局游戏所用时间
 float       g_gamelage = 1.25;      // 设置关卡图标的接受鼠标时的放大倍数
 float       g_buttonlage = 1.25;    // 设置方形按钮图标的接受鼠标时的放大倍数
 float       g_otherlage = 1.15;     // 设置其他按钮图标的接受鼠标时的放大倍数
-float       g_MenuSpeed = 250;      // 设置按钮的移动速度
+float       g_MenuSpeed = 875;      // 设置按钮的移动速度
 // 设置图鉴菜单显示的图鉴图像数组 解锁状态：TJtext?ImageMap  未解锁状态：TJying?ImageMap
 const char *firstname = "C";
 const char *g_Tujian[] = {"TJying1ImageMap","TJying2ImageMap","TJying3ImageMap",
@@ -89,7 +89,7 @@ int         M_Skill4;       // 技能4音效
 float       M_vol = 1;      // 设置声音大小，若要静音将其置为零。设置声音时乘以一个常数即可
 
 //
-const char *M_Main[]={"BGMXWX.ogg","MainBg2.ogg","MainBg3.ogg","MainBg4.ogg","MainBg5.ogg"};
+const char *M_Main[]={"BGMMainMenu.ogg","MainBg2.ogg","MainBg3.ogg","MainBg4.ogg","MainBg5.ogg"};
 const char *M_Map[]={"BGMMapMenu.wav","MapBg_3.ogg","MapBg_9.ogg"};
 const char *M_Game[]={"BGMguanqia.wav","Gamebg_2.ogg","Gamebg_37.ogg",
                        "Gamebg_4.ogg","Gamebg_56.ogg","Gamebg_56.ogg",
@@ -118,7 +118,7 @@ int         Z_IsSkill[] = {0,0,0,0};//记录主角是否可以释放技能
 float       Z_hurtID = 1/(1+(Z_fangyv/100.0)); //记录主角的减伤系数
 float       Z_attackTime;       //记录主角距上次进攻的时间
 float       Z_hurtTime;         //记录主角距上次受伤的时间
-float       Z_PgJiange = 0.6;   //设置主角的普攻间隔
+float       Z_PgJiange = 0.2;   //设置主角的普攻间隔
 float       Z_hurtJg = 1;     //设置主角的受伤间隔
 float       Z_PosX = -470;      //记录主角当前位置的X坐标
 float       Z_PosY = -87;       //记录主角当前位置的Y坐标
@@ -145,10 +145,10 @@ float S_Time1 = 0;                  //记录技能一的释放间隔
 float S_Time2 = 0;                  //记录技能二的释放间隔
 float S_Time3 = 0;                  //记录技能三的释放间隔
 float S_Time4 = 0;                  //记录技能四的释放间隔
-float S_CD1 = 4;                    //记录技能一的冷却时间
-float S_CD2 = 3;                    //记录技能二的冷却时间
-float S_CD3 = 6;                    //记录技能三的冷却时间
-float S_CD4 = 9;                    //记录技能四的冷却时间
+float S_CD1 = 0.5;                    //记录技能一的冷却时间
+float S_CD2 = 0.5;                    //记录技能二的冷却时间
+float S_CD3 = 0.5;                    //记录技能三的冷却时间
+float S_CD4 = 0.5;                    //记录技能四的冷却时间
 
 const char *S_pugong = "pugong";    //记录播放普攻动画的精灵名
 
@@ -162,16 +162,16 @@ char O_isattack = 0;                     //记录当前场地是否已经发起进攻
 
 
 int O_hurt[9] = {10,15,20,25,32,40,45,48,50};//记录每一关小兵伤害
-int O_bloodMax = 100;                   //记录每一关小兵血量上限：每一关翻倍
+int O_bloodMax = 20;                   //记录每一关小兵血量上限：每一关翻倍
 int O_blood[6] = {0,0,0,0,0,0};         //记录小怪的血量
 int O_i = 0;                            //记录当前小兵ID
 int O_numSprite = 0;                    //记录当前伤害显示系统的精灵数，满1000之后清零
-int O_speed = 15;                       //记录小兵平静状态的速度
-int O_Sspeed = 50;                      //记录小兵愤怒状态的速度
+int O_speed = 50;                       //记录小兵平静状态的速度
+int O_Sspeed = 100;                      //记录小兵愤怒状态的速度
 
 float O_attackPosX = 0;                 //记录小怪定点攻击的位置
 float O_attackTime = 0;                 //记录场地对主角发动攻击的时间间隔
-float O_attack = 2;                     //设置每隔几秒小怪发动一次攻击
+float O_attack = 1.5;                     //设置每隔几秒小怪发动一次攻击
 float O_PengzhuangTime = 0.5;           //设置精灵与技能碰撞的时间间隔
 float O_JiluTime[6] = {};               //记录据上一次碰撞间隔的时间
 float O_attTime[6] ={};                 //记录小怪对主角发动攻击的时间间隔
@@ -248,6 +248,9 @@ void GameMainLoop( float	fDeltaTime )
     };
 }
 
+void PlayLongSound(char *[]){
+
+}
 //==============================================================================
 //
 // 每局开始前进行初始化，清空上一局相关数据
@@ -263,11 +266,24 @@ void GameInit()
                 // 加载欢迎界面
                 // 加载欢迎页面
                 // 等待一秒半钟
+				
                 Sleep(1500);
                 // 加载主菜单界面
+				
                 dLoadMap("MainMenu.t2d");
                 // 播放BGM
-                M_BGMXWX=dPlaySound("BGMXWX.ogg",1,1*M_vol);
+                //M_BGMXWX=dPlaySound("BGMXWX.ogg",1,1*M_vol);
+				//设置按钮的初始位置
+				dSetSpritePosition("M_1",216,-264);
+				dSetSpritePosition("Begin",216,-264);
+				dSetSpritePosition("M_2",266,-132);
+				dSetSpritePosition("load",266,-132);
+				dSetSpritePosition("M_3",316,0);
+				dSetSpritePosition("Intor",316,0);
+				dSetSpritePosition("M_4",266,132);
+				dSetSpritePosition("About",266,132);
+				dSetSpritePosition("M_5",216,264);
+				dSetSpritePosition("Exit",216,264);
                 // 将当前地图标记为1
                 g_WhichMap = 1;
             }
@@ -1345,6 +1361,7 @@ void OnMouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
     {
     case 1://主菜单
         {
+
             //点击开始游戏
             if(dIsPointInSprite("Begin",fMouseX,fMouseY))
             {
@@ -2234,6 +2251,7 @@ void GameMenuGo(int WhichMenu)
     switch(WhichMenu)
     {
     case 0:// wellcome界面
+
         break;
     case 1:// MainMenu界面
         {
@@ -2247,7 +2265,7 @@ void GameMenuGo(int WhichMenu)
             dSpriteMoveTo("About",850,132,g_MenuSpeed,1);
             dSpriteMoveTo("M_5",850,264,g_MenuSpeed,1);
             dSpriteMoveTo("Exit",850,264,g_MenuSpeed,1);
-            dSpriteMoveTo("Logo",-349,4,g_MenuSpeed,1);
+            //dSpriteMoveTo("Logo",-349,4,g_MenuSpeed,1);
         }
         break;
     case 2:// MapMenu界面
@@ -2292,7 +2310,7 @@ void GameMenuBack(int WhichMenu)
             dSpriteMoveTo("About",266,132,g_MenuSpeed,1);
             dSpriteMoveTo("M_5",216,264,g_MenuSpeed,1);
             dSpriteMoveTo("Exit",216,264,g_MenuSpeed,1);
-            dSpriteMoveTo("Logo",-255,4,g_MenuSpeed,1);
+            //dSpriteMoveTo("Logo",-255,4,g_MenuSpeed,1);
         }
         break;
     case 2:// MapMenu界面
@@ -2508,7 +2526,7 @@ void GameXbMove(const float PosX)
 {
     int i,Num_Sj;
     float PosX_xb;//定义一个变量记录小兵当前坐标
-    int View_xb=350;//定义小兵的视野，若主角在视野外，小兵进行随机慢速移动
+    int View_xb=600;//定义小兵的视野，若主角在视野外，小兵进行随机慢速移动
     //小兵随机循环移动
     for(i=1;i<=6;i++,g_re++)
     {

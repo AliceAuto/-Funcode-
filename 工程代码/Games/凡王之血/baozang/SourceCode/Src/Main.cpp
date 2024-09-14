@@ -5,7 +5,10 @@
 //
 //-----------------------------------------------------------------------------
 #include "CommonAPI.h"
+#include "resource.h"
 #include "LessonX.h"
+#include <windows.h>
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -22,7 +25,14 @@ int PASCAL WinMain(HINSTANCE hInstance,
 		return 0;
 
 	// To do : 在此使用API更改窗口标题
-	dSetWindowTitle("华夏宝藏");
+	dSetWindowTitle("影之界");
+	HICON hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON1));
+    if (hIcon) {
+        SendMessage(GetActiveWindow(), WM_SETICON, ICON_BIG, (LPARAM)hIcon);
+        SendMessage(GetActiveWindow(), WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    } else {
+        MessageBox(NULL, "加载图标失败！", "警告", MB_ICONWARNING);
+    }
 	// 加载欢迎界面
 	dLoadMap("wellcome.t2d");
 	dResizeWindow(1280,768);

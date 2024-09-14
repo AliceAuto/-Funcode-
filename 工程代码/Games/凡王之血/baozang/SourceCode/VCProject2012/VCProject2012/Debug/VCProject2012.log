@@ -1,140 +1,136 @@
-﻿生成启动时间为 2024/9/9 20:09:56。
-项目“C:\Users\27427\Documents\Tencent Files\2742798794\FileRecv\“华夏宝藏”源码 (1)\baozang\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2024/9/14 9:34:57。
+项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\凡王之血\baozang\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”在节点 2 上(Build 个目标)。
 ClCompile:
-  D:\VS012\VC\bin\CL.exe /c /I../../Header /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\LessonX.cpp ..\..\Src\Main.cpp
-  Main.cpp
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\main.cpp(89): warning C4800: “const int”: 将值强制为布尔值“true”或“false”(性能警告)
+  D:\VS012\VC\bin\CL.exe /c /I../../ /I../../Header /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\LessonX.cpp
   LessonX.cpp
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(47): warning C4305: “初始化”: 从“double”到“float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(118): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(121): warning C4305: “初始化”: 从“double”到“float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(339): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(786): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(805): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(824): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(843): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(862): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(881): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(900): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(919): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(961): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(1361): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(1458): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(1468): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(1478): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(1492): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(1971): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2143): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2152): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2167): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2188): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2194): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2201): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2415): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(47): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(118): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(121): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(355): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(802): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(821): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(840): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(859): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(878): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(897): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(916): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(935): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(977): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(1378): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(1475): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(1485): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(1495): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(1509): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(1988): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2160): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2169): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2184): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2205): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2211): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2218): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2433): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\stdio.h(233) : 参见“freopen”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2428): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2446): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\stdio.h(218) : 参见“fopen”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2431): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2449): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\stdio.h(237) : 参见“fscanf”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2446): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2452): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2470): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2476): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2529): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2541): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2564): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2576): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2589): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2601): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2618): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2464): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2470): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2488): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2494): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2547): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2559): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2582): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2594): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2607): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2619): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2636): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2619): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2637): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2625): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2638): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2643): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2656): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2639): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2657): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2646): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2688): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2690): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2766): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2785): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2786): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2812): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2813): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2814): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(2846): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3027): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3044): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3153): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3164): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3228): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3253): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3333): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3340): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3374): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2664): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2706): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2708): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2784): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2803): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2804): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2830): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2831): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2832): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(2864): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3045): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3062): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3171): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3182): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3246): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3271): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3351): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3358): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3392): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3375): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3393): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3386): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3392): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3394): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3405): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3404): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3410): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3412): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3423): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3406): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3424): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3417): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3423): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3425): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3436): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3435): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3441): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3443): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3454): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3437): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3455): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3448): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3454): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3456): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3467): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3466): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3472): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3474): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3485): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3468): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3486): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3479): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3485): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3487): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3498): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3497): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3503): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3505): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3516): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3499): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3517): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3510): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3516): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3518): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3529): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3528): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3534): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3536): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3547): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(110) : 参见“strcpy”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3530): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3548): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           d:\vs012\vc\include\string.h(115) : 参见“strcat”的声明
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3541): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3547): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3549): warning C4305: “参数”: 从“double”到“const float”截断
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3563): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3654): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3656): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3661): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3671): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3679): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-c:\users\27427\documents\tencent files\2742798794\filerecv\“华夏宝藏”源码 (1)\baozang\sourcecode\src\lessonx.cpp(3681): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-  正在生成代码...
-ResourceCompile:
-  C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\VCTemplate.res" VCTemplate.rc 
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3559): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3565): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3567): warning C4305: “参数”: 从“double”到“const float”截断
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3581): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3672): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3674): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3679): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3689): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3697): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+c:\users\27427\desktop\-funcode-\工程代码\games\凡王之血\baozang\sourcecode\src\lessonx.cpp(3699): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
 Link:
-  D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO Winmm.lib ..\..\Src\CommonAPI_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCTemplate.res
+  D:\VS012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Bin\Game.exe" /INCREMENTAL:NO /NOLOGO Winmm.lib ..\..\Src\CommonAPI_2010.Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Bin\Game.lib" /MACHINE:X86 /SAFESEH Debug\VCProject2012.res
   Debug\LessonX.obj
   Debug\Main.obj
+  ..\..\Src\CommonAPI_2010.lib
 LessonX.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
 LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-CommonAPI_2010.Lib(CommonAPI.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“CommonAPI_2010.Lib(CommonAPI.obj)”或在“C:\Users\27427\Documents\Tencent Files\2742798794\FileRecv\“华夏宝藏”源码 (1)\baozang\SourceCode\VCProject2012\VCProject2012\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-  VCProject2012.vcxproj -> C:\Users\27427\Documents\Tencent Files\2742798794\FileRecv\“华夏宝藏”源码 (1)\baozang\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
-已完成生成项目“C:\Users\27427\Documents\Tencent Files\2742798794\FileRecv\“华夏宝藏”源码 (1)\baozang\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
+CommonAPI_2010.Lib(CommonAPI.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“CommonAPI_2010.Lib(CommonAPI.obj)”或在“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\凡王之血\baozang\SourceCode\VCProject2012\VCProject2012\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  VCProject2012.vcxproj -> C:\Users\27427\Desktop\-Funcode-\工程代码\Games\凡王之血\baozang\SourceCode\VCProject2012\VCProject2012\..\..\..\Bin\Game.exe
+已完成生成项目“C:\Users\27427\Desktop\-Funcode-\工程代码\Games\凡王之血\baozang\SourceCode\VCProject2012\VCProject2012\VCProject2012.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:04.39
+已用时间 00:00:06.06

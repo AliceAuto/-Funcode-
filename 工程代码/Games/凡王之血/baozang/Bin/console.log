@@ -1,7 +1,7 @@
-//-------------------------- 9/10/2024 -- 20:32:56 -----
+//-------------------------- 9/14/2024 -- 10:31:24 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.89 Ghz)
+   Intel Pentium III, ~2.87 Ghz
+     (timed at roughly 2.88 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -113,7 +113,6 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡�
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/gameScripts/align.cs.
 
 FunCode (v1.7.5) initialized...
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/datablocks.cs...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/datablocks.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/persistent.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/brushes.cs.
@@ -130,6 +129,16 @@ Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baoza
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d.
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d.
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
