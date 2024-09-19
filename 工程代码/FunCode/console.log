@@ -1,7 +1,7 @@
-//-------------------------- 9/14/2024 -- 11:22:07 -----
+//-------------------------- 9/18/2024 -- 23:11:09 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.91 Ghz)
+     (timed at roughly 2.92 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -454,6 +454,10 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baoza
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game1.t2d.
 pushDialog(): Invalid control: ConnectWait_NoDB
+Connect success, C = 0, CPP = 0, JAVA = 0
+popDialog(): Invalid control: ConnectWait_NoDB
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.
 Exporting Scene Editor preferences.
