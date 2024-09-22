@@ -102,7 +102,7 @@ int         F_Mflag2=0x000;     // 记录音效播放次数
 int         Z_gongji = 10;      //记录主角基本属性 ==> 攻击
 int         Z_shengming = 100;  //记录主角基本属性 ==> 生命
 int         Z_blood = 100;      //记录主角当前血量
-int         Z_speed = 800;      //记录主角基本属性 ==> 速度
+int         Z_speed = 200;      //记录主角基本属性 ==> 速度
 int         Z_fangyv = 10;      //记录主角基本属性 ==> 防御
 int         Z_jingyan = 0;      //记录主角目前的经验
 int         Z_levelMax = 30;    //记录主角的最大经验值
@@ -118,7 +118,7 @@ int         Z_IsSkill[] = {0,0,0,0};//记录主角是否可以释放技能
 float       Z_hurtID = 1/(1+(Z_fangyv/100.0)); //记录主角的减伤系数
 float       Z_attackTime;       //记录主角距上次进攻的时间
 float       Z_hurtTime;         //记录主角距上次受伤的时间
-float       Z_PgJiange = 0.5;//的普攻间隔
+float       Z_PgJiange = 0.2;   //设置主角的普攻间隔
 float       Z_hurtJg = 1;     //设置主角的受伤间隔
 float       Z_PosX = -470;      //记录主角当前位置的X坐标
 float       Z_PosY = -87;       //记录主角当前位置的Y坐标
@@ -131,7 +131,6 @@ const char *Z_name = "zhujue";              //记录主角名字
 const char *Z_BloodName ="Z_bloodnum";      //主角血条精灵名
 const char *Z_LevelName ="Z_levelnum";      //主角经验条精灵名
 const char *Z_run = "Z_runAnimation";       //记录主角奔跑动画名
-
 const char *Z_stand = "Z_standAnimation";   //记录主角静止动画名
 const char *Z_attack = "Z_attackAnimation"; //记录主角攻击动画名
 const char *Z_hurt = "Z_hurtAnimation";     //记录主角受伤动画名
@@ -1372,9 +1371,9 @@ void OnMouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
                 //初始化地图菜单界面
                 //进行到第几关，显示什么属性图鉴内容显示什么
                 //本选项为重新开始一切重置为默认值
-                Z_gongji = 40;
-                Z_shengming = 30;
-                Z_speed = 400;
+                Z_gongji = 10;
+                Z_shengming = 100;
+                Z_speed = 200;
                 Z_fangyv = 10;
                 Z_hurtID = 1/(1+(Z_fangyv/100.0)); //更新主角的减伤系数
                 Z_jingyan = 0;
