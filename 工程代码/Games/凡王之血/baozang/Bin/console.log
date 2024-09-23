@@ -1,4 +1,4 @@
-//-------------------------- 9/22/2024 -- 18:21:22 -----
+//-------------------------- 9/23/2024 -- 15:53:47 -----
 Processor Init:
    Intel Pentium III, ~2.90 Ghz
      (timed at roughly 2.91 Ghz)
@@ -114,8 +114,6 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡�
 
 FunCode (v1.7.5) initialized...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/datablocks.cs.
-ImageMap(S_xiaoguai9ImageMap)SrcBitmap(game/data/images/S_xiaoguai9.png) Error: 'Invalid Bitmap File!' (2)
-ImageMap(ZI_kaifa)SrcBitmap(game/data/images/Main_KFRY.png) Error: 'Invalid Bitmap File!' (2)
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/persistent.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/brushes.cs.
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/gui/mainScreen.gui.
@@ -131,16 +129,72 @@ Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baoza
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d.
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Shutting down the OpenGL display device...
-Making the GL rendering context not current...
-Deleting the GL rendering context...
-Releasing the device context...
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d.
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game1.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game1.t2d.
+t2dStaticSprite::setImageMap() - t2dImageMapDatablock Datablock is invalid! (renewImageMap)
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dSceneGraph::addToScene() - Object '2303' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2304' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2305' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2306' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2307' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2308' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2309' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2310' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2311' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2312' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2313' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2314' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2315' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2316' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2317' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2318' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2319' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2320' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2321' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2322' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2323' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2324' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2325' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2326' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2327' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2328' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2329' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2330' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2331' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2332' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2333' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2334' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2335' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2336' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2337' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2338' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2339' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2340' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2341' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2342' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2343' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2344' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2345' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2346' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2347' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2348' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2349' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2350' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2351' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2352' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2353' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2354' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2355' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2356' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2357' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2358' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2359' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2360' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2361' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2362' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2363' is already in a SceneGraph!.

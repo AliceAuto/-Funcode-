@@ -182,7 +182,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(mapbgImageMap) {
+   new t2dImageMapDatablock(mapbgImageMap1) {
       imageName = "~/data/images/mapbg.png";
       imageMode = "FULL";
       frameCount = "-1";
@@ -827,8 +827,8 @@ $managedDatablockSet = new SimSet() {
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
+      filterPad = "0";
+      preferPerf = "0";
       cellRowOrder = "1";
       cellOffsetX = "0";
       cellOffsetY = "0";
@@ -838,7 +838,7 @@ $managedDatablockSet = new SimSet() {
       cellCountY = "-1";
       cellWidth = "0";
       cellHeight = "0";
-      preload = "1";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };
@@ -902,13 +902,13 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(logomp2ImageMap) {
+   new t2dImageMapDatablock(logomp2ImageMap1) {
       imageName = "~/data/images/logomp2.png";
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
+      filterPad = "0";
+      preferPerf = "0";
       cellRowOrder = "1";
       cellOffsetX = "0";
       cellOffsetY = "0";
@@ -918,7 +918,7 @@ $managedDatablockSet = new SimSet() {
       cellCountY = "-1";
       cellWidth = "0";
       cellHeight = "0";
-      preload = "1";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };
@@ -1462,7 +1462,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(renewImageMap) {
+   new t2dImageMapDatablock(renewImageMap1) {
       imageName = "~/data/images/renew.png";
       imageMode = "FULL";
       frameCount = "-1";
@@ -4784,26 +4784,6 @@ $managedDatablockSet = new SimSet() {
    };
    new t2dImageMapDatablock(S_xiaoguai8ImageMap) {
       imageName = "~/data/images/S_xiaoguai8.png";
-      imageMode = "FULL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "-1";
-      cellCountY = "-1";
-      cellWidth = "0";
-      cellHeight = "0";
-      preload = "1";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(S_xiaoguai9ImageMap) {
-      imageName = "~/data/images/S_xiaoguai9.png";
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
@@ -9524,26 +9504,6 @@ $managedDatablockSet = new SimSet() {
    };
    new t2dImageMapDatablock(Main_KImageMap) {
       imageName = "~/data/images/Main_K.png";
-      imageMode = "FULL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "-1";
-      cellCountY = "-1";
-      cellWidth = "0";
-      cellHeight = "0";
-      preload = "1";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(ZI_kaifa) {
-      imageName = "~/data/images/Main_KFRY.png";
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
