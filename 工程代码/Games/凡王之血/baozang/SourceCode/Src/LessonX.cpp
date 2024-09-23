@@ -90,7 +90,7 @@ float       M_vol = 1;      // ÉèÖÃÉùÒô´óĞ¡£¬ÈôÒª¾²Òô½«ÆäÖÃÎªÁã¡£ÉèÖÃÉùÒôÊ±³ËÒÔÒ
 
 //
 const char *M_Main[]={"BGMMainMenu.ogg","MainBg2.ogg","MainBg3.ogg","MainBg4.ogg","MainBg5.ogg"};
-const char *M_Map[]={"BGMMapMenu.wav","MapBg_3.ogg","MapBg_9.ogg"};
+const char *M_Map[]={"BGMMapMenu.ogg","MapBg_3.ogg","MapBg_9.ogg"};
 const char *M_Game[]={"BGMguanqia.wav","Gamebg_2.ogg","Gamebg_37.ogg",
                        "Gamebg_4.ogg","Gamebg_56.ogg","Gamebg_56.ogg",
                        "Gamebg_37.ogg","Gamebg_8.ogg","Gamebg_9.ogg"};
