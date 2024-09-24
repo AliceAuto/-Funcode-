@@ -43,8 +43,8 @@
       useSourceRect = "0";
       sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "196.576 -67.325";
-      size = "1683.152 640.702";
+      Position = "416.642 -134.273";
+      size = "2123.283 774.598";
       Layer = "7";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -56,8 +56,8 @@
       useSourceRect = "0";
       sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "1251.500 151.509";
-      size = "3793.000 479.982";
+      Position = "1248.500 259.586";
+      size = "3793.000 289.173";
       Layer = "6";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";

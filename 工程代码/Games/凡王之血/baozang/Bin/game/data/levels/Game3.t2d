@@ -43,8 +43,8 @@
       useSourceRect = "0";
       sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "269.482 -80.937";
-      size = "1971.037 765.000";
+      Position = "311.982 -80.937";
+      size = "2056.037 765.000";
       Layer = "7";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -210,7 +210,7 @@
          mountID = "30";
    };
    new t2dStaticSprite() {
-      imageMap = "game3bg3ImageMap";
+      imageMap = "game3bg1ImageMap";
       frame = "0";
       useSourceRect = "0";
       sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";

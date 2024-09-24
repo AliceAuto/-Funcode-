@@ -37,14 +37,14 @@
       cameraPosition = "0.000000 0.000000";
       cameraSize = "1280.000000 768.000000";
 
-   new t2dStaticSprite(game1Bg1) {
+   new t2dStaticSprite() {
       imageMap = "game7bg2ImageMap";
       frame = "0";
       useSourceRect = "0";
       sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "1196.180 -162.500";
-      size = "3762.360 1075.000";
+      Position = "663.942 -195.951";
+      size = "2697.885 1141.902";
       Layer = "7";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -1484,5 +1484,17 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
          mountID = "121";
+   };
+   new t2dStaticSprite(game1Bg1) {
+      imageMap = "game7bg1ImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "1210.649 323.979";
+      size = "3815.561 262.041";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "122";
    };
 };
