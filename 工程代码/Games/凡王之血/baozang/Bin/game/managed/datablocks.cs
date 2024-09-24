@@ -5172,13 +5172,13 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(game2Bg2ImageMap) {
+   new t2dImageMapDatablock(game2Bg2ImageMap1) {
       imageName = "~/data/images/game2Bg2.png";
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
+      filterPad = "0";
+      preferPerf = "0";
       cellRowOrder = "1";
       cellOffsetX = "0";
       cellOffsetY = "0";
@@ -5188,7 +5188,7 @@ $managedDatablockSet = new SimSet() {
       cellCountY = "-1";
       cellWidth = "0";
       cellHeight = "0";
-      preload = "1";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };

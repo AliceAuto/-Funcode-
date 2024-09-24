@@ -41,10 +41,10 @@
       imageMap = "game3bg2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "0.000 -67.676";
-      size = "1280.000 640.000";
+      Position = "269.482 -80.937";
+      size = "1971.037 765.000";
       Layer = "7";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -54,9 +54,9 @@
       imageMap = "game3bg1ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "1251.500 242.000";
+      Position = "1251.500 240.500";
       size = "3940.000 299.000";
       Layer = "6";
       WorldLimitMin = "-50.000 -37.500";
@@ -70,7 +70,7 @@
       imageMap = "Z_LevelImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-448.500 -293.000";
       size = "283.000 120.000";
@@ -83,7 +83,7 @@
       imageMap = "Z_xueguanImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-350.000 -305.000";
       size = "284.000 71.000";
@@ -97,7 +97,7 @@
       imageMap = "Z_BloodNumImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-346.000 -322.000";
       size = "255.000 19.000";
@@ -110,7 +110,7 @@
       imageMap = "Z_LevelNumImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-346.000 -287.000";
       size = "228.000 19.000";
@@ -123,7 +123,7 @@
       imageMap = "logoconfigImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "530.000 324.000";
       size = "107.000 112.000";
@@ -135,7 +135,7 @@
       imageMap = "Skill1ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-562.000 324.000";
       size = "87.000 88.000";
@@ -148,7 +148,7 @@
       imageMap = "Skill2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-459.000 323.000";
       size = "87.000 88.000";
@@ -161,7 +161,7 @@
       imageMap = "Skill3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-356.000 323.000";
       size = "87.000 88.000";
@@ -174,7 +174,7 @@
       imageMap = "Skill4ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-253.000 323.000";
       size = "87.000 88.000";
@@ -213,9 +213,9 @@
       imageMap = "game3bg3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "1251.500 242.000";
+      Position = "1251.500 240.500";
       size = "3940.000 299.000";
       Layer = "1";
       WorldLimitMin = "-50.000 -37.500";
@@ -229,7 +229,7 @@
       imageMap = "config2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1.500 -769.518";
       size = "407.000 606.000";
@@ -243,7 +243,7 @@
       imageMap = "close2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "164.910 -1011.918";
       size = "40.000 37.000";
@@ -255,10 +255,9 @@
          mountToID = "31";
    };
    new t2dStaticSprite() {
-      imageMap = "renewImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1.500 -830.118";
       size = "257.000 69.000";
@@ -273,7 +272,7 @@
       imageMap = "victory_BackMapImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1.500 -648.318";
       size = "257.000 69.000";
@@ -288,7 +287,7 @@
       imageMap = "Victory_ReImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1.500 -739.218";
       size = "257.000 69.000";
@@ -372,7 +371,7 @@
       imageMap = "num_2ImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-105.101 458.550";
       size = "20.000 25.070";
@@ -385,7 +384,7 @@
       imageMap = "num_2ImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-85.358 459.568";
       size = "29.284 36.604";
@@ -427,7 +426,7 @@
       imageMap = "S_xiaoguai3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "28.968 571.898";
       size = "127.936 93.796";
@@ -448,7 +447,7 @@
       imageMap = "blueNum_0ImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "675.042 -245.000";
       size = "35.625 60.000";
@@ -471,7 +470,7 @@
       imageMap = "LevelImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-390.000 -253.567";
       size = "90.000 40.000";
@@ -483,7 +482,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-330.830 -318.490";
       size = "15.000 30.000";
@@ -498,7 +497,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "2";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-320.180 -318.490";
       size = "15.000 30.000";
@@ -513,7 +512,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "2";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-309.530 -318.490";
       size = "15.000 30.000";
@@ -528,7 +527,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "1";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-341.480 -318.490";
       size = "15.000 30.000";
@@ -544,7 +543,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-373.430 -318.490";
       size = "15.000 30.000";
@@ -559,7 +558,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "2";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-362.780 -318.490";
       size = "15.000 30.000";
@@ -574,7 +573,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "2";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-352.130 -318.490";
       size = "15.000 30.000";
@@ -589,7 +588,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-339.350 -282.635";
       size = "15.000 30.000";
@@ -604,7 +603,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-328.700 -282.635";
       size = "15.000 30.000";
@@ -619,7 +618,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-318.050 -282.635";
       size = "15.000 30.000";
@@ -634,7 +633,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-360.650 -282.635";
       size = "15.000 30.000";
@@ -649,7 +648,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-371.300 -282.635";
       size = "15.000 30.000";
@@ -664,7 +663,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "3";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-381.950 -282.635";
       size = "15.000 30.000";
@@ -679,7 +678,7 @@
       imageMap = "labelatlasImageMap1";
       frame = "1";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-350.000 -282.635";
       size = "15.000 30.000";
@@ -704,7 +703,7 @@
       imageMap = "G_shengjiImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "459.000 580.500";
       size = "448.000 71.000";
@@ -755,7 +754,7 @@
       imageMap = "g_biaozhi3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-5.000 -359.000";
       size = "250.000 48.000";
@@ -768,7 +767,7 @@
       imageMap = "timeNumImageMap1";
       frame = "10";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "61.012 -358.785";
       size = "26.024 34.431";
@@ -781,7 +780,7 @@
       imageMap = "yellowNumImageMap1";
       frame = "1";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "26.590 -358.500";
       size = "18.000 23.000";
@@ -794,7 +793,7 @@
       imageMap = "yellowNumImageMap1";
       frame = "1";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "43.637 -358.500";
       size = "18.000 23.000";
@@ -807,7 +806,7 @@
       imageMap = "yellowNumImageMap1";
       frame = "1";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "77.000 -358.500";
       size = "18.000 23.000";
@@ -820,7 +819,7 @@
       imageMap = "yellowNumImageMap1";
       frame = "1";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "94.000 -358.500";
       size = "18.000 23.000";
@@ -833,7 +832,7 @@
       imageMap = "qianjinImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "869.500 -639.761";
       size = "129.000 75.000";
@@ -845,7 +844,7 @@
       imageMap = "Boss_xuetiaoImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1048.500 -239.446";
       size = "867.000 184.000";
@@ -859,7 +858,7 @@
       imageMap = "Boss_BloodImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1088.000 -222.446";
       size = "569.000 21.000";
@@ -872,7 +871,7 @@
       imageMap = "DefeatImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -800.000";
       size = "745.000 602.000";
@@ -886,7 +885,7 @@
       imageMap = "VictoryImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-1119.000 709.460";
       size = "638.000 626.000";
@@ -900,7 +899,7 @@
       imageMap = "Defeat_BackMapImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -709.700";
       size = "261.000 74.000";
@@ -915,7 +914,7 @@
       imageMap = "Defeat_ReImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -860.200";
       size = "261.000 74.000";
@@ -930,7 +929,7 @@
       imageMap = "Victory_NextImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-1119.000 646.860";
       size = "257.000 69.000";
@@ -944,7 +943,7 @@
       imageMap = "victory_BackMapImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-1119.000 803.360";
       size = "257.000 69.000";
@@ -958,7 +957,7 @@
       imageMap = "XB_BloodImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-412.344 -674.604";
       size = "59.958 9.207";
@@ -972,7 +971,7 @@
       imageMap = "XB_xuetiaoImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-411.941 -675.016";
       size = "59.777 9.969";
@@ -1076,7 +1075,7 @@
       imageMap = "Z_SmallTXImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-523.000 -291.000";
       size = "98.000 98.000";
@@ -1255,7 +1254,7 @@
       imageMap = "GC_HuimuImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 1500.000";
       size = "1320.000 800.000";
@@ -1276,7 +1275,7 @@
       imageMap = "GC_TalkImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "210.000 1620.000";
       size = "617.000 243.000";
@@ -1289,7 +1288,7 @@
       imageMap = "GC_TalkImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-210.000 1330.000";
       size = "617.000 243.000";
@@ -1302,7 +1301,7 @@
       imageMap = "GC_ZhujueImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-511.405 1272.895";
       size = "185.000 195.000";
@@ -1318,7 +1317,7 @@
       imageMap = "GC_Boss3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "489.810 1572.250";
       size = "225.000 203.000";
@@ -1334,7 +1333,7 @@
       imageMap = "GC_ZNameImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-380.292 1248.838";
       size = "79.000 23.000";
@@ -1350,7 +1349,7 @@
       imageMap = "GC_B3nameImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-2.557 1550.866";
       size = "58.000 24.000";
@@ -1366,7 +1365,7 @@
       imageMap = "GC_3T1_1BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "61.000 1586.000";
       size = "181.000 25.000";
@@ -1378,7 +1377,7 @@
       imageMap = "GC_3T1_2BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "74.000 1615.000";
       size = "206.000 25.000";
@@ -1390,7 +1389,7 @@
       imageMap = "GC_3T1_3BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "50.000 1644.000";
       size = "156.000 25.000";
@@ -1402,7 +1401,7 @@
       imageMap = "GC_3T1_4BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "101.000 1585.188";
       size = "258.000 27.000";
@@ -1414,7 +1413,7 @@
       imageMap = "GC_3T1_5ZImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-206.000 1358.000";
       size = "427.000 25.000";
@@ -1426,7 +1425,7 @@
       imageMap = "GC_3T1_6BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "124.500 1700.500";
       size = "311.000 29.000";
@@ -1438,7 +1437,7 @@
       imageMap = "GC_3T1_7BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "75.069 1586.287";
       size = "205.000 25.000";
@@ -1450,7 +1449,7 @@
       imageMap = "GC_3T2_1BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-149.513 1526.500";
       size = "107.000 23.000";
@@ -1462,7 +1461,7 @@
       imageMap = "GC_3T2_2BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-126.500 1553.000";
       size = "157.000 24.000";
@@ -1474,7 +1473,7 @@
       imageMap = "GC_3T2_3BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-115.500 1578.500";
       size = "181.000 23.000";
@@ -1486,7 +1485,7 @@
       imageMap = "GC_3T2_4BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-183.500 1617.000";
       size = "67.000 24.000";
@@ -1498,7 +1497,7 @@
       imageMap = "GC_3T2_5ZImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-369.000 1284.000";
       size = "92.000 22.000";
@@ -1510,7 +1509,7 @@
       imageMap = "GC_3T2_6ZImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37252e-039 0 2.37252e-039 6.22898e-039";
+      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-252.000 1320.223";
       size = "330.000 25.000";
