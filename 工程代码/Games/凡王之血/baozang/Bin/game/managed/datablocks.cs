@@ -1502,7 +1502,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(blueNum_0ImageMap1) {
+   new t2dImageMapDatablock(blueNum_0ImageMap) {
       imageName = "~/data/images/blueNum_0.png";
       imageMode = "CELL";
       frameCount = "-1";
@@ -1522,7 +1522,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(labelatlasImageMap1) {
+   new t2dImageMapDatablock(labelatlasImageMap) {
       imageName = "~/data/images/labelatlas.png";
       imageMode = "CELL";
       frameCount = "-1";
@@ -1542,7 +1542,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(numyellowImageMap11) {
+   new t2dImageMapDatablock(numyellowImageMap) {
       imageName = "~/data/images/numyellow.png";
       imageMode = "CELL";
       frameCount = "-1";
@@ -1562,7 +1562,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(timeNumImageMap1) {
+   new t2dImageMapDatablock(timeNumImageMap) {
       imageName = "~/data/images/timeNum.png";
       imageMode = "CELL";
       frameCount = "-1";
@@ -1578,106 +1578,6 @@ $managedDatablockSet = new SimSet() {
       cellCountY = "1";
       cellWidth = "19";
       cellHeight = "25";
-      preload = "0";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(timeNum_0ImageMap11) {
-      imageName = "~/data/images/timeNum_0.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "12";
-      cellCountY = "1";
-      cellWidth = "20";
-      cellHeight = "32";
-      preload = "0";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(yellowNumImageMap1) {
-      imageName = "~/data/images/yellowNum.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "11";
-      cellCountY = "1";
-      cellWidth = "18";
-      cellHeight = "23";
-      preload = "0";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(yellowNum_0ImageMap1) {
-      imageName = "~/data/images/yellowNum_0.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "13";
-      cellCountY = "1";
-      cellWidth = "19";
-      cellHeight = "32";
-      preload = "0";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(yellowNumEadgeImageMap1) {
-      imageName = "~/data/images/yellowNumEadge.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "11";
-      cellCountY = "1";
-      cellWidth = "20";
-      cellHeight = "25";
-      preload = "0";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(yellowNumEadge_0ImageMap1) {
-      imageName = "~/data/images/yellowNumEadge_0.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "12";
-      cellCountY = "1";
-      cellWidth = "21";
-      cellHeight = "32";
       preload = "0";
       allowUnload = "0";
       force16Bit = "0";
@@ -1827,8 +1727,8 @@ $managedDatablockSet = new SimSet() {
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
+      filterPad = "0";
+      preferPerf = "0";
       cellRowOrder = "1";
       cellOffsetX = "0";
       cellOffsetY = "0";
@@ -1838,7 +1738,7 @@ $managedDatablockSet = new SimSet() {
       cellCountY = "-1";
       cellWidth = "0";
       cellHeight = "0";
-      preload = "1";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };
@@ -1897,8 +1797,8 @@ $managedDatablockSet = new SimSet() {
       imageMode = "FULL";
       frameCount = "-1";
       filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
+      filterPad = "0";
+      preferPerf = "0";
       cellRowOrder = "1";
       cellOffsetX = "0";
       cellOffsetY = "0";
@@ -1908,7 +1808,7 @@ $managedDatablockSet = new SimSet() {
       cellCountY = "-1";
       cellWidth = "0";
       cellHeight = "0";
-      preload = "1";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };
@@ -2819,26 +2719,6 @@ $managedDatablockSet = new SimSet() {
       cellWidth = "0";
       cellHeight = "0";
       preload = "1";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
-   new t2dImageMapDatablock(num_2ImageMap1) {
-      imageName = "~/data/images/num_2.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "10";
-      cellCountY = "1";
-      cellWidth = "20";
-      cellHeight = "25";
-      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };
@@ -9959,6 +9839,26 @@ $managedDatablockSet = new SimSet() {
       cellWidth = "0";
       cellHeight = "0";
       preload = "1";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dImageMapDatablock(HurtNumImageMap) {
+      imageName = "~/data/images/HurtNum.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "5";
+      cellCountY = "2";
+      cellWidth = "204";
+      cellHeight = "301";
+      preload = "0";
       allowUnload = "0";
       force16Bit = "0";
    };

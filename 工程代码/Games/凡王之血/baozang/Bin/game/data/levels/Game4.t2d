@@ -37,150 +37,85 @@
       cameraPosition = "0.000000 0.000000";
       cameraSize = "1280.000000 768.000000";
 
-   new t2dStaticSprite() {
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "182.809 -65.000";
-      size = "1650.097 640.000";
-      Layer = "7";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "2";
-   };
    new t2dStaticSprite(game1Bg1) {
       imageMap = "game4bg1ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "1251.500 242.000";
-      size = "3793.000 299.000";
+      Position = "1363.079 197.736";
+      size = "3998.564 570.276";
       Layer = "6";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveReceive = "1";
       CollisionPolyList = "-1.000 0.260 1.000 0.260 1.000 1.000 -1.000 1.000";
-         mountID = "3";
-   };
-   new t2dStaticSprite() {
-      imageMap = "Z_LevelImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-448.500 -293.000";
-      size = "283.000 120.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "4";
-   };
-   new t2dStaticSprite() {
-      imageMap = "Z_xueguanImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-350.000 -305.000";
-      size = "284.000 71.000";
-      Layer = "5";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      LinkPoints = "0.060 -0.380 -0.090 -0.380 -0.165 -0.380 -0.240 -0.380 0.135 -0.380 0.210 -0.380 0.285 -0.380 0.360 -0.380 -0.000 0.630 -0.075 0.630 -0.150 0.630 -0.015 -0.380 -0.225 0.630 0.075 0.630 0.150 0.630 0.225 0.630";
-         mountID = "5";
-   };
-   new t2dStaticSprite(Z_bloodnum) {
-      imageMap = "Z_BloodNumImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-346.000 -322.000";
-      size = "255.000 19.000";
-      Layer = "5";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "20";
-   };
-   new t2dStaticSprite(Z_levelnum) {
-      imageMap = "Z_LevelNumImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-346.000 -287.000";
-      size = "228.000 19.000";
-      Layer = "5";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "21";
+         mountID = "2";
    };
    new t2dStaticSprite(game1sz) {
       imageMap = "logoconfigImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "530.000 325.000";
       size = "107.000 112.000";
       Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "22";
+         mountID = "3";
    };
    new t2dStaticSprite(skill1) {
       imageMap = "Skill1ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-562.000 324.000";
       size = "87.000 88.000";
       Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "23";
+         mountID = "4";
    };
    new t2dStaticSprite(skill2) {
       imageMap = "Skill2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-459.000 323.000";
       size = "87.000 88.000";
       Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "24";
+         mountID = "5";
    };
    new t2dStaticSprite(skill3) {
       imageMap = "Skill3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-356.000 323.000";
       size = "87.000 88.000";
       Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "25";
+         mountID = "6";
    };
    new t2dStaticSprite(skill4) {
       imageMap = "Skill4ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-253.000 323.000";
       size = "87.000 88.000";
       Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "26";
+         mountID = "7";
    };
    new t2dAnimatedSprite(xg_1) {
       animationName = "XB_7Animation";
@@ -193,7 +128,7 @@
       WorldLimitMax = "635.000 262.000";
       CollisionActiveReceive = "1";
       LinkPoints = "0.000 -1.300 0.500 0.750 -0.500 0.486";
-         mountID = "27";
+         mountID = "8";
    };
    new t2dAnimatedSprite(xg_2) {
       animationName = "XB_3Animation";
@@ -206,13 +141,13 @@
       WorldLimitMax = "635.000 262.000";
       CollisionActiveReceive = "1";
       LinkPoints = "0.000 -1.300 0.500 0.750 -0.500 0.535";
-         mountID = "29";
+         mountID = "10";
    };
    new t2dStaticSprite(menusz) {
       imageMap = "config2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -768.000";
       size = "407.000 606.000";
@@ -220,13 +155,13 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.803 -0.800 0.000 0.400 0.000 0.100 0.000 -0.200";
-         mountID = "30";
+         mountID = "11";
    };
    new t2dStaticSprite(menusz_close) {
       imageMap = "close2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "163.410 -1010.400";
       size = "40.000 37.000";
@@ -234,13 +169,13 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.803 -0.800";
-         mountID = "34";
-         mountToID = "30";
+         mountID = "15";
+         mountToID = "11";
    };
    new t2dStaticSprite() {
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -828.600";
       size = "257.000 69.000";
@@ -248,14 +183,14 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.000 -0.200";
-         mountID = "33";
-         mountToID = "30";
+         mountID = "14";
+         mountToID = "11";
    };
    new t2dStaticSprite(menusz_back) {
       imageMap = "victory_BackMapImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -646.800";
       size = "257.000 69.000";
@@ -263,14 +198,14 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.000 0.400";
-         mountID = "32";
-         mountToID = "30";
+         mountID = "13";
+         mountToID = "11";
    };
    new t2dStaticSprite(menusz_re) {
       imageMap = "Victory_ReImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -737.700";
       size = "257.000 69.000";
@@ -278,8 +213,8 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.000 0.100";
-         mountID = "31";
-         mountToID = "30";
+         mountID = "12";
+         mountToID = "11";
    };
    new t2dAnimatedSprite(zhujue) {
       animationName = "Z_standAnimation";
@@ -293,7 +228,7 @@
       CollisionActiveReceive = "1";
       CollisionPolyList = "-0.250 -0.500 0.250 -0.500 0.250 1.000 -0.250 1.000";
       LinkPoints = "0.500 0.250 0.498 0.231 -0.040 -0.840 0.000 0.230";
-         mountID = "35";
+         mountID = "16";
    };
    new t2dAnimatedSprite(pugong) {
       animationName = "Z_pugongAnimation1";
@@ -304,8 +239,8 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.498 0.231";
-         mountID = "36";
-         mountToID = "35";
+         mountID = "17";
+         mountToID = "16";
    };
    new t2dAnimatedSprite() {
       animationName = "Z_pugongAnimation1";
@@ -315,8 +250,8 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.500 0.750";
-         mountID = "28";
-         mountToID = "27";
+         mountID = "9";
+         mountToID = "8";
    };
    new t2dAnimatedSprite() {
       animationName = "xiaoguai_jnAnimation";
@@ -325,7 +260,7 @@
       size = "125.000 121.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "37";
+         mountID = "18";
    };
    new t2dTextObject() {
       canSaveDynamicFields = "1";
@@ -348,33 +283,7 @@
       snapToInteger = "0";
       noUnicode = "0";
          hideOverlap = "0";
-         mountID = "38";
-   };
-   new t2dStaticSprite() {
-      imageMap = "num_2ImageMap1";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-105.101 458.550";
-      size = "20.000 25.070";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "39";
-   };
-   new t2dStaticSprite(num_shanghai) {
-      imageMap = "num_2ImageMap1";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-85.358 459.568";
-      size = "29.284 36.604";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "40";
+         mountID = "19";
    };
    new t2dAnimatedSprite(S_XBattack1) {
       animationName = "S_xiaoguai33Animation";
@@ -385,7 +294,7 @@
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
       CollisionPolyList = "-0.700 -1.000 0.700 -1.000 0.700 1.000 -0.500 1.000";
-         mountID = "41";
+         mountID = "20";
    };
    new t2dAnimatedSprite(S_XBhint) {
       animationName = "S_xiaoguaiAnimation";
@@ -394,7 +303,7 @@
       size = "122.945 53.640";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "42";
+         mountID = "21";
    };
    new t2dAnimatedSprite() {
       animationName = "S_xiaoguai4Animation";
@@ -403,19 +312,19 @@
       size = "128.000 128.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "43";
+         mountID = "22";
    };
    new t2dStaticSprite() {
       imageMap = "S_xiaoguai3ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "28.968 571.898";
       size = "127.936 93.796";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "44";
+         mountID = "23";
    };
    new t2dAnimatedSprite() {
       animationName = "S_xiaoguan1Animation";
@@ -424,20 +333,19 @@
       size = "218.521 281.335";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "45";
+         mountID = "24";
    };
    new t2dStaticSprite(num_Bule) {
-      imageMap = "blueNum_0ImageMap1";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "675.042 -245.000";
       size = "35.625 60.000";
       Layer = "2";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "46";
+         mountID = "25";
    };
    new t2dAnimatedSprite(GOGOGO) {
       animationName = "g_qianjinAnimation";
@@ -447,230 +355,7 @@
       Layer = "2";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "47";
-   };
-   new t2dStaticSprite(level) {
-      imageMap = "LevelImageMap1";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-390.000 -253.567";
-      size = "90.000 40.000";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "48";
-   };
-   new t2dStaticSprite(BloodMax_1) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-330.830 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.135 -0.380";
-         mountID = "19";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(BloodMax_2) {
-      imageMap = "labelatlasImageMap1";
-      frame = "2";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-320.180 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.210 -0.380";
-         mountID = "18";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(BloodMax_3) {
-      imageMap = "labelatlasImageMap1";
-      frame = "2";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-309.530 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.285 -0.380";
-         mountID = "17";
-         mountToID = "5";
-   };
-   new t2dStaticSprite() {
-      imageMap = "labelatlasImageMap1";
-      frame = "1";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-341.480 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      LinkPoints = "0.000 -0.340";
-      MountOffset = "0.060 -0.380";
-         mountID = "16";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(BloodNum_1) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-373.430 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.165 -0.380";
-         mountID = "15";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(BloodNum_2) {
-      imageMap = "labelatlasImageMap1";
-      frame = "2";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-362.780 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.090 -0.380";
-         mountID = "14";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(BloodNum_3) {
-      imageMap = "labelatlasImageMap1";
-      frame = "2";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-352.130 -318.490";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.015 -0.380";
-         mountID = "13";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(levelMax_1) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-339.350 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.075 0.630";
-         mountID = "12";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(levelMax_2) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-328.700 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.150 0.630";
-         mountID = "11";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(levelMax_3) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-318.050 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.225 0.630";
-         mountID = "10";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(levelNum_3) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-360.650 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.075 0.630";
-         mountID = "9";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(levelNum_2) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-371.300 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.150 0.630";
-         mountID = "8";
-         mountToID = "5";
-   };
-   new t2dStaticSprite(levelNum_1) {
-      imageMap = "labelatlasImageMap1";
-      frame = "3";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-381.950 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.225 0.630";
-         mountID = "7";
-         mountToID = "5";
-   };
-   new t2dStaticSprite() {
-      imageMap = "labelatlasImageMap1";
-      frame = "1";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-350.000 -282.635";
-      size = "15.000 30.000";
-      Layer = "4";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "-0.000 0.630";
-         mountID = "6";
-         mountToID = "5";
+         mountID = "26";
    };
    new t2dAnimatedSprite(skillCD1) {
       animationName = "Skil1l_WaitAnimation";
@@ -680,20 +365,20 @@
       Layer = "3";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "49";
+         mountID = "27";
    };
    new t2dStaticSprite(level_up) {
       imageMap = "G_shengjiImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "459.000 580.500";
       size = "448.000 71.000";
       Layer = "2";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "50";
+         mountID = "28";
    };
    new t2dAnimatedSprite(sendSkill1) {
       animationName = "Z_jineng1Animation";
@@ -703,7 +388,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "51";
+         mountID = "29";
    };
    new t2dAnimatedSprite(skillCD2) {
       animationName = "Skill2_WaitAnimation";
@@ -713,7 +398,7 @@
       Layer = "3";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "52";
+         mountID = "30";
    };
    new t2dAnimatedSprite(skillCD4) {
       animationName = "Skill4_WaitAnimation";
@@ -722,7 +407,7 @@
       size = "81.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "53";
+         mountID = "31";
    };
    new t2dAnimatedSprite(skillCD3) {
       animationName = "Skill3_WaitAnimation";
@@ -731,103 +416,38 @@
       size = "81.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "54";
+         mountID = "32";
    };
    new t2dStaticSprite() {
       imageMap = "g_biaozhi4ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-5.000 -359.000";
       size = "250.000 48.000";
       Layer = "3";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "55";
-   };
-   new t2dStaticSprite() {
-      imageMap = "timeNumImageMap1";
-      frame = "10";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "61.012 -358.785";
-      size = "26.024 34.431";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "56";
-   };
-   new t2dStaticSprite(systime4) {
-      imageMap = "yellowNumImageMap1";
-      frame = "1";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "26.590 -358.500";
-      size = "18.000 23.000";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "57";
-   };
-   new t2dStaticSprite(systime3) {
-      imageMap = "yellowNumImageMap1";
-      frame = "1";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "43.637 -358.500";
-      size = "18.000 23.000";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "58";
-   };
-   new t2dStaticSprite(systime2) {
-      imageMap = "yellowNumImageMap1";
-      frame = "1";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "77.000 -358.500";
-      size = "18.000 23.000";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "59";
-   };
-   new t2dStaticSprite(systime1) {
-      imageMap = "yellowNumImageMap1";
-      frame = "1";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "94.000 -358.500";
-      size = "18.000 23.000";
-      Layer = "3";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "60";
+         mountID = "33";
    };
    new t2dStaticSprite() {
       imageMap = "qianjinImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "869.500 -639.761";
       size = "129.000 75.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "61";
+         mountID = "34";
    };
    new t2dStaticSprite(Bossxuetiao) {
       imageMap = "Boss_xuetiaoImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1048.500 -239.446";
       size = "867.000 184.000";
@@ -835,20 +455,20 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.090 0.190";
-         mountID = "62";
+         mountID = "35";
    };
    new t2dStaticSprite(Boss_blood) {
       imageMap = "Boss_BloodImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "1088.000 -222.446";
       size = "569.000 21.000";
       Layer = "3";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "63";
+         mountID = "36";
    };
    new t2dAnimatedSprite(Boss) {
       canSaveDynamicFields = "1";
@@ -860,13 +480,13 @@
       WorldLimitMax = "635.000 262.000";
       CollisionActiveReceive = "1";
       CollisionPolyList = "-0.535 -0.507 0.565 -0.492 0.658 0.251 0.496 0.743 -0.516 0.743";
-         mountID = "64";
+         mountID = "37";
    };
    new t2dStaticSprite(defeat) {
       imageMap = "DefeatImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -800.000";
       size = "745.000 602.000";
@@ -874,13 +494,13 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.000 0.300 0.000 -0.200";
-         mountID = "65";
+         mountID = "38";
    };
    new t2dStaticSprite(victory) {
       imageMap = "VictoryImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-1119.000 709.460";
       size = "638.000 626.000";
@@ -888,13 +508,13 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.000 -0.200 -0.000 0.300";
-         mountID = "68";
+         mountID = "41";
    };
    new t2dStaticSprite(defeat_back) {
       imageMap = "Defeat_BackMapImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -709.700";
       size = "261.000 74.000";
@@ -902,14 +522,14 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.000 0.300";
-         mountID = "67";
-         mountToID = "65";
+         mountID = "40";
+         mountToID = "38";
    };
    new t2dStaticSprite(defeat_re) {
       imageMap = "Defeat_ReImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 -860.200";
       size = "261.000 74.000";
@@ -917,42 +537,42 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.000 -0.200";
-         mountID = "66";
-         mountToID = "65";
+         mountID = "39";
+         mountToID = "38";
    };
    new t2dStaticSprite(victory_next) {
       imageMap = "Victory_NextImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-1119.000 646.860";
       size = "257.000 69.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "0.000 -0.200";
-         mountID = "70";
-         mountToID = "68";
+         mountID = "43";
+         mountToID = "41";
    };
    new t2dStaticSprite(victory_back) {
       imageMap = "victory_BackMapImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-1119.000 803.360";
       size = "257.000 69.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       MountOffset = "-0.000 0.300";
-         mountID = "69";
-         mountToID = "68";
+         mountID = "42";
+         mountToID = "41";
    };
    new t2dStaticSprite(XT_blood) {
       imageMap = "XB_BloodImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-412.344 -674.604";
       size = "59.958 9.207";
@@ -960,13 +580,13 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "-0.977 0.000";
-         mountID = "71";
+         mountID = "44";
    };
    new t2dStaticSprite(XG_bloodbar) {
       imageMap = "XB_xuetiaoImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-411.941 -675.016";
       size = "59.777 9.969";
@@ -974,7 +594,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "-0.977 0.000";
-         mountID = "72";
+         mountID = "45";
    };
    new t2dAnimatedSprite(Boss) {
       animationName = "Boss4_standAnimation";
@@ -987,7 +607,7 @@
       WorldLimitMax = "643.355 257.254";
       CollisionActiveReceive = "1";
       CollisionPolyList = "-0.746 -0.492 0.751 -0.492 0.751 0.753 -0.771 0.774";
-         mountID = "73";
+         mountID = "46";
    };
    new t2dAnimatedSprite(sendSkill2) {
       animationName = "Z_zhiliaoAnimation";
@@ -996,7 +616,7 @@
       size = "176.014 157.919";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "74";
+         mountID = "47";
    };
    new t2dAnimatedSprite(sendSkill2_1) {
       animationName = "B_dengchang2Animation";
@@ -1005,7 +625,7 @@
       size = "331.922 215.064";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "75";
+         mountID = "48";
    };
    new t2dAnimatedSprite(sendSkill4) {
       animationName = "Z_jineng6Animation";
@@ -1015,7 +635,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "76";
+         mountID = "49";
    };
    new t2dAnimatedSprite(sendskill3) {
       animationName = "Z_jineng7Animation";
@@ -1025,7 +645,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "77";
+         mountID = "50";
    };
    new t2dAnimatedSprite(XB_Skill1) {
       animationName = "B_BossSkill6Animation";
@@ -1035,7 +655,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "78";
+         mountID = "51";
    };
    new t2dAnimatedSprite(XB_Skill2) {
       animationName = "B_BossSkill3Animation";
@@ -1045,7 +665,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "79";
+         mountID = "52";
    };
    new t2dAnimatedSprite(XB_Skill3) {
       animationName = "B_BossSkill5Animation";
@@ -1055,7 +675,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "80";
+         mountID = "53";
    };
    new t2dAnimatedSprite() {
       animationName = "Boss1_attackAnimation";
@@ -1064,19 +684,7 @@
       size = "520.000 460.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "81";
-   };
-   new t2dStaticSprite() {
-      imageMap = "Z_SmallTXImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "-522.000 -292.000";
-      size = "96.000 96.000";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-         mountID = "82";
+         mountID = "54";
    };
    new t2dAnimatedSprite(Boss_Skill19) {
       animationName = "B_BossSkill25Animation";
@@ -1085,7 +693,7 @@
       size = "300.000 50.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "83";
+         mountID = "55";
    };
    new t2dAnimatedSprite(Boss_Skill18) {
       animationName = "B_BossSkill24Animation";
@@ -1094,7 +702,7 @@
       size = "300.000 50.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "84";
+         mountID = "56";
    };
    new t2dAnimatedSprite(Boss_Skill17) {
       animationName = "B_BossSkill23Animation";
@@ -1103,7 +711,7 @@
       size = "300.000 50.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "85";
+         mountID = "57";
    };
    new t2dAnimatedSprite(Boss_Skill16) {
       animationName = "B_BossSkill22Animation";
@@ -1112,7 +720,7 @@
       size = "300.000 120.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "86";
+         mountID = "58";
    };
    new t2dAnimatedSprite(Boss_Skill15) {
       animationName = "B_BossSkill21Animation";
@@ -1121,7 +729,7 @@
       size = "300.000 100.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "87";
+         mountID = "59";
    };
    new t2dAnimatedSprite(Boss_Skill14) {
       animationName = "B_BossSkill19Animation";
@@ -1130,7 +738,7 @@
       size = "300.000 100.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "88";
+         mountID = "60";
    };
    new t2dAnimatedSprite(Boss_Skill13) {
       animationName = "B_BossSkill20Animation";
@@ -1139,7 +747,7 @@
       size = "300.000 100.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "89";
+         mountID = "61";
    };
    new t2dAnimatedSprite(Boss_Skill12) {
       animationName = "B_BossSkill15Animation";
@@ -1149,7 +757,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "90";
+         mountID = "62";
    };
    new t2dAnimatedSprite(Boss_Skill11) {
       animationName = "B_BossSkill16Animation";
@@ -1159,7 +767,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "91";
+         mountID = "63";
    };
    new t2dAnimatedSprite(Boss_Skill10) {
       animationName = "B_BossSkill18Animation";
@@ -1169,7 +777,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "92";
+         mountID = "64";
    };
    new t2dAnimatedSprite(Boss_Skill9) {
       animationName = "B_BossSkill17Animation";
@@ -1179,7 +787,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "93";
+         mountID = "65";
    };
    new t2dAnimatedSprite(Boss_Skill8) {
       animationName = "B_BossSkill11Animation";
@@ -1188,7 +796,7 @@
       size = "400.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "94";
+         mountID = "66";
    };
    new t2dAnimatedSprite(Boss_Skill7) {
       animationName = "B_BossSkill10Animation";
@@ -1197,7 +805,7 @@
       size = "400.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "95";
+         mountID = "67";
    };
    new t2dAnimatedSprite(Boss_Skill6) {
       animationName = "B_BossSkill9Animation";
@@ -1206,7 +814,7 @@
       size = "400.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "96";
+         mountID = "68";
    };
    new t2dAnimatedSprite(Boss_Skill5) {
       animationName = "B_BossSkill8Animation";
@@ -1215,7 +823,7 @@
       size = "400.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "97";
+         mountID = "69";
    };
    new t2dAnimatedSprite(Boss_Skill4) {
       animationName = "B_BossSkill7Animation";
@@ -1224,7 +832,7 @@
       size = "400.000 80.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "98";
+         mountID = "70";
    };
    new t2dAnimatedSprite(Boss_Skill3) {
       animationName = "B_BossSkill14Animation";
@@ -1233,7 +841,7 @@
       size = "240.000 180.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "99";
+         mountID = "71";
    };
    new t2dAnimatedSprite(Boss_Skill2) {
       animationName = "B_BossSkill13Animation";
@@ -1242,7 +850,7 @@
       size = "240.000 180.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "100";
+         mountID = "72";
    };
    new t2dAnimatedSprite(Boss_Skill1) {
       animationName = "B_BossSkill12Animation";
@@ -1251,51 +859,51 @@
       size = "240.000 180.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "101";
+         mountID = "73";
    };
    new t2dStaticSprite(GC_huimu) {
       imageMap = "GC_HuimuImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "0.000 1500.000";
       size = "1320.000 800.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "102";
+         mountID = "74";
    };
    new t2dStaticSprite(GC_Talk2) {
       imageMap = "GC_TalkImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "210.000 1620.000";
       size = "617.000 243.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "-0.689 -0.569 0.767 -0.348 0.907 -0.393 0.902 -0.582 -0.642 -0.553";
-         mountID = "103";
+         mountID = "75";
    };
    new t2dStaticSprite(GC_Talk1) {
       imageMap = "GC_TalkImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-210.000 1330.000";
       size = "617.000 243.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "-0.552 -0.668 -0.977 -0.470";
-         mountID = "106";
+         mountID = "78";
    };
    new t2dStaticSprite() {
       imageMap = "GC_ZhujueImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-511.405 1272.895";
       size = "185.000 195.000";
@@ -1304,14 +912,14 @@
       MountOffset = "-0.977 -0.470";
       MountOwned = "0";
       MountInheritAttributes = "0";
-         mountID = "108";
-         mountToID = "106";
+         mountID = "80";
+         mountToID = "78";
    };
    new t2dStaticSprite() {
       imageMap = "GC_Boss4ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "488.267 1549.287";
       size = "225.000 203.000";
@@ -1320,14 +928,14 @@
       MountOffset = "0.902 -0.582";
       MountOwned = "0";
       MountInheritAttributes = "0";
-         mountID = "105";
-         mountToID = "103";
+         mountID = "77";
+         mountToID = "75";
    };
    new t2dStaticSprite() {
       imageMap = "GC_ZNameImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-380.292 1248.838";
       size = "79.000 23.000";
@@ -1336,14 +944,14 @@
       MountOffset = "-0.552 -0.668";
       MountOwned = "0";
       MountInheritAttributes = "0";
-         mountID = "107";
-         mountToID = "106";
+         mountID = "79";
+         mountToID = "78";
    };
    new t2dStaticSprite() {
       imageMap = "GC_B4nameImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "11.943 1552.811";
       size = "82.000 24.000";
@@ -1352,116 +960,116 @@
       MountOffset = "-0.642 -0.553";
       MountOwned = "0";
       MountInheritAttributes = "0";
-         mountID = "104";
-         mountToID = "103";
+         mountID = "76";
+         mountToID = "75";
    };
    new t2dStaticSprite(T1_1) {
       imageMap = "GC_4T1_1BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "124.000 1586.000";
       size = "304.000 25.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "109";
+         mountID = "81";
    };
    new t2dStaticSprite(T1_2) {
       imageMap = "GC_4T1_2ZImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-280.000 1281.500";
       size = "279.000 25.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "110";
+         mountID = "82";
    };
    new t2dStaticSprite(T1_3) {
       imageMap = "GC_4T1_3BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "325.500 1377.000";
       size = "279.000 24.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "111";
+         mountID = "83";
    };
    new t2dStaticSprite(T1_4) {
       imageMap = "GC_4T1_4BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "212.736 1349.850";
       size = "218.000 24.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "112";
+         mountID = "84";
    };
    new t2dStaticSprite(T1_5) {
       imageMap = "GC_4T1_5BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "178.500 1612.500";
       size = "410.000 25.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "113";
+         mountID = "85";
    };
    new t2dStaticSprite(T1_6) {
       imageMap = "GC_4T1_6BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-292.000 1281.717";
       size = "254.000 25.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "114";
+         mountID = "86";
    };
    new t2dStaticSprite(T2_1) {
       imageMap = "GC_4T2_1BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "111.000 1587.500";
       size = "274.000 27.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "115";
+         mountID = "87";
    };
    new t2dStaticSprite(T2_2) {
       imageMap = "GC_4T2_2BImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "90.000 1614.027";
       size = "230.000 24.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "116";
+         mountID = "88";
    };
    new t2dStaticSprite(T2_3) {
       imageMap = "GC_4T2_3ZImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "2.37249e-039 0 2.37249e-039 6.22914e-039";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
       Position = "-298.500 1283.000";
       size = "247.000 24.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "117";
+         mountID = "89";
    };
    new t2dAnimatedSprite(XB_Skill5) {
       animationName = "B_BossSkill27Animation";
@@ -1471,7 +1079,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "118";
+         mountID = "90";
    };
    new t2dAnimatedSprite(XB_Skill6) {
       animationName = "B_BossSkill28Animation";
@@ -1481,7 +1089,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "119";
+         mountID = "91";
    };
    new t2dAnimatedSprite(XB_Skill7) {
       animationName = "B_BossSkill29Animation";
@@ -1491,7 +1099,7 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "120";
+         mountID = "92";
    };
    new t2dAnimatedSprite(XB_Skill4) {
       animationName = "B_BossSkill26Animation";
@@ -1501,19 +1109,357 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
       CollisionActiveSend = "1";
-         mountID = "121";
+         mountID = "93";
    };
    new t2dStaticSprite() {
       imageMap = "game4bg2ImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "0 0 0 0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "553.074 -163.261";
-      size = "2383.853 993.478";
+      Position = "3.073 -33.061";
+      size = "1283.853 731.256";
       Layer = "7";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
-         mountID = "122";
+         mountID = "94";
+   };
+   new t2dStaticSprite(num_shanghai) {
+      imageMap = "HurtNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-109.358 456.568";
+      size = "29.284 36.604";
+      Layer = "3";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "95";
+   };
+   new t2dStaticSprite(systime2) {
+      imageMap = "timeNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "79.410 -358.969";
+      size = "18.000 23.000";
+      Layer = "3";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "96";
+   };
+   new t2dStaticSprite(systime1) {
+      imageMap = "timeNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "96.410 -358.969";
+      size = "18.000 23.000";
+      Layer = "3";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "97";
+   };
+   new t2dStaticSprite(systime3) {
+      imageMap = "timeNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "46.047 -358.969";
+      size = "18.000 23.000";
+      Layer = "3";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "98";
+   };
+   new t2dStaticSprite() {
+      imageMap = "timeNumImageMap";
+      frame = "10";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "63.422 -359.254";
+      size = "26.024 34.431";
+      Layer = "3";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "99";
+   };
+   new t2dStaticSprite(systime4) {
+      imageMap = "timeNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "29.000 -358.969";
+      size = "18.000 23.000";
+      Layer = "3";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "100";
+   };
+   new t2dStaticSprite(level) {
+      imageMap = "LevelImageMap1";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-390.000 -253.567";
+      size = "90.000 40.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "101";
+   };
+   new t2dStaticSprite() {
+      imageMap = "Z_SmallTXImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-522.518 -293.448";
+      size = "96.000 96.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "102";
+   };
+   new t2dStaticSprite() {
+      imageMap = "Z_LevelImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-438.500 -292.835";
+      size = "283.000 120.000";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "103";
+   };
+   new t2dStaticSprite(BloodMax_1) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-320.754 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "104";
+   };
+   new t2dStaticSprite(BloodMax_2) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-302.871 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "105";
+   };
+   new t2dStaticSprite(BloodMax_3) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-284.987 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "106";
+   };
+   new t2dStaticSprite() {
+      imageMap = "labelatlasImageMap";
+      frame = "1";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-338.638 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      LinkPoints = "0.000 -0.340";
+         mountID = "107";
+   };
+   new t2dStaticSprite(BloodNum_1) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-392.288 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "108";
+   };
+   new t2dStaticSprite(BloodNum_2) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-374.404 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "109";
+   };
+   new t2dStaticSprite(BloodNum_3) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-356.521 -319.247";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "110";
+   };
+   new t2dStaticSprite(levelMax_1) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-333.479 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "111";
+   };
+   new t2dStaticSprite(levelMax_2) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-315.595 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "112";
+   };
+   new t2dStaticSprite(levelMax_3) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-297.712 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "113";
+   };
+   new t2dStaticSprite(levelNum_3) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-369.246 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "114";
+   };
+   new t2dStaticSprite(levelNum_2) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-387.129 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "115";
+   };
+   new t2dStaticSprite(levelNum_1) {
+      imageMap = "labelatlasImageMap";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-405.013 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "116";
+   };
+   new t2dStaticSprite() {
+      imageMap = "labelatlasImageMap";
+      frame = "1";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-351.362 -282.993";
+      size = "15.423 21.507";
+      Layer = "4";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "117";
+   };
+   new t2dStaticSprite(Z_bloodnum) {
+      imageMap = "Z_BloodNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-346.000 -322.000";
+      size = "255.000 19.000";
+      Layer = "5";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "118";
+   };
+   new t2dStaticSprite(Z_levelnum) {
+      imageMap = "Z_LevelNumImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-346.000 -287.000";
+      size = "228.000 19.000";
+      Layer = "5";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "119";
+   };
+   new t2dStaticSprite() {
+      imageMap = "Z_xueguanImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37825e-039 0 2.37825e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "-350.000 -305.000";
+      size = "284.000 71.000";
+      Layer = "6";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      LinkPoints = "0.060 -0.380 -0.090 -0.380 -0.165 -0.380 -0.240 -0.380 0.135 -0.380 0.210 -0.380 0.285 -0.380 0.360 -0.380 -0.000 0.630 -0.075 0.630 -0.150 0.630 -0.015 -0.380 -0.225 0.630 0.075 0.630 0.150 0.630 0.225 0.630";
+         mountID = "120";
    };
 };

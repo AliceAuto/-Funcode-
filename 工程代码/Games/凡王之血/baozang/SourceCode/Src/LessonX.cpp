@@ -3301,10 +3301,10 @@ void SysTime(const float num)
     num3 = (int)num/60%10;
     num4 = (int)num/60/10;
 
-    dSetStaticSpriteFrame("systime1",num1+1);
-    dSetStaticSpriteFrame("systime2",num2+1);
-    dSetStaticSpriteFrame("systime3",num3+1);
-    dSetStaticSpriteFrame("systime4",num4+1);
+    dSetStaticSpriteFrame("systime1",num1);
+    dSetStaticSpriteFrame("systime2",num2);
+    dSetStaticSpriteFrame("systime3",num3);
+    dSetStaticSpriteFrame("systime4",num4);
 }
 
 // º”‘ÿBoss
