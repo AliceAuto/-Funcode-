@@ -9852,16 +9852,6 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dAnimationDatablock(Z_run2Animation) {
-      imageMap = "run2ImageMap1";
-      animationFrames = "5 4 3 2 1 0 11 10 9 8 7 6 17 16 15 14 13 12 23 22 21 20 19 18 29 28 27 26 25 24 35";
-      animationTime = "1.03333";
-      animationCycle = "1";
-      randomStart = "0";
-      startFrame = "0";
-      animationPingPong = "0";
-      animationReverse = "1";
-   };
    new t2dImageMapDatablock(Z_jumpAnimationImageMap) {
       imageName = "~/data/images/Z_jumpAnimation.png";
       imageMode = "CELL";
@@ -9887,6 +9877,56 @@ $managedDatablockSet = new SimSet() {
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12";
       animationTime = "0.433333";
       animationCycle = "0";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dImageMapDatablock(gj11ImageMap) {
+      imageName = "~/data/images/gj11.png";
+      imageMode = "FULL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "1";
+      preferPerf = "1";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "-1";
+      cellCountY = "-1";
+      cellWidth = "0";
+      cellHeight = "0";
+      preload = "1";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dImageMapDatablock(mv11ImageMap1) {
+      imageName = "~/data/images/mv11.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "6";
+      cellCountY = "4";
+      cellWidth = "341";
+      cellHeight = "341";
+      preload = "0";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dAnimationDatablock(mv11Animation) {
+      imageMap = "mv11ImageMap1";
+      animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20";
+      animationTime = "0.7";
+      animationCycle = "1";
       randomStart = "0";
       startFrame = "0";
       animationPingPong = "0";
