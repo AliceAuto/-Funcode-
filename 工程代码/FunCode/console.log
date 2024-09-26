@@ -1,7 +1,7 @@
-//-------------------------- 9/26/2024 -- 11:36:20 -----
+//-------------------------- 9/26/2024 -- 17:38:17 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.90 Ghz)
+   Intel Pentium III, ~2.93 Ghz
+     (timed at roughly 2.92 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -452,18 +452,13 @@ Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baoza
 Missing file: C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/persistent.cs!
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/brushes.cs.
 tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullContainToggle' attempting to call function 'setValue'
-Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game2.t2d.
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MainMenu.t2d.
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-<input> (0): Unable to find object: '' attempting to call function 'getFrameCount'
-<input> (0): Unable to find object: '' attempting to call function 'getFrameCount'
-Populating font cache with range 0x20 to 0xff (33 fonts found)
+Populating font cache with range 0x20 to 0xff (32 fonts found)
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
-   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 10 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
    o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
@@ -495,10 +490,9 @@ Populating font cache with range 0x20 to 0xff (33 fonts found)
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
 --------------------------------------------------------------------------
-   Writing font cache to disk (33 fonts found)
+   Writing font cache to disk (32 fonts found)
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
-      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 10 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
@@ -530,10 +524,9 @@ Populating font cache with range 0x20 to 0xff (33 fonts found)
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
 Set::getObject index out of range.
-Populating font cache with range 0x20 to 0xff (33 fonts found)
+Populating font cache with range 0x20 to 0xff (32 fonts found)
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
-   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 10 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
    o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
@@ -565,10 +558,680 @@ Populating font cache with range 0x20 to 0xff (33 fonts found)
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
    o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
 --------------------------------------------------------------------------
-   Writing font cache to disk (33 fonts found)
+   Writing font cache to disk (32 fonts found)
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
-      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 10 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2875" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2870" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2868" does not exist in set
+Executing C:/Users/27427/AppData/Roaming/FunCode/FunCode/levelEditor/clipboard.cs.
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2875" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2875" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "2867" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "17" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (611): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (88): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (89): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (90): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (91): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (92): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'getValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (328): Unable to find object: 'ImageEditorCheckBoxFilterPad' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (329): Unable to find object: 'ImageEditorCheckBoxPreferPerf' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (330): Unable to find object: 'ImageEditorCheckBoxPreload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (331): Unable to find object: 'ImageEditorCheckBoxAllowUnload' attempting to call function 'setValue'
+tools/imageEditor/scripts/editorSettings.ed.cs (332): Unable to find object: 'ImageEditorCheckBoxForce16Bit' attempting to call function 'setValue'
+Set::remove: Object "30" does not exist in set
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+tools/animationEditor/utility/objectReference.ed.cs (23): Unable to find object: '' attempting to call function 'getId'
+Populating font cache with range 0x20 to 0xff (32 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (32 fonts found)
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+Populating font cache with range 0x20 to 0xff (32 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (32 fonts found)
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+Populating font cache with range 0x20 to 0xff (32 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (32 fonts found)
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+Populating font cache with range 0x20 to 0xff (32 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (32 fonts found)
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+Populating font cache with range 0x20 to 0xff (32 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (32 fonts found)
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
+RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/"
+Set::getObject index out of range.
+Populating font cache with range 0x20 to 0xff (32 fonts found)
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial Bold 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 24 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 22 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 18 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 15 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/VBProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/PythonProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Eclipse/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/CSProject/Bin/common/data/fonts/Arial 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Lucida Console 12 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial Bold 20 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 14 (ansi).uft'
+   o Populating font 'C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/gameData/TemplateGame/Bin/common/data/fonts/Arial 12 (ansi).uft'
+--------------------------------------------------------------------------
+   Writing font cache to disk (32 fonts found)
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial Bold 20 (ansi).uft' to disk...
+      o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 12 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Lucida Console 12 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/Desktop/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/data/fonts/Arial 14 (ansi).uft' to disk...
       o Writing 'C:/Users/27427/AppData/Roaming/FunCode/FunCode/fonts/Lucida Console 12 (ansi).uft' to disk...

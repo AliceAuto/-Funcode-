@@ -9262,16 +9262,6 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dAnimationDatablock(Z_run2Animation) {
-      imageMap = "Z_run2ImageMap1";
-      animationFrames = "0 1 2 3 4 5";
-      animationTime = "1.2";
-      animationCycle = "1";
-      randomStart = "0";
-      startFrame = "0";
-      animationPingPong = "0";
-      animationReverse = "0";
-   };
    new t2dImageMapDatablock(scene_1ImageMap11) {
       imageName = "~/data/images/scene_1.png";
       imageMode = "CELL";
@@ -9861,5 +9851,35 @@ $managedDatablockSet = new SimSet() {
       preload = "1";
       allowUnload = "0";
       force16Bit = "0";
+   };
+   new t2dImageMapDatablock(run2ImageMap1) {
+      imageName = "~/data/images/run2.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "6";
+      cellCountY = "6";
+      cellWidth = "160";
+      cellHeight = "160";
+      preload = "0";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dAnimationDatablock(Z_run2Animation) {
+      imageMap = "run2ImageMap1";
+      animationFrames = "5 4 3 2 1 0 11 10 9 8 7 6 17 16 15 14 13 12 23 22 21 20 19 18 29 28 27 26 25 24 35";
+      animationTime = "1.03333";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "1";
    };
 };
