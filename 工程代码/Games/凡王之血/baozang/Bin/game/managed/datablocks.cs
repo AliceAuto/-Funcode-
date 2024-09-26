@@ -1622,26 +1622,6 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(Defeat_ReImageMap) {
-      imageName = "~/data/images/Defeat_Re.png";
-      imageMode = "FULL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "1";
-      preferPerf = "1";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "-1";
-      cellCountY = "-1";
-      cellWidth = "0";
-      cellHeight = "0";
-      preload = "1";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
    new t2dImageMapDatablock(game1Bg1ImageMap) {
       imageName = "~/data/images/game1Bg1.png";
       imageMode = "FULL";
@@ -9859,6 +9839,26 @@ $managedDatablockSet = new SimSet() {
       cellWidth = "204";
       cellHeight = "301";
       preload = "0";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dImageMapDatablock(Defeat_ReImageMap) {
+      imageName = "~/data/images/Defeat_Re.png";
+      imageMode = "FULL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "1";
+      preferPerf = "1";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "-1";
+      cellCountY = "-1";
+      cellWidth = "0";
+      cellHeight = "0";
+      preload = "1";
       allowUnload = "0";
       force16Bit = "0";
    };
