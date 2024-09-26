@@ -9242,26 +9242,6 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(Z_run2ImageMap1) {
-      imageName = "~/data/images/Z_run2.png";
-      imageMode = "CELL";
-      frameCount = "-1";
-      filterMode = "SMOOTH";
-      filterPad = "0";
-      preferPerf = "0";
-      cellRowOrder = "1";
-      cellOffsetX = "0";
-      cellOffsetY = "0";
-      cellStrideX = "0";
-      cellStrideY = "0";
-      cellCountX = "6";
-      cellCountY = "1";
-      cellWidth = "280";
-      cellHeight = "270";
-      preload = "0";
-      allowUnload = "0";
-      force16Bit = "0";
-   };
    new t2dImageMapDatablock(scene_1ImageMap11) {
       imageName = "~/data/images/scene_1.png";
       imageMode = "CELL";
@@ -9852,7 +9832,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dImageMapDatablock(run2ImageMap1) {
+   new t2dImageMapDatablock(run2ImageMap) {
       imageName = "~/data/images/run2.png";
       imageMode = "CELL";
       frameCount = "-1";
@@ -9881,5 +9861,35 @@ $managedDatablockSet = new SimSet() {
       startFrame = "0";
       animationPingPong = "0";
       animationReverse = "1";
+   };
+   new t2dImageMapDatablock(Z_jumpAnimationImageMap) {
+      imageName = "~/data/images/Z_jumpAnimation.png";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "4";
+      cellCountY = "4";
+      cellWidth = "480";
+      cellHeight = "480";
+      preload = "0";
+      allowUnload = "0";
+      force16Bit = "0";
+   };
+   new t2dAnimationDatablock(Z_jumpAnimationAnimation) {
+      imageMap = "Z_jumpAnimationImageMap";
+      animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12";
+      animationTime = "0.433333";
+      animationCycle = "0";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
    };
 };
