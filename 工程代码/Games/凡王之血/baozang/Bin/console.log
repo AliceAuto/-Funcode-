@@ -1,7 +1,7 @@
-//-------------------------- 9/26/2024 -- 10:58:09 -----
+//-------------------------- 9/26/2024 -- 11:39:51 -----
 Processor Init:
    Intel Pentium III, ~3.10 Ghz
-     (timed at roughly 3.10 Ghz)
+     (timed at roughly 3.09 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -108,26 +108,17 @@ Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/common/gameScripts/align.cs.
 
 FunCode (v1.7.5) initialized...
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/datablocks.cs...
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/datablocks.cs.
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/persistent.cs.
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/brushes.cs...
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/managed/brushes.cs.
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/gui/mainScreen.gui.
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/gameScripts/game.cs.
 Activating DirectInput...
 DirectInput joystick failed to enable!
-Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
-Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game2.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game2.t2d.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/wellcome.t2d...
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/wellcome.t2d.
@@ -165,56 +156,34 @@ Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dSceneGraph::addToScene() - Object '2181' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2182' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2183' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2184' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2185' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2186' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2187' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2188' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2189' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2190' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2191' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2192' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2193' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2230' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2231' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2232' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2233' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2234' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2235' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2236' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2237' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2238' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2239' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2240' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2241' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2242' is already in a SceneGraph!.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dSceneGraph::addToScene() - Object '2194' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2243' is already in a SceneGraph!.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dSceneGraph::addToScene() - Object '2195' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2244' is already in a SceneGraph!.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dSceneGraph::addToScene() - Object '2196' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2197' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2198' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2199' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2200' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2201' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2202' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2203' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2204' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2205' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2206' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2207' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2208' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2209' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2210' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2211' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2212' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2213' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2214' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2215' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2216' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2217' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2218' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2219' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2220' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2221' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2222' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2223' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2224' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2225' is already in a SceneGraph!.
-t2dSceneGraph::addToScene() - Object '2226' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2245' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '2246' is already in a SceneGraph!.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dSceneGraph::addToScene() - Object '2247' is already in a SceneGraph!.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dSceneGraph::addToScene() - Object '2248' is already in a SceneGraph!.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dSceneGraph::addToScene() - Object '2249' is already in a SceneGraph!.
 Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
 Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
@@ -241,18 +210,65 @@ t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatab
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game2.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game2.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game3.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/Game3.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/凡王之血/baozang/Bin/game/data/levels/MapMenu.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
