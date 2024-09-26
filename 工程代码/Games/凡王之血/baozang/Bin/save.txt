@@ -1,8 +1,8 @@
-g_Whichgame:3
-Z_gongji:58
-Z_fangyv:58
-Z_shengming:500
-Z_jingyan:129
-Z_levelmax:270
+g_Whichgame:4
+Z_gongji:82
+Z_fangyv:82
+Z_shengming:700
+Z_jingyan:33
+Z_levelmax:390
 Z_speed:400
-Z_level:5
+Z_level:7
