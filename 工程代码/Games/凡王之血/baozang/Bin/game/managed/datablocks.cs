@@ -3042,7 +3042,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dAnimationDatablock(Boss2_attackAnimation) {
+   new t2dAnimationDatablock(Boss2_attackAnimation999) {
       imageMap = "Boss2_attackImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34";
       animationTime = "0.583333";
@@ -3052,7 +3052,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss2_standAnimation) {
+   new t2dAnimationDatablock(Boss2_standAnimation999) {
       imageMap = "Boss2_standImageMap11";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24";
       animationTime = "1.66667";
@@ -3062,7 +3062,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss3_attackAnimation) {
+   new t2dAnimationDatablock(Boss3_attackAnimation999) {
       imageMap = "Boss3_attackImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17";
       animationTime = "0.9";
@@ -3072,7 +3072,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss3_standAnimation) {
+   new t2dAnimationDatablock(Boss3_standAnimation999) {
       imageMap = "Boss3_standImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21";
       animationTime = "1.46667";
@@ -3092,7 +3092,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss4_attackAnimation) {
+   new t2dAnimationDatablock(Boss4_attackAnimation999) {
       imageMap = "Boss4_attackImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27";
       animationTime = "1.4";
@@ -3102,7 +3102,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss4_attack2Animation) {
+   new t2dAnimationDatablock(Boss4_attack2Animation999) {
       imageMap = "Boss4_attack2ImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23";
       animationTime = "0.685714";
@@ -3112,7 +3112,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss4_standAnimation) {
+   new t2dAnimationDatablock(Boss4_standAnimation999) {
       imageMap = "Boss4_standImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25";
       animationTime = "1.3";
@@ -3122,7 +3122,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss5_attackAnimation) {
+   new t2dAnimationDatablock(Boss5_attackAnimation999) {
       imageMap = "Boss5_attackImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23";
       animationTime = "1.2";
@@ -3132,7 +3132,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss5_standAnimation) {
+   new t2dAnimationDatablock(Boss5_standAnimation999) {
       imageMap = "Boss5_standImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24";
       animationTime = "1.25";
@@ -3142,7 +3142,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss7_attack2Animation) {
+   new t2dAnimationDatablock(Boss7_attack2Animation999) {
       imageMap = "Boss7_attack2ImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12";
       animationTime = "0.866667";
@@ -3152,7 +3152,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss7_standAnimation) {
+   new t2dAnimationDatablock(Boss7_standAnimation999) {
       imageMap = "Boss7_standImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20";
       animationTime = "1.4";
@@ -3162,7 +3162,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss8_standAnimation) {
+   new t2dAnimationDatablock(Boss8_standAnimation999) {
       imageMap = "Boss8_standImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75";
       animationTime = "3.79975";
@@ -3172,7 +3172,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss8_attack2Animation) {
+   new t2dAnimationDatablock(Boss8_attack2Animation999) {
       imageMap = "Boss8_attack2ImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33";
       animationTime = "0.68";
@@ -5492,7 +5492,7 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
-   new t2dAnimationDatablock(Boss6_attackAnimation) {
+   new t2dAnimationDatablock(Boss6_attackAnimation999) {
       imageMap = "Boss6_attackImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17";
       animationTime = "0.9";
@@ -5512,7 +5512,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(Boss6_standAnimation) {
+   new t2dAnimationDatablock(Boss6_standAnimation999) {
       imageMap = "Boss6_standImageMap1";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21";
       animationTime = "1.1";
@@ -10245,7 +10245,7 @@ $managedDatablockSet = new SimSet() {
    new t2dAnimationDatablock(Boss1_attackAnimation) {
       imageMap = "gj111ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29";
-      animationTime = "1";
+      animationTime = "0.5";
       animationCycle = "0";
       randomStart = "0";
       startFrame = "0";
@@ -10262,7 +10262,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(gj222Animation) {
+   new t2dAnimationDatablock(Boss2_attackAnimation) {
       imageMap = "gj222ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18";
       animationTime = "0.633333";
@@ -10272,7 +10272,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(mv222Animation) {
+   new t2dAnimationDatablock(Boss2_standAnimation) {
       imageMap = "mv222ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36";
       animationTime = "1.23331";
@@ -10282,7 +10282,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(gj333Animation) {
+   new t2dAnimationDatablock(Boss3_attackAnimation) {
       imageMap = "gj333ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43";
       animationTime = "1.46662";
@@ -10292,7 +10292,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(mv333Animation) {
+   new t2dAnimationDatablock(Boss3_standAnimation) {
       imageMap = "mv333ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44";
       animationTime = "1.49995";
@@ -10302,7 +10302,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(gj444Animation) {
+   new t2dAnimationDatablock(Boss4_attack2Animation) {
       imageMap = "gj444ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27";
       animationTime = "0.933333";
@@ -10312,7 +10312,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(mv444Animation) {
+   new t2dAnimationDatablock(Boss4_standAnimation) {
       imageMap = "mv444ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27";
       animationTime = "0.933333";
@@ -10322,7 +10322,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(gj555Animation) {
+   new t2dAnimationDatablock(Boss5_attackAnimation) {
       imageMap = "gj555ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20";
       animationTime = "0.7";
@@ -10332,7 +10332,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(mv555Animation) {
+   new t2dAnimationDatablock(Boss5_standAnimation) {
       imageMap = "mv555ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26";
       animationTime = "0.9";
@@ -10342,7 +10342,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(gj666Animation) {
+   new t2dAnimationDatablock(Boss6_attackAnimation) {
       imageMap = "gj666ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35";
       animationTime = "1.19998";
@@ -10352,7 +10352,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(mv777Animation) {
+   new t2dAnimationDatablock(Boss7_standAnimation) {
       imageMap = "mv777ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18";
       animationTime = "0.633333";
@@ -10362,7 +10362,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(gj888Animation) {
+   new t2dAnimationDatablock(Boss8_attack2Animation) {
       imageMap = "gj888ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21";
       animationTime = "0.733333";
@@ -10372,7 +10372,7 @@ $managedDatablockSet = new SimSet() {
       animationPingPong = "0";
       animationReverse = "0";
    };
-   new t2dAnimationDatablock(mv888Animation) {
+   new t2dAnimationDatablock(Boss8_standAnimation) {
       imageMap = "mv888ImageMap";
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29";
       animationTime = "1";
@@ -10397,6 +10397,26 @@ $managedDatablockSet = new SimSet() {
       animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13";
       animationTime = "0.466667";
       animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(Boss6_standAnimation) {
+      imageMap = "mv666ImageMap";
+      animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26";
+      animationTime = "0.9";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+   };
+   new t2dAnimationDatablock(Boss7_attack2Animation) {
+      imageMap = "gj777ImageMap";
+      animationFrames = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23";
+      animationTime = "0.8";
+      animationCycle = "0";
       randomStart = "0";
       startFrame = "0";
       animationPingPong = "0";
