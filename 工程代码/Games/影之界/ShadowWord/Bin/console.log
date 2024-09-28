@@ -1,0 +1,206 @@
+//-------------------------- 9/28/2024 -- 23:33:50 -----
+Processor Init:
+   Intel Pentium III, ~2.93 Ghz
+     (timed at roughly 2.93 Ghz)
+   FPU detected
+   MMX detected
+   SSE detected
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+   Installing FPU extensions
+   Installing MMX extensions
+   Installing SSE extensions
+ 
+Input Init:
+   DirectInput enabled.
+
+Initializing chunk mappings...
+   o 'TEXT' maps to TextChunk
+   o 'SCHK' maps to UnknownChunk
+   o 'SCHK' maps to SimChunk
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/main.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/main.cs.
+ % - Initializing Common
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/preferences/defaultPrefs.cs.
+Reading Display Device information...
+   Primary Display Device Found:
+      Vendor Id: VEN_0000
+      Device Id: DEV_0000
+
+Using OpenGL rendering. Fullscreen: 0
+
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/xml.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/properties.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/common.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/audio.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/canvas.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/cursor.cs.
+Video Init:
+   Accelerated OpenGL display device detected.
+   Accelerated D3D device not detected.
+   Voodoo 2 display device not detected.
+
+Activating the OpenGL display device...
+Activating the OpenGL display device...
+Setting screen mode to 320x320x32 (w)...
+Creating a new window...
+Acquiring a new device context...
+Pixel format set:
+  32 color bits, 24 depth bits, 8 stencil bits
+Creating a new rendering context...
+Making the new rendering context current...
+OpenGL driver information:
+  Vendor: Intel
+  Renderer: Intel(R) Iris(R) Xe Graphics
+  Version: 4.6.0 - Build 31.0.101.4146
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 8)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_compiled_vertex_array
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  3DFX_texture_compression_FXT1
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16)
+  WGL_EXT_swap_control
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  NV_vertex_array_range
+
+Max Texture Size reported as: 16384
+OpenGLDevice::setScreenMode -- can't switch to resolution larger than desktop in windowed mode!
+Setting screen mode to 1600x1152x32 (w)...
+OpenAL Driver Init:
+   Vendor: Creative Labs Inc.
+   Version: OpenAL 1.0
+   Renderer: Software
+   Extensions: EAX 2.0, EAX 3.0, EAX Unified, and EAX-AC3
+
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/profiles.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/cursors.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOk.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxYesNo.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxYesNoCancel.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOKCancel.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOKCancelDetailsDlg.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messagePopup.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/options.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/remap.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/console.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/NetworkMenu.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/startServer.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/joinServer.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/waitingForServer.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/helpDlg.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBox.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/help.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/chatGui.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/screenshot.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/metrics.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/Gui/FrameOverlayGui.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/scriptDoc.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/keybindings.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/options.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/levelManagement.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/projectManagement.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/projectResources.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/align.cs.
+
+FunCode (v1.7.5) initialized...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/datablocks.cs.
+ImageMap(Game1xiaoguoImageMap)SrcBitmap(game/data/images/Game1xiaoguo.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Z_standImageMap1)SrcBitmap(game/data/images/Z_stand.png) Error: 'Invalid Bitmap File!' (2)
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Z_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object _standAnimation of class t2dAnimationDatablock.
+ImageMap(Boss1_attackImageMap1)SrcBitmap(game/data/images/Boss1_attack.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss1_standImageMap1)SrcBitmap(game/data/images/Boss1_stand.png) Error: 'Invalid Bitmap File!' (2)
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss1_attackImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss1_attackAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss1_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss1_standAnimation999 of class t2dAnimationDatablock.
+ImageMap(Boss2_attackImageMap1)SrcBitmap(game/data/images/Boss2_attack.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss2_standImageMap11)SrcBitmap(game/data/images/Boss2_stand.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss3_attackImageMap1)SrcBitmap(game/data/images/Boss3_attack.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss3_standImageMap1)SrcBitmap(game/data/images/Boss3_stand.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss4_attackImageMap1)SrcBitmap(game/data/images/Boss4_attack.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss4_attack2ImageMap1)SrcBitmap(game/data/images/Boss4_attack2.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss4_standImageMap1)SrcBitmap(game/data/images/Boss4_stand.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss5_attackImageMap1)SrcBitmap(game/data/images/Boss5_attack.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss7_attack2ImageMap1)SrcBitmap(game/data/images/Boss7_attack2.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss3_attack2ImageMap1)SrcBitmap(game/data/images/Boss3_attack2.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss5_standImageMap1)SrcBitmap(game/data/images/Boss5_stand.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss7_standImageMap1)SrcBitmap(game/data/images/Boss7_stand.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss8_attack2ImageMap1)SrcBitmap(game/data/images/Boss8_attack2.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss8_standImageMap1)SrcBitmap(game/data/images/Boss8_stand.png) Error: 'Invalid Bitmap File!' (2)
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss2_attackImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss2_attackAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss2_standImageMap11)
+game/managed/datablocks.cs (0): Register object failed for object Boss2_standAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss3_attackImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss3_attackAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss3_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss3_standAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss3_attack2ImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss3_attack2Animation of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss4_attackImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss4_attackAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss4_attack2ImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss4_attack2Animation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss4_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss4_standAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss5_attackImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss5_attackAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss5_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss5_standAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss7_attack2ImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss7_attack2Animation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss7_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss7_standAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss8_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss8_standAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss8_attack2ImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss8_attack2Animation999 of class t2dAnimationDatablock.
+ImageMap(Boss6_attackImageMap1)SrcBitmap(game/data/images/Boss6_attack.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss6_attack2ImageMap1)SrcBitmap(game/data/images/Boss6_attack2.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(Boss6_standImageMap1)SrcBitmap(game/data/images/Boss6_stand.png) Error: 'Invalid Bitmap File!' (2)
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss6_attackImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss6_attackAnimation999 of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss6_attack2ImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss6_attack2Animation of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Boss6_standImageMap1)
+game/managed/datablocks.cs (0): Register object failed for object Boss6_standAnimation999 of class t2dAnimationDatablock.
+ImageMap(erjinengImageMap11)SrcBitmap(game/data/images/erjineng.png) Error: 'Invalid Bitmap File!' (2)
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (erjinengImageMap11)
+game/managed/datablocks.cs (0): Register object failed for object Z_pugongAnimation5 of class t2dAnimationDatablock.
+ImageMap(gj999ImageMap)SrcBitmap(game/data/images/gj999.png) Error: 'Invalid Bitmap File!' (2)
+ImageMap(mv999ImageMap)SrcBitmap(game/data/images/mv999.png) Error: 'Invalid Bitmap File!' (2)
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (gj999ImageMap)
+game/managed/datablocks.cs (0): Register object failed for object gj999Animation of class t2dAnimationDatablock.
+t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (mv999ImageMap)
+game/managed/datablocks.cs (0): Register object failed for object mv999Animation of class t2dAnimationDatablock.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/persistent.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/brushes.cs.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gui/mainScreen.gui.
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gameScripts/game.cs.
+Activating DirectInput...
+DirectInput joystick failed to enable!
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d.
+Setting screen mode to 1280x768x32 (w)...
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
+DirectInput deactivated.
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
