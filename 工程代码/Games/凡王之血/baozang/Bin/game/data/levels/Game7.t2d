@@ -838,6 +838,7 @@
          mountID = "71";
    };
    new t2dStaticSprite(GC_huimu) {
+      imageMap = "GC_HuimuImageMap";
       frame = "0";
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
@@ -912,7 +913,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-339.292 1254.318";
+      Position = "-339.262 1254.306";
       size = "79.000 23.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -928,7 +929,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "42.992 1545.530";
+      Position = "43.102 1545.521";
       size = "58.000 22.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -1205,7 +1206,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-514.040 -296.372";
+      Position = "-514.061 -296.375";
       size = "96.000 96.000";
       Layer = "3";
       WorldLimitMin = "-50.000 -37.500";

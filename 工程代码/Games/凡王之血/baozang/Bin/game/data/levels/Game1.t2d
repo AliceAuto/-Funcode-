@@ -769,11 +769,12 @@
          mountID = "66";
    };
    new t2dStaticSprite(GC_huimu) {
+      imageMap = "GC_HuimuImageMap";
       frame = "0";
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-39.000 1467.000";
+      Position = "-40.000 1465.000";
       size = "1320.000 800.000";
       SortPoint = "-0.124 0.103";
       WorldLimitMin = "-50.000 -37.500";
@@ -844,7 +845,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-382.797 1253.618";
+      Position = "-382.697 1253.614";
       size = "79.000 23.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -860,7 +861,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "27.320 1544.549";
+      Position = "27.431 1544.586";
       size = "59.000 23.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -876,7 +877,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "192.500 1658.773";
+      Position = "147.500 1613.774";
       size = "365.000 57.547";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -888,7 +889,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "208.033 1552.215";
+      Position = "188.033 1604.964";
       size = "346.066 60.072";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -900,7 +901,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "158.250 1636.876";
+      Position = "180.467 1608.067";
       size = "156.500 29.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -912,7 +913,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-399.000 1282.750";
+      Position = "-286.000 1315.235";
       size = "78.000 24.500";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -924,7 +925,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-396.500 1314.099";
+      Position = "-273.500 1315.901";
       size = "93.000 21.803";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -936,7 +937,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-298.602 1359.856";
+      Position = "-264.602 1328.625";
       size = "300.796 52.751";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -948,8 +949,9 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "161.656 1605.660";
+      Position = "202.478 1622.025";
       size = "340.460 58.679";
+      SortPoint = "-0.996 -0.012";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
          mountID = "80";
@@ -1125,7 +1127,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "-510.220 -295.189";
+      Position = "-510.241 -295.175";
       size = "96.000 96.000";
       Layer = "3";
       WorldLimitMin = "-50.000 -37.500";

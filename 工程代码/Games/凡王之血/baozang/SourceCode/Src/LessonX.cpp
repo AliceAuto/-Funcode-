@@ -3781,12 +3781,12 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",-200.0,-180.0);//位置-200；-180
+                        dSetSpritePosition("T1_1",-180.0,-170.0);//位置-200；-180
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",160.0,110.0);//位置160；110
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走2
+                        dSetSpritePosition("T1_2",240,120.0);//位置160；110
                         GC_F[3]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -3797,30 +3797,30 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",127.0,102.0);//位置127；102
+                        dSetSpritePosition("T2_1",240,120.0);//位置127；102
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T2_2",-360.0,-215.0);//位置-360；-215
+                    {dSetSpritePosition("T2_1",0.0,1460.0);//移走2
+                        dSetSpritePosition("T2_2",-180.0,-170.0);//位置-360；-215
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_3",-317.0,-215.0);//位置-317；-215
+                        dSetSpritePosition("T2_3",-180.0,-170.0);//位置-317；-215
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T2_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_4",-273.0,-200.0);//位置-273；-200
+                        dSetSpritePosition("T2_4",-180.0,-170.0);//位置-273；-200
                         GC_F[5]=1;
                     }
                     if(g_GCTime >= 6 && GC_F[6]==0)//6秒后
                     {
-                        dSetSpritePosition("T2_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T2_5",48.0,86.0);//位置48；86
+                        dSetSpritePosition("T2_4",0.0,1460.0);//移走1
+                        dSetSpritePosition("T2_5",240,120.0);//位置48；86
                         GC_F[6]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -3837,36 +3837,37 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",-270.0,-215.0);//位置-270；-215
+                        dSetSpritePosition("T1_1",-180.0,-170.0);//位置-270；-215
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
                     {
                         dSetSpritePosition("T1_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T1_2",-315.0,-215.0);//位置-315；-215
+                        dSetSpritePosition("T1_2",-180.0,-170.0);//位置-315；-215
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T1_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T1_3",-277.0,-215.0);//位置-277；-215
+                        dSetSpritePosition("T1_3",-180.0,-170.0);//位置-277；-215
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
-                        dSetSpritePosition("T1_4",124.0,86.0);//位置124；86
+						dSetSpritePosition("T1_3",0.0,1460.0);
+                        dSetSpritePosition("T1_4",240,120.0);//位置124；86
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
                     {
                         dSetSpritePosition("T1_4",0.0,1460.0);//移走4
-                        dSetSpritePosition("T1_5",160.0,86.0);//位置160；86
+                        dSetSpritePosition("T1_5",240,120.0);//位置160；86
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7&&GC_F[7]==0)//7秒后
                     {
                         dSetSpritePosition("T1_5",0.0,1460.0);//移走5
-                        dSetSpritePosition("T1_6",50.0,86.0);//位置50；86
+                        dSetSpritePosition("T1_6",240,120.0);//位置50；86
                         GC_F[7]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -3877,48 +3878,49 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",-265.0,-215);//位置-265；-215
+                        dSetSpritePosition("T2_1",-180.0,-170.0);//位置-265；-215
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
                     {
-                        dSetSpritePosition("T2_2",47.0,86.0); //位置47.0,86.0
+						dSetSpritePosition("T2_1",0.0,1460.0);
+                        dSetSpritePosition("T2_2",240,120.0); //位置47.0,86.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_3",141.0,86.0);//位置141.0,86.0
+                        dSetSpritePosition("T2_3",240,120.0);//位置141.0,86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T2_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_4",85.0,86.0);//位置85.0,86.0
+                        dSetSpritePosition("T2_4",240,120.0);//位置85.0,86.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime >= 6 && GC_F[6]==0)//6秒后
                     {
                         dSetSpritePosition("T2_4",0.0,1460.0);//移走4
-                        dSetSpritePosition("T2_5",98.0,86.0);//位置98.0,86.0
+                        dSetSpritePosition("T2_5",240,120.0);//位置98.0,86.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime >= 7 &&GC_F[7]==0)//4秒后
                     {
-                        dSetSpritePosition("T2_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T2_6",-249.0,-215.0);//6位置-249.0,-215.0
+                        dSetSpritePosition("T2_5",0.0,1460.0);//移走1
+                        dSetSpritePosition("T2_6",-180.0,-170.0);//6位置-249.0,-215.0
                         GC_F[7]=1;
                     }
                     if(g_GCTime >= 8 &&GC_F[8]==0)//5秒后
                     {
                         dSetSpritePosition("T2_6",0.0,1460.0);//移走6
-                        dSetSpritePosition("T2_7",-267.0,-215.0);//位置-267.0,-215.0
+                        dSetSpritePosition("T2_7",-180.0,-170.0);//位置-267.0,-215.0
                         GC_F[8]=1;
                     }
                     if(g_GCTime >= 9 && GC_F[9]==0)//6秒后
                     {
                         dSetSpritePosition("T2_7",0.0,1460.0);//移走7
-                        dSetSpritePosition("T2_8",-333.0,-215.0);//位置-333.0,-215.0
+                        dSetSpritePosition("T2_8",-180.0,-170.0);//位置-333.0,-215.0
                         GC_F[9]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -3935,42 +3937,42 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",61.0,86.0);//位置61.0,86.0
+                        dSetSpritePosition("T1_1",240,120.0);//位置61.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",74.0,115.0);//位置74.0,115.0
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",240,120.0);//位置74.0,115.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
-                    {
-                        dSetSpritePosition("T1_3",50.0,144.0);//位置50.0，144.0
+                    {dSetSpritePosition("T1_2",0.0,1460.0);//移走2
+                        dSetSpritePosition("T1_3",240,120.0);//位置50.0，144.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
-                        dSetSpritePosition("T1_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T1_2",0.0,1460.0);//移走2
+                        
+                        
                         dSetSpritePosition("T1_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T1_4",99.0,86.0);//位置99.0，86.0
+                        dSetSpritePosition("T1_4",240,120.0);//位置99.0，86.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
-                    {
-                        dSetSpritePosition("T1_5",-206.0,-215.0);//位置-206.0，-215.0
+                    {dSetSpritePosition("T1_4",0.0,1460.0);//移走4
+                        dSetSpritePosition("T1_5",-180.0,-170.0);//位置-206.0，-215.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7&&GC_F[7]==0)//7秒后
                     {
-                        dSetSpritePosition("T1_4",0.0,1460.0);//移走4
-                        dSetSpritePosition("T1_6",127.0,86.0);//位置127.0，86.0
+                        dSetSpritePosition("T1_5",0.0,1460.0);
+                        dSetSpritePosition("T1_6",240,120.0);//位置127.0，86.0
                         GC_F[7]=1;
                     }
                     if(g_GCTime>=8&&GC_F[8]==0)//8秒后
                     {
                         dSetSpritePosition("T1_6",0.0,1460.0);//移走6
-                        dSetSpritePosition("T1_7",75.0,86.0);//位置75.0，86.0
+                        dSetSpritePosition("T1_7",240,120.0);//位置75.0，86.0
                         GC_F[8]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -3981,35 +3983,35 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",25.0,86.0);//位置25.0,86.0
+                        dSetSpritePosition("T2_1",240,120.0);//位置25.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
                     {
                         dSetSpritePosition("T2_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T2_2",51.0,86.0); //位置51.0,86.0
+                        dSetSpritePosition("T2_2",240,120.0); //位置51.0,86.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_3",63.0,86.0);//位置63.0,86.0
+                        dSetSpritePosition("T2_3",240,120.0);//位置63.0,86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
-                    {
-                        dSetSpritePosition("T2_4",3.50,115.0);//位置3.50,115.0
+                    {dSetSpritePosition("T2_3",0.0,1460.0);
+                        dSetSpritePosition("T2_4",240,120.0);//位置3.50,115.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime >= 6 && GC_F[6]==0)//6秒后
-                    {
-                        dSetSpritePosition("T2_5",-370.0,-215.0);//位置-370.0,-215.0
+                    {dSetSpritePosition("T2_4",0.0,1460.0);
+                        dSetSpritePosition("T2_5",-180.0,-170.0);//位置-370.0,-215.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime >= 7 &&GC_F[7]==0)//4秒后
                     {
                         dSetSpritePosition("T2_5",0.0,1460.0);//移走5
-                        dSetSpritePosition("T2_6",-252.0,-215.0);//6位置-252.0,-215.0
+                        dSetSpritePosition("T2_6",-180.0,-170.0);//6位置-252.0,-215.0
                         GC_F[7]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -4026,35 +4028,35 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",124.0,86.0);//位置124.0,86.0
+                        dSetSpritePosition("T1_1",240,120.0);//位置124.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",-280.0,-215.0);//位置-280.0,-215.0
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",-180.0,-170.0);//位置-280.0,-215.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
-                        dSetSpritePosition("T1_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T1_3",111.5,86.0);//位置111.5，86.0
+                        dSetSpritePosition("T1_2",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_3",240,120.0);//位置111.5，86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T1_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T1_4",81.0,86.0);//位置81.0，86.0
+                        dSetSpritePosition("T1_4",240,120.0);//位置81.0，86.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
-                    {
-                        dSetSpritePosition("T1_5",178.5,112.5);//位置178.5，112.5
+                    {dSetSpritePosition("T1_4",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_5",240,120.0);//位置178.5，112.5
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7&&GC_F[7]==0)//7秒后
                     {
-                        dSetSpritePosition("T1_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T1_6",-290.0,-215.0);//位置-290.0，-215.0
+                        dSetSpritePosition("T1_5",0.0,1460.0);//移走2
+                        dSetSpritePosition("T1_6",-180.0,-170.0);//位置-290.0，-215.0
                         GC_F[7]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -4065,18 +4067,18 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",111.0,86.0);//位置111.0,86.0
+                        dSetSpritePosition("T2_1",240,120.0);//位置111.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T2_2",90.0,115.0); //位置90.0,115.0
+                    {dSetSpritePosition("T2_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T2_2",240,120.0); //位置90.0,115.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_3",-298.0,-215.0);//位置-298.5.0,-215.0
+                        dSetSpritePosition("T2_3",-180.0,-170.0);//位置-298.5.0,-215.0
                         GC_F[4]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -4093,50 +4095,49 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",100.0,86.0);//位置100.0,86.0
+                        dSetSpritePosition("T1_1",240,120.0);//位置100.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",124.0,115.0);//位置124.0,115.0
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",240,120.0);//位置124.0,115.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
-                    {
-                        dSetSpritePosition("T1_3",-210.0,-215.0);//位置-210.0，-215.0
+                    {dSetSpritePosition("T1_2",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_3",-180.0,-170.0);//位置-210.0，-215.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T1_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T1_4",-290.0,-215.0);//位置-290，-215.0
+                        dSetSpritePosition("T1_4",-180.0,-170.0);//位置-290，-215.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
                     {
-                        dSetSpritePosition("T1_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T1_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T1_5",100.0,86.0);//位置100.0，86.0
+                        dSetSpritePosition("T1_4",0.0,1460.0);//移走2
+                        dSetSpritePosition("T1_5",240,120.0);//位置100.0，86.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7&&GC_F[7]==0)//7秒后
-                    {
-                        dSetSpritePosition("T1_6",186.0,115.0);//位置186.0，115.0
+                    {dSetSpritePosition("T1_5",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_6",240,120.0);//位置186.0，115.0
                         GC_F[7]=1;
                     }
                     if(g_GCTime>=8&&GC_F[8]==0)//8秒后
-                    {
-                        dSetSpritePosition("T1_7",198.0,145.0);//位置198.0，145.0
+                    {dSetSpritePosition("T1_6",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_7",240,120.0);//位置198.0，145.0
                         GC_F[8]=1;
                     }
                     if(g_GCTime>=9&&GC_F[9]==0)//9秒后
-                    {
-                        dSetSpritePosition("T1_8",175.0,175.0);//位置175.0，175.0
+                    {dSetSpritePosition("T1_7",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_8",240,120.0);//位置175.0，175.0
                         GC_F[9]=1;
                     }
                     if(g_GCTime>=10&&GC_F[10]==0)//10秒后
-                    {
-                        dSetSpritePosition("T1_9",210.0,205.0);//位置210.0，205.0
+                    {dSetSpritePosition("T1_8",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_9",240,120.0);//位置210.0，205.0
                         GC_F[10]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -4147,28 +4148,28 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",-295.0,-215.0);//位置-295.0,-215.0
+                        dSetSpritePosition("T2_1",-180.0,-170.0);//位置-295.0,-215.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
                     {
                         dSetSpritePosition("T2_1",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_2",-287.0,-215.0); //位置-287.0,-215.0
+                        dSetSpritePosition("T2_2",-180.0,-170.0); //位置-287.0,-215.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
-                    {
-                        dSetSpritePosition("T2_3",100.0,86.0);//位置100.0,86.0
+                    {dSetSpritePosition("T2_2",0.0,1460.0);//移走2
+                        dSetSpritePosition("T2_3",240,120.0);//位置100.0,86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
-                    {
-                        dSetSpritePosition("T2_4",161.0,115.0);//位置161.0,115.0
+                    {dSetSpritePosition("T2_3",0.0,1460.0);//移走2
+                        dSetSpritePosition("T2_4",240,120.0);//位置161.0,115.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
-                    {
-                        dSetSpritePosition("T2_5",153.5,145.0);//位置153.5,145.0
+                    {dSetSpritePosition("T2_4",0.0,1460.0);//移走2
+                        dSetSpritePosition("T2_5",240,120.0);//位置153.5,145.0
                         GC_F[6]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -4185,12 +4186,12 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",-171.5,-215.0);//位置-171.5,-215.0
+                        dSetSpritePosition("T1_1",-180.0,-170.0);//位置-171.5,-215.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",150.0,86.0);//位置150.0,86.0
+                    {dSetSpritePosition("T2_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",240,120.0);//位置150.0,86.0
                         GC_F[3]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -4201,48 +4202,48 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",-345.0,-215.0);//位置-345.0,-215.0
+                        dSetSpritePosition("T2_1",-180.0,-170.0);//位置-345.0,-215.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
                     {
                         dSetSpritePosition("T2_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T2_2",-226.0,-215.0); //位置-226.0,-215.0
+                        dSetSpritePosition("T2_2",-180.0,-170.0); //位置-226.0,-215.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
-                    {
-                        dSetSpritePosition("T2_3",157.5,86.0);//位置157.5,86.0
+                    {dSetSpritePosition("T2_2",0.0,1460.0);//移走1
+                        dSetSpritePosition("T2_3",240,120.0);//位置157.5,86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T2_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_4",89.0,86.0);//位置89.0,86.0
+                        dSetSpritePosition("T2_4",240,120.0);//位置89.0,86.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
                     {
                         dSetSpritePosition("T2_4",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_5",130.0,86.0);//位置130.0,86.0
+                        dSetSpritePosition("T2_5",240,120.0);//位置130.0,86.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7&&GC_F[7]==0)//7秒后
                     {
                         dSetSpritePosition("T2_5",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_6",166.0,86.0);//位置89.0,86.0
+                        dSetSpritePosition("T2_6",240,120.0);//位置89.0,86.0
                         GC_F[7]=1;
                     }
                     if(g_GCTime>=8&&GC_F[8]==0)//8秒后
                     {
                         dSetSpritePosition("T2_6",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_7",106.0,86.0);//位置106.0,86.0
+                        dSetSpritePosition("T2_7",240,120.0);//位置106.0,86.0
                         GC_F[8]=1;
                     }
                     if(g_GCTime>=9&&GC_F[9]==0)//9秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_8",-189.0,-215.0);//位置-189.0,-215.0
+                        dSetSpritePosition("T2_8",-180.0,-170.0);//位置-189.0,-215.0
                         GC_F[9]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -4259,12 +4260,12 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",-250.0,-215.0);//位置-250,-215.0
+                        dSetSpritePosition("T1_1",-180.0,-170.0);//位置-250,-215.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",96.0,86.0);//位置96.0,86.0
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",240,120.0);//位置96.0,86.0
                         GC_F[3]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -4275,24 +4276,24 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",72.0,86.0);//位置72.0,86.0
+                        dSetSpritePosition("T2_1",240,120.0);//位置72.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T2_2",-172.0,-215.0); //位置-172.0,-215.0
+                    {dSetSpritePosition("T2_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T2_2",-180.0,-170.0); //位置-172.0,-215.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_3",-177.0,-215.0);//位置-177.0,-215.0
+                        dSetSpritePosition("T2_3",-180.0,-170.0);//位置-177.0,-215.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T2_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_4",-282.50,-215.0);//位置-282.50,-215.0
+                        dSetSpritePosition("T2_4",-180.0,-170.0);//位置-282.50,-215.0
                         GC_F[5]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -4309,12 +4310,12 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",-250.0,-215.0);//位置-250,-215
+                        dSetSpritePosition("T1_1",-180.0,-170.0);//位置-250,-215
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",181.0,86.0);//位置181.0,86.0
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",240,120.0);//位置181.0,86.0
                         GC_F[3]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -4325,36 +4326,37 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",67.0,86.0);//位置67.0,86.0
+                        dSetSpritePosition("T2_1",240,120.0);//位置67.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
                     {
                         dSetSpritePosition("T2_1",0.0,1460.0);//移走1
-                        dSetSpritePosition("T2_2",172.0,86.0); //位置-226.0,-215.0
+                        dSetSpritePosition("T2_2",240,120.0); //位置-226.0,-215.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
                         dSetSpritePosition("T2_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T2_3",158.5,86.0);//位置158.5,86.0
+              
+						dSetSpritePosition("T2_3",158.5,86.0);//位置158.5,86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
                     {
                         dSetSpritePosition("T2_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T2_4",150.0,86.0);//位置150.0,86.0
+                        dSetSpritePosition("T2_4",240,120.0);//位置150.0,86.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6&&GC_F[6]==0)//6秒后
-                    {
-                        dSetSpritePosition("T2_5",-306.0,-215.0);//位置-306,-215.0
+                    {dSetSpritePosition("T2_4",0.0,1460.0);//移走1
+                        dSetSpritePosition("T2_5",-180.0,-170.0);//位置-306,-215.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7&&GC_F[7]==0)//7秒后
                     {
                         dSetSpritePosition("T2_5",0.0,1460.0);//移走5
-                        dSetSpritePosition("T2_6",-196.0,-215.0);//位置-196.0,-215.0
+                        dSetSpritePosition("T2_6",-180.0,-170.0);//位置-196.0,-215.0
                         GC_F[7]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
@@ -4371,42 +4373,42 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T1_1",97.0,86.0);//位置97.0,86.0
+                        dSetSpritePosition("T1_1",240,120.0);//位置97.0,86.0
                         GC_F[2]=1;
                     }
                     if(g_GCTime>=3&&GC_F[3]==0)//3秒后
-                    {
-                        dSetSpritePosition("T1_2",200.0,115.0);//位置200.0,115.0
+                    {dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                        dSetSpritePosition("T1_2",240,120.0);//位置200.0,115.0
                         GC_F[3]=1;
                     }
                     if(g_GCTime>=4&&GC_F[4]==0)//4秒后
                     {
-                        dSetSpritePosition("T1_1",0.0,1460.0);//移走1
+                
                         dSetSpritePosition("T1_2",0.0,1460.0);//移走2
-                        dSetSpritePosition("T1_3",173.0,86.0);//位置173.0,86.0
+                        dSetSpritePosition("T1_3",240,120.0);//位置173.0,86.0
                         GC_F[4]=1;
                     }
                     if(g_GCTime>=5&&GC_F[5]==0)//5秒后
-                    {
-                        dSetSpritePosition("T1_4",-270.0,-215.0);//位置-270.0,-215.0
+                    { dSetSpritePosition("T1_3",0.0,1460.0);//移走2
+                        dSetSpritePosition("T1_4",-180.0,-170.0);//位置-270.0,-215.0
                         GC_F[5]=1;
                     }
                     if(g_GCTime>=6 &&GC_F[6]==0)//6秒后
                     {
-                        dSetSpritePosition("T1_3",0.0,1460.0);//移走3
-                        dSetSpritePosition("T1_5",171.5,86.0);//位置171.5,86.0
+                        dSetSpritePosition("T1_4",0.0,1460.0);//移走3
+                        dSetSpritePosition("T1_5",240,120.0);//位置171.5,86.0
                         GC_F[6]=1;
                     }
                     if(g_GCTime>=7 && GC_F[7]==0)//7秒后
                     {
-                        dSetSpritePosition("T1_4",0.0,1460.0);//移走4
-                        dSetSpritePosition("T1_6",-260.0,-215.0);//位置-260.0,-215.0
+                        dSetSpritePosition("T1_5",0.0,1460.0);//移走4
+                        dSetSpritePosition("T1_6",-180.0,-170.0);//位置-260.0,-215.0
                         GC_F[7]=1;
                     }
                     if(g_GCTime>=8 && GC_F[8]==0)//8秒后
                     {
                         dSetSpritePosition("T1_6",0.0,1460.0);//移走6
-                        dSetSpritePosition("T1_7",-330.0,-215.0);//位置-330.0,-215.0
+                        dSetSpritePosition("T1_7",-180.0,-170.0);//位置-330.0,-215.0
                         GC_F[8]=1;
                     }
                     g_isLoadGC = 0;//记录过场已加载
@@ -4417,7 +4419,7 @@ void GameLoadGC(const int GameGQ,const int ID)
                     //定位
                     if(g_GCTime>=2&&GC_F[2]==0)//2秒后
                     {
-                        dSetSpritePosition("T2_1",-203.5,-215.0);//位置67.0,86.0
+                        dSetSpritePosition("T2_1",-180.0,-170.0);//位置67.0,86.0
                         GC_F[2]=1;
                     }
                     g_isLoadGC1 = 0;//记录过场2已加载
