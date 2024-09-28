@@ -89,11 +89,11 @@ int         M_Skill4;       // 技能4音效
 float       M_vol = 1;      // 设置声音大小，若要静音将其置为零。设置声音时乘以一个常数即可
 
 //
-const char *M_Main[]={"BGMMainMenu.ogg","MainBg2.ogg","MainBg3.ogg","MainBg4.ogg","MainBg5.ogg"};
-const char *M_Map[]={"BGMMapMenu.ogg","MapBg_3.ogg","MapBg_9.ogg"};
-const char *M_Game[]={"BGMguanqia.wav","Gamebg_2.ogg","Gamebg_37.ogg",
-                       "Gamebg_4.ogg","Gamebg_56.ogg","Gamebg_56.ogg",
-                       "Gamebg_37.ogg","Gamebg_8.ogg","Gamebg_9.ogg"};
+const char *M_Main[]={"BGMMainMenu_weiZhi.ogg"/**/,"BGMMainMenu_er.ogg","BGMMainMenu_noName.ogg","BGMMainMenu_yuanFeng.ogg","BGMMainMenu_huang.ogg"};
+const char *M_Map[]={"BGMMainMap_hongJi.ogg"/**/,"BGMMainMap_wangDao.ogg","BGMMainMap_zhiWo.ogg"};
+const char *M_Game[]={"BGMGuanka_jingHong.ogg","BGMGuanka_jinGuo.ogg","BGMGuanka_miTian.ogg",
+                       "BGMGuanka_naoHai.ogg","BGMGuanka_poXiao.ogg","BGMGuanka_raoJiang.ogg",
+                       "BGMGuanka_reXue.ogg","BGMGuanka_xiSheng.ogg","BGMGuanka_zhenHai.ogg"};
 //
 int         F_Mflag1=0x00;      // 记录音效播放次数
 int         F_Mflag2=0x000;     // 记录音效播放次数
