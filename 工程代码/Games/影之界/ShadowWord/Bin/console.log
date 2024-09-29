@@ -1,7 +1,7 @@
-//-------------------------- 9/29/2024 -- 09:53:06 -----
+//-------------------------- 9/29/2024 -- 12:02:37 -----
 Processor Init:
-   Intel Pentium III, ~2.90 Ghz
-     (timed at roughly 2.89 Ghz)
+   Intel Pentium III, ~3.07 Ghz
+     (timed at roughly 3.08 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -20,10 +20,10 @@ Initializing chunk mappings...
    o 'TEXT' maps to TextChunk
    o 'SCHK' maps to UnknownChunk
    o 'SCHK' maps to SimChunk
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/main.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/main.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/main.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/main.cs.
  % - Initializing Common
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/preferences/defaultPrefs.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/preferences/defaultPrefs.cs.
 Reading Display Device information...
    Primary Display Device Found:
       Vendor Id: VEN_0000
@@ -31,12 +31,12 @@ Reading Display Device information...
 
 Using OpenGL rendering. Fullscreen: 0
 
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/xml.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/properties.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/common.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/audio.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/canvas.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/cursor.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/xml.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/properties.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/common.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/audio.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/canvas.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/cursor.cs.
 Video Init:
    Accelerated OpenGL display device detected.
    Accelerated D3D device not detected.
@@ -54,7 +54,7 @@ Making the new rendering context current...
 OpenGL driver information:
   Vendor: Intel
   Renderer: Intel(R) Iris(R) Xe Graphics
-  Version: 4.6.0 - Build 31.0.101.4146
+  Version: 4.6.0 - Build 31.0.101.3251
 OpenGL Init: Enabled Extensions
   ARB_multitexture (Max Texture Units: 8)
   EXT_blend_color
@@ -74,46 +74,41 @@ OpenGL Init: Disabled Extensions
   NV_vertex_array_range
 
 Max Texture Size reported as: 16384
-OpenGLDevice::setScreenMode -- can't switch to resolution larger than desktop in windowed mode!
-Setting screen mode to 1600x1152x32 (w)...
+Setting screen mode to 800x600x32 (w)...
 OpenAL Driver Init:
-   Vendor: Creative Labs Inc.
-   Version: OpenAL 1.0
-   Renderer: Software
-   Extensions: EAX 2.0, EAX 3.0, EAX Unified, and EAX-AC3
-
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/profiles.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/cursors.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOk.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxYesNo.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxYesNoCancel.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOKCancel.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOKCancelDetailsDlg.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messagePopup.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/options.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/remap.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/console.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/NetworkMenu.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/startServer.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/joinServer.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/waitingForServer.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/helpDlg.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBox.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/help.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/chatGui.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/screenshot.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/metrics.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/Gui/FrameOverlayGui.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/scriptDoc.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/keybindings.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/options.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/levelManagement.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/projectManagement.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/projectResources.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/align.cs.
+   Failed to initialize driver.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/profiles.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/cursors.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOk.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxYesNo.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxYesNoCancel.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOKCancel.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBoxOKCancelDetailsDlg.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messagePopup.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/options.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/remap.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/console.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/NetworkMenu.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/startServer.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/joinServer.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/waitingForServer.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/helpDlg.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/messageBox.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/help.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gui/chatGui.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/screenshot.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/metrics.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/Gui/FrameOverlayGui.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/scriptDoc.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/keybindings.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/options.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/levelManagement.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/projectManagement.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/projectResources.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/common/gameScripts/align.cs.
 
 FunCode (v1.7.5) initialized...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/datablocks.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/datablocks.cs.
 ImageMap(Game1xiaoguoImageMap)SrcBitmap(game/data/images/Game1xiaoguo.png) Error: 'Invalid Bitmap File!' (2)
 ImageMap(Z_standImageMap1)SrcBitmap(game/data/images/Z_stand.png) Error: 'Invalid Bitmap File!' (2)
 t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (Z_standImageMap1)
@@ -184,22 +179,32 @@ t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create an
 game/managed/datablocks.cs (0): Register object failed for object gj999Animation of class t2dAnimationDatablock.
 t2dAnimationDatablock::onAdd() - ImageMap Datablock is invalid, cannot create animation! (mv999ImageMap)
 game/managed/datablocks.cs (0): Register object failed for object mv999Animation of class t2dAnimationDatablock.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/persistent.cs.
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/brushes.cs...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/brushes.cs.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gui/mainScreen.gui.
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gameScripts/game.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/persistent.cs.
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/brushes.cs...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/brushes.cs.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gui/mainScreen.gui.
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gameScripts/game.cs.
 Activating DirectInput...
 DirectInput joystick failed to enable!
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d.
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d.
 Setting screen mode to 1280x768x32 (w)...
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
 DirectInput deactivated.
 Activating DirectInput...
 DirectInput deactivated.
@@ -208,8 +213,44 @@ DirectInput deactivated.
 Activating DirectInput...
 DirectInput deactivated.
 Activating DirectInput...
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d.
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
