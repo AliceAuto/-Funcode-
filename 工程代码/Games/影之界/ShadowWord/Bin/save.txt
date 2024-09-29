@@ -1,8 +1,8 @@
-g_Whichgame:0
-Z_gongji:40
-Z_fangyv:10
-Z_shengming:30
-Z_jingyan:0
-Z_levelmax:30
+g_Whichgame:7
+Z_gongji:999
+Z_fangyv:1999
+Z_shengming:999
+Z_jingyan:99
+Z_levelmax:3099
 Z_speed:400
-Z_level:1
+Z_level:9
