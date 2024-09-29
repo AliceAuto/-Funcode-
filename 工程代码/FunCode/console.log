@@ -1,7 +1,7 @@
-//-------------------------- 9/28/2024 -- 23:28:25 -----
+//-------------------------- 9/29/2024 -- 09:25:49 -----
 Processor Init:
-   Intel Pentium III, ~2.87 Ghz
-     (timed at roughly 2.88 Ghz)
+   Intel Pentium III, ~2.90 Ghz
+     (timed at roughly 2.89 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -447,9 +447,6 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/to
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/FunCode/tools/gui/IPInputBox.ed.gui.
 
 FunCode (v1.7.5) initialized...
-pushDialog(): Invalid control: ConnectWait_NoDB
-Connect success, C = 0, CPP = 0, JAVA = 0
-popDialog(): Invalid control: ConnectWait_NoDB
 % Opening Project C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/project.funProj ...
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/managed/datablocks.cs.
 ImageMap(Game1xiaoguoImageMap)SrcBitmap(C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/images/Game1xiaoguo.png) Error: 'Invalid Bitmap File!' (2)
@@ -528,6 +525,9 @@ tools/levelEditor/scripts/options.ed.cs (118): Unable to find object: 'T2DFullCo
 Executing C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+pushDialog(): Invalid control: ConnectWait_NoDB
+Connect success, C = 0, CPP = 0, JAVA = 0
+popDialog(): Invalid control: ConnectWait_NoDB
 RunGame Exe : C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/Game.exe, Args : -project "C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/"
 Set::getObject index out of range.
 Set::getObject index out of range.
