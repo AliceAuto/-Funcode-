@@ -1,7 +1,7 @@
-//-------------------------- 9/29/2024 -- 21:34:33 -----
+//-------------------------- 9/30/2024 -- 00:26:10 -----
 Processor Init:
-   Intel Pentium III, ~2.87 Ghz
-     (timed at roughly 2.88 Ghz)
+   Intel Pentium III, ~2.90 Ghz
+     (timed at roughly 2.90 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -122,42 +122,15 @@ Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影�
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/gameScripts/game.cs.
 Activating DirectInput...
 DirectInput joystick failed to enable!
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game9.t2d.
+Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game1.t2d...
+Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game1.t2d.
+t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
+t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (B_dengchang2Animation)
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d.
 Setting screen mode to 1280x768x32 (w)...
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
-t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (Z_pugongAnimation1)
-Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d...
-Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d.
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 Compiling C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
 Loading compiled script C:/Users/27427/Desktop/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
 t2dAnimationController::playAnimation() - Invalid t2dAnimationDatablock datablock (Z_pugongAnimation1)

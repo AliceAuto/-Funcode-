@@ -78,12 +78,15 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Winmm.lib;..\..\Src\CommonAPI_2010.Lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\..\..\Bin\Game.exe</OutputFile>
+      <OutputFile>../../../Bin/Game.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\Bin\</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
