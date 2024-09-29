@@ -1,4 +1,4 @@
-//-------------------------- 9/29/2024 -- 11:59:45 -----
+//-------------------------- 9/29/2024 -- 13:45:13 -----
 Processor Init:
    Intel Pentium III, ~3.07 Ghz
      (timed at roughly 3.08 Ghz)
@@ -126,7 +126,7 @@ Video Init:
 
 Activating the OpenGL display device...
 Activating the OpenGL display device...
-Setting screen mode to 1761x1376x32 (w)...
+Setting screen mode to 1761x1462x32 (w)...
 Creating a new window...
 Acquiring a new device context...
 Pixel format set:
@@ -528,13 +528,10 @@ t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatab
 pushDialog(): Invalid control: ConnectWait_NoDB
 Connect success, C = 0, CPP = 0, JAVA = 0
 popDialog(): Invalid control: ConnectWait_NoDB
-Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game1.t2d...
-Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/Game1.t2d.
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d...
-Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/wellcome.t2d.
+RunGame Exe : E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/Game.exe, Args : -project "E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/"
+Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d...
+Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d.
+Open level error, level name is empty : E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MainMenu.t2d
 Compiling E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d...
 Loading compiled script E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/game/data/levels/MapMenu.t2d.
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
@@ -549,7 +546,6 @@ t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatab
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
 t2dStaticSprite::setFrame() - Cannot set Frame without existing t2dImageMapDatablock Datablock!
-RunGame Exe : E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/Game.exe, Args : -project "E:/-Funcode-/工程代码/Games/影之界/ShadowWord/Bin/"
 Set::getObject index out of range.
 Set::getObject index out of range.
 Exporting Particle Editor preferences.
