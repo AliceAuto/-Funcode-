@@ -118,7 +118,7 @@ int         Z_IsSkill[] = {0,0,0,0};//记录主角是否可以释放技能
 float       Z_hurtID = 1/(1+(Z_fangyv/100.0)); //记录主角的减伤系数
 float       Z_attackTime;       //记录主角距上次进攻的时间
 float       Z_hurtTime;         //记录主角距上次受伤的时间
-float       Z_PgJiange = 0.5;//的普攻间隔
+float       Z_PgJiange = 0.3;//的普攻间隔
 float       Z_hurtJg = 1;     //设置主角的受伤间隔
 float       Z_PosX = -470;      //记录主角当前位置的X坐标
 float       Z_PosY = -87;       //记录主角当前位置的Y坐标
@@ -162,7 +162,7 @@ char O_isattack = 0;                     //记录当前场地是否已经发起进攻
 
 
 
-int O_hurt[9] = {10,15,20,25,32,40,45,48,50};//记录每一关小兵伤害
+int O_hurt[9] = {5,10,15,25,50,100,125,150,200};//记录每一关小兵伤害
 int O_bloodMax = 20;                   //记录每一关小兵血量上限：每一关翻倍
 int O_blood[6] = {0,0,0,0,0,0};         //记录小怪的血量
 int O_i = 0;                            //记录当前小兵ID
@@ -172,8 +172,8 @@ int O_Sspeed = 100;                      //记录小兵愤怒状态的速度
 
 float O_attackPosX = 0;                 //记录小怪定点攻击的位置
 float O_attackTime = 0;                 //记录场地对主角发动攻击的时间间隔
-float O_attack = 1.5;                     //设置每隔几秒小怪发动一次攻击
-float O_PengzhuangTime = 0.5;           //设置精灵与技能碰撞的时间间隔
+float O_attack = 1;                     //设置每隔几秒小怪发动一次攻击
+float O_PengzhuangTime = 0.1;           //设置精灵与技能碰撞的时间间隔
 float O_JiluTime[6] = {};               //记录据上一次碰撞间隔的时间
 float O_attTime[6] ={};                 //记录小怪对主角发动攻击的时间间隔
 
@@ -189,7 +189,7 @@ int B_num = 0;                          //记录场上Boss数
 int B_i = 0;                            //记录当前Boss技能ID，死亡后清零
 int B_SkillSpeed = 500;                 //设置Boss技能速度
 
-float B_PengzhuangTime = 0.5;           //设置Boss的碰撞时间间隔
+float B_PengzhuangTime = 0.1;           //设置Boss的碰撞时间间隔
 float B_JiangeTime = 0;                 //记录Boss距上次碰撞发生的间隔时间
 float B_attack = 4;                     //设置Boss每隔多长时间进行一次攻击
 float B_attackTime = 0;                 //记录距离上次Boss发动攻击过去了多长时间
@@ -574,7 +574,7 @@ void GameRun( float fDeltaTime )
                 dSetSpriteCollisionReceive(Z_name,1);//接受碰撞
             }
             //当发动四技能0.3秒且主角不可动
-            if (S_SpeedTime4 >= 0.3 && Z_IsSkill[3]==0 && g_IsL==1)
+            if (S_SpeedTime4 >= 1 && Z_IsSkill[3]==0 && g_IsL==1)
             {
                 g_IsL =0;
                 //主角可见，可移动,接受碰撞
@@ -2197,26 +2197,26 @@ void OnSpriteColSprite( const char *szSrcName, const char *szTarName )
     if(strcmp(szSrcName,"CsendSkill1")==0&&strcmp(szTarName,"Boss1")==0)
     {
         //Boss血量减少并显示
-        BossHurt(2*Z_gongji);
+        BossHurt(1*Z_gongji);
     }
      //如果人物技能3与Boss碰撞
     if(strcmp(szSrcName,"CsendSkill3")==0&&strcmp(szTarName,"Boss1")==0)
     {
         //Boss血量减少并显示
-        BossHurt(1.8*Z_gongji);
+        BossHurt(2*Z_gongji);
     }
      //如果人物技能4与Boss碰撞
     if(strcmp(szSrcName,"CsendSkill4")==0&&strcmp(szTarName,"Boss1")==0)
     {
         //Boss血量减少并显示
-        BossHurt(3.2*Z_gongji);
+        BossHurt(6 * Z_gongji);
     }
 
     //如果Boss技能与人物碰撞
     if(strcmp(szTarName,Z_name)==0&&strncmp(szSrcName,"CBoss_Skill",10)==0)
     {
         //Boss伤害=伤害乘以防御系数
-        SubBlood(O_hurt[g_WhichMap-3] * Z_hurtID * 2 + (rand()%10-4));
+        SubBlood(B_Gongji * Z_hurtID + (rand()%10-4));
     }
 
 }
@@ -3185,7 +3185,7 @@ void SendSkill(const char skill)
             dCloneSprite("sendSkill4","CsendSkill4");
             dSetSpritePosition("CsendSkill4",Z_PosX,Z_PosY);
             //设置技能生命值
-            dSetSpriteLifeTime("CsendSkill4",0.3);
+            dSetSpriteLifeTime("CsendSkill4",1);
             //主角不可见，不可移动,且不接受碰撞
             dSetSpriteVisible(Z_name,0);//不可见
             dSetSpriteImmovable(Z_name,1);//不可动
@@ -3236,8 +3236,8 @@ void CloneBoss(const int WhichMap)
     // 定义Boss为可碰撞
     B_IsPengzhuang = 1;
     // 定义Boss的基本属性：Boos血量 = 当前地图值-2*250；
-    B_Shengming = (WhichMap-2) * 120 + 130;
-    B_Gongji =  (WhichMap-2) * 10 + 40;
+    B_Shengming = ((WhichMap*WhichMap*WhichMap)) * 10 + 350;
+    B_Gongji =  pow((WhichMap), 2) * 15 + 40;
     B_Fangyv =  (WhichMap-2) * 10 + 60;
     // 设置Boss当前血量
     B_Blood = B_Shengming;
@@ -3487,6 +3487,89 @@ void BossAttack(const float PosX)
         }
     }
 }
+void GameShowNum(const char *szName,const int num,const float PosX,const float PosY)
+{
+    //判断这个数值是几位数,
+    int numB,numS,numG;
+    char *numname1;
+    char *numname2;
+    char *numname3;
+    numB = num/100;
+    numS = num/10%10;
+    numG = num%10;
+    if(O_numSprite >= 2000)
+    {
+        //数字精灵满1000清一次
+        O_numSprite = 0;
+    }
+    switch(numB)
+    {
+    case 0://当数字小于3位
+        if(numS == 0)//为一位数时
+        {
+            //克隆一个数字精灵，显示这个数字
+            numname1 = dMakeSpriteName("num_",O_numSprite);
+            dCloneSprite(szName,numname1);//克隆
+            O_numSprite++;
+            dSetStaticSpriteFrame(numname1,numG);//显示数值
+            //设置精灵位置
+            dSetSpritePosition(numname1,PosX,PosY-120);
+            //逐渐上移
+            dSetSpriteLinearVelocity(numname1,0.f,-25.f);
+            //设置其生命 0.8秒
+            dSetSpriteLifeTime(numname1,0.8);
+        }
+        else//为两位数时
+        {
+            numname1 = dMakeSpriteName("num_",O_numSprite);
+            dCloneSprite(szName,numname1);//克隆
+            O_numSprite++;
+            numname2 = dMakeSpriteName("num_",O_numSprite);
+            dCloneSprite(szName,numname2);//克隆
+            O_numSprite++;
+            dSetStaticSpriteFrame(numname1,numS);
+            dSetStaticSpriteFrame(numname2,numG);
+            //设置精灵位置
+            dSetSpritePosition(numname1,PosX-9,PosY-120);
+            dSetSpritePosition(numname2,PosX+9,PosY-120);
+            //逐渐上移
+            dSetSpriteLinearVelocity(numname1,0.f,-25.f);
+            dSetSpriteLinearVelocity(numname2,0.f,-25.f);
+            //设置其生命 0.8秒
+            dSetSpriteLifeTime(numname1,0.8);
+            dSetSpriteLifeTime(numname2,0.8);
+        }
+        break;
+    default:
+        {
+            numname1 = dMakeSpriteName("num_",O_numSprite);
+            dCloneSprite(szName,numname1);//克隆
+            O_numSprite++;
+            numname2 = dMakeSpriteName("num_",O_numSprite);
+            dCloneSprite(szName,numname2);//克隆
+            O_numSprite++;
+            numname3 = dMakeSpriteName("num_",O_numSprite);
+            dCloneSprite(szName,numname3);//克隆
+            O_numSprite++;
+            dSetStaticSpriteFrame(numname1,numB);
+            dSetStaticSpriteFrame(numname2,numS);
+            dSetStaticSpriteFrame(numname3,numG);
+            //设置精灵位置
+            dSetSpritePosition(numname1,PosX-18,PosY-120);
+            dSetSpritePosition(numname2,PosX,PosY-120);
+            dSetSpritePosition(numname3,PosX+18,PosY-120);
+            //逐渐上移
+            dSetSpriteLinearVelocity(numname1,0.f,-25.f);
+            dSetSpriteLinearVelocity(numname2,0.f,-25.f);
+            dSetSpriteLinearVelocity(numname3,0.f,-25.f);
+            //设置其生命 0.8秒
+            dSetSpriteLifeTime(numname1,0.8);
+            dSetSpriteLifeTime(numname2,0.8);
+            dSetSpriteLifeTime(numname3,0.8);
+        }
+        break;
+    }
+}
 
 // BossHurt：Boss受伤扣血函数
 // hurt：对Boss的伤害
@@ -3500,6 +3583,8 @@ void BossHurt(const int hurt)
      //显示的扣除血量
     GameShowNum("num_shanghai",kouxue,dGetSpritePositionX("Boss1"),dGetSpritePositionY("Boss1"));
     // 改变血条长度
+
+
     BloodLen("Boss_blood",569,B_Shengming,B_Blood,339.5);
     //关闭Boss接收碰撞功能
     dSetSpriteCollisionReceive("Boss1",0);

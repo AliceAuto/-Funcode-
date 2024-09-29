@@ -151,7 +151,6 @@
          mountID = "10";
    };
    new t2dAnimatedSprite(pugong) {
-      animationName = "Z_pugongAnimation1";
       canSaveDynamicFields = "1";
       Position = "-380.018 56.015";
       size = "207.917 181.000";
@@ -163,7 +162,6 @@
          mountToID = "10";
    };
    new t2dAnimatedSprite() {
-      animationName = "Z_pugongAnimation1";
       canSaveDynamicFields = "1";
       Position = "388.815 -464.490";
       size = "180.000 181.000";
@@ -1400,5 +1398,17 @@
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
          mountID = "114";
+   };
+   new t2dStaticSprite() {
+      imageMap = "B_BossSkill14ImageMap1";
+      frame = "2";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "-860.053 -225.040";
+      size = "198.298 92.262";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "115";
    };
 };

@@ -229,7 +229,6 @@
          mountID = "16";
    };
    new t2dAnimatedSprite(pugong) {
-      animationName = "Z_pugongAnimation1";
       canSaveDynamicFields = "1";
       Position = "-400.280 -55.679";
       size = "180.000 181.000";
@@ -241,7 +240,6 @@
          mountToID = "16";
    };
    new t2dAnimatedSprite() {
-      animationName = "Z_pugongAnimation1";
       canSaveDynamicFields = "1";
       Position = "400.815 -461.490";
       size = "180.000 181.000";
@@ -483,36 +481,6 @@
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.000 -0.200 -0.000 0.300";
          mountID = "37";
-   };
-   new t2dStaticSprite(defeat_back) {
-      imageMap = "Defeat_BackMapImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "0.000 -709.700";
-      size = "261.000 74.000";
-      Layer = "1";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.000 0.300";
-         mountID = "95";
-         mountToID = "93";
-   };
-   new t2dStaticSprite(defeat_re) {
-      imageMap = "Defeat_ReImageMap";
-      frame = "0";
-      useSourceRect = "0";
-      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
-      canSaveDynamicFields = "1";
-      Position = "0.000 -860.200";
-      size = "261.000 74.000";
-      Layer = "1";
-      WorldLimitMin = "-50.000 -37.500";
-      WorldLimitMax = "50.000 37.500";
-      MountOffset = "0.000 -0.200";
-         mountID = "94";
-         mountToID = "93";
    };
    new t2dStaticSprite(victory_next) {
       imageMap = "Victory_NextImageMap";
@@ -1116,7 +1084,7 @@
       useSourceRect = "0";
       sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
       canSaveDynamicFields = "1";
-      Position = "0.000 -800.000";
+      Position = "2.500 -1346.000";
       size = "745.000 602.000";
       Layer = "1";
       WorldLimitMin = "-50.000 -37.500";
@@ -1501,5 +1469,35 @@
       WorldLimitMax = "50.000 37.500";
       LinkPoints = "0.060 -0.380 -0.090 -0.380 -0.165 -0.380 -0.240 -0.380 0.135 -0.380 0.210 -0.380 0.285 -0.380 0.360 -0.380 -0.000 0.630 -0.075 0.630 -0.150 0.630 -0.015 -0.380 -0.225 0.630 0.075 0.630 0.150 0.630 0.225 0.630";
          mountID = "124";
+   };
+   new t2dStaticSprite(defeat_back) {
+      imageMap = "Defeat_BackMapImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "2.500 -1255.700";
+      size = "261.000 74.000";
+      Layer = "1";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      MountOffset = "0.000 0.300";
+         mountID = "95";
+         mountToID = "93";
+   };
+   new t2dStaticSprite(defeat_re) {
+      imageMap = "Defeat_ReImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.37773e-039 0 2.37773e-039 6.22914e-039";
+      canSaveDynamicFields = "1";
+      Position = "2.500 -1406.200";
+      size = "261.000 74.000";
+      Layer = "1";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      MountOffset = "0.000 -0.200";
+         mountID = "94";
+         mountToID = "93";
    };
 };

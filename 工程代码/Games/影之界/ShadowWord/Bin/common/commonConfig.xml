@@ -4,7 +4,7 @@
    <GameName>Untitled Game</GameName>
    <Resolution>800 600 32</Resolution>
    <FullScreen>false</FullScreen>
-   <CommonVer />
+   <CommonVer></CommonVer>
    <ScreenShotKey>ctrl p</ScreenShotKey>
    <FullscreenKey>alt enter</FullscreenKey>
    <UsesNetwork>0</UsesNetwork>
